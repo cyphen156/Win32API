@@ -8,6 +8,8 @@
 
 using namespace Gdiplus;
 
+static HWND hWnd;
+
 // GDIPlus 토큰 초기화
 ULONG_PTR gdiplusToken;
 
@@ -15,6 +17,10 @@ ULONG_PTR gdiplusToken;
 // 좌표 변수 
 static POINT point;
 static BOOL reverse;
+static POINT endPos;
+
+static int scaledWidth;
+static int scaledHeight;
 #define MAX_LOADSTRING 100
 
 // 전역 변수:
@@ -31,6 +37,8 @@ INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
 HDC MemDC;
 HBITMAP hBitmap, oldBitmap;
 HBITMAP hBitmaps[5];
+
+static RECT hWndInfo;
 
 static unsigned int iFrame = 1;
 
@@ -50,11 +58,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     // TODO: 여기에 코드를 입력합니다.
     // 
     // 
-    // 기본 좌표 설정
-    point = { 0, 0 };
-
-    // 이미지 역전 설정
-    reverse = true;
 
     // 전역 문자열을 초기화합니다.
     LoadStringW(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
@@ -66,6 +69,11 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     {
         return FALSE;
     }
+    // 기본 좌표 설정
+    point = { 0, 0 };
+
+    // 이미지 역전 설정
+    reverse = true;
 
     // 비트맵 로드
     // 
@@ -88,13 +96,40 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     MSG msg;
 
 
-    // 기본 메시지 루프입니다:
-    while (GetMessage(&msg, nullptr, 0, 0))
+    // 메세지 루프
+    while (1)
     {
-        if (!TranslateAccelerator(msg.hwnd, hAccelTable, &msg))
+        // 사용자 입력 처리
+        if (PeekMessage(&msg, nullptr, 0, 0, PM_REMOVE))
         {
-            TranslateMessage(&msg);
-            DispatchMessage(&msg);
+            if (!TranslateAccelerator(msg.hwnd, hAccelTable, &msg))
+            {
+                TranslateMessage(&msg);
+                DispatchMessage(&msg);
+            }
+        }
+        // 분기에 걸리지 않는 백그라운드 프로세싱 작성
+        else 
+        {
+            if (reverse)
+            {
+                if (point.x + scaledWidth < endPos.x - (scaledWidth / 2))
+                {
+                    ++point.x;
+                }
+                if (point.y + scaledHeight < endPos.y - scaledHeight)
+                {
+                    ++point.y;
+                }
+            }
+            else if (!reverse)
+            {
+                if (point.x > 0)
+                    --point.x;
+                if (point.y > 0)
+                    --point.y;
+            }
+            InvalidateRect(hWnd, NULL, FALSE);
         }
     }
 
@@ -146,7 +181,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 {
    hInst = hInstance; // 인스턴스 핸들을 전역 변수에 저장합니다.
 
-   HWND hWnd = CreateWindowW(szWindowClass, szTitle, WS_OVERLAPPEDWINDOW,
+   hWnd = CreateWindowW(szWindowClass, szTitle, WS_OVERLAPPEDWINDOW,
       CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, nullptr, nullptr, hInstance, nullptr);
 
    if (!hWnd)
@@ -191,6 +226,12 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             }
         }
         break;
+    case WM_SIZE:
+        // 윈도우 크기 변경 시 RECT 값 업데이트
+        GetWindowRect(hWnd, &hWndInfo);
+        endPos.x = hWndInfo.right - hWndInfo.left;
+        endPos.y = hWndInfo.bottom - hWndInfo.top;
+        break;
     case WM_PAINT:
         {
             PAINTSTRUCT ps;
@@ -216,8 +257,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
             int originalWidth = bitmap.bmWidth;
             int originalHeight = bitmap.bmHeight;
-            int scaledWidth = originalWidth / 10;
-            int scaledHeight = originalHeight / 10;
+            scaledWidth = originalWidth / 10;
+            scaledHeight = originalHeight / 10;
 
             // 비트맵을 백 버퍼에 그리기
             if (reverse) {

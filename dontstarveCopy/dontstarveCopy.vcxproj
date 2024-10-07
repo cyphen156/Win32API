@@ -134,14 +134,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dontstarveCopy.cpp" />
+    <ClCompile Include="DST_2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DST_3.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="dontstarveCopy.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="bitmap1.bmp" />
     <Image Include="dontstarveCopy.ico" />
-    <Image Include="resources\bitmap3.bmp" />
     <Image Include="resources\fir.bmp" />
     <Image Include="resources\liz.bmp" />
     <Image Include="resources\mong.bmp" />

@@ -32,6 +32,12 @@
     <ClCompile Include="dontstarveCopy.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="DST_2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DST_3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="dontstarveCopy.rc">
@@ -45,13 +51,7 @@
     <Image Include="dontstarveCopy.ico">
       <Filter>리소스 파일</Filter>
     </Image>
-    <Image Include="bitmap1.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
     <Image Include="resources\fir.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="resources\bitmap3.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
     <Image Include="resources\liz.bmp">
