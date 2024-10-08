@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\Class">
+      <UniqueIdentifier>{3acf1222-11c5-4811-b13a-1580c0037963}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Class">
+      <UniqueIdentifier>{3ae72d74-62bd-4738-8d54-1d8d84385a0c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -27,6 +33,15 @@
     <ClInclude Include="dontstarveCopy.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>헤더 파일\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>헤더 파일\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>헤더 파일\Class</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dontstarveCopy.cpp">
@@ -36,6 +51,18 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="DST_3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DST_4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>소스 파일\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>소스 파일\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

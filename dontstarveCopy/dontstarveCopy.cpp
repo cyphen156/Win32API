@@ -3,30 +3,23 @@
 
 #include "framework.h"
 #include "dontstarveCopy.h"
-#include "Gdiplus.h"  
-#pragma comment (lib, "gdiplus")
 
-using namespace Gdiplus;
-
-static HWND hWnd;
-
-// GDIPlus 토큰 초기화
-ULONG_PTR gdiplusToken;
-
-
-// 좌표 변수 
-static POINT point;
-static BOOL reverse;
-static POINT endPos;
-
-static int scaledWidth;
-static int scaledHeight;
 #define MAX_LOADSTRING 100
+#define WSREGULAR 5000
+#define WSLARGE 10000
 
 // 전역 변수:
 HINSTANCE hInst;                                // 현재 인스턴스입니다.
+HWND hWnd;                                      // 메인 윈도우
 WCHAR szTitle[MAX_LOADSTRING];                  // 제목 표시줄 텍스트입니다.
 WCHAR szWindowClass[MAX_LOADSTRING];            // 기본 창 클래스 이름입니다.
+
+// 커스텀 전역변수
+RECT worldSize;
+RECT windowInfo;
+POINT charWorldPos;
+POINT charWinPos;
+DWORD lastFrameTime = 0;
 
 // 이 코드 모듈에 포함된 함수의 선언을 전달합니다:
 ATOM                MyRegisterClass(HINSTANCE hInstance);
@@ -34,30 +27,15 @@ BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
 
-HDC MemDC;
-HBITMAP hBitmap, oldBitmap;
-HBITMAP hBitmaps[5];
 
-static RECT hWndInfo;
-
-static unsigned int iFrame = 1;
 
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,
                      _In_ LPWSTR    lpCmdLine,
                      _In_ int       nCmdShow)
 {
-    // GDI+ 초기화
-    GdiplusStartupInput gpsi;
-    GdiplusStartup(&gdiplusToken, &gpsi, nullptr);
-
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
-
-
-    // TODO: 여기에 코드를 입력합니다.
-    // 
-    // 
 
     // 전역 문자열을 초기화합니다.
     LoadStringW(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
@@ -69,32 +47,17 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     {
         return FALSE;
     }
-    // 기본 좌표 설정
-    point = { 0, 0 };
 
-    // 이미지 역전 설정
-    reverse = true;
-
-    // 비트맵 로드
-    // 
-
-    /*hBitmaps[0] = LoadBitmap(hInst, MAKEINTRESOURCE(IDB_BITMAP1));
-    hBitmaps[1] = LoadBitmap(hInst, MAKEINTRESOURCE(IDB_BITMAP2));
-    hBitmaps[2] = LoadBitmap(hInst, MAKEINTRESOURCE(IDB_BITMAP3));
-    hBitmaps[3] = LoadBitmap(hInst, MAKEINTRESOURCE(IDB_BITMAP4));
-    hBitmaps[4] = LoadBitmap(hInst, MAKEINTRESOURCE(IDB_BITMAP5));*/
-
-
-    /*for (int i = 0; i < 5; ++i)
-    {
-        if (hBitmaps[i] == NULL) {
-            MessageBox(NULL, L"비트맵을 로드할 수 없습니다.", L"Error", MB_OK);
-        }
-    }*/
     HACCEL hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_DONTSTARVECOPY));
 
     MSG msg;
 
+    // TODO: 여기에 코드를 입력합니다.
+    // 커스텀 전역변수 초기화
+    SetWorldSize(true);  // true면 Large, false면 Regular
+    GetWindowRect(hWnd, &windowInfo);   // 애플리케이션 실행시 윈도우 사이즈 가져오기
+    charWinPos = { (windowInfo.bottom - windowInfo.top) / 2, (windowInfo.right - windowInfo.left) / 2 };              // 기본 좌표 : 화면정중앙
+    charWorldPos = { (worldSize.bottom - worldSize.top) / 2, (worldSize.right - worldSize.left) / 2};            // 기본 좌표 : 월드 정중앙
 
     // 메세지 루프
     while (1)
@@ -111,30 +74,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         // 분기에 걸리지 않는 백그라운드 프로세싱 작성
         else 
         {
-            if (reverse)
-            {
-                if (point.x + scaledWidth < endPos.x - (scaledWidth / 2))
-                {
-                    ++point.x;
-                }
-                if (point.y + scaledHeight < endPos.y - scaledHeight)
-                {
-                    ++point.y;
-                }
-            }
-            else if (!reverse)
-            {
-                if (point.x > 0)
-                    --point.x;
-                if (point.y > 0)
-                    --point.y;
-            }
-            InvalidateRect(hWnd, NULL, FALSE);
+
         }
     }
-
-    // GDI Plus 해제
-    GdiplusShutdown(gdiplusToken);
 
     return (int) msg.wParam;
 }
@@ -160,7 +102,7 @@ ATOM MyRegisterClass(HINSTANCE hInstance)
     wcex.hIcon          = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_DONTSTARVECOPY));
     wcex.hCursor        = LoadCursor(nullptr, IDC_ARROW);
     wcex.hbrBackground  = (HBRUSH)(COLOR_WINDOW+1);
-    wcex.lpszMenuName   = MAKEINTRESOURCEW(IDC_DONTSTARVECOPY);
+    wcex.lpszMenuName   = MAKEINTRESOURCEW(NULL); // 메뉴 ON : IDC_DONTSTARVECOPY
     wcex.lpszClassName  = szWindowClass;
     wcex.hIconSm        = LoadIcon(wcex.hInstance, MAKEINTRESOURCE(IDI_SMALL));
 
@@ -188,6 +130,11 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    {
       return FALSE;
    }
+   // 풀스크린 모드로 설정
+   SetWindowLong(hWnd, GWL_STYLE, WS_POPUP | WS_VISIBLE);
+   int screenWidth = GetSystemMetrics(SM_CXSCREEN);
+   int screenHeight = GetSystemMetrics(SM_CYSCREEN);
+   SetWindowPos(hWnd, HWND_TOP, 0, 0, screenWidth, screenHeight, SWP_NOZORDER | SWP_FRAMECHANGED);
 
    ShowWindow(hWnd, nCmdShow);
    UpdateWindow(hWnd);
@@ -226,96 +173,16 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             }
         }
         break;
-    case WM_SIZE:
-        // 윈도우 크기 변경 시 RECT 값 업데이트
-        GetWindowRect(hWnd, &hWndInfo);
-        endPos.x = hWndInfo.right - hWndInfo.left;
-        endPos.y = hWndInfo.bottom - hWndInfo.top;
-        break;
     case WM_PAINT:
         {
             PAINTSTRUCT ps;
             HDC hdc = BeginPaint(hWnd, &ps);
 
-            // MemDC가 처음일 때만 생성
-            if (MemDC == NULL) {
-                MemDC = CreateCompatibleDC(hdc);
-                HBITMAP hMemBitmap = CreateCompatibleBitmap(hdc, ps.rcPaint.right - ps.rcPaint.left, ps.rcPaint.bottom - ps.rcPaint.top);
-                oldBitmap = (HBITMAP)SelectObject(MemDC, hMemBitmap);
-            }
-
-            // 백 버퍼(MemDC)에 배경 그리기
-            FillRect(MemDC, &ps.rcPaint, (HBRUSH)(COLOR_WINDOW + 1));
-
-            // 미리 로드된 비트맵을 백 버퍼에 그리기
-            hBitmap = LoadBitmap(hInst, MAKEINTRESOURCE(IDB_BITMAP1 + (iFrame / 5)));
-            HDC hTempDC = CreateCompatibleDC(MemDC);
-            HBITMAP hOldBitmap = (HBITMAP)SelectObject(hTempDC, hBitmap);
-
-            BITMAP bitmap;
-            GetObject(hBitmap, sizeof(BITMAP), &bitmap);
-
-            int originalWidth = bitmap.bmWidth;
-            int originalHeight = bitmap.bmHeight;
-            scaledWidth = originalWidth / 10;
-            scaledHeight = originalHeight / 10;
-
-            // 비트맵을 백 버퍼에 그리기
-            if (reverse) {
-                StretchBlt(MemDC, point.x + scaledWidth, point.y, -scaledWidth, scaledHeight, hTempDC, 0, 0, originalWidth, originalHeight, SRCCOPY);
-            }
-            else {
-                StretchBlt(MemDC, point.x, point.y, scaledWidth, scaledHeight, hTempDC, 0, 0, originalWidth, originalHeight, SRCCOPY);
-            }
-
-            // 백 버퍼(MemDC) 내용을 화면(hdc)에 복사
-            BitBlt(hdc, 0, 0, ps.rcPaint.right - ps.rcPaint.left, ps.rcPaint.bottom - ps.rcPaint.top, MemDC, 0, 0, SRCCOPY);
-
-            // 자원 해제
-            SelectObject(hTempDC, hOldBitmap);
-            DeleteDC(hTempDC);
-
             EndPaint(hWnd, &ps);
         }
         break;
-    case WM_KEYDOWN:
-        switch (wParam)
-        {
-        case VK_LEFT:
-            {
-                reverse = false;
-                point.x -= 5;
-                if (iFrame > 1)
-                {
-                    --iFrame;
-                }
-                break;
-            }
-        case VK_RIGHT:
-            {
-                reverse = true;
-                point.x += 5;
-                if (iFrame < 24)
-                {
-                    ++iFrame;
-                }
-                break;
-            }
-        case VK_UP:
-            point.y -= 5;
-            break;
-        case VK_DOWN:
-            point.y += 5;
-            break;
-        }
-        InvalidateRect(hWnd, NULL, FALSE);
-        break;
+    
     case WM_DESTROY:
-        SelectObject(MemDC, oldBitmap);
-        for (int i = 0; i < 5; ++i) {
-            DeleteObject(hBitmaps[i]);
-        }        
-        DeleteDC(MemDC);
         PostQuitMessage(0);
         break;
     default:
@@ -342,4 +209,21 @@ INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
         break;
     }
     return (INT_PTR)FALSE;
+}
+
+
+// 월드 사이즈 설정 함수
+void SetWorldSize(bool isLarge) {
+    if (isLarge) {
+        worldSize = { 0, 0, WSLARGE, WSLARGE };
+    }
+    else {
+        worldSize = { 0, 0, WSREGULAR, WSREGULAR };
+    }
+}
+
+// 매초 60번의 렌더링을 위한 타이머 호출
+void RenderFrame() {
+    // 화면 갱신 요청
+    InvalidateRect(hWnd, NULL, FALSE);
 }

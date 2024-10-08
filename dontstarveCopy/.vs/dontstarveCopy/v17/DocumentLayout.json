@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Win32API\\dontstarveCopy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C43A6BE-CE39-4F28-9957-EF9FB5B21FBD}|dontstarveCopy.vcxproj|C:\\Win32API\\dontstarveCopy\\DST_3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8C43A6BE-CE39-4F28-9957-EF9FB5B21FBD}|dontstarveCopy.vcxproj|solutionrelative:DST_3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8C43A6BE-CE39-4F28-9957-EF9FB5B21FBD}|dontstarveCopy.vcxproj|C:\\Win32API\\dontstarveCopy\\Core.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8C43A6BE-CE39-4F28-9957-EF9FB5B21FBD}|dontstarveCopy.vcxproj|solutionrelative:Core.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C43A6BE-CE39-4F28-9957-EF9FB5B21FBD}|dontstarveCopy.vcxproj|C:\\Win32API\\dontstarveCopy\\Core.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8C43A6BE-CE39-4F28-9957-EF9FB5B21FBD}|dontstarveCopy.vcxproj|solutionrelative:Core.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C43A6BE-CE39-4F28-9957-EF9FB5B21FBD}|dontstarveCopy.vcxproj|C:\\Win32API\\dontstarveCopy\\dontstarveCopy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -23,27 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "dontstarveCopy.cpp",
-              "DocumentMoniker": "C:\\Win32API\\dontstarveCopy\\dontstarveCopy.cpp",
-              "RelativeDocumentMoniker": "dontstarveCopy.cpp",
-              "ToolTip": "C:\\Win32API\\dontstarveCopy\\dontstarveCopy.cpp",
-              "RelativeToolTip": "dontstarveCopy.cpp",
-              "ViewState": "AgIAADcBAAAAAAAAAAAkwFkBAAAAAAAAAAAAAA==",
+              "Title": "Core.cpp",
+              "DocumentMoniker": "C:\\Win32API\\dontstarveCopy\\Core.cpp",
+              "RelativeDocumentMoniker": "Core.cpp",
+              "ToolTip": "C:\\Win32API\\dontstarveCopy\\Core.cpp",
+              "RelativeToolTip": "Core.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-04T14:35:30.995Z",
+              "WhenOpened": "2024-10-08T09:22:23.448Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DST_3.cpp",
-              "DocumentMoniker": "C:\\Win32API\\dontstarveCopy\\DST_3.cpp",
-              "RelativeDocumentMoniker": "DST_3.cpp",
-              "ToolTip": "C:\\Win32API\\dontstarveCopy\\DST_3.cpp",
-              "RelativeToolTip": "DST_3.cpp",
-              "ViewState": "AgIAADcBAAAAAAAAAAAkwFkBAAAAAAAAAAAAAA==",
+              "Title": "Core.h",
+              "DocumentMoniker": "C:\\Win32API\\dontstarveCopy\\Core.h",
+              "RelativeDocumentMoniker": "Core.h",
+              "ToolTip": "C:\\Win32API\\dontstarveCopy\\Core.h",
+              "RelativeToolTip": "Core.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-08T09:21:47.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "dontstarveCopy.cpp",
+              "DocumentMoniker": "C:\\Win32API\\dontstarveCopy\\dontstarveCopy.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy.cpp",
+              "ToolTip": "C:\\Win32API\\dontstarveCopy\\dontstarveCopy.cpp",
+              "RelativeToolTip": "dontstarveCopy.cpp",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAAANMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-07T08:25:04.561Z",
+              "WhenOpened": "2024-10-08T06:56:49.956Z",
               "EditorCaption": ""
             }
           ]
