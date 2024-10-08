@@ -63,7 +63,7 @@
       <Filter>소스 파일\Class</Filter>
     </ClCompile>
     <ClCompile Include="Core.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Class</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

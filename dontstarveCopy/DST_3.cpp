@@ -38,6 +38,8 @@ HDC MemDC;
 HBITMAP hBitmap, oldBitmap;
 HBITMAP hBitmaps[5];
 
+BOOL changedhWndSize;
+
 static RECT hWndInfo;
 
 static unsigned int iFrame = 1;
@@ -75,6 +77,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     // 이미지 역전 설정
     reverse = true;
 
+    changedhWndSize = false;
+
     // 비트맵 로드
     // 
 
@@ -102,6 +106,10 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         // 사용자 입력 처리
         if (PeekMessage(&msg, nullptr, 0, 0, PM_REMOVE))
         {
+            if (WM_QUIT == msg.message)
+            {
+                break;
+            }
             if (!TranslateAccelerator(msg.hwnd, hAccelTable, &msg))
             {
                 TranslateMessage(&msg);
@@ -113,11 +121,11 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         {
             if (reverse)
             {
-                if (point.x + scaledWidth < endPos.x - (scaledWidth / 2))
+                if (point.x + scaledWidth < endPos.x)
                 {
                     ++point.x;
                 }
-                if (point.y + scaledHeight < endPos.y - scaledHeight)
+                if (point.y + scaledHeight < endPos.y - (scaledHeight / 2))
                 {
                     ++point.y;
                 }
@@ -231,6 +239,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         GetWindowRect(hWnd, &hWndInfo);
         endPos.x = hWndInfo.right - hWndInfo.left;
         endPos.y = hWndInfo.bottom - hWndInfo.top;
+        changedhWndSize = true;
         break;
     case WM_PAINT:
     {
@@ -242,6 +251,13 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             MemDC = CreateCompatibleDC(hdc);
             HBITMAP hMemBitmap = CreateCompatibleBitmap(hdc, ps.rcPaint.right - ps.rcPaint.left, ps.rcPaint.bottom - ps.rcPaint.top);
             oldBitmap = (HBITMAP)SelectObject(MemDC, hMemBitmap);
+        }
+        else if (changedhWndSize)
+        {
+            MemDC = CreateCompatibleDC(hdc);
+            HBITMAP hMemBitmap = CreateCompatibleBitmap(hdc, ps.rcPaint.right - ps.rcPaint.left, ps.rcPaint.bottom - ps.rcPaint.top);
+            oldBitmap = (HBITMAP)SelectObject(MemDC, hMemBitmap);
+            changedhWndSize = false;
         }
 
         // 백 버퍼(MemDC)에 배경 그리기

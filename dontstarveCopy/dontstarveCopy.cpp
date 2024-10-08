@@ -27,7 +27,14 @@ BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
 
-
+void SetWorldSize(bool isLarge) {
+    if (isLarge) {
+        worldSize = { 0, 0, WSLARGE, WSLARGE };
+    }
+    else {
+        worldSize = { 0, 0, WSREGULAR, WSREGULAR };
+    }
+}
 
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,
@@ -211,16 +218,6 @@ INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
     return (INT_PTR)FALSE;
 }
 
-
-// 월드 사이즈 설정 함수
-void SetWorldSize(bool isLarge) {
-    if (isLarge) {
-        worldSize = { 0, 0, WSLARGE, WSLARGE };
-    }
-    else {
-        worldSize = { 0, 0, WSREGULAR, WSREGULAR };
-    }
-}
 
 // 매초 60번의 렌더링을 위한 타이머 호출
 void RenderFrame() {

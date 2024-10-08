@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Win32API\\dontstarveCopy\\",
+  "WorkspaceRootPath": "D:\\project\\Win32API\\dontstarveCopy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C43A6BE-CE39-4F28-9957-EF9FB5B21FBD}|dontstarveCopy.vcxproj|C:\\Win32API\\dontstarveCopy\\dontstarveCopy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{8C43A6BE-CE39-4F28-9957-EF9FB5B21FBD}|dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\Core.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8C43A6BE-CE39-4F28-9957-EF9FB5B21FBD}|dontstarveCopy.vcxproj|solutionrelative:Core.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C43A6BE-CE39-4F28-9957-EF9FB5B21FBD}|dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8C43A6BE-CE39-4F28-9957-EF9FB5B21FBD}|dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C43A6BE-CE39-4F28-9957-EF9FB5B21FBD}|dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\DST_3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8C43A6BE-CE39-4F28-9957-EF9FB5B21FBD}|dontstarveCopy.vcxproj|solutionrelative:DST_3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +22,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DST_3.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\DST_3.cpp",
+              "RelativeDocumentMoniker": "DST_3.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\DST_3.cpp",
+              "RelativeToolTip": "DST_3.cpp",
+              "ViewState": "AgIAAEUBAAAAAAAAAAAkwGkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-08T12:26:18.923Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "dontstarveCopy.cpp",
-              "DocumentMoniker": "C:\\Win32API\\dontstarveCopy\\dontstarveCopy.cpp",
-              "RelativeDocumentMoniker": "dontstarveCopy.cpp",
-              "ToolTip": "C:\\Win32API\\dontstarveCopy\\dontstarveCopy.cpp",
-              "RelativeToolTip": "dontstarveCopy.cpp",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAwwHcAAAACAAAAAAAAAA==",
+              "Title": "Core.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\Core.cpp",
+              "RelativeDocumentMoniker": "Core.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\Core.cpp",
+              "RelativeToolTip": "Core.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-08T06:56:49.956Z",
+              "WhenOpened": "2024-10-08T09:22:23.448Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dontstarveCopy.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy.cpp",
+              "RelativeToolTip": "dontstarveCopy.cpp",
+              "ViewState": "AgIAALIAAAAAAAAAAAAkwMMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-08T06:56:49.956Z"
             }
           ]
         }
