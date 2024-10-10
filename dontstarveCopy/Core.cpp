@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "Core.h"
 
 //// 월드 사이즈 설정 함수

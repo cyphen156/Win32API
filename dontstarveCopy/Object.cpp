@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "Object.h"
 
 // 생성자 구현

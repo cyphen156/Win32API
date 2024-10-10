@@ -42,6 +42,9 @@
     <ClInclude Include="Core.h">
       <Filter>헤더 파일\Class</Filter>
     </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dontstarveCopy.cpp">
