@@ -19,6 +19,9 @@
     <Filter Include="헤더 파일\Class">
       <UniqueIdentifier>{3ae72d74-62bd-4738-8d54-1d8d84385a0c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Type">
+      <UniqueIdentifier>{e0cc7dfc-b8b6-489c-8c65-b6b0f04cd5fa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -39,11 +42,14 @@
     <ClInclude Include="Object.h">
       <Filter>헤더 파일\Class</Filter>
     </ClInclude>
-    <ClInclude Include="Core.h">
+    <ClInclude Include="World.h">
       <Filter>헤더 파일\Class</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>헤더 파일\Class</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -65,7 +71,13 @@
     <ClCompile Include="Character.cpp">
       <Filter>소스 파일\Class</Filter>
     </ClCompile>
-    <ClCompile Include="Core.cpp">
+    <ClCompile Include="World.cpp">
+      <Filter>소스 파일\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="DST_3-2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp">
       <Filter>소스 파일\Class</Filter>
     </ClCompile>
   </ItemGroup>

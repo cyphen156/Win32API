@@ -3,6 +3,7 @@
 #include "pch.h"
 #include "framework.h"
 #include "dontstarveCopy.h"
+#include "World.h"
 
 #define MAX_LOADSTRING 100
 #define WSREGULAR 5000
@@ -20,6 +21,14 @@ RECT windowInfo;
 POINT charWorldPos;
 POINT charWinPos;
 DWORD lastFrameTime = 0;
+RECT tileSize;
+
+// 풀스크린 설정용 키 변수
+BOOL isFScreen;
+
+// 렌더링 횟수 카운트용 변수
+int iRenderCnt = 0;
+DWORD lastRenderTime = 0;
 
 // 이 코드 모듈에 포함된 함수의 선언을 전달합니다:
 ATOM                MyRegisterClass(HINSTANCE hInstance);
@@ -27,14 +36,11 @@ BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
 
-void SetWorldSize(bool isLarge) {
-    if (isLarge) {
-        worldSize = { 0, 0, WSLARGE, WSLARGE };
-    }
-    else {
-        worldSize = { 0, 0, WSREGULAR, WSREGULAR };
-    }
-}
+// 월드 크기 지정
+void SetWorldSize(bool isLarge);
+
+// 화면에 렌더링하기
+void Rendering();
 
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,
@@ -62,9 +68,16 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     // TODO: 여기에 코드를 입력합니다.
     // 커스텀 전역변수 초기화
     SetWorldSize(true);  // true면 Large, false면 Regular
-    GetWindowRect(hWnd, &windowInfo);   // 애플리케이션 실행시 윈도우 사이즈 가져오기
+    GetWindowRect(hWnd, &windowInfo);   // 애플리케이션 실행시 윈도우 사이즈 가져오기 == 클리핑 영역
     charWinPos = { (windowInfo.bottom - windowInfo.top) / 2, (windowInfo.right - windowInfo.left) / 2 };              // 기본 좌표 : 화면정중앙
     charWorldPos = { (worldSize.bottom - worldSize.top) / 2, (worldSize.right - worldSize.left) / 2};            // 기본 좌표 : 월드 정중앙
+    tileSize = { 50, 50 };
+    // 풀스크린 변수 초기화
+    isFScreen = true;
+
+    // 월드 생성, 초기화
+    World wld(&worldSize, &tileSize);
+    wld.generateWorld(&charWorldPos);
 
     // 메세지 루프
     while (1)
@@ -81,7 +94,23 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         // 분기에 걸리지 않는 백그라운드 프로세싱 작성
         else 
         {
+            Rendering();
 
+            // 현재 시간 가져옴
+            DWORD currentTime = GetTickCount64();
+
+            // 프레임 레이트 출력
+            if (currentTime - lastRenderTime >= 1000)
+            {
+                HDC hdc = GetDC(hWnd);
+                TCHAR fps[10];
+                wsprintf(fps, L"FPS: %d", iRenderCnt);
+                TextOut(hdc, 10, 10, fps, lstrlen(fps));
+                ReleaseDC(hWnd, hdc);
+
+                iRenderCnt = 0;
+                lastRenderTime = currentTime;
+            }
         }
     }
 
@@ -180,6 +209,25 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             }
         }
         break;
+    case WM_KEYDOWN:
+        if (wParam == VK_F11)
+        {
+            if (isFScreen) {
+                // 창 모드로 전환 (HD : 1280 X 720)
+                SetWindowLong(hWnd, GWL_STYLE, WS_OVERLAPPEDWINDOW | WS_VISIBLE);
+                SetWindowPos(hWnd, HWND_TOP, 100, 100, 800, 600, SWP_NOZORDER | SWP_FRAMECHANGED);
+                isFScreen = false;
+            }
+            else {
+                // 풀스크린 모드로 전환
+                SetWindowLong(hWnd, GWL_STYLE, WS_POPUP | WS_VISIBLE);
+                int screenWidth = GetSystemMetrics(SM_CXSCREEN);
+                int screenHeight = GetSystemMetrics(SM_CYSCREEN);
+                SetWindowPos(hWnd, HWND_TOP, 0, 0, screenWidth, screenHeight, SWP_NOZORDER | SWP_FRAMECHANGED);
+                isFScreen = true;
+            }
+        }
+        break;
     case WM_PAINT:
         {
             PAINTSTRUCT ps;
@@ -219,8 +267,16 @@ INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 }
 
 
-// 매초 60번의 렌더링을 위한 타이머 호출
-void RenderFrame() {
-    // 화면 갱신 요청
-    InvalidateRect(hWnd, NULL, FALSE);
+void SetWorldSize(bool isLarge) {
+    if (isLarge) {
+        worldSize = { 0, 0, WSLARGE, WSLARGE };
+    }
+    else {
+        worldSize = { 0, 0, WSREGULAR, WSREGULAR };
+    }
+}
+
+void Rendering()
+{
+    ++iRenderCnt;
 }

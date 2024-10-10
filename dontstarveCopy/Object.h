@@ -9,7 +9,6 @@ protected:
     POINT pt;
     int hp;
 
-    // 持失切 protected 識情
     Object(int initX, int initY, int initHealth);
 
 public:
