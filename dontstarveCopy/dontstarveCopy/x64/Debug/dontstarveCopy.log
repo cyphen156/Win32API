@@ -1,2 +1,38 @@
-﻿  Core.cpp
-  dontstarveCopy.vcxproj -> D:\project\Win32API\dontstarveCopy\Output\bin_debug\dontstarveCopy.exe
+﻿  pch.cpp
+  Attack.cpp
+  Core.cpp
+  dontstarveCopy.cpp
+  KeyMgr.cpp
+  Monster.cpp
+C:\Win32API\dontstarveCopy\dontstarveCopy\Monster.cpp(21,36): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Monster.cpp'을(를) 컴파일하는 중)
+  
+  Object.cpp
+  PathMgr.cpp
+C:\Win32API\dontstarveCopy\dontstarveCopy\PathMgr.cpp(19,11): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/PathMgr.cpp'을(를) 컴파일하는 중)
+  
+  Player.cpp
+C:\Win32API\dontstarveCopy\dontstarveCopy\Player.cpp(21,22): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Player.cpp'을(를) 컴파일하는 중)
+  
+C:\Win32API\dontstarveCopy\dontstarveCopy\Player.cpp(25,22): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Player.cpp'을(를) 컴파일하는 중)
+  
+C:\Win32API\dontstarveCopy\dontstarveCopy\Player.cpp(29,22): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Player.cpp'을(를) 컴파일하는 중)
+  
+C:\Win32API\dontstarveCopy\dontstarveCopy\Player.cpp(33,22): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Player.cpp'을(를) 컴파일하는 중)
+  
+  ResAud.cpp
+  ResMgr.cpp
+  ResTex.cpp
+  Scene.cpp
+  SceneMgr.cpp
+  Scene_Start.cpp
+  Terrain.cpp
+  TimeMgr.cpp
+  World.cpp
+  코드를 생성하고 있습니다...
+  dontstarveCopy.vcxproj -> C:\Win32API\dontstarveCopy\Output\bin_debug\dontstarveCopy.exe

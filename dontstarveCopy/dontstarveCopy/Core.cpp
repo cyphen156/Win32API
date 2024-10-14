@@ -4,6 +4,7 @@
 #include "TimeMgr.h"
 #include "PathMgr.h"
 #include "KeyMgr.h"
+#include "SceneMgr.h"
 
 Core::Core() : m_hWnd(0), m_ptWinInfo(nullptr), m_hdc(0), m_hBit(0), m_MemDC(0) {};
 
@@ -26,6 +27,7 @@ int Core::init(HWND hWnd, RECT* windowInfo)
 	TimeMgr::GetInst()->init();
 	PathMgr::GetInst()->init();
 	KeyMgr::GetInst()->init();
+	SceneMgr::GetInst()->init();
 
 	// 비트맵 설정
 	m_hBit = CreateCompatibleBitmap(m_hdc, (int)(m_ptWinInfo->right - m_ptWinInfo->left), (int)(m_ptWinInfo->bottom - m_ptWinInfo->top));
@@ -39,7 +41,8 @@ void Core::progress()
 {
 	// 초당 프레임 동기화
 	TimeMgr::GetInst()->update();
-	//KeyMgr::GetInst()->update();
+	KeyMgr::GetInst()->update();
+	SceneMgr::GetInst()->update();
 
 	update();
 
