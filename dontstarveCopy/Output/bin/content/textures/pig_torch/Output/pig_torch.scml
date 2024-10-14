@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="pigtorch01">
+		<file id="0" name="pigtorch01/pigtorch01-0.png" width="176" height="480" pivot_x="0.49858" pivot_y="0.0352604" />
+	</folder>
+	<entity id="0" name="pigtorch">
+		<animation id="0" name="hit" length="367">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="pigtorch01" abs_x="0" abs_y="0" abs_pivot_x="0.49858" abs_pivot_y="0.0352604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="pigtorch01" abs_x="0" abs_y="0" abs_pivot_x="0.49858" abs_pivot_y="0.0352604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="pigtorch01" abs_x="0" abs_y="0" abs_pivot_x="0.49858" abs_pivot_y="0.0352604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="pigtorch01" abs_x="0" abs_y="0" abs_pivot_x="0.49858" abs_pivot_y="0.0352604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="pigtorch01" abs_x="0" abs_y="0" abs_pivot_x="0.49858" abs_pivot_y="0.0352604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="pigtorch01" abs_x="0" abs_y="0" abs_pivot_x="0.49858" abs_pivot_y="0.0352604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="2" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="pigtorch01" abs_x="0" abs_y="0" abs_pivot_x="0.49858" abs_pivot_y="0.0352604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="2" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="pigtorch01" abs_x="0" abs_y="0" abs_pivot_x="0.49858" abs_pivot_y="0.0352604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="2" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="pigtorch01" abs_x="0" abs_y="0" abs_pivot_x="0.49858" abs_pivot_y="0.0352604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="2" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="pigtorch01" abs_x="0" abs_y="0" abs_pivot_x="0.49858" abs_pivot_y="0.0352604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="2" />
+				</key>
+				<key id="10" time="334">
+					<object_ref id="0" name="pigtorch01" abs_x="0" abs_y="0" abs_pivot_x="0.49858" abs_pivot_y="0.0352604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="10" z_index="2" />
+				</key>
+				<key id="11" time="367">
+					<object_ref id="0" name="pigtorch01" abs_x="0" abs_y="0" abs_pivot_x="0.49858" abs_pivot_y="0.0352604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="11" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="pigtorch01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-0.3" y="-0.3" scale_x="1" scale_y="1.00034" angle="0.752131" />
+				</key>
+				<key id="1" time="34" spin="-1">
+					<object folder="0" file="0" x="-0.35" y="-0.35" scale_x="1" scale_y="1.00024" angle="0.125427" />
+				</key>
+				<key id="2" time="67" spin="-1">
+					<object folder="0" file="0" x="-0.3" y="-0.3" scale_x="1" scale_y="1.00015" angle="359.499" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="-0.3" y="-0.35" scale_x="1" scale_y="1.00036" angle="0.249953" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="-0.3" y="-0.3" scale_x="1" scale_y="1.00061" angle="1.00281" />
+				</key>
+				<key id="5" time="167" spin="-1">
+					<object folder="0" file="0" x="-0.35" y="-0.35" scale_x="1" scale_y="1.00033" angle="0.642864" />
+				</key>
+				<key id="6" time="200" spin="-1">
+					<object folder="0" file="0" x="-0.35" y="-0.35" scale_x="1" scale_y="1.00022" angle="0.392909" />
+				</key>
+				<key id="7" time="234" spin="-1">
+					<object folder="0" file="0" x="-0.35" y="-0.35" scale_x="1" scale_y="1.00011" angle="0.250451" />
+				</key>
+				<key id="8" time="267" spin="-1">
+					<object folder="0" file="0" x="-0.35" y="-0.35" scale_x="1" scale_y="1.00006" angle="0.0284118" />
+				</key>
+				<key id="9" time="300" spin="-1">
+					<object folder="0" file="0" x="-0.35" y="-0.35" scale_x="1" scale_y="1" angle="0.00743125" />
+				</key>
+				<key id="10" time="334" spin="-1">
+					<object folder="0" file="0" x="-0.3" y="-0.3" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="0" file="0" x="-0.3" y="-0.3" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="idle" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="pigtorch01" abs_x="0" abs_y="0" abs_pivot_x="0.49858" abs_pivot_y="0.0352604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="pigtorch01" abs_x="0" abs_y="0" abs_pivot_x="0.49858" abs_pivot_y="0.0352604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="pigtorch01" abs_x="0" abs_y="0" abs_pivot_x="0.49858" abs_pivot_y="0.0352604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="pigtorch01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-0.3" y="-0.3" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-0.3" y="-0.3" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="-0.3" y="-0.3" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

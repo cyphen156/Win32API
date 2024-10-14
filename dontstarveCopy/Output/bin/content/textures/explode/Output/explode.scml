@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="dfs10">
+		<file id="0" name="dfs10/dfs10-0.png" width="36" height="44" pivot_x="0.499986" pivot_y="0.852273" />
+	</folder>
+	<folder id="1" name="dfs11">
+		<file id="0" name="dfs11/dfs11-0.png" width="36" height="56" pivot_x="0.499986" pivot_y="0.888393" />
+	</folder>
+	<folder id="2" name="dfs12">
+		<file id="0" name="dfs12/dfs12-0.png" width="40" height="36" pivot_x="0.499987" pivot_y="0.826389" />
+	</folder>
+	<folder id="3" name="dfs13">
+		<file id="0" name="dfs13/dfs13-0.png" width="48" height="64" pivot_x="0.49999" pivot_y="0.894141" />
+	</folder>
+	<folder id="4" name="dfs0">
+		<file id="0" name="dfs0/dfs0-0.png" width="28" height="20" pivot_x="0.499089" pivot_y="0.6525" />
+	</folder>
+	<folder id="5" name="dfs1">
+		<file id="0" name="dfs1/dfs1-0.png" width="20" height="20" pivot_x="0.499975" pivot_y="0.72375" />
+	</folder>
+	<folder id="6" name="dfs2">
+		<file id="0" name="dfs2/dfs2-0.png" width="40" height="28" pivot_x="0.499363" pivot_y="0.777679" />
+	</folder>
+	<folder id="7" name="dfs3">
+		<file id="0" name="dfs3/dfs3-0.png" width="36" height="64" pivot_x="0.499986" pivot_y="0.888672" />
+	</folder>
+	<folder id="8" name="dfs4">
+		<file id="0" name="dfs4/dfs4-0.png" width="36" height="36" pivot_x="0.499292" pivot_y="0.807639" />
+	</folder>
+	<folder id="9" name="dfs5">
+		<file id="0" name="dfs5/dfs5-0.png" width="32" height="36" pivot_x="0.499984" pivot_y="0.829861" />
+	</folder>
+	<folder id="10" name="dfs6">
+		<file id="0" name="dfs6/dfs6-0.png" width="40" height="48" pivot_x="0.499987" pivot_y="0.867188" />
+	</folder>
+	<folder id="11" name="dfs7">
+		<file id="0" name="dfs7/dfs7-0.png" width="32" height="32" pivot_x="0.499984" pivot_y="0.805469" />
+	</folder>
+	<folder id="12" name="dfs8">
+		<file id="0" name="dfs8/dfs8-0.png" width="40" height="32" pivot_x="0.499363" pivot_y="0.769531" />
+	</folder>
+	<folder id="13" name="dfs9">
+		<file id="0" name="dfs9/dfs9-0.png" width="40" height="72" pivot_x="0.499987" pivot_y="0.914931" />
+	</folder>
+	<folder id="14" name="splode">
+		<file id="0" name="splode/splode-0.png" width="356" height="236" pivot_x="0.49424" pivot_y="-0.00751696" />
+		<file id="1" name="splode/splode-1.png" width="428" height="272" pivot_x="0.532884" pivot_y="-0.0412647" />
+		<file id="2" name="splode/splode-2.png" width="512" height="320" pivot_x="0.563915" pivot_y="0.044064" />
+		<file id="3" name="splode/splode-3.png" width="536" height="336" pivot_x="0.538758" pivot_y="0.0536473" />
+		<file id="4" name="splode/splode-4.png" width="516" height="352" pivot_x="0.556249" pivot_y="0.082956" />
+		<file id="5" name="splode/splode-5.png" width="512" height="356" pivot_x="0.54453" pivot_y="0.081743" />
+		<file id="6" name="splode/splode-6.png" width="488" height="360" pivot_x="0.542519" pivot_y="0.0877097" />
+		<file id="7" name="splode/splode-7.png" width="472" height="360" pivot_x="0.530719" pivot_y="0.0870153" />
+		<file id="8" name="splode/splode-8.png" width="472" height="352" pivot_x="0.539088" pivot_y="0.0620043" />
+	</folder>
+	<entity id="0" name="explode">
+		<animation id="0" name="anim" length="100">
+			<mainline>
+				<key id="0" time="0" />
+				<key id="1" time="34" />
+				<key id="2" time="67" />
+				<key id="3" time="100" />
+			</mainline>
+		</animation>
+		<animation id="1" name="large" length="934">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="0" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="0" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="0" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="0" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="0" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="0" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="0" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="0" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="0" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="0" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="0" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.49424" abs_pivot_y="-0.00751696" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="1" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="1" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="1" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="1" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="1" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="1" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="1" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="1" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="1" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="1" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="1" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.532884" abs_pivot_y="-0.0412647" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="2" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="2" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="2" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="2" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="2" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="2" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="2" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="2" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="2" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="2" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="2" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="2" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.563915" abs_pivot_y="0.044064" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="3" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="3" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="3" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="3" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="3" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="3" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="3" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="3" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="3" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="3" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="3" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="3" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.538758" abs_pivot_y="0.0536473" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="4" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="4" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="4" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="4" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="4" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="4" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="4" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="4" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="4" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="4" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="4" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="4" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.556249" abs_pivot_y="0.082956" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="5" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="5" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="5" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="5" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="5" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="5" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="5" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="5" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="5" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="5" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="5" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="5" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.54453" abs_pivot_y="0.081743" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="5" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="6" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="6" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="6" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="6" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="6" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="6" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="6" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="6" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="6" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="6" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="6" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="6" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="6" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.542519" abs_pivot_y="0.0877097" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="6" z_index="1" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="7" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="7" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="7" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="7" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="7" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="7" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="7" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="7" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="7" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="7" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="7" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="7" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="7" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.530719" abs_pivot_y="0.0870153" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="7" z_index="1" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="8" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="8" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="8" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="8" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="8" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="8" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="8" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="8" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="8" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="8" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="8" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="8" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="8" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.539088" abs_pivot_y="0.0620043" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="8" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="9" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="9" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="9" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="9" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="9" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="9" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="9" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="9" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="9" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="9" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="9" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="9" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="9" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.539088" abs_pivot_y="0.0620043" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="9" z_index="1" />
+				</key>
+				<key id="10" time="334" />
+				<key id="11" time="367" />
+				<key id="12" time="400" />
+				<key id="13" time="434" />
+				<key id="14" time="467" />
+				<key id="15" time="500" />
+				<key id="16" time="534" />
+				<key id="17" time="567" />
+				<key id="18" time="600" />
+				<key id="19" time="634" />
+				<key id="20" time="667" />
+				<key id="21" time="700" />
+				<key id="22" time="734" />
+				<key id="23" time="767" />
+				<key id="24" time="800" />
+				<key id="25" time="834" />
+				<key id="26" time="867" />
+				<key id="27" time="900" />
+				<key id="28" time="934" />
+			</mainline>
+			<timeline id="0" name="dfs13">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="-97.799" y="244.199" scale_x="1.36415" scale_y="1.36415" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="3" file="0" x="-130.199" y="287.899" scale_x="1.19775" scale_y="1.19777" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="3" file="0" x="-158.899" y="326.499" scale_x="1.05096" scale_y="1.05096" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="3" file="0" x="-183.699" y="359.949" scale_x="0.923737" scale_y="0.923737" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="3" file="0" x="-204.699" y="388.249" scale_x="0.816071" scale_y="0.816086" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="3" file="0" x="-221.899" y="411.349" scale_x="0.727966" scale_y="0.727997" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="3" file="0" x="-235.249" y="429.349" scale_x="0.65947" scale_y="0.659485" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="3" file="0" x="-244.749" y="442.199" scale_x="0.610535" scale_y="0.61055" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="3" file="0" x="-250.549" y="449.949" scale_x="0.581161" scale_y="0.581177" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="3" file="0" x="-252.449" y="452.499" scale_x="0.571381" scale_y="0.571396" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="dfs12">
+				<key id="0" time="0" spin="1">
+					<object folder="2" file="0" x="-105.799" y="155.599" scale_x="1.36415" scale_y="1.36415" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="2" file="0" x="-146.349" y="184.949" scale_x="1.19775" scale_y="1.19777" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="2" file="0" x="-182.149" y="210.949" scale_x="1.05096" scale_y="1.05096" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="2" file="0" x="-213.149" y="233.399" scale_x="0.923737" scale_y="0.923737" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="2" file="0" x="-239.349" y="252.449" scale_x="0.816071" scale_y="0.816086" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="2" file="0" x="-260.849" y="268.049" scale_x="0.727966" scale_y="0.727997" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="2" file="0" x="-277.549" y="280.099" scale_x="0.65947" scale_y="0.659485" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="2" file="0" x="-289.449" y="288.749" scale_x="0.610535" scale_y="0.61055" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="2" file="0" x="-296.599" y="293.949" scale_x="0.581161" scale_y="0.581177" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="2" file="0" x="-298.999" y="295.649" scale_x="0.571381" scale_y="0.571396" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="dfs11">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="-41.349" y="240.199" scale_x="1.36415" scale_y="1.36415" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="0" x="-57.149" y="303.199" scale_x="1.19775" scale_y="1.19777" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="1" file="0" x="-71.099" y="358.899" scale_x="1.05096" scale_y="1.05096" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="1" file="0" x="-83.149" y="407.049" scale_x="0.923737" scale_y="0.923737" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="1" file="0" x="-93.349" y="447.899" scale_x="0.816071" scale_y="0.816086" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="1" file="0" x="-101.749" y="481.299" scale_x="0.727966" scale_y="0.727997" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="1" file="0" x="-108.249" y="507.199" scale_x="0.65947" scale_y="0.659485" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="1" file="0" x="-112.899" y="525.749" scale_x="0.610535" scale_y="0.61055" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="1" file="0" x="-115.649" y="536.949" scale_x="0.581161" scale_y="0.581177" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="1" file="0" x="-116.599" y="540.649" scale_x="0.571381" scale_y="0.571396" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="3" name="dfs10">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="53.45" y="191.399" scale_x="1.36415" scale_y="1.36415" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="87.45" y="233.899" scale_x="1.19775" scale_y="1.19777" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="117.5" y="271.449" scale_x="1.05096" scale_y="1.05096" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="143.5" y="303.949" scale_x="0.923737" scale_y="0.923737" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="165.45" y="331.499" scale_x="0.816071" scale_y="0.816086" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="0" x="183.5" y="354.049" scale_x="0.727966" scale_y="0.727997" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="0" x="197.55" y="371.549" scale_x="0.65947" scale_y="0.659485" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="0" file="0" x="207.5" y="384.049" scale_x="0.610535" scale_y="0.61055" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="0" file="0" x="213.5" y="391.549" scale_x="0.581161" scale_y="0.581177" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="0" file="0" x="215.55" y="394.149" scale_x="0.571381" scale_y="0.571396" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="4" name="dfs9">
+				<key id="0" time="0" spin="1">
+					<object folder="13" file="0" x="-12.349" y="195.199" scale_x="1.36415" scale_y="1.36415" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="13" file="0" x="-24.949" y="256.399" scale_x="1.19775" scale_y="1.19777" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="13" file="0" x="-36.049" y="310.399" scale_x="1.05096" scale_y="1.05096" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="13" file="0" x="-45.699" y="357.199" scale_x="0.923737" scale_y="0.923737" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="13" file="0" x="-53.849" y="396.749" scale_x="0.816071" scale_y="0.816086" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="13" file="0" x="-60.549" y="429.099" scale_x="0.727966" scale_y="0.727997" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="13" file="0" x="-65.749" y="454.299" scale_x="0.65947" scale_y="0.659485" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="13" file="0" x="-69.449" y="472.299" scale_x="0.610535" scale_y="0.61055" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="13" file="0" x="-71.649" y="483.049" scale_x="0.581161" scale_y="0.581177" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="13" file="0" x="-72.399" y="486.699" scale_x="0.571381" scale_y="0.571396" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="5" name="dfs8">
+				<key id="0" time="0" spin="1">
+					<object folder="12" file="0" x="112.95" y="123.549" scale_x="1.36415" scale_y="1.36415" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="12" file="0" x="163.2" y="138.749" scale_x="1.19775" scale_y="1.19777" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="12" file="0" x="207.5" y="152.049" scale_x="1.05096" scale_y="1.05096" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="12" file="0" x="245.9" y="163.649" scale_x="0.923737" scale_y="0.923737" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="12" file="0" x="278.45" y="173.399" scale_x="0.816071" scale_y="0.816086" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="12" file="0" x="305" y="181.499" scale_x="0.727966" scale_y="0.727997" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="12" file="0" x="325.7" y="187.699" scale_x="0.65947" scale_y="0.659485" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="12" file="0" x="340.5" y="192.149" scale_x="0.610535" scale_y="0.61055" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="12" file="0" x="349.35" y="194.799" scale_x="0.581161" scale_y="0.581177" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="12" file="0" x="352.3" y="195.799" scale_x="0.571381" scale_y="0.571396" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="6" name="dfs7">
+				<key id="0" time="0" spin="1">
+					<object folder="11" file="0" x="-130.049" y="117.499" scale_x="1.36415" scale_y="1.36415" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="11" file="0" x="-165.099" y="128.549" scale_x="1.19775" scale_y="1.19777" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="11" file="0" x="-195.999" y="138.249" scale_x="1.05096" scale_y="1.05096" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="11" file="0" x="-222.699" y="146.699" scale_x="0.923737" scale_y="0.923737" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="11" file="0" x="-245.449" y="153.899" scale_x="0.816071" scale_y="0.816086" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="11" file="0" x="-263.999" y="159.699" scale_x="0.727966" scale_y="0.727997" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="11" file="0" x="-278.349" y="164.299" scale_x="0.65947" scale_y="0.659485" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="11" file="0" x="-288.699" y="167.549" scale_x="0.610535" scale_y="0.61055" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="11" file="0" x="-294.899" y="169.499" scale_x="0.581161" scale_y="0.581177" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="11" file="0" x="-296.949" y="170.149" scale_x="0.571381" scale_y="0.571396" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="7" name="dfs6">
+				<key id="0" time="0" spin="1">
+					<object folder="10" file="0" x="27.55" y="316.249" scale_x="1.36415" scale_y="1.36415" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="10" file="0" x="46.3" y="363.399" scale_x="1.19775" scale_y="1.19777" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="10" file="0" x="62.85" y="404.949" scale_x="1.05096" scale_y="1.05096" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="10" file="0" x="77.25" y="440.949" scale_x="0.923737" scale_y="0.923737" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="10" file="0" x="89.4" y="471.449" scale_x="0.816071" scale_y="0.816086" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="10" file="0" x="99.35" y="496.349" scale_x="0.727966" scale_y="0.727997" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="10" file="0" x="107.05" y="515.799" scale_x="0.65947" scale_y="0.659485" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="10" file="0" x="112.6" y="529.599" scale_x="0.610535" scale_y="0.61055" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="10" file="0" x="115.9" y="537.949" scale_x="0.581161" scale_y="0.581177" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="10" file="0" x="117" y="540.649" scale_x="0.571381" scale_y="0.571396" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="8" name="dfs5">
+				<key id="0" time="0" spin="1">
+					<object folder="9" file="0" x="65.75" y="251.399" scale_x="1.36415" scale_y="1.36415" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="9" file="0" x="89.1" y="292.999" scale_x="1.19775" scale_y="1.19777" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="9" file="0" x="109.65" y="329.699" scale_x="1.05096" scale_y="1.05096" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="9" file="0" x="127.5" y="361.449" scale_x="0.923737" scale_y="0.923737" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="9" file="0" x="142.6" y="388.349" scale_x="0.816071" scale_y="0.816086" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="9" file="0" x="154.95" y="410.349" scale_x="0.727966" scale_y="0.727997" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="9" file="0" x="164.55" y="427.499" scale_x="0.65947" scale_y="0.659485" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="9" file="0" x="171.4" y="439.699" scale_x="0.610535" scale_y="0.61055" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="9" file="0" x="175.55" y="447.099" scale_x="0.581161" scale_y="0.581177" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="9" file="0" x="176.9" y="449.499" scale_x="0.571381" scale_y="0.571396" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="9" name="dfs4">
+				<key id="0" time="0" spin="1">
+					<object folder="8" file="0" x="132.3" y="205.299" scale_x="1.36415" scale_y="1.36415" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="8" file="0" x="174.2" y="222.649" scale_x="1.19775" scale_y="1.19777" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="8" file="0" x="211.25" y="237.949" scale_x="1.05096" scale_y="1.05096" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="8" file="0" x="243.3" y="251.199" scale_x="0.923737" scale_y="0.923737" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="8" file="0" x="270.45" y="262.399" scale_x="0.816071" scale_y="0.816086" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="8" file="0" x="292.7" y="271.599" scale_x="0.727966" scale_y="0.727997" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="8" file="0" x="309.95" y="278.749" scale_x="0.65947" scale_y="0.659485" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="8" file="0" x="322.3" y="283.899" scale_x="0.610535" scale_y="0.61055" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="8" file="0" x="329.7" y="286.899" scale_x="0.581161" scale_y="0.581177" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="8" file="0" x="332.15" y="287.999" scale_x="0.571381" scale_y="0.571396" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="10" name="dfs3">
+				<key id="0" time="0" spin="1">
+					<object folder="7" file="0" x="35.05" y="150.149" scale_x="1.36415" scale_y="1.36415" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="7" file="0" x="78.4" y="179.149" scale_x="1.19775" scale_y="1.19777" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="7" file="0" x="116.75" y="204.649" scale_x="1.05096" scale_y="1.05096" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="7" file="0" x="149.9" y="226.749" scale_x="0.923737" scale_y="0.923737" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="7" file="0" x="178" y="245.499" scale_x="0.816071" scale_y="0.816086" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="7" file="0" x="200.95" y="260.849" scale_x="0.727966" scale_y="0.727997" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="7" file="0" x="218.85" y="272.749" scale_x="0.65947" scale_y="0.659485" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="7" file="0" x="231.6" y="281.249" scale_x="0.610535" scale_y="0.61055" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="7" file="0" x="239.25" y="286.349" scale_x="0.581161" scale_y="0.581177" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="7" file="0" x="241.8" y="287.999" scale_x="0.571381" scale_y="0.571396" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="11" name="dfs2">
+				<key id="0" time="0" spin="1">
+					<object folder="6" file="0" x="-132.949" y="79.299" scale_x="1.36415" scale_y="1.36415" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="6" file="0" x="-177.949" y="88.699" scale_x="1.19775" scale_y="1.19777" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="6" file="0" x="-217.649" y="96.999" scale_x="1.05096" scale_y="1.05096" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="6" file="0" x="-251.999" y="104.149" scale_x="0.923737" scale_y="0.923737" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="6" file="0" x="-281.099" y="110.199" scale_x="0.816071" scale_y="0.816086" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="6" file="0" x="-304.899" y="115.149" scale_x="0.727966" scale_y="0.727997" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="6" file="0" x="-323.399" y="119.049" scale_x="0.65947" scale_y="0.659485" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="6" file="0" x="-336.599" y="121.849" scale_x="0.610535" scale_y="0.61055" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="6" file="0" x="-344.549" y="123.449" scale_x="0.581161" scale_y="0.581177" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="6" file="0" x="-347.199" y="124.049" scale_x="0.571381" scale_y="0.571396" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="12" name="dfs1">
+				<key id="0" time="0" spin="1">
+					<object folder="5" file="0" x="-68.599" y="294.749" scale_x="1.36415" scale_y="1.36415" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="5" file="0" x="-86.349" y="356.049" scale_x="1.19775" scale_y="1.19777" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="5" file="0" x="-101.999" y="410.199" scale_x="1.05096" scale_y="1.05096" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="5" file="0" x="-115.599" y="457.099" scale_x="0.923737" scale_y="0.923737" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="5" file="0" x="-127.099" y="496.749" scale_x="0.816071" scale_y="0.816086" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="5" file="0" x="-136.499" y="529.249" scale_x="0.727966" scale_y="0.727997" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="5" file="0" x="-143.799" y="554.499" scale_x="0.65947" scale_y="0.659485" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="5" file="0" x="-148.999" y="572.499" scale_x="0.610535" scale_y="0.61055" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="5" file="0" x="-152.149" y="583.349" scale_x="0.581161" scale_y="0.581177" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="5" file="0" x="-153.199" y="586.949" scale_x="0.571381" scale_y="0.571396" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="13" name="dfs0">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="-157.549" y="187.699" scale_x="1.36415" scale_y="1.36415" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="4" file="0" x="-207.549" y="224.799" scale_x="1.19775" scale_y="1.19777" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="4" file="0" x="-251.699" y="257.549" scale_x="1.05096" scale_y="1.05096" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="4" file="0" x="-289.949" y="285.899" scale_x="0.923737" scale_y="0.923737" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="4" file="0" x="-322.299" y="309.949" scale_x="0.816071" scale_y="0.816086" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="4" file="0" x="-348.799" y="329.549" scale_x="0.727966" scale_y="0.727997" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="4" file="0" x="-369.349" y="344.849" scale_x="0.65947" scale_y="0.659485" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="4" file="0" x="-384.099" y="355.749" scale_x="0.610535" scale_y="0.61055" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="4" file="0" x="-392.899" y="362.299" scale_x="0.581161" scale_y="0.581177" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="4" file="0" x="-395.849" y="364.349" scale_x="0.571381" scale_y="0.571396" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="14" name="splode">
+				<key id="0" time="0" spin="1">
+					<object folder="14" file="0" x="2.95" y="-99.95" scale_x="1.82329" scale_y="1.82329" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="14" file="1" x="2.95" y="-99.95" scale_x="1.82329" scale_y="1.82329" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="14" file="2" x="2.95" y="-99.95" scale_x="1.82329" scale_y="1.82329" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="14" file="3" x="2.95" y="-99.95" scale_x="1.82329" scale_y="1.82329" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="14" file="4" x="2.95" y="-99.95" scale_x="1.82329" scale_y="1.82329" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="14" file="5" x="2.95" y="-99.95" scale_x="1.82329" scale_y="1.82329" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="14" file="6" x="2.95" y="-99.95" scale_x="1.82329" scale_y="1.82329" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="14" file="7" x="2.95" y="-99.95" scale_x="1.82329" scale_y="1.82329" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="14" file="8" x="2.95" y="-99.95" scale_x="1.82329" scale_y="1.82329" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="14" file="8" x="2.95" y="-99.95" scale_x="1.82329" scale_y="1.82329" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="2" name="small" length="934">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="0" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="0" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="0" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="0" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="0" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="0" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="0" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="0" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="0" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="0" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="0" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.49424" abs_pivot_y="-0.00751696" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="1" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="1" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="1" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="1" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="1" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="1" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="1" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="1" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="1" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="1" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="1" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.532884" abs_pivot_y="-0.0412647" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="2" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="2" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="2" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="2" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="2" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="2" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="2" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="2" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="2" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="2" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="2" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="2" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.563915" abs_pivot_y="0.044064" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="3" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="3" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="3" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="3" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="3" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="3" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="3" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="3" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="3" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="3" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="3" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="3" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.538758" abs_pivot_y="0.0536473" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="4" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="4" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="4" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="4" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="4" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="4" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="4" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="4" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="4" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="4" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="4" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="4" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.556249" abs_pivot_y="0.082956" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="5" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="5" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="5" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="5" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="5" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="5" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="5" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="5" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="5" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="5" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="5" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="5" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.54453" abs_pivot_y="0.081743" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="5" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="6" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="6" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="6" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="6" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="6" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="6" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="6" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="6" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="6" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="6" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="6" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="6" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="6" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.542519" abs_pivot_y="0.0877097" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="6" z_index="1" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="7" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="7" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="7" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="7" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="7" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="7" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="7" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="7" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="7" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="7" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="7" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="7" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="7" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.530719" abs_pivot_y="0.0870153" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="7" z_index="1" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="8" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="8" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="8" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="8" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="8" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="8" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="8" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="8" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="8" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="8" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="8" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="8" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="8" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.539088" abs_pivot_y="0.0620043" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="8" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="dfs13" abs_x="0" abs_y="0" abs_pivot_x="0.49999" abs_pivot_y="0.894141" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="15" />
+					<object_ref id="1" name="dfs12" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.826389" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="9" z_index="14" />
+					<object_ref id="2" name="dfs11" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888393" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="9" z_index="13" />
+					<object_ref id="3" name="dfs10" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.852273" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="9" z_index="12" />
+					<object_ref id="4" name="dfs9" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.914931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="9" z_index="11" />
+					<object_ref id="5" name="dfs8" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.769531" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="9" z_index="10" />
+					<object_ref id="6" name="dfs7" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.805469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="9" z_index="9" />
+					<object_ref id="7" name="dfs6" abs_x="0" abs_y="0" abs_pivot_x="0.499987" abs_pivot_y="0.867188" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="9" z_index="8" />
+					<object_ref id="8" name="dfs5" abs_x="0" abs_y="0" abs_pivot_x="0.499984" abs_pivot_y="0.829861" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="8" key="9" z_index="7" />
+					<object_ref id="9" name="dfs4" abs_x="0" abs_y="0" abs_pivot_x="0.499292" abs_pivot_y="0.807639" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="9" key="9" z_index="6" />
+					<object_ref id="10" name="dfs3" abs_x="0" abs_y="0" abs_pivot_x="0.499986" abs_pivot_y="0.888672" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="10" key="9" z_index="5" />
+					<object_ref id="11" name="dfs2" abs_x="0" abs_y="0" abs_pivot_x="0.499363" abs_pivot_y="0.777679" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="11" key="9" z_index="4" />
+					<object_ref id="12" name="dfs1" abs_x="0" abs_y="0" abs_pivot_x="0.499975" abs_pivot_y="0.72375" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="12" key="9" z_index="3" />
+					<object_ref id="13" name="dfs0" abs_x="0" abs_y="0" abs_pivot_x="0.499089" abs_pivot_y="0.6525" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="13" key="9" z_index="2" />
+					<object_ref id="14" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.539088" abs_pivot_y="0.0620043" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="14" key="9" z_index="1" />
+				</key>
+				<key id="10" time="334" />
+				<key id="11" time="367" />
+				<key id="12" time="400" />
+				<key id="13" time="434" />
+				<key id="14" time="467" />
+				<key id="15" time="500" />
+				<key id="16" time="534" />
+				<key id="17" time="567" />
+				<key id="18" time="600" />
+				<key id="19" time="634" />
+				<key id="20" time="667" />
+				<key id="21" time="700" />
+				<key id="22" time="734" />
+				<key id="23" time="767" />
+				<key id="24" time="800" />
+				<key id="25" time="834" />
+				<key id="26" time="867" />
+				<key id="27" time="900" />
+				<key id="28" time="934" />
+			</mainline>
+			<timeline id="0" name="dfs13">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="-69.799" y="189.699" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="3" file="0" x="-93.599" y="221.699" scale_x="0.878021" scale_y="0.878036" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="3" file="0" x="-114.599" y="249.999" scale_x="0.770416" scale_y="0.770416" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="3" file="0" x="-132.749" y="274.499" scale_x="0.677155" scale_y="0.677155" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="3" file="0" x="-148.149" y="295.299" scale_x="0.598221" scale_y="0.598236" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="3" file="0" x="-160.749" y="312.249" scale_x="0.533646" scale_y="0.533661" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="3" file="0" x="-170.549" y="325.399" scale_x="0.483429" scale_y="0.483444" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="3" file="0" x="-177.549" y="334.849" scale_x="0.447556" scale_y="0.447571" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="3" file="0" x="-181.749" y="340.499" scale_x="0.426025" scale_y="0.426041" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="3" file="0" x="-183.149" y="342.399" scale_x="0.418854" scale_y="0.418869" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="dfs12">
+				<key id="0" time="0" spin="1">
+					<object folder="2" file="0" x="-75.649" y="124.749" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="2" file="0" x="-105.399" y="146.349" scale_x="0.878021" scale_y="0.878036" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="2" file="0" x="-131.599" y="165.299" scale_x="0.770416" scale_y="0.770416" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="2" file="0" x="-154.349" y="181.849" scale_x="0.677155" scale_y="0.677155" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="2" file="0" x="-173.599" y="195.749" scale_x="0.598221" scale_y="0.598236" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="2" file="0" x="-189.299" y="207.099" scale_x="0.533646" scale_y="0.533661" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="2" file="0" x="-201.549" y="215.999" scale_x="0.483429" scale_y="0.483444" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="2" file="0" x="-210.299" y="222.349" scale_x="0.447556" scale_y="0.447571" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="2" file="0" x="-215.549" y="226.149" scale_x="0.426025" scale_y="0.426041" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="2" file="0" x="-217.299" y="227.399" scale_x="0.418854" scale_y="0.418869" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="dfs11">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="-28.399" y="186.749" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="0" x="-39.949" y="232.949" scale_x="0.878021" scale_y="0.878036" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="1" file="0" x="-50.199" y="273.799" scale_x="0.770416" scale_y="0.770416" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="1" file="0" x="-59.049" y="309.099" scale_x="0.677155" scale_y="0.677155" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="1" file="0" x="-66.549" y="338.999" scale_x="0.598221" scale_y="0.598236" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="1" file="0" x="-72.649" y="363.499" scale_x="0.533646" scale_y="0.533661" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="1" file="0" x="-77.399" y="382.549" scale_x="0.483429" scale_y="0.483444" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="1" file="0" x="-80.849" y="396.149" scale_x="0.447556" scale_y="0.447571" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="1" file="0" x="-82.849" y="404.249" scale_x="0.426025" scale_y="0.426041" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="1" file="0" x="-83.549" y="407.049" scale_x="0.418854" scale_y="0.418869" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="3" name="dfs10">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="41.1" y="150.999" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="66.05" y="182.199" scale_x="0.878021" scale_y="0.878036" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="88.05" y="209.699" scale_x="0.770416" scale_y="0.770416" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="107.1" y="233.549" scale_x="0.677155" scale_y="0.677155" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="123.25" y="253.699" scale_x="0.598221" scale_y="0.598236" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="0" x="136.45" y="270.249" scale_x="0.533646" scale_y="0.533661" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="0" x="146.7" y="283.049" scale_x="0.483429" scale_y="0.483444" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="0" file="0" x="154.05" y="292.199" scale_x="0.447556" scale_y="0.447571" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="0" file="0" x="158.45" y="297.699" scale_x="0.426025" scale_y="0.426041" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="0" file="0" x="159.9" y="299.599" scale_x="0.418854" scale_y="0.418869" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="4" name="dfs9">
+				<key id="0" time="0" spin="1">
+					<object folder="13" file="0" x="-7.149" y="153.749" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="13" file="0" x="-16.399" y="198.599" scale_x="0.878021" scale_y="0.878036" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="13" file="0" x="-24.549" y="238.199" scale_x="0.770416" scale_y="0.770416" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="13" file="0" x="-31.599" y="272.449" scale_x="0.677155" scale_y="0.677155" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="13" file="0" x="-37.549" y="301.549" scale_x="0.598221" scale_y="0.598236" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="13" file="0" x="-42.449" y="325.249" scale_x="0.533646" scale_y="0.533661" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="13" file="0" x="-46.249" y="343.749" scale_x="0.483429" scale_y="0.483444" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="13" file="0" x="-48.999" y="356.899" scale_x="0.447556" scale_y="0.447571" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="13" file="0" x="-50.599" y="364.799" scale_x="0.426025" scale_y="0.426041" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="13" file="0" x="-51.149" y="367.449" scale_x="0.418854" scale_y="0.418869" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="5" name="dfs8">
+				<key id="0" time="0" spin="1">
+					<object folder="12" file="0" x="84.7" y="101.249" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="12" file="0" x="121.5" y="112.349" scale_x="0.878021" scale_y="0.878036" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="12" file="0" x="154" y="122.099" scale_x="0.770416" scale_y="0.770416" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="12" file="0" x="182.15" y="130.599" scale_x="0.677155" scale_y="0.677155" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="12" file="0" x="206" y="137.799" scale_x="0.598221" scale_y="0.598236" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="12" file="0" x="225.5" y="143.699" scale_x="0.533646" scale_y="0.533661" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="12" file="0" x="240.65" y="148.249" scale_x="0.483429" scale_y="0.483444" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="12" file="0" x="251.5" y="151.549" scale_x="0.447556" scale_y="0.447571" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="12" file="0" x="258" y="153.549" scale_x="0.426025" scale_y="0.426041" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="12" file="0" x="260.15" y="154.199" scale_x="0.418854" scale_y="0.418869" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="6" name="dfs7">
+				<key id="0" time="0" spin="1">
+					<object folder="11" file="0" x="-93.399" y="96.799" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="11" file="0" x="-119.099" y="104.899" scale_x="0.878021" scale_y="0.878036" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="11" file="0" x="-141.749" y="112.099" scale_x="0.770416" scale_y="0.770416" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="11" file="0" x="-161.349" y="118.249" scale_x="0.677155" scale_y="0.677155" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="11" file="0" x="-177.999" y="123.449" scale_x="0.598221" scale_y="0.598236" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="11" file="0" x="-191.599" y="127.749" scale_x="0.533646" scale_y="0.533661" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="11" file="0" x="-202.149" y="131.099" scale_x="0.483429" scale_y="0.483444" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="11" file="0" x="-209.699" y="133.449" scale_x="0.447556" scale_y="0.447571" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="11" file="0" x="-214.249" y="134.899" scale_x="0.426025" scale_y="0.426041" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="11" file="0" x="-215.749" y="135.399" scale_x="0.418854" scale_y="0.418869" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="7" name="dfs6">
+				<key id="0" time="0" spin="1">
+					<object folder="10" file="0" x="22.1" y="242.499" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="10" file="0" x="35.85" y="277.049" scale_x="0.878021" scale_y="0.878036" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="10" file="0" x="48" y="307.549" scale_x="0.770416" scale_y="0.770416" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="10" file="0" x="58.5" y="333.899" scale_x="0.677155" scale_y="0.677155" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="10" file="0" x="67.4" y="356.199" scale_x="0.598221" scale_y="0.598236" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="10" file="0" x="74.7" y="374.549" scale_x="0.533646" scale_y="0.533661" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="10" file="0" x="80.35" y="388.749" scale_x="0.483429" scale_y="0.483444" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="10" file="0" x="84.4" y="398.899" scale_x="0.447556" scale_y="0.447571" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="10" file="0" x="86.85" y="404.999" scale_x="0.426025" scale_y="0.426041" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="10" file="0" x="87.65" y="407.049" scale_x="0.418854" scale_y="0.418869" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="8" name="dfs5">
+				<key id="0" time="0" spin="1">
+					<object folder="9" file="0" x="50.1" y="194.999" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="9" file="0" x="67.2" y="225.449" scale_x="0.878021" scale_y="0.878036" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="9" file="0" x="82.3" y="252.399" scale_x="0.770416" scale_y="0.770416" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="9" file="0" x="95.35" y="275.699" scale_x="0.677155" scale_y="0.677155" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="9" file="0" x="106.4" y="295.399" scale_x="0.598221" scale_y="0.598236" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="9" file="0" x="115.45" y="311.499" scale_x="0.533646" scale_y="0.533661" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="9" file="0" x="122.5" y="324.049" scale_x="0.483429" scale_y="0.483444" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="9" file="0" x="127.55" y="333.099" scale_x="0.447556" scale_y="0.447571" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="9" file="0" x="130.55" y="338.399" scale_x="0.426025" scale_y="0.426041" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="9" file="0" x="131.55" y="340.199" scale_x="0.418854" scale_y="0.418869" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="9" name="dfs4">
+				<key id="0" time="0" spin="1">
+					<object folder="8" file="0" x="98.9" y="161.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="8" file="0" x="129.65" y="173.849" scale_x="0.878021" scale_y="0.878036" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="8" file="0" x="156.8" y="185.049" scale_x="0.770416" scale_y="0.770416" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="8" file="0" x="180.3" y="194.749" scale_x="0.677155" scale_y="0.677155" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="8" file="0" x="200.2" y="202.999" scale_x="0.598221" scale_y="0.598236" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="8" file="0" x="216.45" y="209.749" scale_x="0.533646" scale_y="0.533661" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="8" file="0" x="229.1" y="214.999" scale_x="0.483429" scale_y="0.483444" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="8" file="0" x="238.15" y="218.749" scale_x="0.447556" scale_y="0.447571" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="8" file="0" x="243.6" y="220.949" scale_x="0.426025" scale_y="0.426041" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="8" file="0" x="245.4" y="221.799" scale_x="0.418854" scale_y="0.418869" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="10" name="dfs3">
+				<key id="0" time="0" spin="1">
+					<object folder="7" file="0" x="27.6" y="120.749" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="7" file="0" x="59.4" y="141.949" scale_x="0.878021" scale_y="0.878036" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="7" file="0" x="87.45" y="160.699" scale_x="0.770416" scale_y="0.770416" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="7" file="0" x="111.8" y="176.899" scale_x="0.677155" scale_y="0.677155" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="7" file="0" x="132.4" y="190.699" scale_x="0.598221" scale_y="0.598236" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="7" file="0" x="149.2" y="201.899" scale_x="0.533646" scale_y="0.533661" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="7" file="0" x="162.3" y="210.649" scale_x="0.483429" scale_y="0.483444" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="7" file="0" x="171.65" y="216.899" scale_x="0.447556" scale_y="0.447571" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="7" file="0" x="177.3" y="220.599" scale_x="0.426025" scale_y="0.426041" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="7" file="0" x="179.15" y="221.799" scale_x="0.418854" scale_y="0.418869" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="11" name="dfs2">
+				<key id="0" time="0" spin="1">
+					<object folder="6" file="0" x="-95.549" y="68.799" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="6" file="0" x="-128.499" y="75.699" scale_x="0.878021" scale_y="0.878036" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="6" file="0" x="-157.599" y="81.749" scale_x="0.770416" scale_y="0.770416" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="6" file="0" x="-182.799" y="86.999" scale_x="0.677155" scale_y="0.677155" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="6" file="0" x="-204.149" y="91.499" scale_x="0.598221" scale_y="0.598236" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="6" file="0" x="-221.599" y="95.099" scale_x="0.533646" scale_y="0.533661" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="6" file="0" x="-235.149" y="97.949" scale_x="0.483429" scale_y="0.483444" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="6" file="0" x="-244.849" y="99.999" scale_x="0.447556" scale_y="0.447571" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="6" file="0" x="-250.649" y="101.199" scale_x="0.426025" scale_y="0.426041" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="6" file="0" x="-252.599" y="101.599" scale_x="0.418854" scale_y="0.418869" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="12" name="dfs1">
+				<key id="0" time="0" spin="1">
+					<object folder="5" file="0" x="-48.399" y="226.749" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="5" file="0" x="-61.399" y="271.699" scale_x="0.878021" scale_y="0.878036" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="5" file="0" x="-72.899" y="311.399" scale_x="0.770416" scale_y="0.770416" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="5" file="0" x="-82.849" y="345.749" scale_x="0.677155" scale_y="0.677155" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="5" file="0" x="-91.249" y="374.849" scale_x="0.598221" scale_y="0.598236" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="5" file="0" x="-98.149" y="398.649" scale_x="0.533646" scale_y="0.533661" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="5" file="0" x="-103.499" y="417.149" scale_x="0.483429" scale_y="0.483444" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="5" file="0" x="-107.349" y="430.399" scale_x="0.447556" scale_y="0.447571" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="5" file="0" x="-109.649" y="438.299" scale_x="0.426025" scale_y="0.426041" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="5" file="0" x="-110.399" y="440.999" scale_x="0.418854" scale_y="0.418869" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="13" name="dfs0">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="-113.549" y="148.249" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="4" file="0" x="-150.249" y="175.399" scale_x="0.878021" scale_y="0.878036" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="4" file="0" x="-182.599" y="199.449" scale_x="0.770416" scale_y="0.770416" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="4" file="0" x="-210.649" y="220.249" scale_x="0.677155" scale_y="0.677155" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="4" file="0" x="-234.349" y="237.849" scale_x="0.598221" scale_y="0.598236" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="4" file="0" x="-253.799" y="252.199" scale_x="0.533646" scale_y="0.533661" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="4" file="0" x="-268.899" y="263.399" scale_x="0.483429" scale_y="0.483444" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="4" file="0" x="-279.649" y="271.399" scale_x="0.447556" scale_y="0.447571" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="4" file="0" x="-286.149" y="276.249" scale_x="0.426025" scale_y="0.426041" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="4" file="0" x="-288.299" y="277.799" scale_x="0.418854" scale_y="0.418869" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="14" name="splode">
+				<key id="0" time="0" spin="1">
+					<object folder="14" file="0" x="1.15" y="-45" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="14" file="1" x="1.15" y="-45" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="14" file="2" x="1.15" y="-45" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="14" file="3" x="1.15" y="-45" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="14" file="4" x="1.15" y="-45" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="14" file="5" x="1.15" y="-45" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="14" file="6" x="1.15" y="-45" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="14" file="7" x="1.15" y="-45" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="14" file="8" x="1.15" y="-45" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="14" file="8" x="1.15" y="-45" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

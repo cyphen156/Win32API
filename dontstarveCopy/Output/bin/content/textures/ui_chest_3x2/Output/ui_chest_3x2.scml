@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="chestframe">
+		<file id="0" name="chestframe/chestframe-0.png" width="296" height="252" pivot_x="0.499998" pivot_y="0.500002" />
+	</folder>
+	<entity id="0" name="ui_chest_3x2">
+		<animation id="0" name="close" length="167">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="chestframe" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500002" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="chestframe" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500002" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="chestframe" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500002" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="chestframe" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500002" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134" />
+				<key id="5" time="167" />
+			</mainline>
+			<timeline id="0" name="chestframe">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-0.549" y="-0.4" scale_x="0.959305" scale_y="0.896713" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-0.549" y="-0.4" scale_x="0.959305" scale_y="0.802567" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="-0.549" y="-0.25" scale_x="0.959305" scale_y="0.520126" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="-0.549" y="-0" scale_x="0.959305" scale_y="0.0494232" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="open" length="234">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="chestframe" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500002" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="chestframe" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500002" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="chestframe" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500002" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="chestframe" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500002" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="chestframe" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500002" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="chestframe" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500002" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="chestframe" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500002" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="1" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="chestframe" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.500002" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="chestframe">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-0.549" y="-0.05" scale_x="0.959305" scale_y="0.0728455" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-0.549" y="-0.15" scale_x="0.980133" scale_y="0.301453" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="-0.599" y="-0.45" scale_x="1.0426" scale_y="0.987305" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="-0.549" y="-0.45" scale_x="0.996323" scale_y="0.971619" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="-0.549" y="-0.45" scale_x="0.968567" scale_y="0.962189" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="0" x="-0.549" y="-0.45" scale_x="0.959305" scale_y="0.959076" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="0" x="-0.549" y="-0.45" scale_x="0.959305" scale_y="0.959076" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="0" file="0" x="-0.549" y="-0.45" scale_x="0.959305" scale_y="0.959076" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="head">
+		<file id="0" name="head/head-0.png" width="484" height="348" pivot_x="0.530784" pivot_y="0.56753" />
+		<file id="1" name="head/head-1.png" width="416" height="308" pivot_x="0.492787" pivot_y="0.489044" />
+		<file id="2" name="head/head-2.png" width="404" height="392" pivot_x="0.499009" pivot_y="0.608101" />
+	</folder>
+	<folder id="1" name="horn">
+		<file id="0" name="horn/horn-0.png" width="232" height="420" pivot_x="0.482756" pivot_y="0.241608" />
+		<file id="1" name="horn/horn-1.png" width="216" height="416" pivot_x="0.505206" pivot_y="0.244593" />
+		<file id="2" name="horn/horn-2.png" width="220" height="416" pivot_x="0.556134" pivot_y="0.244593" />
+	</folder>
+	<folder id="2" name="innerds">
+		<file id="0" name="innerds/innerds-0.png" width="384" height="436" pivot_x="0.499999" pivot_y="0.499944" />
+		<file id="1" name="innerds/innerds-1.png" width="368" height="348" pivot_x="0.49239" pivot_y="0.626295" />
+	</folder>
+	<folder id="3" name="ear">
+		<file id="0" name="ear/ear-0.png" width="100" height="144" pivot_x="0.599995" pivot_y="0.317712" />
+		<file id="1" name="ear/ear-1.png" width="80" height="120" pivot_x="0.377181" pivot_y="0.233129" />
+	</folder>
+	<folder id="4" name="eye">
+		<file id="0" name="eye/eye-0.png" width="100" height="104" pivot_x="0.515745" pivot_y="0.489909" />
+		<file id="1" name="eye/eye-1.png" width="100" height="100" pivot_x="0.516745" pivot_y="0.482505" />
+		<file id="2" name="eye/eye-2.png" width="100" height="100" pivot_x="0.502245" pivot_y="0.482505" />
+		<file id="3" name="eye/eye-3.png" width="100" height="100" pivot_x="0.504245" pivot_y="0.482505" />
+		<file id="4" name="eye/eye-4.png" width="100" height="72" pivot_x="0.504495" pivot_y="0.476049" />
+		<file id="5" name="eye/eye-5.png" width="96" height="88" pivot_x="0.532807" pivot_y="0.575574" />
+	</folder>
+	<folder id="5" name="jaw">
+		<file id="0" name="jaw/jaw-0.png" width="392" height="308" pivot_x="0.529527" pivot_y="0.534255" />
+		<file id="1" name="jaw/jaw-1.png" width="88" height="176" pivot_x="0.467892" pivot_y="0.337219" />
+		<file id="2" name="jaw/jaw-2.png" width="420" height="276" pivot_x="0.497856" pivot_y="0.511324" />
+		<file id="3" name="jaw/jaw-3.png" width="400" height="244" pivot_x="0.481499" pivot_y="0.558096" />
+	</folder>
+	<folder id="6" name="leg">
+		<file id="0" name="leg/leg-0.png" width="132" height="192" pivot_x="0.553027" pivot_y="0.499872" />
+	</folder>
+	<folder id="7" name="shoulder">
+		<file id="0" name="shoulder/shoulder-0.png" width="188" height="220" pivot_x="0.555848" pivot_y="0.524093" />
+		<file id="1" name="shoulder/shoulder-1.png" width="212" height="220" pivot_x="0.499408" pivot_y="0.524093" />
+	</folder>
+	<folder id="8" name="foot">
+		<file id="0" name="foot/foot-0.png" width="196" height="188" pivot_x="0.461732" pivot_y="0.506519" />
+		<file id="1" name="foot/foot-1.png" width="132" height="156" pivot_x="0.53636" pivot_y="0.475484" />
+		<file id="2" name="foot/foot-2.png" width="164" height="180" pivot_x="0.499692" pivot_y="0.438336" />
+	</folder>
+	<folder id="9" name="hinge">
+		<file id="0" name="hinge/hinge-0.png" width="76" height="92" pivot_x="0.500322" pivot_y="0.487234" />
+	</folder>
+	<entity id="0" name="FORCEEXPORT/pipe1">
+		<animation id="0" name="anim" length="34">
+			<mainline>
+				<key id="0" time="0" />
+				<key id="1" time="34" />
+			</mainline>
+		</animation>
+	</entity>
+	<entity id="1" name="FORCEEXPORT/pipe2">
+		<animation id="0" name="anim" length="34">
+			<mainline>
+				<key id="0" time="0" />
+				<key id="1" time="34" />
+			</mainline>
+		</animation>
+	</entity>
+</spriter_data>

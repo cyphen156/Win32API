@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="light01">
+		<file id="0" name="light01/light01-0.png" width="60" height="64" pivot_x="0.499583" pivot_y="0.5" />
+		<file id="1" name="light01/light01-1.png" width="60" height="64" pivot_x="0.499583" pivot_y="0.5" />
+	</folder>
+	<folder id="1" name="beacon01">
+		<file id="0" name="beacon01/beacon01-0.png" width="124" height="264" pivot_x="0.517742" pivot_y="0.0994318" />
+	</folder>
+	<folder id="2" name="glow01">
+		<file id="0" name="glow01/glow01-0.png" width="196" height="196" pivot_x="0.499872" pivot_y="0.5" />
+	</folder>
+	<entity id="0" name="teleport_pad_beacon">
+		<animation id="0" name="off" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="beacon01" abs_x="0" abs_y="0" abs_pivot_x="0.517742" abs_pivot_y="0.0994318" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="light01" abs_x="0" abs_y="0" abs_pivot_x="0.499583" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="beacon01" abs_x="0" abs_y="0" abs_pivot_x="0.517742" abs_pivot_y="0.0994318" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="light01" abs_x="0" abs_y="0" abs_pivot_x="0.499583" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="beacon01">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="0" y="0.3" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="0" x="0" y="0.3" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="light01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="1.3" y="197.8" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="1.3" y="197.8" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="on" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="glow01" abs_x="0" abs_y="0" abs_pivot_x="0.499872" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="3" />
+					<object_ref id="1" name="beacon01" abs_x="0" abs_y="0" abs_pivot_x="0.517742" abs_pivot_y="0.0994318" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="2" />
+					<object_ref id="2" name="light01" abs_x="0" abs_y="0" abs_pivot_x="0.499583" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="glow01" abs_x="0" abs_y="0" abs_pivot_x="0.499872" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="3" />
+					<object_ref id="1" name="beacon01" abs_x="0" abs_y="0" abs_pivot_x="0.517742" abs_pivot_y="0.0994318" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="2" />
+					<object_ref id="2" name="light01" abs_x="0" abs_y="0" abs_pivot_x="0.499583" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="glow01">
+				<key id="0" time="0" spin="1">
+					<object folder="2" file="0" x="3.45" y="200" scale_x="1.04346" scale_y="1.04346" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="2" file="0" x="3.45" y="200" scale_x="1.04346" scale_y="1.04346" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="beacon01">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="0" y="0.3" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="0" x="0" y="0.3" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="light01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="1.3" y="197.8" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="1.3" y="197.8" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="2" name="place" length="400">
+			<mainline>
+				<key id="0" time="0" />
+				<key id="1" time="34" />
+				<key id="2" time="67" />
+				<key id="3" time="100" />
+				<key id="4" time="134">
+					<object_ref id="0" name="beacon01" abs_x="0" abs_y="0" abs_pivot_x="0.517742" abs_pivot_y="0.0994318" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="light01" abs_x="0" abs_y="0" abs_pivot_x="0.499583" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="beacon01" abs_x="0" abs_y="0" abs_pivot_x="0.517742" abs_pivot_y="0.0994318" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="light01" abs_x="0" abs_y="0" abs_pivot_x="0.499583" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="beacon01" abs_x="0" abs_y="0" abs_pivot_x="0.517742" abs_pivot_y="0.0994318" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+					<object_ref id="1" name="light01" abs_x="0" abs_y="0" abs_pivot_x="0.499583" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="1" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="beacon01" abs_x="0" abs_y="0" abs_pivot_x="0.517742" abs_pivot_y="0.0994318" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+					<object_ref id="1" name="light01" abs_x="0" abs_y="0" abs_pivot_x="0.499583" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="1" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="beacon01" abs_x="0" abs_y="0" abs_pivot_x="0.517742" abs_pivot_y="0.0994318" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+					<object_ref id="1" name="light01" abs_x="0" abs_y="0" abs_pivot_x="0.499583" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="beacon01" abs_x="0" abs_y="0" abs_pivot_x="0.517742" abs_pivot_y="0.0994318" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="2" />
+					<object_ref id="1" name="light01" abs_x="0" abs_y="0" abs_pivot_x="0.499583" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="1" />
+				</key>
+				<key id="10" time="334">
+					<object_ref id="0" name="beacon01" abs_x="0" abs_y="0" abs_pivot_x="0.517742" abs_pivot_y="0.0994318" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="2" />
+					<object_ref id="1" name="light01" abs_x="0" abs_y="0" abs_pivot_x="0.499583" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="6" z_index="1" />
+				</key>
+				<key id="11" time="367">
+					<object_ref id="0" name="beacon01" abs_x="0" abs_y="0" abs_pivot_x="0.517742" abs_pivot_y="0.0994318" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="2" />
+					<object_ref id="1" name="light01" abs_x="0" abs_y="0" abs_pivot_x="0.499583" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="7" z_index="1" />
+				</key>
+				<key id="12" time="400">
+					<object_ref id="0" name="beacon01" abs_x="0" abs_y="0" abs_pivot_x="0.517742" abs_pivot_y="0.0994318" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="2" />
+					<object_ref id="1" name="light01" abs_x="0" abs_y="0" abs_pivot_x="0.499583" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="8" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="beacon01">
+				<key id="0" time="134" spin="1">
+					<object folder="1" file="0" x="0.65" y="2.35" scale_x="1.48912" scale_y="0.352554" angle="0" />
+				</key>
+				<key id="1" time="167" spin="1">
+					<object folder="1" file="0" x="0.15" y="1.3" scale_x="1.16144" scale_y="0.822876" angle="0" />
+				</key>
+				<key id="2" time="200" spin="1">
+					<object folder="1" file="0" x="-0.45" y="0.7" scale_x="0.833801" scale_y="1.29321" angle="0" />
+				</key>
+				<key id="3" time="234" spin="1">
+					<object folder="1" file="0" x="-0.2" y="0.45" scale_x="0.945114" scale_y="1.11194" angle="0" />
+				</key>
+				<key id="4" time="267" spin="1">
+					<object folder="1" file="0" x="0.05" y="0.15" scale_x="1.05644" scale_y="0.93074" angle="0" />
+				</key>
+				<key id="5" time="300" spin="1">
+					<object folder="1" file="0" x="0" y="0.25" scale_x="1.02507" scale_y="0.969193" angle="0" />
+				</key>
+				<key id="6" time="334" spin="1">
+					<object folder="1" file="0" x="0" y="0.25" scale_x="1.00626" scale_y="0.992279" angle="0" />
+				</key>
+				<key id="7" time="367" spin="1">
+					<object folder="1" file="0" x="0" y="0.3" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="8" time="400" spin="1">
+					<object folder="1" file="0" x="0" y="0.3" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="light01">
+				<key id="0" time="134" spin="1">
+					<object folder="0" file="0" x="2.55" y="72" scale_x="1.48912" scale_y="0.352554" angle="0" />
+				</key>
+				<key id="1" time="167" spin="1">
+					<object folder="0" file="0" x="1.6" y="163.95" scale_x="1.16144" scale_y="0.822876" angle="0" />
+				</key>
+				<key id="2" time="200" spin="1">
+					<object folder="0" file="0" x="0.6" y="256.15" scale_x="0.833801" scale_y="1.29321" angle="0" />
+				</key>
+				<key id="3" time="234" spin="1">
+					<object folder="0" file="0" x="0.95" y="220.05" scale_x="0.945114" scale_y="1.11194" angle="0" />
+				</key>
+				<key id="4" time="267" spin="1">
+					<object folder="0" file="0" x="1.4" y="184" scale_x="1.05644" scale_y="0.93074" angle="0" />
+				</key>
+				<key id="5" time="300" spin="1">
+					<object folder="0" file="0" x="1.35" y="191.65" scale_x="1.02507" scale_y="0.969193" angle="0" />
+				</key>
+				<key id="6" time="334" spin="1">
+					<object folder="0" file="0" x="1.25" y="196.2" scale_x="1.00626" scale_y="0.992279" angle="0" />
+				</key>
+				<key id="7" time="367" spin="1">
+					<object folder="0" file="0" x="1.3" y="197.8" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="8" time="400" spin="1">
+					<object folder="0" file="0" x="1.3" y="197.8" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

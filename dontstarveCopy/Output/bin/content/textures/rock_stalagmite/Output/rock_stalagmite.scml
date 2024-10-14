@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="shdw">
+		<file id="0" name="shdw/shdw-0.png" width="700" height="132" pivot_x="0.499999" pivot_y="0.500004" />
+		<file id="1" name="shdw/shdw-1.png" width="600" height="92" pivot_x="0.481666" pivot_y="0.700277" />
+	</folder>
+	<folder id="1" name="rocks">
+		<file id="0" name="rocks/rocks-0.png" width="676" height="612" pivot_x="0.51065" pivot_y="0.143016" />
+		<file id="1" name="rocks/rocks-6.png" width="672" height="360" pivot_x="0.512834" pivot_y="0.242432" />
+		<file id="2" name="rocks/rocks-12.png" width="564" height="220" pivot_x="0.485105" pivot_y="0.423298" />
+	</folder>
+	<entity id="0" name="rock_stalagmite">
+		<animation id="0" name="full" length="200">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.51065" abs_pivot_y="0.143016" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.51065" abs_pivot_y="0.143016" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.51065" abs_pivot_y="0.143016" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.51065" abs_pivot_y="0.143016" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.51065" abs_pivot_y="0.143016" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.51065" abs_pivot_y="0.143016" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.51065" abs_pivot_y="0.143016" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="6" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="rocks">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="0" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="1" file="0" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="1" file="0" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="1" file="0" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="1" file="0" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="1" file="0" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="shdw">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="low" length="200">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.485105" abs_pivot_y="0.423298" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.481666" abs_pivot_y="0.700277" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.485105" abs_pivot_y="0.423298" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.485105" abs_pivot_y="0.423298" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.481666" abs_pivot_y="0.700277" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.485105" abs_pivot_y="0.423298" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.485105" abs_pivot_y="0.423298" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.481666" abs_pivot_y="0.700277" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.485105" abs_pivot_y="0.423298" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.485105" abs_pivot_y="0.423298" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="6" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="rocks">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="2" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="2" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="1" file="2" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="1" file="2" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="1" file="2" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="1" file="2" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="1" file="2" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="shdw">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="1" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="1" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="2" name="med" length="200">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.512834" abs_pivot_y="0.242432" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.512834" abs_pivot_y="0.242432" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.512834" abs_pivot_y="0.242432" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.512834" abs_pivot_y="0.242432" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.512834" abs_pivot_y="0.242432" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.512834" abs_pivot_y="0.242432" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="rocks" abs_x="0" abs_y="0" abs_pivot_x="0.512834" abs_pivot_y="0.242432" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="2" />
+					<object_ref id="1" name="shdw" abs_x="0" abs_y="0" abs_pivot_x="0.499999" abs_pivot_y="0.500004" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="6" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="rocks">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="1" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="1" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="1" file="1" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="1" file="1" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="1" file="1" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="1" file="1" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="1" file="1" x="0" y="-0.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="shdw">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="0" x="-3.999" y="-31.35" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="fence_posts">
+		<file id="0" name="fence_posts/fence_posts-0.png" width="100" height="304" pivot_x="0.49975" pivot_y="0.160362" />
+		<file id="1" name="fence_posts/fence_posts-2.png" width="216" height="284" pivot_x="0.409722" pivot_y="0.180458" />
+		<file id="2" name="fence_posts/fence_posts-4.png" width="248" height="252" pivot_x="0.496169" pivot_y="0.0902778" />
+		<file id="3" name="fence_posts/fence_posts-6.png" width="216" height="284" pivot_x="0.409722" pivot_y="0.180458" />
+		<file id="4" name="fence_posts/fence_posts-8.png" width="100" height="304" pivot_x="0.50025" pivot_y="0.160362" />
+	</folder>
+	<folder id="1" name="inventory">
+		<file id="0" name="inventory/inventory-0.png" width="172" height="136" pivot_x="0.50843" pivot_y="0.474081" />
+	</folder>
+	<entity id="0" name="fence">
+		<animation id="0" name="hit_down" length="167">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="fence_posts">
+				<key id="0" time="0" spin="-1">
+					<object folder="0" file="2" x="0.25" y="0.1" scale_x="1" scale_y="1.00015" angle="359.512" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="2" x="-0.3" y="0.1" scale_x="1" scale_y="1.0002" angle="0.566449" />
+				</key>
+				<key id="2" time="67" spin="-1">
+					<object folder="0" file="2" x="0.3" y="0.1" scale_x="1" scale_y="1.00019" angle="359.44" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="2" x="-0.1" y="0.1" scale_x="1" scale_y="1.00003" angle="0.210694" />
+				</key>
+				<key id="4" time="134" spin="-1">
+					<object folder="0" file="2" x="0.05" y="0.1" scale_x="1" scale_y="1.00001" angle="359.861" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="2" x="0.05" y="0.1" scale_x="1" scale_y="1.00001" angle="359.861" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="hit_downside" length="167">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="fence_posts">
+				<key id="0" time="0" spin="-1">
+					<object folder="0" file="3" x="-18.25" y="0.1" scale_x="1" scale_y="1.00015" angle="359.502" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="3" x="-19.85" y="0.1" scale_x="1" scale_y="1.00019" angle="0.556399" />
+				</key>
+				<key id="2" time="67" spin="-1">
+					<object folder="0" file="3" x="-18.25" y="0.1" scale_x="1" scale_y="1.00015" angle="359.507" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="3" x="-19.5" y="0.1" scale_x="1" scale_y="1.00006" angle="0.307292" />
+				</key>
+				<key id="4" time="134" spin="-1">
+					<object folder="0" file="3" x="-18.7" y="0.1" scale_x="1" scale_y="1.00002" angle="359.815" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="3" x="-18.7" y="0.1" scale_x="1" scale_y="1.00002" angle="359.815" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="2" name="hit_side" length="167">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.50025" abs_pivot_y="0.160362" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.50025" abs_pivot_y="0.160362" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.50025" abs_pivot_y="0.160362" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.50025" abs_pivot_y="0.160362" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.50025" abs_pivot_y="0.160362" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.50025" abs_pivot_y="0.160362" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="fence_posts">
+				<key id="0" time="0" spin="-1">
+					<object folder="0" file="4" x="0.5" y="0.1" scale_x="1" scale_y="1.00007" angle="359.655" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="4" x="-0.6" y="0.1" scale_x="1" scale_y="1.0001" angle="0.403883" />
+				</key>
+				<key id="2" time="67" spin="-1">
+					<object folder="0" file="4" x="0.7" y="0.1" scale_x="1" scale_y="1.00013" angle="359.537" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="4" x="-0.25" y="0.1" scale_x="1" scale_y="1.00002" angle="0.172228" />
+				</key>
+				<key id="4" time="134" spin="-1">
+					<object folder="0" file="4" x="0.25" y="0.1" scale_x="1" scale_y="1.00002" angle="359.828" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="4" x="0.25" y="0.1" scale_x="1" scale_y="1.00002" angle="359.828" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="3" name="hit_up" length="167">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="fence_posts">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="2" x="1.55" y="0.1" scale_x="-1" scale_y="1.00015" angle="0.488229" />
+				</key>
+				<key id="1" time="34" spin="-1">
+					<object folder="0" file="2" x="2.1" y="0.1" scale_x="-1" scale_y="1.0002" angle="359.434" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="2" x="1.5" y="0.1" scale_x="-1" scale_y="1.00019" angle="0.560332" />
+				</key>
+				<key id="3" time="100" spin="-1">
+					<object folder="0" file="2" x="1.9" y="0.1" scale_x="-1" scale_y="1.00032" angle="359.274" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="2" x="1.9" y="0.1" scale_x="-1" scale_y="1.00003" angle="359.789" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="2" x="1.9" y="0.1" scale_x="-1" scale_y="1.00003" angle="359.789" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="4" name="hit_upside" length="167">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="fence_posts">
+				<key id="0" time="0" spin="-1">
+					<object folder="0" file="1" x="-17.35" y="0.1" scale_x="1" scale_y="1.00012" angle="359.566" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="-18.95" y="0.1" scale_x="1" scale_y="1.00023" angle="0.619757" />
+				</key>
+				<key id="2" time="67" spin="-1">
+					<object folder="0" file="1" x="-17.25" y="0.1" scale_x="1" scale_y="1.00015" angle="359.507" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="1" x="-18.3" y="0.1" scale_x="1" scale_y="1.00002" angle="0.185341" />
+				</key>
+				<key id="4" time="134" spin="-1">
+					<object folder="0" file="1" x="-17.7" y="0.1" scale_x="1" scale_y="1.00002" angle="359.815" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="1" x="-17.7" y="0.1" scale_x="1" scale_y="1.00002" angle="359.815" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="5" name="idle_down" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="fence_posts">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="2" x="0" y="0.1" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="2" x="0" y="0.1" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="2" x="0" y="0.1" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="6" name="idle_downside" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="fence_posts">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="3" x="-20" y="-1.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="3" x="-20" y="-1.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="3" x="-20" y="-1.9" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="7" name="idle_side" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.49975" abs_pivot_y="0.160362" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.49975" abs_pivot_y="0.160362" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.49975" abs_pivot_y="0.160362" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="fence_posts">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="0" y="0.1" scale_x="1" scale_y="0.931625" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="0" y="0.1" scale_x="1" scale_y="0.931625" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="0" y="0.1" scale_x="1" scale_y="0.931625" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="8" name="idle_up" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.496169" abs_pivot_y="0.0902778" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="fence_posts">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="2" x="0" y="0.1" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="2" x="0" y="0.1" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="2" x="0" y="0.1" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="9" name="idle_upside" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="fence_posts" abs_x="0" abs_y="0" abs_pivot_x="0.409722" abs_pivot_y="0.180458" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="fence_posts">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="-17" y="0.1" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="-17" y="0.1" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="1" x="-17" y="0.1" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="10" name="inventory" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="inventory" abs_x="0" abs_y="0" abs_pivot_x="0.50843" abs_pivot_y="0.474081" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="inventory" abs_x="0" abs_y="0" abs_pivot_x="0.50843" abs_pivot_y="0.474081" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="inventory">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="-0.2" y="15.3" scale_x="1" scale_y="0.89537" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="0" x="-0.2" y="15.3" scale_x="1" scale_y="0.89537" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

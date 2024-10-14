@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="splode">
+		<file id="0" name="splode/splode-0.png" width="212" height="124" pivot_x="0.459198" pivot_y="-1.07843" />
+		<file id="1" name="splode/splode-1.png" width="564" height="360" pivot_x="0.494282" pivot_y="0.0268055" />
+		<file id="2" name="splode/splode-2.png" width="812" height="452" pivot_x="0.526509" pivot_y="0.0669801" />
+		<file id="3" name="splode/splode-3.png" width="876" height="500" pivot_x="0.506393" pivot_y="0.0986" />
+		<file id="4" name="splode/splode-4.png" width="844" height="520" pivot_x="0.519579" pivot_y="0.116683" />
+		<file id="5" name="splode/splode-5.png" width="808" height="524" pivot_x="0.52664" pivot_y="0.112739" />
+		<file id="6" name="splode/splode-6.png" width="768" height="512" pivot_x="0.507292" pivot_y="0.106104" />
+		<file id="7" name="splode/splode-7.png" width="700" height="488" pivot_x="0.5055" pivot_y="0.0882172" />
+		<file id="8" name="splode/splode-8.png" width="684" height="456" pivot_x="0.503655" pivot_y="0.048739" />
+	</folder>
+	<entity id="0" name="beefalo_fx">
+		<animation id="0" name="transform" length="367">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.459198" abs_pivot_y="-1.07843" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.494282" abs_pivot_y="0.0268055" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.526509" abs_pivot_y="0.0669801" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.506393" abs_pivot_y="0.0986" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.519579" abs_pivot_y="0.116683" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.52664" abs_pivot_y="0.112739" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.507292" abs_pivot_y="0.106104" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="1" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.5055" abs_pivot_y="0.0882172" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="1" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.503655" abs_pivot_y="0.048739" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="splode" abs_x="0" abs_y="0" abs_pivot_x="0.503655" abs_pivot_y="0.048739" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="1" />
+				</key>
+				<key id="10" time="334" />
+				<key id="11" time="367" />
+			</mainline>
+			<timeline id="0" name="splode">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="4.35" y="0.6" scale_x="0.935364" scale_y="1.44418" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="4.35" y="0.6" scale_x="0.935364" scale_y="1.44418" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="2" x="4.35" y="0.6" scale_x="0.935364" scale_y="1.44418" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="3" x="4.35" y="0.6" scale_x="0.935364" scale_y="1.44418" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="4" x="4.35" y="0.6" scale_x="0.935364" scale_y="1.44418" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="5" x="4.35" y="0.6" scale_x="0.935364" scale_y="1.44418" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="6" x="4.35" y="0.6" scale_x="0.935364" scale_y="1.44418" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="0" file="7" x="4.35" y="0.6" scale_x="0.935364" scale_y="1.44418" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="0" file="8" x="4.35" y="0.6" scale_x="0.935364" scale_y="1.44418" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="0" file="8" x="4.35" y="0.6" scale_x="0.935364" scale_y="1.44418" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

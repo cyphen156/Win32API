@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="glass">
+		<file id="0" name="glass/glass-0.png" width="84" height="452" pivot_x="0.458625" pivot_y="0.499946" />
+	</folder>
+	<folder id="1" name="burnt">
+		<file id="0" name="burnt/burnt-0.png" width="292" height="576" pivot_x="0.499998" pivot_y="0.499957" />
+	</folder>
+	<folder id="2" name="meter">
+		<file id="0" name="meter/meter-0.png" width="68" height="436" pivot_x="0.44889" pivot_y="0.616974" />
+		<file id="1" name="meter/meter-1.png" width="68" height="424" pivot_x="0.44889" pivot_y="0.637737" />
+		<file id="2" name="meter/meter-2.png" width="68" height="408" pivot_x="0.44889" pivot_y="0.662379" />
+		<file id="3" name="meter/meter-3.png" width="68" height="392" pivot_x="0.44889" pivot_y="0.689542" />
+		<file id="4" name="meter/meter-4.png" width="68" height="376" pivot_x="0.458449" pivot_y="0.718951" />
+		<file id="5" name="meter/meter-5.png" width="68" height="356" pivot_x="0.461757" pivot_y="0.755338" />
+		<file id="6" name="meter/meter-6.png" width="68" height="344" pivot_x="0.46911" pivot_y="0.786266" />
+		<file id="7" name="meter/meter-7.png" width="68" height="328" pivot_x="0.473154" pivot_y="0.824239" />
+		<file id="8" name="meter/meter-8.png" width="64" height="308" pivot_x="0.484367" pivot_y="0.875976" />
+		<file id="9" name="meter/meter-9.png" width="64" height="292" pivot_x="0.484367" pivot_y="0.921663" />
+		<file id="10" name="meter/meter-10.png" width="64" height="280" pivot_x="0.484367" pivot_y="0.963752" />
+		<file id="11" name="meter/meter-11.png" width="64" height="264" pivot_x="0.480852" pivot_y="1.02197" />
+		<file id="12" name="meter/meter-12.png" width="64" height="244" pivot_x="0.476164" pivot_y="1.10102" />
+		<file id="13" name="meter/meter-13.png" width="64" height="228" pivot_x="0.476164" pivot_y="1.18059" />
+		<file id="14" name="meter/meter-14.png" width="64" height="212" pivot_x="0.476164" pivot_y="1.27288" />
+		<file id="15" name="meter/meter-15.png" width="64" height="196" pivot_x="0.477336" pivot_y="1.37003" />
+		<file id="16" name="meter/meter-16.png" width="64" height="180" pivot_x="0.478117" pivot_y="1.49931" />
+		<file id="17" name="meter/meter-17.png" width="64" height="168" pivot_x="0.478117" pivot_y="1.60923" />
+		<file id="18" name="meter/meter-18.png" width="64" height="148" pivot_x="0.478117" pivot_y="1.81875" />
+		<file id="19" name="meter/meter-19.png" width="64" height="148" pivot_x="0.478117" pivot_y="1.81875" />
+		<file id="20" name="meter/meter-20.png" width="64" height="148" pivot_x="0.478117" pivot_y="1.81875" />
+		<file id="21" name="meter/meter-21.png" width="64" height="148" pivot_x="0.476555" pivot_y="1.81875" />
+		<file id="22" name="meter/meter-22.png" width="64" height="148" pivot_x="0.476555" pivot_y="1.81875" />
+		<file id="23" name="meter/meter-23.png" width="64" height="148" pivot_x="0.476555" pivot_y="1.81875" />
+		<file id="24" name="meter/meter-24.png" width="64" height="148" pivot_x="0.476555" pivot_y="1.81875" />
+	</folder>
+	<folder id="3" name="winter_meter_01">
+		<file id="0" name="winter_meter_01/winter_meter_01-0.png" width="264" height="592" pivot_x="0.454922" pivot_y="0.510347" />
+	</folder>
+	<entity id="0" name="winter_meter">
+		<animation id="0" name="burnt" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="burnt" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.499957" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="burnt" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.499957" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="burnt" abs_x="0" abs_y="0" abs_pivot_x="0.499998" abs_pivot_y="0.499957" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="burnt">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="6.5" y="249.649" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="0" x="6.5" y="249.649" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="1" file="0" x="6.5" y="249.649" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="hit" length="367">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="4" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="4" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="4" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="4" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="4" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="4" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="6" z_index="4" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="7" z_index="4" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="8" z_index="4" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="9" z_index="4" />
+				</key>
+				<key id="10" time="334">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="10" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="10" z_index="4" />
+				</key>
+				<key id="11" time="367">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="11" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="11" z_index="4" />
+				</key>
+			</mainline>
+			<timeline id="0" name="winter_meter_01">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="-9.449" y="271.249" scale_x="1.21629" scale_y="1.06273" angle="0.444252" />
+				</key>
+				<key id="1" time="34" spin="-1">
+					<object folder="3" file="0" x="-3.099" y="271.249" scale_x="1.21628" scale_y="1.0628" angle="359.873" />
+				</key>
+				<key id="2" time="67" spin="-1">
+					<object folder="3" file="0" x="3.25" y="271.249" scale_x="1.21629" scale_y="1.06293" angle="359.29" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="3" file="0" x="-3.949" y="271.249" scale_x="1.21628" scale_y="1.0629" angle="359.989" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="3" file="0" x="-11.399" y="271.249" scale_x="1.21629" scale_y="1.06286" angle="0.621904" />
+				</key>
+				<key id="5" time="167" spin="-1">
+					<object folder="3" file="0" x="-9.349" y="271.249" scale_x="1.21628" scale_y="1.06274" angle="0.389539" />
+				</key>
+				<key id="6" time="200" spin="-1">
+					<object folder="3" file="0" x="-7.649" y="271.249" scale_x="1.21628" scale_y="1.06268" angle="0.257096" />
+				</key>
+				<key id="7" time="234" spin="-1">
+					<object folder="3" file="0" x="-6.349" y="271.249" scale_x="1.21628" scale_y="1.06265" angle="0.13287" />
+				</key>
+				<key id="8" time="267" spin="-1">
+					<object folder="3" file="0" x="-5.449" y="271.249" scale_x="1.21628" scale_y="1.06261" angle="0.0176892" />
+				</key>
+				<key id="9" time="300" spin="-1">
+					<object folder="3" file="0" x="-4.849" y="271.249" scale_x="1.21628" scale_y="1.06261" angle="0.00493653" />
+				</key>
+				<key id="10" time="334" spin="-1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="glass">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-8.249" y="277.349" scale_x="1.21629" scale_y="1.06273" angle="0.444252" />
+				</key>
+				<key id="1" time="34" spin="-1">
+					<object folder="0" file="0" x="-1.799" y="277.349" scale_x="1.21628" scale_y="1.0628" angle="359.873" />
+				</key>
+				<key id="2" time="67" spin="-1">
+					<object folder="0" file="0" x="4.7" y="277.349" scale_x="1.21629" scale_y="1.06293" angle="359.29" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="-2.749" y="277.349" scale_x="1.21628" scale_y="1.0629" angle="359.989" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="-10.199" y="277.349" scale_x="1.21629" scale_y="1.06286" angle="0.621904" />
+				</key>
+				<key id="5" time="167" spin="-1">
+					<object folder="0" file="0" x="-8.149" y="277.349" scale_x="1.21628" scale_y="1.06274" angle="0.389539" />
+				</key>
+				<key id="6" time="200" spin="-1">
+					<object folder="0" file="0" x="-6.349" y="277.299" scale_x="1.21628" scale_y="1.06268" angle="0.257096" />
+				</key>
+				<key id="7" time="234" spin="-1">
+					<object folder="0" file="0" x="-4.999" y="277.349" scale_x="1.21628" scale_y="1.06265" angle="0.13287" />
+				</key>
+				<key id="8" time="267" spin="-1">
+					<object folder="0" file="0" x="-4.099" y="277.349" scale_x="1.21628" scale_y="1.06261" angle="0.0176892" />
+				</key>
+				<key id="9" time="300" spin="-1">
+					<object folder="0" file="0" x="-3.499" y="277.349" scale_x="1.21628" scale_y="1.06261" angle="0.00493653" />
+				</key>
+				<key id="10" time="334" spin="-1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="2" name="idle" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.44889" abs_pivot_y="0.616974" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="4" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.44889" abs_pivot_y="0.616974" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="4" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.44889" abs_pivot_y="0.616974" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="2" z_index="4" />
+				</key>
+			</mainline>
+			<timeline id="0" name="winter_meter_01">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="meter">
+				<key id="0" time="0" spin="1">
+					<object folder="2" file="0" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="2" file="0" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="2" file="0" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="glass">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="3" name="meter" length="834">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.44889" abs_pivot_y="0.616974" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="4" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.44889" abs_pivot_y="0.637737" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="4" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.44889" abs_pivot_y="0.662379" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="2" z_index="4" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.44889" abs_pivot_y="0.689542" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="3" z_index="4" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.458449" abs_pivot_y="0.718951" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="4" z_index="4" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.461757" abs_pivot_y="0.755338" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="5" z_index="4" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.46911" abs_pivot_y="0.786266" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="6" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="6" z_index="4" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.473154" abs_pivot_y="0.824239" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="7" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="7" z_index="4" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.484367" abs_pivot_y="0.875976" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="8" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="8" z_index="4" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.484367" abs_pivot_y="0.921663" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="9" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="9" z_index="4" />
+				</key>
+				<key id="10" time="334">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="10" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.484367" abs_pivot_y="0.963752" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="10" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="10" z_index="4" />
+				</key>
+				<key id="11" time="367">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="11" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.480852" abs_pivot_y="1.02197" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="11" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="11" z_index="4" />
+				</key>
+				<key id="12" time="400">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="12" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.476164" abs_pivot_y="1.10102" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="12" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="12" z_index="4" />
+				</key>
+				<key id="13" time="434">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="13" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.476164" abs_pivot_y="1.18059" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="13" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="13" z_index="4" />
+				</key>
+				<key id="14" time="467">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="14" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.476164" abs_pivot_y="1.27288" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="14" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="14" z_index="4" />
+				</key>
+				<key id="15" time="500">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="15" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.477336" abs_pivot_y="1.37003" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="15" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="15" z_index="4" />
+				</key>
+				<key id="16" time="534">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="16" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.478117" abs_pivot_y="1.49931" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="16" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="16" z_index="4" />
+				</key>
+				<key id="17" time="567">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="17" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.478117" abs_pivot_y="1.60923" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="17" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="17" z_index="4" />
+				</key>
+				<key id="18" time="600">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="18" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.478117" abs_pivot_y="1.81875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="18" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="18" z_index="4" />
+				</key>
+				<key id="19" time="634">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="19" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.478117" abs_pivot_y="1.81875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="19" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="19" z_index="4" />
+				</key>
+				<key id="20" time="667">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="20" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.478117" abs_pivot_y="1.81875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="20" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="20" z_index="4" />
+				</key>
+				<key id="21" time="700">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="21" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.476555" abs_pivot_y="1.81875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="21" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="21" z_index="4" />
+				</key>
+				<key id="22" time="734">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="22" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.476555" abs_pivot_y="1.81875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="22" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="22" z_index="4" />
+				</key>
+				<key id="23" time="767">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="23" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.476555" abs_pivot_y="1.81875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="23" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="23" z_index="4" />
+				</key>
+				<key id="24" time="800">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="24" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.476555" abs_pivot_y="1.81875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="24" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="24" z_index="4" />
+				</key>
+				<key id="25" time="834">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="25" z_index="6" />
+					<object_ref id="1" name="meter" abs_x="0" abs_y="0" abs_pivot_x="0.476555" abs_pivot_y="1.81875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="25" z_index="5" />
+					<object_ref id="2" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="25" z_index="4" />
+				</key>
+			</mainline>
+			<timeline id="0" name="winter_meter_01">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="10" time="334" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="12" time="400" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="13" time="434" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="14" time="467" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="15" time="500" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="16" time="534" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="17" time="567" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="18" time="600" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="19" time="634" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="20" time="667" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="21" time="700" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="22" time="734" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="23" time="767" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="24" time="800" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="25" time="834" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="meter">
+				<key id="0" time="0" spin="1">
+					<object folder="2" file="0" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="2" file="1" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="2" file="2" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="2" file="3" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="2" file="4" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="2" file="5" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="2" file="6" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="2" file="7" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="2" file="8" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="2" file="9" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="10" time="334" spin="1">
+					<object folder="2" file="10" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="2" file="11" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="12" time="400" spin="1">
+					<object folder="2" file="12" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="13" time="434" spin="1">
+					<object folder="2" file="13" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="14" time="467" spin="1">
+					<object folder="2" file="14" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="15" time="500" spin="1">
+					<object folder="2" file="15" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="16" time="534" spin="1">
+					<object folder="2" file="16" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="17" time="567" spin="1">
+					<object folder="2" file="17" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="18" time="600" spin="1">
+					<object folder="2" file="18" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="19" time="634" spin="1">
+					<object folder="2" file="19" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="20" time="667" spin="1">
+					<object folder="2" file="20" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="21" time="700" spin="1">
+					<object folder="2" file="21" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="22" time="734" spin="1">
+					<object folder="2" file="22" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="23" time="767" spin="1">
+					<object folder="2" file="23" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="24" time="800" spin="1">
+					<object folder="2" file="24" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="25" time="834" spin="1">
+					<object folder="2" file="24" x="-2.549" y="332.199" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="glass">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="10" time="334" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="12" time="400" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="13" time="434" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="14" time="467" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="15" time="500" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="16" time="534" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="17" time="567" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="18" time="600" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="19" time="634" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="20" time="667" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="21" time="700" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="22" time="734" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="23" time="767" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="24" time="800" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="25" time="834" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="4" name="place" length="367">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="4" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="4" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="4" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="4" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="4" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="4" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="6" z_index="4" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="7" z_index="4" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="8" z_index="4" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="9" z_index="4" />
+				</key>
+				<key id="10" time="334">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="10" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="10" z_index="4" />
+				</key>
+				<key id="11" time="367">
+					<object_ref id="0" name="winter_meter_01" abs_x="0" abs_y="0" abs_pivot_x="0.454922" abs_pivot_y="0.510347" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="11" z_index="5" />
+					<object_ref id="1" name="glass" abs_x="0" abs_y="0" abs_pivot_x="0.458625" abs_pivot_y="0.499946" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="11" z_index="4" />
+				</key>
+			</mainline>
+			<timeline id="0" name="winter_meter_01">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="-2.999" y="433.549" scale_x="0.973511" scale_y="1.2417" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="3" file="0" x="-6.149" y="228.299" scale_x="1.34288" scale_y="0.917465" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="3" file="0" x="-5.499" y="242.549" scale_x="1.29272" scale_y="0.965683" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="3" file="0" x="-3.699" y="285.349" scale_x="1.14218" scale_y="1.11029" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="3" file="0" x="-3.699" y="283.599" scale_x="1.14819" scale_y="1.10443" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="3" file="0" x="-3.949" y="278.399" scale_x="1.16623" scale_y="1.08684" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="3" file="0" x="-4.299" y="269.699" scale_x="1.19627" scale_y="1.05751" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="3" file="0" x="-4.799" y="257.549" scale_x="1.23834" scale_y="1.01646" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="3" file="0" x="-4.649" y="265.149" scale_x="1.22607" scale_y="1.04208" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="3" file="0" x="-4.549" y="269.749" scale_x="1.21875" scale_y="1.05748" angle="0" />
+				</key>
+				<key id="10" time="334" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="3" file="0" x="-4.599" y="271.249" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="glass">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-1.949" y="440.649" scale_x="0.973511" scale_y="1.2417" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-4.699" y="233.549" scale_x="1.34288" scale_y="0.917465" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="-4.149" y="248.099" scale_x="1.29272" scale_y="0.965683" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="-2.499" y="291.749" scale_x="1.14218" scale_y="1.11029" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="-2.499" y="289.999" scale_x="1.14819" scale_y="1.10443" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="0" x="-2.699" y="284.699" scale_x="1.16623" scale_y="1.08684" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="0" x="-2.999" y="275.849" scale_x="1.19627" scale_y="1.05751" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="0" file="0" x="-3.499" y="263.399" scale_x="1.23834" scale_y="1.01646" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="0" file="0" x="-3.399" y="271.149" scale_x="1.22607" scale_y="1.04208" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="0" file="0" x="-3.299" y="275.799" scale_x="1.21875" scale_y="1.05748" angle="0" />
+				</key>
+				<key id="10" time="334" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="0" file="0" x="-3.299" y="277.349" scale_x="1.21629" scale_y="1.06261" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

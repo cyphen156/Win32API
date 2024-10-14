@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="interior">
+		<file id="0" name="interior/interior-0.png" width="152" height="152" pivot_x="0.503451" pivot_y="0.195727" />
+		<file id="1" name="interior/interior-1.png" width="264" height="140" pivot_x="0.559562" pivot_y="0.204468" />
+		<file id="2" name="interior/interior-2.png" width="308" height="552" pivot_x="0.547563" pivot_y="0.0351911" />
+		<file id="3" name="interior/interior-3.png" width="480" height="560" pivot_x="0.473436" pivot_y="0.0482152" />
+		<file id="4" name="interior/interior-4.png" width="660" height="540" pivot_x="0.496249" pivot_y="0.0601398" />
+		<file id="5" name="interior/interior-5.png" width="760" height="516" pivot_x="0.478749" pivot_y="0.041813" />
+		<file id="6" name="interior/interior-7.png" width="840" height="500" pivot_x="0.520238" pivot_y="0.044001" />
+		<file id="7" name="interior/interior-9.png" width="884" height="460" pivot_x="0.512811" pivot_y="0.039675" />
+		<file id="8" name="interior/interior-11.png" width="928" height="444" pivot_x="0.515732" pivot_y="0.0442016" />
+		<file id="9" name="interior/interior-13.png" width="900" height="460" pivot_x="0.540166" pivot_y="0.0320119" />
+		<file id="10" name="interior/interior-15.png" width="860" height="424" pivot_x="0.514912" pivot_y="0.0177488" />
+		<file id="11" name="interior/interior-17.png" width="804" height="404" pivot_x="0.49689" pivot_y="0.0105223" />
+		<file id="12" name="interior/interior-19.png" width="804" height="448" pivot_x="0.522014" pivot_y="0.0027366" />
+		<file id="13" name="interior/interior-21.png" width="796" height="456" pivot_x="0.479019" pivot_y="-0.00953728" />
+		<file id="14" name="interior/interior-23.png" width="816" height="376" pivot_x="0.470281" pivot_y="-0.327457" />
+		<file id="15" name="interior/interior-25.png" width="840" height="392" pivot_x="0.467618" pivot_y="-0.322638" />
+		<file id="16" name="interior/interior-27.png" width="612" height="328" pivot_x="0.258782" pivot_y="-0.548549" />
+		<file id="17" name="interior/interior-29.png" width="476" height="288" pivot_x="0.30168" pivot_y="-0.753382" />
+		<file id="18" name="interior/interior-31.png" width="472" height="244" pivot_x="0.271768" pivot_y="-1.0625" />
+		<file id="19" name="interior/interior-33.png" width="80" height="48" pivot_x="-1.43219" pivot_y="-7.8005" />
+	</folder>
+	<entity id="0" name="max_fx">
+		<animation id="0" name="anim" length="1334">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.503451" abs_pivot_y="0.195727" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.559562" abs_pivot_y="0.204468" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.547563" abs_pivot_y="0.0351911" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.473436" abs_pivot_y="0.0482152" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.496249" abs_pivot_y="0.0601398" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.478749" abs_pivot_y="0.041813" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.478749" abs_pivot_y="0.041813" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="1" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.520238" abs_pivot_y="0.044001" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="1" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.520238" abs_pivot_y="0.044001" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.512811" abs_pivot_y="0.039675" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="1" />
+				</key>
+				<key id="10" time="334">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.512811" abs_pivot_y="0.039675" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="10" z_index="1" />
+				</key>
+				<key id="11" time="367">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.515732" abs_pivot_y="0.0442016" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="11" z_index="1" />
+				</key>
+				<key id="12" time="400">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.515732" abs_pivot_y="0.0442016" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="12" z_index="1" />
+				</key>
+				<key id="13" time="434">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.540166" abs_pivot_y="0.0320119" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="13" z_index="1" />
+				</key>
+				<key id="14" time="467">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.540166" abs_pivot_y="0.0320119" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="14" z_index="1" />
+				</key>
+				<key id="15" time="500">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.514912" abs_pivot_y="0.0177488" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="15" z_index="1" />
+				</key>
+				<key id="16" time="534">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.514912" abs_pivot_y="0.0177488" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="16" z_index="1" />
+				</key>
+				<key id="17" time="567">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.49689" abs_pivot_y="0.0105223" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="17" z_index="1" />
+				</key>
+				<key id="18" time="600">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.49689" abs_pivot_y="0.0105223" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="18" z_index="1" />
+				</key>
+				<key id="19" time="634">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.522014" abs_pivot_y="0.0027366" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="19" z_index="1" />
+				</key>
+				<key id="20" time="667">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.522014" abs_pivot_y="0.0027366" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="20" z_index="1" />
+				</key>
+				<key id="21" time="700">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.479019" abs_pivot_y="-0.00953728" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="21" z_index="1" />
+				</key>
+				<key id="22" time="734">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.479019" abs_pivot_y="-0.00953728" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="22" z_index="1" />
+				</key>
+				<key id="23" time="767">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.470281" abs_pivot_y="-0.327457" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="23" z_index="1" />
+				</key>
+				<key id="24" time="800">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.470281" abs_pivot_y="-0.327457" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="24" z_index="1" />
+				</key>
+				<key id="25" time="834">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.467618" abs_pivot_y="-0.322638" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="25" z_index="1" />
+				</key>
+				<key id="26" time="867">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.467618" abs_pivot_y="-0.322638" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="26" z_index="1" />
+				</key>
+				<key id="27" time="900">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.258782" abs_pivot_y="-0.548549" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="27" z_index="1" />
+				</key>
+				<key id="28" time="934">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.258782" abs_pivot_y="-0.548549" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="28" z_index="1" />
+				</key>
+				<key id="29" time="967">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.30168" abs_pivot_y="-0.753382" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="29" z_index="1" />
+				</key>
+				<key id="30" time="1000">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.30168" abs_pivot_y="-0.753382" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="30" z_index="1" />
+				</key>
+				<key id="31" time="1034">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.271768" abs_pivot_y="-1.0625" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="31" z_index="1" />
+				</key>
+				<key id="32" time="1067">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="0.271768" abs_pivot_y="-1.0625" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="32" z_index="1" />
+				</key>
+				<key id="33" time="1100">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="-1.43219" abs_pivot_y="-7.8005" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="33" z_index="1" />
+				</key>
+				<key id="34" time="1134">
+					<object_ref id="0" name="interior" abs_x="0" abs_y="0" abs_pivot_x="-1.43219" abs_pivot_y="-7.8005" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="34" z_index="1" />
+				</key>
+				<key id="35" time="1167" />
+				<key id="36" time="1201" />
+				<key id="37" time="1234" />
+				<key id="38" time="1267" />
+				<key id="39" time="1301" />
+				<key id="40" time="1334" />
+			</mainline>
+			<timeline id="0" name="interior">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="2" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="3" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="4" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="5" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="5" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="0" file="6" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="0" file="6" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="0" file="7" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="10" time="334" spin="1">
+					<object folder="0" file="7" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="0" file="8" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="12" time="400" spin="1">
+					<object folder="0" file="8" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="13" time="434" spin="1">
+					<object folder="0" file="9" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="14" time="467" spin="1">
+					<object folder="0" file="9" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="15" time="500" spin="1">
+					<object folder="0" file="10" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="16" time="534" spin="1">
+					<object folder="0" file="10" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="17" time="567" spin="1">
+					<object folder="0" file="11" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="18" time="600" spin="1">
+					<object folder="0" file="11" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="19" time="634" spin="1">
+					<object folder="0" file="12" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="20" time="667" spin="1">
+					<object folder="0" file="12" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="21" time="700" spin="1">
+					<object folder="0" file="13" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="22" time="734" spin="1">
+					<object folder="0" file="13" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="23" time="767" spin="1">
+					<object folder="0" file="14" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="24" time="800" spin="1">
+					<object folder="0" file="14" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="25" time="834" spin="1">
+					<object folder="0" file="15" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="26" time="867" spin="1">
+					<object folder="0" file="15" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="27" time="900" spin="1">
+					<object folder="0" file="16" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="28" time="934" spin="1">
+					<object folder="0" file="16" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="29" time="967" spin="1">
+					<object folder="0" file="17" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="30" time="1000" spin="1">
+					<object folder="0" file="17" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="31" time="1034" spin="1">
+					<object folder="0" file="18" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="32" time="1067" spin="1">
+					<object folder="0" file="18" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="33" time="1100" spin="1">
+					<object folder="0" file="19" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="34" time="1134" spin="1">
+					<object folder="0" file="19" x="70.5" y="-46.25" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="ferns01">
+		<file id="0" name="ferns01/ferns01-0.png" width="184" height="152" pivot_x="0.524997" pivot_y="0.161516" />
+		<file id="1" name="ferns01/ferns01-1.png" width="212" height="204" pivot_x="0.431837" pivot_y="0.302331" />
+		<file id="2" name="ferns01/ferns01-2.png" width="140" height="144" pivot_x="0.410711" pivot_y="0.103649" />
+		<file id="3" name="ferns01/ferns01-3.png" width="204" height="184" pivot_x="0.420096" pivot_y="0.156253" />
+		<file id="4" name="ferns01/ferns01-4.png" width="200" height="160" pivot_x="0.499997" pivot_y="0.0851594" />
+		<file id="5" name="ferns01/ferns01-5.png" width="188" height="128" pivot_x="0.446939" pivot_y="0.141801" />
+		<file id="6" name="ferns01/ferns01-6.png" width="116" height="176" pivot_x="0.535772" pivot_y="0.106253" />
+		<file id="7" name="ferns01/ferns01-7.png" width="252" height="156" pivot_x="0.480157" pivot_y="0.130772" />
+		<file id="8" name="ferns01/ferns01-8.png" width="192" height="136" pivot_x="0.525909" pivot_y="0.202761" />
+		<file id="9" name="ferns01/ferns01-9.png" width="168" height="164" pivot_x="0.485116" pivot_y="0.142686" />
+	</folder>
+	<entity id="0" name="ferns">
+		<animation id="0" name="f1" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.524997" abs_pivot_y="0.161516" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.524997" abs_pivot_y="0.161516" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="ferns01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="f10" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.485116" abs_pivot_y="0.142686" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.485116" abs_pivot_y="0.142686" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="ferns01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="9" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="9" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="2" name="f2" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.431837" abs_pivot_y="0.302331" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.431837" abs_pivot_y="0.302331" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="ferns01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="3" name="f3" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.410711" abs_pivot_y="0.103649" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.410711" abs_pivot_y="0.103649" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="ferns01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="2" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="2" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="4" name="f4" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.420096" abs_pivot_y="0.156253" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.420096" abs_pivot_y="0.156253" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="ferns01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="3" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="3" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="5" name="f5" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.499997" abs_pivot_y="0.0851594" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.499997" abs_pivot_y="0.0851594" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="ferns01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="4" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="4" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="6" name="f6" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.446939" abs_pivot_y="0.141801" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.446939" abs_pivot_y="0.141801" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="ferns01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="5" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="5" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="7" name="f7" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.535772" abs_pivot_y="0.106253" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.535772" abs_pivot_y="0.106253" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="ferns01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="6" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="6" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="8" name="f8" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.480157" abs_pivot_y="0.130772" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.480157" abs_pivot_y="0.130772" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="ferns01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="7" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="7" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="9" name="f9" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.525909" abs_pivot_y="0.202761" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="ferns01" abs_x="0" abs_y="0" abs_pivot_x="0.525909" abs_pivot_y="0.202761" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="ferns01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="8" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="8" x="-0.199" y="0.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

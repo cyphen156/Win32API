@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="marble_trees01">
+		<file id="0" name="marble_trees01/marble_trees01-0.png" width="276" height="592" pivot_x="0.532607" pivot_y="0.0619096" />
+		<file id="1" name="marble_trees01/marble_trees01-1.png" width="276" height="596" pivot_x="0.6096" pivot_y="0.0612844" />
+		<file id="2" name="marble_trees01/marble_trees01-2.png" width="308" height="416" pivot_x="0.55844" pivot_y="0.192549" />
+		<file id="3" name="marble_trees01/marble_trees01-3.png" width="320" height="208" pivot_x="0.537577" pivot_y="0.404209" />
+		<file id="4" name="marble_trees01/marble_trees01-4.png" width="256" height="556" pivot_x="0.570311" pivot_y="0.0651538" />
+		<file id="5" name="marble_trees01/marble_trees01-5.png" width="308" height="384" pivot_x="0.55844" pivot_y="0.210288" />
+		<file id="6" name="marble_trees01/marble_trees01-6.png" width="236" height="584" pivot_x="0.519595" pivot_y="0.0611738" />
+		<file id="7" name="marble_trees01/marble_trees01-7.png" width="308" height="360" pivot_x="0.55844" pivot_y="0.225626" />
+		<file id="8" name="marble_trees01/marble_trees01-8.png" width="320" height="208" pivot_x="0.537577" pivot_y="0.404209" />
+	</folder>
+	<entity id="0" name="marble_trees">
+		<animation id="0" name="full_1" length="134">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.532607" abs_pivot_y="0.0619096" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.532607" abs_pivot_y="0.0619096" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.532607" abs_pivot_y="0.0619096" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.532607" abs_pivot_y="0.0619096" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.532607" abs_pivot_y="0.0619096" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="marble_trees01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="full_2" length="134">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.6096" abs_pivot_y="0.0612844" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.6096" abs_pivot_y="0.0612844" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.6096" abs_pivot_y="0.0612844" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.6096" abs_pivot_y="0.0612844" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.6096" abs_pivot_y="0.0612844" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="marble_trees01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="1" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="1" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="1" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="2" name="full_3" length="134">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.570311" abs_pivot_y="0.0651538" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.570311" abs_pivot_y="0.0651538" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.570311" abs_pivot_y="0.0651538" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.570311" abs_pivot_y="0.0651538" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.570311" abs_pivot_y="0.0651538" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="marble_trees01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="4" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="4" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="4" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="4" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="4" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="3" name="full_4" length="134">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.519595" abs_pivot_y="0.0611738" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="3" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.519595" abs_pivot_y="0.0611738" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="3" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.519595" abs_pivot_y="0.0611738" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="3" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.519595" abs_pivot_y="0.0611738" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="3" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.519595" abs_pivot_y="0.0611738" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="3" />
+				</key>
+			</mainline>
+			<timeline id="0" name="marble_trees01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="6" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="6" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="6" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="6" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="6" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="4" name="low_1" length="134">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="marble_trees01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="3" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="3" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="3" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="3" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="3" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="5" name="low_2" length="134">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="marble_trees01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="3" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="3" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="3" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="3" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="3" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="6" name="low_3" length="134">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="marble_trees01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="8" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="8" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="8" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="8" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="8" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="7" name="low_4" length="134">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.537577" abs_pivot_y="0.404209" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="marble_trees01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="8" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="8" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="8" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="8" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="8" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="8" name="med_1" length="134">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.192549" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.192549" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.192549" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.192549" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.192549" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="marble_trees01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="2" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="2" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="2" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="2" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="2" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="9" name="med_2" length="134">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.192549" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.192549" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.192549" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.192549" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.192549" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="marble_trees01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="2" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="2" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="2" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="2" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="2" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="10" name="med_3" length="134">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.210288" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.210288" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.210288" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.210288" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.210288" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="marble_trees01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="5" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="5" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="5" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="5" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="5" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="11" name="med_4" length="134">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.225626" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.225626" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.225626" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.225626" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="marble_trees01" abs_x="0" abs_y="0" abs_pivot_x="0.55844" abs_pivot_y="0.225626" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="marble_trees01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="7" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="7" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="7" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="7" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="7" x="0.3" y="-0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

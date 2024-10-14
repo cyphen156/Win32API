@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="eyes">
+		<file id="0" name="eyes/eyes-0.png" width="100" height="56" pivot_x="0.485495" pivot_y="0.380813" />
+		<file id="1" name="eyes/eyes-1.png" width="100" height="52" pivot_x="0.486495" pivot_y="0.354817" />
+		<file id="2" name="eyes/eyes-2.png" width="100" height="48" pivot_x="0.486495" pivot_y="0.328656" />
+		<file id="3" name="eyes/eyes-3.png" width="100" height="48" pivot_x="0.485495" pivot_y="0.308344" />
+		<file id="4" name="eyes/eyes-4.png" width="100" height="52" pivot_x="0.486245" pivot_y="0.359144" />
+		<file id="5" name="eyes/eyes-5.png" width="40" height="48" pivot_x="0.480613" pivot_y="0.486469" />
+		<file id="6" name="eyes/eyes-6.png" width="44" height="40" pivot_x="0.467602" pivot_y="0.528137" />
+		<file id="7" name="eyes/eyes-7.png" width="44" height="24" pivot_x="0.490898" pivot_y="0.578146" />
+		<file id="8" name="eyes/eyes-8.png" width="44" height="36" pivot_x="0.473284" pivot_y="0.479181" />
+		<file id="9" name="eyes/eyes-9.png" width="40" height="28" pivot_x="0.474988" pivot_y="0.472339" />
+		<file id="10" name="eyes/eyes-10.png" width="40" height="24" pivot_x="0.484362" pivot_y="0.514604" />
+	</folder>
+	<entity id="0" name="eyes_darkness">
+		<animation id="0" name="appear_1" length="100">
+			<mainline>
+				<key id="0" time="0" />
+				<key id="1" time="34">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.308344" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.308344" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.486245" abs_pivot_y="0.359144" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.486245" abs_pivot_y="0.359144" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.486245" abs_pivot_y="0.359144" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.486245" abs_pivot_y="0.359144" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="eyes_0">
+				<key id="0" time="34" spin="1">
+					<object folder="0" file="3" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="67" spin="1">
+					<object folder="0" file="4" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="100" spin="1">
+					<object folder="0" file="4" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="eyes_1">
+				<key id="0" time="34" spin="1">
+					<object folder="0" file="3" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="67" spin="1">
+					<object folder="0" file="4" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="100" spin="1">
+					<object folder="0" file="4" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="appear_2" length="234">
+			<mainline>
+				<key id="0" time="0" />
+				<key id="1" time="34">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.467602" abs_pivot_y="0.528137" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.467602" abs_pivot_y="0.528137" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="1" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="eyes_0">
+				<key id="0" time="34" spin="-1">
+					<object folder="0" file="6" x="-22.799" y="392.099" scale_x="-1.17587" scale_y="0.585201" angle="346.19" />
+				</key>
+				<key id="1" time="67" spin="1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="-1.0673" scale_y="1.26169" angle="346.19" />
+				</key>
+				<key id="2" time="100" spin="1">
+					<object folder="0" file="5" x="-22.799" y="392.049" scale_x="-1.09424" scale_y="1.20348" angle="346.223" />
+				</key>
+				<key id="3" time="134" spin="1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="-1.11403" scale_y="1.16258" angle="346.223" />
+				</key>
+				<key id="4" time="167" spin="-1">
+					<object folder="0" file="5" x="-22.799" y="392.049" scale_x="-1.12591" scale_y="1.13806" angle="346.223" />
+				</key>
+				<key id="5" time="200" spin="-1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="-1.13074" scale_y="1.13074" angle="346.19" />
+				</key>
+				<key id="6" time="234" spin="1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="-1.13074" scale_y="1.13074" angle="346.19" />
+				</key>
+			</timeline>
+			<timeline id="1" name="eyes_1">
+				<key id="0" time="67" spin="1">
+					<object folder="0" file="6" x="20.25" y="392.099" scale_x="0.780532" scale_y="0.871651" angle="9.99238" />
+				</key>
+				<key id="1" time="100" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.752304" scale_y="0.923969" angle="11.3016" />
+				</key>
+				<key id="2" time="134" spin="-1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.788101" scale_y="0.884579" angle="11.2698" />
+				</key>
+				<key id="3" time="167" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.149" scale_x="0.813989" scale_y="0.856871" angle="11.2699" />
+				</key>
+				<key id="4" time="200" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.82952" scale_y="0.840224" angle="11.2706" />
+				</key>
+				<key id="5" time="234" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.82952" scale_y="0.840224" angle="11.2706" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="2" name="appear_3" length="100">
+			<mainline>
+				<key id="0" time="0" />
+				<key id="1" time="34">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.484362" abs_pivot_y="0.514604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.484362" abs_pivot_y="0.514604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.474988" abs_pivot_y="0.472339" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.474988" abs_pivot_y="0.472339" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.474988" abs_pivot_y="0.472339" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.474988" abs_pivot_y="0.472339" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="eyes_0">
+				<key id="0" time="34" spin="1">
+					<object folder="0" file="10" x="-37.749" y="304.849" scale_x="-1.35555" scale_y="1.35555" angle="3.50943" />
+				</key>
+				<key id="1" time="67" spin="1">
+					<object folder="0" file="9" x="-37.749" y="304.849" scale_x="-1.35555" scale_y="1.35555" angle="3.50943" />
+				</key>
+				<key id="2" time="100" spin="1">
+					<object folder="0" file="9" x="-37.749" y="304.849" scale_x="-1.35555" scale_y="1.35555" angle="3.50943" />
+				</key>
+			</timeline>
+			<timeline id="1" name="eyes_1">
+				<key id="0" time="34" spin="-1">
+					<object folder="0" file="10" x="36.25" y="304.849" scale_x="1.35148" scale_y="1.35148" angle="357.779" />
+				</key>
+				<key id="1" time="67" spin="1">
+					<object folder="0" file="9" x="36.25" y="304.849" scale_x="1.35148" scale_y="1.35148" angle="357.779" />
+				</key>
+				<key id="2" time="100" spin="1">
+					<object folder="0" file="9" x="36.25" y="304.849" scale_x="1.35148" scale_y="1.35148" angle="357.779" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="3" name="blink_1" length="300">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.486495" abs_pivot_y="0.354817" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.486495" abs_pivot_y="0.354817" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.486495" abs_pivot_y="0.328656" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.486495" abs_pivot_y="0.328656" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.308344" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.308344" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100" />
+				<key id="4" time="134" />
+				<key id="5" time="167" />
+				<key id="6" time="200" />
+				<key id="7" time="234">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.308344" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.308344" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="1" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.486245" abs_pivot_y="0.359144" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.486245" abs_pivot_y="0.359144" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.486245" abs_pivot_y="0.359144" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.486245" abs_pivot_y="0.359144" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="eyes_0">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="2" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="3" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="234" spin="1">
+					<object folder="0" file="3" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="267" spin="1">
+					<object folder="0" file="4" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+				<key id="5" time="300" spin="1">
+					<object folder="0" file="4" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="eyes_1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="2" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="3" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="234" spin="1">
+					<object folder="0" file="3" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="267" spin="1">
+					<object folder="0" file="4" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="5" time="300" spin="1">
+					<object folder="0" file="4" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="4" name="blink_2" length="467">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.490898" abs_pivot_y="0.578146" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.490898" abs_pivot_y="0.578146" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167" />
+				<key id="6" time="200" />
+				<key id="7" time="234">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.467602" abs_pivot_y="0.528137" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="1" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.467602" abs_pivot_y="0.528137" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="1" />
+				</key>
+				<key id="10" time="334">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="6" z_index="1" />
+				</key>
+				<key id="11" time="367">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="7" z_index="1" />
+				</key>
+				<key id="12" time="400">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="10" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="8" z_index="1" />
+				</key>
+				<key id="13" time="434">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="11" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="9" z_index="1" />
+				</key>
+				<key id="14" time="467">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="12" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="10" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="eyes_0">
+				<key id="0" time="0" spin="-1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="-1.13074" scale_y="1.13074" angle="346.19" />
+				</key>
+				<key id="1" time="34" spin="-1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="-1.17587" scale_y="0.978185" angle="346.19" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="-1.31603" scale_y="0.711658" angle="346.19" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="7" x="-22.799" y="392.099" scale_x="-1.31603" scale_y="0.711658" angle="346.19" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="7" x="20.25" y="392.099" scale_x="1.0782" scale_y="0.778417" angle="11.302" />
+				</key>
+				<key id="5" time="234" spin="1">
+					<object folder="0" file="6" x="-22.799" y="392.099" scale_x="1.17587" scale_y="-0.978185" angle="166.19" />
+				</key>
+				<key id="6" time="267" spin="1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="1.0673" scale_y="-1.26169" angle="166.19" />
+				</key>
+				<key id="7" time="300" spin="1">
+					<object folder="0" file="5" x="-22.799" y="392.049" scale_x="1.09424" scale_y="-1.20348" angle="166.223" />
+				</key>
+				<key id="8" time="334" spin="1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="1.11403" scale_y="-1.16258" angle="166.223" />
+				</key>
+				<key id="9" time="367" spin="-1">
+					<object folder="0" file="5" x="-22.799" y="392.049" scale_x="1.12591" scale_y="-1.13806" angle="166.223" />
+				</key>
+				<key id="10" time="400" spin="-1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="1.13074" scale_y="-1.13074" angle="166.19" />
+				</key>
+				<key id="11" time="434" spin="1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="1.13074" scale_y="-1.13074" angle="166.19" />
+				</key>
+				<key id="12" time="467" spin="1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="1.13074" scale_y="-1.13074" angle="166.19" />
+				</key>
+			</timeline>
+			<timeline id="1" name="eyes_1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.835211" scale_y="0.835211" angle="11.3017" />
+				</key>
+				<key id="1" time="34" spin="-1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.780532" scale_y="0.871651" angle="9.99238" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.84766" scale_y="0.799188" angle="11.3016" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="1.02539" scale_y="0.546609" angle="11.3016" />
+				</key>
+				<key id="4" time="267" spin="-1">
+					<object folder="0" file="6" x="20.25" y="392.099" scale_x="0.780532" scale_y="0.871651" angle="9.99238" />
+				</key>
+				<key id="5" time="300" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.752304" scale_y="0.923969" angle="11.3016" />
+				</key>
+				<key id="6" time="334" spin="-1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.788101" scale_y="0.884579" angle="11.2698" />
+				</key>
+				<key id="7" time="367" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.149" scale_x="0.813989" scale_y="0.856871" angle="11.2699" />
+				</key>
+				<key id="8" time="400" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.82952" scale_y="0.840224" angle="11.2706" />
+				</key>
+				<key id="9" time="434" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.835211" scale_y="0.835211" angle="11.3017" />
+				</key>
+				<key id="10" time="467" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.835211" scale_y="0.835211" angle="11.3017" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="5" name="blink_3" length="267">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.473284" abs_pivot_y="0.479181" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.473284" abs_pivot_y="0.479181" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.474988" abs_pivot_y="0.472339" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.474988" abs_pivot_y="0.472339" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.484362" abs_pivot_y="0.514604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.484362" abs_pivot_y="0.514604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100" />
+				<key id="4" time="134" />
+				<key id="5" time="167" />
+				<key id="6" time="200">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.484362" abs_pivot_y="0.514604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.484362" abs_pivot_y="0.514604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="1" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.474988" abs_pivot_y="0.472339" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.474988" abs_pivot_y="0.472339" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="1" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.474988" abs_pivot_y="0.472339" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.474988" abs_pivot_y="0.472339" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="eyes_0">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="8" x="-37.749" y="304.849" scale_x="-1.35555" scale_y="1.35555" angle="3.50943" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="9" x="-37.749" y="304.849" scale_x="-1.35555" scale_y="1.35555" angle="3.50943" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="10" x="-37.749" y="304.849" scale_x="-1.35555" scale_y="1.35555" angle="3.50943" />
+				</key>
+				<key id="3" time="200" spin="1">
+					<object folder="0" file="10" x="-37.749" y="304.849" scale_x="-1.35555" scale_y="1.35555" angle="3.50943" />
+				</key>
+				<key id="4" time="234" spin="1">
+					<object folder="0" file="9" x="-37.749" y="304.849" scale_x="-1.35555" scale_y="1.35555" angle="3.50943" />
+				</key>
+				<key id="5" time="267" spin="1">
+					<object folder="0" file="9" x="-37.749" y="304.849" scale_x="-1.35555" scale_y="1.35555" angle="3.50943" />
+				</key>
+			</timeline>
+			<timeline id="1" name="eyes_1">
+				<key id="0" time="0" spin="-1">
+					<object folder="0" file="8" x="36.25" y="304.849" scale_x="1.35148" scale_y="1.35148" angle="357.779" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="9" x="36.25" y="304.849" scale_x="1.35148" scale_y="1.35148" angle="357.779" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="10" x="36.25" y="304.849" scale_x="1.35148" scale_y="1.35148" angle="357.779" />
+				</key>
+				<key id="3" time="200" spin="1">
+					<object folder="0" file="10" x="36.25" y="304.849" scale_x="1.35148" scale_y="1.35148" angle="357.779" />
+				</key>
+				<key id="4" time="234" spin="1">
+					<object folder="0" file="9" x="36.25" y="304.849" scale_x="1.35148" scale_y="1.35148" angle="357.779" />
+				</key>
+				<key id="5" time="267" spin="1">
+					<object folder="0" file="9" x="36.25" y="304.849" scale_x="1.35148" scale_y="1.35148" angle="357.779" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="6" name="disappear_1" length="134">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.380813" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.380813" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.486495" abs_pivot_y="0.354817" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.486495" abs_pivot_y="0.354817" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.486495" abs_pivot_y="0.328656" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.486495" abs_pivot_y="0.328656" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.308344" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.308344" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.308344" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.308344" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="eyes_0">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="2" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="3" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="3" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="eyes_1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="2" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="3" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="3" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="7" name="disappear_2" length="200">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.490898" abs_pivot_y="0.578146" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.490898" abs_pivot_y="0.578146" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167" />
+				<key id="6" time="200" />
+			</mainline>
+			<timeline id="0" name="eyes_0">
+				<key id="0" time="0" spin="-1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="-1.13074" scale_y="1.13074" angle="346.19" />
+				</key>
+				<key id="1" time="34" spin="-1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="-1.17587" scale_y="0.978185" angle="346.19" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="-1.31603" scale_y="0.711658" angle="346.19" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="7" x="-22.799" y="392.099" scale_x="-1.31603" scale_y="0.711658" angle="346.19" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="7" x="20.25" y="392.099" scale_x="1.0782" scale_y="0.778417" angle="11.302" />
+				</key>
+			</timeline>
+			<timeline id="1" name="eyes_1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.835211" scale_y="0.835211" angle="11.3017" />
+				</key>
+				<key id="1" time="34" spin="-1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.780532" scale_y="0.871651" angle="9.99238" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.84766" scale_y="0.799188" angle="11.3016" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="1.02539" scale_y="0.546609" angle="11.3016" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="8" name="disappear_3" length="134">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.473284" abs_pivot_y="0.479181" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.473284" abs_pivot_y="0.479181" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.474988" abs_pivot_y="0.472339" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.474988" abs_pivot_y="0.472339" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.484362" abs_pivot_y="0.514604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.484362" abs_pivot_y="0.514604" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100" />
+				<key id="4" time="134" />
+			</mainline>
+			<timeline id="0" name="eyes_0">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="8" x="-37.749" y="304.849" scale_x="-1.35555" scale_y="1.35555" angle="3.50943" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="9" x="-37.749" y="304.849" scale_x="-1.35555" scale_y="1.35555" angle="3.50943" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="10" x="-37.749" y="304.849" scale_x="-1.35555" scale_y="1.35555" angle="3.50943" />
+				</key>
+			</timeline>
+			<timeline id="1" name="eyes_1">
+				<key id="0" time="0" spin="-1">
+					<object folder="0" file="8" x="36.25" y="304.849" scale_x="1.35148" scale_y="1.35148" angle="357.779" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="9" x="36.25" y="304.849" scale_x="1.35148" scale_y="1.35148" angle="357.779" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="10" x="36.25" y="304.849" scale_x="1.35148" scale_y="1.35148" angle="357.779" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="9" name="idle_1" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.380813" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.380813" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.380813" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.380813" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.380813" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.485495" abs_pivot_y="0.380813" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="eyes_0">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="-61.949" y="116.049" scale_x="-1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="eyes_1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="65.25" y="116.049" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="10" name="idle_2" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.480613" abs_pivot_y="0.486469" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="eyes_0">
+				<key id="0" time="0" spin="-1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="-1.13074" scale_y="1.13074" angle="346.19" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="-1.13074" scale_y="1.13074" angle="346.19" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="5" x="-22.799" y="392.099" scale_x="-1.13074" scale_y="1.13074" angle="346.19" />
+				</key>
+			</timeline>
+			<timeline id="1" name="eyes_1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.835211" scale_y="0.835211" angle="11.3017" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.835211" scale_y="0.835211" angle="11.3017" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="5" x="20.25" y="392.099" scale_x="0.835211" scale_y="0.835211" angle="11.3017" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="11" name="idle_3" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.473284" abs_pivot_y="0.479181" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.473284" abs_pivot_y="0.479181" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.473284" abs_pivot_y="0.479181" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.473284" abs_pivot_y="0.479181" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.473284" abs_pivot_y="0.479181" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+					<object_ref id="1" name="eyes" abs_x="0" abs_y="0" abs_pivot_x="0.473284" abs_pivot_y="0.479181" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="eyes_0">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="8" x="-37.749" y="304.849" scale_x="-1.35555" scale_y="1.35555" angle="3.50943" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="8" x="-37.749" y="304.849" scale_x="-1.35555" scale_y="1.35555" angle="3.50943" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="8" x="-37.749" y="304.849" scale_x="-1.35555" scale_y="1.35555" angle="3.50943" />
+				</key>
+			</timeline>
+			<timeline id="1" name="eyes_1">
+				<key id="0" time="0" spin="-1">
+					<object folder="0" file="8" x="36.25" y="304.849" scale_x="1.35148" scale_y="1.35148" angle="357.779" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="8" x="36.25" y="304.849" scale_x="1.35148" scale_y="1.35148" angle="357.779" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="8" x="36.25" y="304.849" scale_x="1.35148" scale_y="1.35148" angle="357.779" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

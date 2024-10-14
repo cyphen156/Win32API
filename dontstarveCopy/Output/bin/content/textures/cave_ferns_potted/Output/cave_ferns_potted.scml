@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="pot">
+		<file id="0" name="pot/pot-0.png" width="120" height="96" pivot_x="0.466662" pivot_y="0.553391" />
+		<file id="1" name="pot/pot-1.png" width="136" height="28" pivot_x="0.375548" pivot_y="-0.702643" />
+	</folder>
+	<folder id="1" name="ferns_potted01">
+		<file id="0" name="ferns_potted01/ferns_potted01-0.png" width="184" height="152" pivot_x="0.524997" pivot_y="0.115464" />
+		<file id="1" name="ferns_potted01/ferns_potted01-1.png" width="212" height="204" pivot_x="0.450705" pivot_y="0.312135" />
+		<file id="2" name="ferns_potted01/ferns_potted01-2.png" width="140" height="136" pivot_x="0.470175" pivot_y="0.0968787" />
+		<file id="3" name="ferns_potted01/ferns_potted01-3.png" width="204" height="164" pivot_x="0.400855" pivot_y="0.167534" />
+		<file id="4" name="ferns_potted01/ferns_potted01-4.png" width="200" height="160" pivot_x="0.499997" pivot_y="0.0976594" />
+		<file id="5" name="ferns_potted01/ferns_potted01-5.png" width="172" height="128" pivot_x="0.475869" pivot_y="0.157426" />
+		<file id="6" name="ferns_potted01/ferns_potted01-6.png" width="116" height="176" pivot_x="0.51853" pivot_y="0.123298" />
+		<file id="7" name="ferns_potted01/ferns_potted01-7.png" width="232" height="144" pivot_x="0.450213" pivot_y="0.140455" />
+		<file id="8" name="ferns_potted01/ferns_potted01-8.png" width="192" height="132" pivot_x="0.499867" pivot_y="0.19489" />
+		<file id="9" name="ferns_potted01/ferns_potted01-9.png" width="144" height="132" pivot_x="0.468052" pivot_y="0.11989" />
+	</folder>
+	<entity id="0" name="ferns_potted">
+		<animation id="0" name="f1" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="3" />
+					<object_ref id="1" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.499997" abs_pivot_y="0.0976594" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="3" />
+					<object_ref id="1" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.499997" abs_pivot_y="0.0976594" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="pot_0">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="ferns_potted01">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="4" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="4" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="pot_1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="f10" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="3" />
+					<object_ref id="1" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.468052" abs_pivot_y="0.11989" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="3" />
+					<object_ref id="1" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.468052" abs_pivot_y="0.11989" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="pot_0">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="ferns_potted01">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="9" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="9" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="pot_1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="2" name="f2" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.450705" abs_pivot_y="0.312135" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="3" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.450705" abs_pivot_y="0.312135" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="3" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="ferns_potted01">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="1" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="1" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="pot_0">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="pot_1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="3" name="f3" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="3" />
+					<object_ref id="1" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.470175" abs_pivot_y="0.0968787" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="3" />
+					<object_ref id="1" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.470175" abs_pivot_y="0.0968787" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="pot_0">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="ferns_potted01">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="2" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="2" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="pot_1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="4" name="f4" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.400855" abs_pivot_y="0.167534" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="3" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.400855" abs_pivot_y="0.167534" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="3" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="ferns_potted01">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="3" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="3" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="pot_0">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="pot_1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="5" name="f5" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="3" />
+					<object_ref id="1" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.524997" abs_pivot_y="0.115464" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="3" />
+					<object_ref id="1" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.524997" abs_pivot_y="0.115464" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="pot_0">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="ferns_potted01">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="0" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="pot_1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="6" name="f6" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="3" />
+					<object_ref id="1" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.475869" abs_pivot_y="0.157426" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="3" />
+					<object_ref id="1" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.475869" abs_pivot_y="0.157426" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="pot_0">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="ferns_potted01">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="5" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="5" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="pot_1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="7" name="f7" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="3" />
+					<object_ref id="1" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.51853" abs_pivot_y="0.123298" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="3" />
+					<object_ref id="1" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.51853" abs_pivot_y="0.123298" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="pot_0">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="ferns_potted01">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="6" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="6" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="pot_1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="8" name="f8" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="3" />
+					<object_ref id="1" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.450213" abs_pivot_y="0.140455" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="3" />
+					<object_ref id="1" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.450213" abs_pivot_y="0.140455" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="pot_0">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="ferns_potted01">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="7" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="7" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="pot_1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="9" name="f9" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.499867" abs_pivot_y="0.19489" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="3" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="ferns_potted01" abs_x="0" abs_y="0" abs_pivot_x="0.499867" abs_pivot_y="0.19489" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="3" />
+					<object_ref id="1" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.466662" abs_pivot_y="0.553391" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="2" />
+					<object_ref id="2" name="pot" abs_x="0" abs_y="0" abs_pivot_x="0.375548" abs_pivot_y="-0.702643" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="ferns_potted01">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="8" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="8" x="-2.199" y="62.149" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="pot_0">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="pot_1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="-4.399" y="29.549" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

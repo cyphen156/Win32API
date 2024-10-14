@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="Symbol 1">
+		<file id="0" name="Symbol 1/Symbol 1-0.png" width="72" height="144" pivot_x="0.0833333" pivot_y="0.500003" />
+	</folder>
+	<folder id="1" name="Symbol 1 copy">
+		<file id="0" name="Symbol 1 copy/Symbol 1 copy-0.png" width="72" height="144" pivot_x="0.0833333" pivot_y="0.500003" />
+		<file id="1" name="Symbol 1 copy/Symbol 1 copy-1.png" width="80" height="148" pivot_x="0.131869" pivot_y="0.490206" />
+	</folder>
+	<entity id="0" name="scroll_arrow">
+		<animation id="0" name="idle" length="84">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="Symbol 1" abs_x="0" abs_y="0" abs_pivot_x="0.0833333" abs_pivot_y="0.500003" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="84">
+					<object_ref id="0" name="Symbol 1" abs_x="0" abs_y="0" abs_pivot_x="0.0833333" abs_pivot_y="0.500003" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="Symbol 1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-17.999" y="-2" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="84" spin="1">
+					<object folder="0" file="0" x="-17.999" y="-2" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="over" length="84">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="Symbol 1 copy" abs_x="0" abs_y="0" abs_pivot_x="0.131869" abs_pivot_y="0.490206" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="84">
+					<object_ref id="0" name="Symbol 1 copy" abs_x="0" abs_y="0" abs_pivot_x="0.131869" abs_pivot_y="0.490206" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="Symbol 1 copy">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="1" x="-18.899" y="-2" scale_x="1.03" scale_y="1.03" angle="0" />
+				</key>
+				<key id="1" time="84" spin="1">
+					<object folder="1" file="1" x="-18.899" y="-2" scale_x="1.03" scale_y="1.03" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

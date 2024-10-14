@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="rock1_pieces">
+		<file id="0" name="rock1_pieces/rock1_pieces-0.png" width="980" height="676" pivot_x="0.512448" pivot_y="0.13824" />
+		<file id="1" name="rock1_pieces/rock1_pieces-1.png" width="656" height="860" pivot_x="0.502133" pivot_y="0.10628" />
+		<file id="2" name="rock1_pieces/rock1_pieces-2.png" width="448" height="380" pivot_x="0.523157" pivot_y="0.469672" />
+		<file id="3" name="rock1_pieces/rock1_pieces-3.png" width="668" height="1592" pivot_x="0.526496" pivot_y="0.163128" />
+		<file id="4" name="rock1_pieces/rock1_pieces-4.png" width="548" height="1020" pivot_x="0.529652" pivot_y="0.136496" />
+	</folder>
+	<entity id="0" name="pillar_stalactite">
+		<animation id="0" name="idle" length="100">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="rock1_pieces" abs_x="0" abs_y="0" abs_pivot_x="0.526496" abs_pivot_y="0.163128" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="rock1_pieces" abs_x="0" abs_y="0" abs_pivot_x="0.526496" abs_pivot_y="0.163128" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="rock1_pieces" abs_x="0" abs_y="0" abs_pivot_x="0.526496" abs_pivot_y="0.163128" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="rock1_pieces" abs_x="0" abs_y="0" abs_pivot_x="0.526496" abs_pivot_y="0.163128" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="rock1_pieces">
+				<key id="0" time="0" spin="-1">
+					<object folder="0" file="3" x="-24.999" y="2303.45" scale_x="1.24037" scale_y="1.10946" angle="180.25" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="3" x="-24.999" y="2303.45" scale_x="1.24037" scale_y="1.10946" angle="180.25" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="3" x="-24.999" y="2303.45" scale_x="1.24037" scale_y="1.10946" angle="180.25" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="3" x="-24.999" y="2303.45" scale_x="1.24037" scale_y="1.10946" angle="180.25" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

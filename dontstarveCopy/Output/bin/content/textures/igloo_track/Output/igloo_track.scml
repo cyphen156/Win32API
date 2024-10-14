@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="Symbol 1">
+		<file id="0" name="Symbol 1/Symbol 1-0.png" width="840" height="820" pivot_x="0.50744" pivot_y="0.469513" />
+	</folder>
+	<entity id="0" name="igloo_track">
+		<animation id="0" name="idle" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="Symbol 1" abs_x="0" abs_y="0" abs_pivot_x="0.50744" abs_pivot_y="0.469513" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="Symbol 1" abs_x="0" abs_y="0" abs_pivot_x="0.50744" abs_pivot_y="0.469513" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="Symbol 1">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-0.299" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-0.299" y="-0" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

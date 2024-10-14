@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="teleport_pad01">
+		<file id="0" name="teleport_pad01/teleport_pad01-0.png" width="640" height="624" pivot_x="0.503086" pivot_y="0.501082" />
+	</folder>
+	<entity id="0" name="teleport_pad">
+		<animation id="0" name="idle" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="teleport_pad01" abs_x="0" abs_y="0" abs_pivot_x="0.503086" abs_pivot_y="0.501082" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="teleport_pad01" abs_x="0" abs_y="0" abs_pivot_x="0.503086" abs_pivot_y="0.501082" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="teleport_pad01" abs_x="0" abs_y="0" abs_pivot_x="0.503086" abs_pivot_y="0.501082" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="teleport_pad01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-0.1" y="0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-0.1" y="0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="-0.1" y="0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="place" length="267">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="teleport_pad01" abs_x="0" abs_y="0" abs_pivot_x="0.503086" abs_pivot_y="0.501082" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="teleport_pad01" abs_x="0" abs_y="0" abs_pivot_x="0.503086" abs_pivot_y="0.501082" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="teleport_pad01" abs_x="0" abs_y="0" abs_pivot_x="0.503086" abs_pivot_y="0.501082" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="teleport_pad01" abs_x="0" abs_y="0" abs_pivot_x="0.503086" abs_pivot_y="0.501082" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="teleport_pad01" abs_x="0" abs_y="0" abs_pivot_x="0.503086" abs_pivot_y="0.501082" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="teleport_pad01" abs_x="0" abs_y="0" abs_pivot_x="0.503086" abs_pivot_y="0.501082" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="teleport_pad01" abs_x="0" abs_y="0" abs_pivot_x="0.503086" abs_pivot_y="0.501082" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="1" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="teleport_pad01" abs_x="0" abs_y="0" abs_pivot_x="0.503086" abs_pivot_y="0.501082" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="1" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="teleport_pad01" abs_x="0" abs_y="0" abs_pivot_x="0.503086" abs_pivot_y="0.501082" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="teleport_pad01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-0.1" y="0.4" scale_x="0.19046" scale_y="0.19046" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-0.1" y="0.4" scale_x="0.399399" scale_y="0.399399" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="-0.15" y="0.45" scale_x="0.608353" scale_y="0.608353" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="-0.15" y="0.45" scale_x="0.817307" scale_y="0.817307" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="-0.1" y="0.4" scale_x="1.02628" scale_y="1.02628" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="0" x="0" y="0.3" scale_x="1.01166" scale_y="1.01166" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="0" x="0" y="0.25" scale_x="1.0029" scale_y="1.0029" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="0" file="0" x="-0.1" y="0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="0" file="0" x="-0.1" y="0.4" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

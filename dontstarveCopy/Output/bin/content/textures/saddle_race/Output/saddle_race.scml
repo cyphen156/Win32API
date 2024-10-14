@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="swap_saddle">
+		<file id="0" name="swap_saddle/swap_saddle-0.png" width="428" height="328" pivot_x="0.662325" pivot_y="0.0738567" />
+		<file id="1" name="swap_saddle/swap_saddle-1.png" width="420" height="344" pivot_x="0.570298" pivot_y="0.131032" />
+		<file id="2" name="swap_saddle/swap_saddle-2.png" width="380" height="412" pivot_x="0.599013" pivot_y="0.26074" />
+		<file id="3" name="swap_saddle/swap_saddle-3.png" width="500" height="352" pivot_x="0.53215" pivot_y="0.248011" />
+	</folder>
+	<entity id="0" name="saddlerace">
+		<animation id="0" name="idle" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="swap_saddle" abs_x="0" abs_y="0" abs_pivot_x="0.53215" abs_pivot_y="0.248011" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="swap_saddle" abs_x="0" abs_y="0" abs_pivot_x="0.53215" abs_pivot_y="0.248011" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="swap_saddle">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="3" x="21" y="-4.7" scale_x="0.705292" scale_y="0.705292" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="3" x="21" y="-4.7" scale_x="0.705292" scale_y="0.705292" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

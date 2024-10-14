@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="spatbomb01">
+		<file id="0" name="spatbomb01/spatbomb01-0.png" width="148" height="152" pivot_x="0.448142" pivot_y="0.455263" />
+	</folder>
+	<entity id="0" name="spat_bomb">
+		<animation id="0" name="spin_loop" length="300">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="spatbomb01" abs_x="0" abs_y="0" abs_pivot_x="0.448142" abs_pivot_y="0.455263" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="spatbomb01" abs_x="0" abs_y="0" abs_pivot_x="0.448142" abs_pivot_y="0.455263" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="spatbomb01" abs_x="0" abs_y="0" abs_pivot_x="0.448142" abs_pivot_y="0.455263" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="spatbomb01" abs_x="0" abs_y="0" abs_pivot_x="0.448142" abs_pivot_y="0.455263" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="spatbomb01" abs_x="0" abs_y="0" abs_pivot_x="0.448142" abs_pivot_y="0.455263" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="spatbomb01" abs_x="0" abs_y="0" abs_pivot_x="0.448142" abs_pivot_y="0.455263" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="spatbomb01" abs_x="0" abs_y="0" abs_pivot_x="0.448142" abs_pivot_y="0.455263" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="1" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="spatbomb01" abs_x="0" abs_y="0" abs_pivot_x="0.448142" abs_pivot_y="0.455263" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="1" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="spatbomb01" abs_x="0" abs_y="0" abs_pivot_x="0.448142" abs_pivot_y="0.455263" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="spatbomb01" abs_x="0" abs_y="0" abs_pivot_x="0.448142" abs_pivot_y="0.455263" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="spatbomb01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-0.45" y="44" scale_x="0.809982" scale_y="0.809982" angle="0" />
+				</key>
+				<key id="1" time="34" spin="-1">
+					<object folder="0" file="0" x="-0.35" y="44.05" scale_x="0.809709" scale_y="0.809709" angle="275.531" />
+				</key>
+				<key id="2" time="67" spin="-1">
+					<object folder="0" file="0" x="-0.35" y="43.9" scale_x="0.809961" scale_y="0.809961" angle="191.248" />
+				</key>
+				<key id="3" time="100" spin="-1">
+					<object folder="0" file="0" x="-0.5" y="43.9" scale_x="0.809222" scale_y="0.809222" angle="106.795" />
+				</key>
+				<key id="4" time="134" spin="-1">
+					<object folder="0" file="0" x="-0.55" y="44" scale_x="0.809958" scale_y="0.809958" angle="22.4996" />
+				</key>
+				<key id="5" time="167" spin="-1">
+					<object folder="0" file="0" x="-0.35" y="44.05" scale_x="0.808855" scale_y="0.808855" angle="298.072" />
+				</key>
+				<key id="6" time="200" spin="-1">
+					<object folder="0" file="0" x="-0.3" y="43.95" scale_x="0.809947" scale_y="0.809947" angle="213.75" />
+				</key>
+				<key id="7" time="234" spin="-1">
+					<object folder="0" file="0" x="-0.45" y="43.85" scale_x="0.80865" scale_y="0.80865" angle="129.357" />
+				</key>
+				<key id="8" time="267" spin="-1">
+					<object folder="0" file="0" x="-0.45" y="44" scale_x="0.809996" scale_y="0.809996" angle="45" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="0" file="0" x="-0.45" y="44" scale_x="0.809996" scale_y="0.809996" angle="45" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

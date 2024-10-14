@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="gunpowder01">
+		<file id="0" name="gunpowder01/gunpowder01-0.png" width="292" height="160" pivot_x="0.489296" pivot_y="0.277191" />
+		<file id="1" name="gunpowder01/gunpowder01-1.png" width="340" height="248" pivot_x="0.36794" pivot_y="0.178833" />
+		<file id="2" name="gunpowder01/gunpowder01-2.png" width="80" height="100" pivot_x="-1.62719" pivot_y="-0.52899" />
+		<file id="3" name="gunpowder01/gunpowder01-3.png" width="84" height="64" pivot_x="-1.54851" pivot_y="-0.821469" />
+	</folder>
+	<entity id="0" name="gunpowder">
+		<animation id="0" name="idle" length="100">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="gunpowder01" abs_x="0" abs_y="0" abs_pivot_x="0.489296" abs_pivot_y="0.277191" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="gunpowder01" abs_x="0" abs_y="0" abs_pivot_x="0.489296" abs_pivot_y="0.277191" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="gunpowder01" abs_x="0" abs_y="0" abs_pivot_x="0.489296" abs_pivot_y="0.277191" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="gunpowder01" abs_x="0" abs_y="0" abs_pivot_x="0.489296" abs_pivot_y="0.277191" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="gunpowder01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="0.3" y="-7.7" scale_x="0.859955" scale_y="0.859955" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="0.3" y="-7.7" scale_x="0.859955" scale_y="0.859955" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="0.3" y="-7.7" scale_x="0.859955" scale_y="0.859955" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="0.3" y="-7.7" scale_x="0.859955" scale_y="0.859955" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="maxwell_torch01">
+		<file id="0" name="maxwell_torch01/maxwell_torch01-0.png" width="268" height="344" pivot_x="0.440297" pivot_y="0.182124" />
+	</folder>
+	<entity id="0" name="maxwell_torch">
+		<animation id="0" name="hit" length="367">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="maxwell_torch01" abs_x="0" abs_y="0" abs_pivot_x="0.440297" abs_pivot_y="0.182124" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="maxwell_torch01" abs_x="0" abs_y="0" abs_pivot_x="0.440297" abs_pivot_y="0.182124" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="maxwell_torch01" abs_x="0" abs_y="0" abs_pivot_x="0.440297" abs_pivot_y="0.182124" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="maxwell_torch01" abs_x="0" abs_y="0" abs_pivot_x="0.440297" abs_pivot_y="0.182124" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="maxwell_torch01" abs_x="0" abs_y="0" abs_pivot_x="0.440297" abs_pivot_y="0.182124" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="2" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="maxwell_torch01" abs_x="0" abs_y="0" abs_pivot_x="0.440297" abs_pivot_y="0.182124" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="2" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="maxwell_torch01" abs_x="0" abs_y="0" abs_pivot_x="0.440297" abs_pivot_y="0.182124" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="2" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="maxwell_torch01" abs_x="0" abs_y="0" abs_pivot_x="0.440297" abs_pivot_y="0.182124" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="2" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="maxwell_torch01" abs_x="0" abs_y="0" abs_pivot_x="0.440297" abs_pivot_y="0.182124" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="2" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="maxwell_torch01" abs_x="0" abs_y="0" abs_pivot_x="0.440297" abs_pivot_y="0.182124" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="2" />
+				</key>
+				<key id="10" time="334">
+					<object_ref id="0" name="maxwell_torch01" abs_x="0" abs_y="0" abs_pivot_x="0.440297" abs_pivot_y="0.182124" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="10" z_index="2" />
+				</key>
+				<key id="11" time="367">
+					<object_ref id="0" name="maxwell_torch01" abs_x="0" abs_y="0" abs_pivot_x="0.440297" abs_pivot_y="0.182124" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="11" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="maxwell_torch01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-0.649" y="-0.3" scale_x="1" scale_y="1.00018" angle="0.549408" />
+				</key>
+				<key id="1" time="34" spin="-1">
+					<object folder="0" file="0" x="-0.099" y="-0.3" scale_x="1" scale_y="1.0005" angle="359.735" />
+				</key>
+				<key id="2" time="67" spin="-1">
+					<object folder="0" file="0" x="0.45" y="-0.3" scale_x="1" scale_y="1.00083" angle="358.833" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="-0.499" y="-0.3" scale_x="1" scale_y="1.00129" angle="0.256269" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="-1.449" y="-0.3" scale_x="1" scale_y="1.00179" angle="1.715" />
+				</key>
+				<key id="5" time="167" spin="-1">
+					<object folder="0" file="0" x="-1.099" y="-0.3" scale_x="1" scale_y="1.00112" angle="1.14169" />
+				</key>
+				<key id="6" time="200" spin="-1">
+					<object folder="0" file="0" x="-0.799" y="-0.3" scale_x="1" scale_y="1.0007" angle="0.753178" />
+				</key>
+				<key id="7" time="234" spin="-1">
+					<object folder="0" file="0" x="-0.599" y="-0.3" scale_x="1" scale_y="1.00041" angle="0.388462" />
+				</key>
+				<key id="8" time="267" spin="-1">
+					<object folder="0" file="0" x="-0.449" y="-0.3" scale_x="1" scale_y="1.00018" angle="0.141169" />
+				</key>
+				<key id="9" time="300" spin="-1">
+					<object folder="0" file="0" x="-0.349" y="-0.3" scale_x="1" scale_y="1.00003" angle="0.0118022" />
+				</key>
+				<key id="10" time="334" spin="-1">
+					<object folder="0" file="0" x="-0.299" y="-0.3" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="0" file="0" x="-0.299" y="-0.3" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="idle" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="maxwell_torch01" abs_x="0" abs_y="0" abs_pivot_x="0.440297" abs_pivot_y="0.182124" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="maxwell_torch01" abs_x="0" abs_y="0" abs_pivot_x="0.440297" abs_pivot_y="0.182124" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="maxwell_torch01" abs_x="0" abs_y="0" abs_pivot_x="0.440297" abs_pivot_y="0.182124" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="maxwell_torch01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-0.299" y="-0.3" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-0.299" y="-0.3" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="-0.299" y="-0.3" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

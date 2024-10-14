@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="purpleamulet">
+		<file id="0" name="purpleamulet/purpleamulet-0.png" width="76" height="100" pivot_x="0.499664" pivot_y="0.153005" />
+		<file id="1" name="purpleamulet/purpleamulet-1.png" width="84" height="104" pivot_x="0.548506" pivot_y="0.151928" />
+		<file id="2" name="purpleamulet/purpleamulet-2.png" width="88" height="104" pivot_x="0.446585" pivot_y="0.154572" />
+		<file id="3" name="purpleamulet/purpleamulet-3.png" width="84" height="108" pivot_x="0.310113" pivot_y="0.130329" />
+		<file id="4" name="purpleamulet/purpleamulet-4.png" width="68" height="116" pivot_x="0.0908088" pivot_y="0.241168" />
+		<file id="5" name="purpleamulet/purpleamulet-5.png" width="96" height="96" pivot_x="0.39687" pivot_y="0.0687604" />
+		<file id="6" name="purpleamulet/purpleamulet-6.png" width="76" height="40" pivot_x="0.490125" pivot_y="-1.20247" />
+		<file id="7" name="purpleamulet/purpleamulet-7.png" width="76" height="44" pivot_x="0.662822" pivot_y="-1.06986" />
+		<file id="8" name="purpleamulet/purpleamulet-8.png" width="76" height="48" pivot_x="0.315454" pivot_y="-0.827063" />
+		<file id="9" name="purpleamulet/purpleamulet-14.png" width="76" height="72" pivot_x="0.497362" pivot_y="0.498618" />
+		<file id="10" name="purpleamulet/purpleamulet-15.png" width="32" height="80" pivot_x="0.460922" pivot_y="0.137506" />
+	</folder>
+	<folder id="1" name="orangeamulet">
+		<file id="0" name="orangeamulet/orangeamulet-0.png" width="84" height="104" pivot_x="0.505946" pivot_y="0.189909" />
+		<file id="1" name="orangeamulet/orangeamulet-1.png" width="84" height="108" pivot_x="0.549399" pivot_y="0.189356" />
+		<file id="2" name="orangeamulet/orangeamulet-2.png" width="84" height="108" pivot_x="0.425292" pivot_y="0.180792" />
+		<file id="3" name="orangeamulet/orangeamulet-3.png" width="84" height="116" pivot_x="0.311304" pivot_y="0.19397" />
+		<file id="4" name="orangeamulet/orangeamulet-4.png" width="68" height="124" pivot_x="0.0764706" pivot_y="0.28327" />
+		<file id="5" name="orangeamulet/orangeamulet-5.png" width="96" height="100" pivot_x="0.407026" pivot_y="0.112505" />
+		<file id="6" name="orangeamulet/orangeamulet-6.png" width="76" height="40" pivot_x="0.490125" pivot_y="-1.20247" />
+		<file id="7" name="orangeamulet/orangeamulet-7.png" width="76" height="44" pivot_x="0.662822" pivot_y="-1.06986" />
+		<file id="8" name="orangeamulet/orangeamulet-8.png" width="76" height="48" pivot_x="0.315454" pivot_y="-0.827063" />
+		<file id="9" name="orangeamulet/orangeamulet-14.png" width="84" height="76" pivot_x="0.505946" pivot_y="0.58652" />
+		<file id="10" name="orangeamulet/orangeamulet-15.png" width="32" height="80" pivot_x="0.460922" pivot_y="0.137506" />
+	</folder>
+	<folder id="2" name="yellowamulet">
+		<file id="0" name="yellowamulet/yellowamulet-0.png" width="76" height="100" pivot_x="0.499664" pivot_y="0.153005" />
+		<file id="1" name="yellowamulet/yellowamulet-1.png" width="84" height="104" pivot_x="0.548506" pivot_y="0.151928" />
+		<file id="2" name="yellowamulet/yellowamulet-2.png" width="88" height="104" pivot_x="0.446585" pivot_y="0.154572" />
+		<file id="3" name="yellowamulet/yellowamulet-3.png" width="84" height="108" pivot_x="0.310113" pivot_y="0.130329" />
+		<file id="4" name="yellowamulet/yellowamulet-4.png" width="68" height="116" pivot_x="0.0908088" pivot_y="0.241168" />
+		<file id="5" name="yellowamulet/yellowamulet-5.png" width="96" height="96" pivot_x="0.39687" pivot_y="0.0687604" />
+		<file id="6" name="yellowamulet/yellowamulet-6.png" width="76" height="40" pivot_x="0.490125" pivot_y="-1.20247" />
+		<file id="7" name="yellowamulet/yellowamulet-7.png" width="76" height="44" pivot_x="0.662822" pivot_y="-1.06986" />
+		<file id="8" name="yellowamulet/yellowamulet-8.png" width="76" height="48" pivot_x="0.315454" pivot_y="-0.827063" />
+		<file id="9" name="yellowamulet/yellowamulet-14.png" width="76" height="72" pivot_x="0.497362" pivot_y="0.498618" />
+		<file id="10" name="yellowamulet/yellowamulet-15.png" width="32" height="80" pivot_x="0.460922" pivot_y="0.137506" />
+	</folder>
+	<folder id="3" name="greenamulet">
+		<file id="0" name="greenamulet/greenamulet-0.png" width="84" height="104" pivot_x="0.508923" pivot_y="0.183418" />
+		<file id="1" name="greenamulet/greenamulet-1.png" width="84" height="104" pivot_x="0.541065" pivot_y="0.168274" />
+		<file id="2" name="greenamulet/greenamulet-2.png" width="88" height="104" pivot_x="0.452835" pivot_y="0.157697" />
+		<file id="3" name="greenamulet/greenamulet-3.png" width="88" height="112" pivot_x="0.296301" pivot_y="0.162058" />
+		<file id="4" name="greenamulet/greenamulet-4.png" width="72" height="116" pivot_x="0.123951" pivot_y="0.246341" />
+		<file id="5" name="greenamulet/greenamulet-5.png" width="100" height="96" pivot_x="0.383995" pivot_y="0.0747448" />
+		<file id="6" name="greenamulet/greenamulet-6.png" width="76" height="40" pivot_x="0.490125" pivot_y="-1.20247" />
+		<file id="7" name="greenamulet/greenamulet-7.png" width="76" height="44" pivot_x="0.662822" pivot_y="-1.06986" />
+		<file id="8" name="greenamulet/greenamulet-8.png" width="76" height="48" pivot_x="0.315454" pivot_y="-0.827063" />
+		<file id="9" name="greenamulet/greenamulet-14.png" width="84" height="84" pivot_x="0.508923" pivot_y="0.504768" />
+		<file id="10" name="greenamulet/greenamulet-15.png" width="32" height="80" pivot_x="0.460922" pivot_y="0.137506" />
+	</folder>
+	<folder id="4" name="blueamulet">
+		<file id="0" name="blueamulet/blueamulet-0.png" width="84" height="104" pivot_x="0.505946" pivot_y="0.189909" />
+		<file id="1" name="blueamulet/blueamulet-1.png" width="84" height="108" pivot_x="0.549399" pivot_y="0.189356" />
+		<file id="2" name="blueamulet/blueamulet-2.png" width="84" height="108" pivot_x="0.425292" pivot_y="0.180792" />
+		<file id="3" name="blueamulet/blueamulet-3.png" width="84" height="116" pivot_x="0.311304" pivot_y="0.19397" />
+		<file id="4" name="blueamulet/blueamulet-4.png" width="68" height="124" pivot_x="0.0764706" pivot_y="0.28327" />
+		<file id="5" name="blueamulet/blueamulet-5.png" width="96" height="100" pivot_x="0.407026" pivot_y="0.112505" />
+		<file id="6" name="blueamulet/blueamulet-6.png" width="76" height="40" pivot_x="0.490125" pivot_y="-1.20247" />
+		<file id="7" name="blueamulet/blueamulet-7.png" width="76" height="44" pivot_x="0.662822" pivot_y="-1.06986" />
+		<file id="8" name="blueamulet/blueamulet-8.png" width="76" height="48" pivot_x="0.315454" pivot_y="-0.827063" />
+		<file id="9" name="blueamulet/blueamulet-14.png" width="84" height="76" pivot_x="0.505946" pivot_y="0.58652" />
+		<file id="10" name="blueamulet/blueamulet-15.png" width="32" height="80" pivot_x="0.460922" pivot_y="0.137506" />
+	</folder>
+	<folder id="5" name="redamulet">
+		<file id="0" name="redamulet/redamulet-0.png" width="84" height="104" pivot_x="0.508923" pivot_y="0.183418" />
+		<file id="1" name="redamulet/redamulet-1.png" width="84" height="104" pivot_x="0.541065" pivot_y="0.168274" />
+		<file id="2" name="redamulet/redamulet-2.png" width="88" height="104" pivot_x="0.452835" pivot_y="0.157697" />
+		<file id="3" name="redamulet/redamulet-3.png" width="88" height="112" pivot_x="0.296301" pivot_y="0.162058" />
+		<file id="4" name="redamulet/redamulet-4.png" width="72" height="116" pivot_x="0.123951" pivot_y="0.246341" />
+		<file id="5" name="redamulet/redamulet-5.png" width="100" height="96" pivot_x="0.383995" pivot_y="0.0747448" />
+		<file id="6" name="redamulet/redamulet-6.png" width="76" height="40" pivot_x="0.490125" pivot_y="-1.20247" />
+		<file id="7" name="redamulet/redamulet-7.png" width="76" height="44" pivot_x="0.662822" pivot_y="-1.06986" />
+		<file id="8" name="redamulet/redamulet-8.png" width="76" height="48" pivot_x="0.315454" pivot_y="-0.827063" />
+		<file id="9" name="redamulet/redamulet-14.png" width="84" height="84" pivot_x="0.508923" pivot_y="0.504768" />
+		<file id="10" name="redamulet/redamulet-15.png" width="32" height="80" pivot_x="0.460922" pivot_y="0.137506" />
+	</folder>
+	<entity id="0" name="torso_amulets">
+		<animation id="0" name="blueamulet" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="blueamulet" abs_x="0" abs_y="0" abs_pivot_x="0.505946" abs_pivot_y="0.189909" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="blueamulet" abs_x="0" abs_y="0" abs_pivot_x="0.505946" abs_pivot_y="0.189909" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="blueamulet" abs_x="0" abs_y="0" abs_pivot_x="0.505946" abs_pivot_y="0.189909" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="blueamulet">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="4" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="4" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="greenamulet" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="greenamulet" abs_x="0" abs_y="0" abs_pivot_x="0.508923" abs_pivot_y="0.183418" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="greenamulet" abs_x="0" abs_y="0" abs_pivot_x="0.508923" abs_pivot_y="0.183418" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="greenamulet" abs_x="0" abs_y="0" abs_pivot_x="0.508923" abs_pivot_y="0.183418" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="greenamulet">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="3" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="3" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="2" name="orangeamulet" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="orangeamulet" abs_x="0" abs_y="0" abs_pivot_x="0.505946" abs_pivot_y="0.189909" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="orangeamulet" abs_x="0" abs_y="0" abs_pivot_x="0.505946" abs_pivot_y="0.189909" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="orangeamulet" abs_x="0" abs_y="0" abs_pivot_x="0.505946" abs_pivot_y="0.189909" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="orangeamulet">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="1" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="3" name="purpleamulet" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="purpleamulet" abs_x="0" abs_y="0" abs_pivot_x="0.499664" abs_pivot_y="0.153005" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="purpleamulet" abs_x="0" abs_y="0" abs_pivot_x="0.499664" abs_pivot_y="0.153005" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="purpleamulet" abs_x="0" abs_y="0" abs_pivot_x="0.499664" abs_pivot_y="0.153005" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="purpleamulet">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="4" name="redamulet" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="redamulet" abs_x="0" abs_y="0" abs_pivot_x="0.508923" abs_pivot_y="0.183418" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="redamulet" abs_x="0" abs_y="0" abs_pivot_x="0.508923" abs_pivot_y="0.183418" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="redamulet" abs_x="0" abs_y="0" abs_pivot_x="0.508923" abs_pivot_y="0.183418" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="redamulet">
+				<key id="0" time="0" spin="1">
+					<object folder="5" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="5" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="5" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="5" name="yellowamulet" length="67">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="yellowamulet" abs_x="0" abs_y="0" abs_pivot_x="0.499664" abs_pivot_y="0.153005" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="yellowamulet" abs_x="0" abs_y="0" abs_pivot_x="0.499664" abs_pivot_y="0.153005" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="yellowamulet" abs_x="0" abs_y="0" abs_pivot_x="0.499664" abs_pivot_y="0.153005" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="yellowamulet">
+				<key id="0" time="0" spin="1">
+					<object folder="2" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="2" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="2" file="0" x="-0.449" y="0.299" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

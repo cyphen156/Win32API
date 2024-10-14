@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="spiralfx">
+		<file id="0" name="spiralfx/spiralfx-0.png" width="1280" height="1152" pivot_x="0.468809" pivot_y="0.501888" />
+		<file id="1" name="spiralfx/spiralfx-1.png" width="1280" height="1152" pivot_x="0.468809" pivot_y="0.501888" />
+		<file id="2" name="spiralfx/spiralfx-2.png" width="1244" height="1112" pivot_x="0.467886" pivot_y="0.501933" />
+	</folder>
+	<folder id="1" name="FX halo">
+		<file id="0" name="FX halo/FX halo-0.png" width="272" height="656" pivot_x="0.462776" pivot_y="0.99112" />
+		<file id="1" name="FX halo/FX halo-1.png" width="604" height="816" pivot_x="0.500124" pivot_y="0.500368" />
+		<file id="2" name="FX halo/FX halo-2.png" width="604" height="816" pivot_x="0.500124" pivot_y="0.500368" />
+		<file id="3" name="FX halo/FX halo-3.png" width="600" height="812" pivot_x="0.500125" pivot_y="0.500369" />
+		<file id="4" name="FX halo/FX halo-4.png" width="652" height="860" pivot_x="0.500115" pivot_y="0.500349" />
+		<file id="5" name="FX halo/FX halo-6.png" width="600" height="812" pivot_x="0.500125" pivot_y="0.500369" />
+		<file id="6" name="FX halo/FX halo-7.png" width="556" height="768" pivot_x="0.500135" pivot_y="0.500391" />
+	</folder>
+	<folder id="2" name="FX copy">
+		<file id="0" name="FX copy/FX copy-0.png" width="272" height="656" pivot_x="0.462776" pivot_y="0.99112" />
+		<file id="1" name="FX copy/FX copy-1.png" width="604" height="816" pivot_x="0.500124" pivot_y="0.500368" />
+		<file id="2" name="FX copy/FX copy-2.png" width="604" height="816" pivot_x="0.500124" pivot_y="0.500368" />
+		<file id="3" name="FX copy/FX copy-3.png" width="600" height="812" pivot_x="0.500125" pivot_y="0.500369" />
+		<file id="4" name="FX copy/FX copy-4.png" width="652" height="860" pivot_x="0.500115" pivot_y="0.500349" />
+		<file id="5" name="FX copy/FX copy-6.png" width="600" height="812" pivot_x="0.500125" pivot_y="0.500369" />
+		<file id="6" name="FX copy/FX copy-7.png" width="556" height="768" pivot_x="0.500135" pivot_y="0.500391" />
+	</folder>
+	<entity id="0" name="wilsonbeefalo">
+		<animation id="0" name="anim" length="1334">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="64" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="66" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="65" />
+					<object_ref id="2" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="64" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="66" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="65" />
+					<object_ref id="2" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="64" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="66" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="2" z_index="65" />
+					<object_ref id="2" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="64" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="FX halo" abs_x="0" abs_y="0" abs_pivot_x="0.500124" abs_pivot_y="0.500368" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="0" z_index="65" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="64" />
+					<object_ref id="2" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="3" z_index="63" />
+					<object_ref id="3" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="62" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="FX halo" abs_x="0" abs_y="0" abs_pivot_x="0.500124" abs_pivot_y="0.500368" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="1" z_index="65" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="64" />
+					<object_ref id="2" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="4" z_index="63" />
+					<object_ref id="3" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="62" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="FX halo" abs_x="0" abs_y="0" abs_pivot_x="0.500124" abs_pivot_y="0.500368" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="2" z_index="65" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="64" />
+					<object_ref id="2" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="5" z_index="63" />
+					<object_ref id="3" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="62" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="FX halo" abs_x="0" abs_y="0" abs_pivot_x="0.500124" abs_pivot_y="0.500368" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="3" z_index="65" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="6" z_index="64" />
+					<object_ref id="2" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="6" z_index="63" />
+					<object_ref id="3" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="62" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="FX halo" abs_x="0" abs_y="0" abs_pivot_x="0.500124" abs_pivot_y="0.500368" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="4" z_index="65" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="7" z_index="64" />
+					<object_ref id="2" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="7" z_index="63" />
+					<object_ref id="3" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="62" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="FX halo" abs_x="0" abs_y="0" abs_pivot_x="0.500124" abs_pivot_y="0.500368" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="5" z_index="65" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="8" z_index="64" />
+					<object_ref id="2" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="8" z_index="63" />
+					<object_ref id="3" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="62" />
+				</key>
+				<key id="10" time="334">
+					<object_ref id="0" name="FX halo" abs_x="0" abs_y="0" abs_pivot_x="0.500124" abs_pivot_y="0.500368" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="6" z_index="65" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="9" z_index="64" />
+					<object_ref id="2" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="9" z_index="63" />
+					<object_ref id="3" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="10" z_index="62" />
+				</key>
+				<key id="11" time="367">
+					<object_ref id="0" name="FX halo" abs_x="0" abs_y="0" abs_pivot_x="0.500124" abs_pivot_y="0.500368" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="7" z_index="65" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="10" z_index="64" />
+					<object_ref id="2" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="10" z_index="63" />
+					<object_ref id="3" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="11" z_index="62" />
+				</key>
+				<key id="12" time="400">
+					<object_ref id="0" name="FX halo" abs_x="0" abs_y="0" abs_pivot_x="0.500124" abs_pivot_y="0.500368" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="8" z_index="20" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="11" z_index="19" />
+					<object_ref id="2" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="11" z_index="18" />
+					<object_ref id="3" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="12" z_index="17" />
+				</key>
+				<key id="13" time="434">
+					<object_ref id="0" name="FX halo" abs_x="0" abs_y="0" abs_pivot_x="0.500124" abs_pivot_y="0.500368" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="9" z_index="20" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="12" z_index="19" />
+					<object_ref id="2" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="12" z_index="18" />
+					<object_ref id="3" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="13" z_index="17" />
+				</key>
+				<key id="14" time="467">
+					<object_ref id="0" name="FX halo" abs_x="0" abs_y="0" abs_pivot_x="0.500124" abs_pivot_y="0.500368" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="10" z_index="20" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="13" z_index="19" />
+					<object_ref id="2" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="13" z_index="18" />
+					<object_ref id="3" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="14" z_index="17" />
+				</key>
+				<key id="15" time="500">
+					<object_ref id="0" name="FX halo" abs_x="0" abs_y="0" abs_pivot_x="0.500124" abs_pivot_y="0.500368" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="11" z_index="20" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="14" z_index="19" />
+					<object_ref id="2" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="14" z_index="18" />
+					<object_ref id="3" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="15" z_index="17" />
+				</key>
+				<key id="16" time="534">
+					<object_ref id="0" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.500125" abs_pivot_y="0.500369" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="16" z_index="21" />
+					<object_ref id="1" name="FX halo" abs_x="0" abs_y="0" abs_pivot_x="0.500124" abs_pivot_y="0.500368" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="12" z_index="20" />
+					<object_ref id="2" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="15" z_index="19" />
+					<object_ref id="3" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="15" z_index="18" />
+					<object_ref id="4" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="0" z_index="17" />
+				</key>
+				<key id="17" time="567">
+					<object_ref id="0" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.500115" abs_pivot_y="0.500349" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="17" z_index="21" />
+					<object_ref id="1" name="FX halo" abs_x="0" abs_y="0" abs_pivot_x="0.500124" abs_pivot_y="0.500368" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="13" z_index="20" />
+					<object_ref id="2" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="16" z_index="19" />
+					<object_ref id="3" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="16" z_index="18" />
+					<object_ref id="4" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="1" z_index="17" />
+				</key>
+				<key id="18" time="600">
+					<object_ref id="0" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.500115" abs_pivot_y="0.500349" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="18" z_index="21" />
+					<object_ref id="1" name="FX halo" abs_x="0" abs_y="0" abs_pivot_x="0.500124" abs_pivot_y="0.500368" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="14" z_index="20" />
+					<object_ref id="2" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="17" z_index="19" />
+					<object_ref id="3" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="17" z_index="18" />
+					<object_ref id="4" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="2" z_index="17" />
+				</key>
+				<key id="19" time="634">
+					<object_ref id="0" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.500125" abs_pivot_y="0.500369" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="19" z_index="21" />
+					<object_ref id="1" name="FX halo" abs_x="0" abs_y="0" abs_pivot_x="0.500124" abs_pivot_y="0.500368" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="15" z_index="20" />
+					<object_ref id="2" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="18" z_index="19" />
+					<object_ref id="3" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="18" z_index="18" />
+					<object_ref id="4" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="3" z_index="17" />
+				</key>
+				<key id="20" time="667">
+					<object_ref id="0" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="19" z_index="19" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="19" z_index="18" />
+					<object_ref id="2" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="20" z_index="17" />
+				</key>
+				<key id="21" time="700">
+					<object_ref id="0" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="20" z_index="19" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="20" z_index="18" />
+					<object_ref id="2" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="21" z_index="17" />
+				</key>
+				<key id="22" time="734">
+					<object_ref id="0" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="21" z_index="19" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="21" z_index="18" />
+					<object_ref id="2" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="22" z_index="17" />
+				</key>
+				<key id="23" time="767">
+					<object_ref id="0" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="22" z_index="19" />
+					<object_ref id="1" name="spiralfx" abs_x="0" abs_y="0" abs_pivot_x="0.468809" abs_pivot_y="0.501888" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="22" z_index="18" />
+					<object_ref id="2" name="FX copy" abs_x="0" abs_y="0" abs_pivot_x="0.462776" abs_pivot_y="0.99112" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="23" z_index="17" />
+				</key>
+				<key id="24" time="800" />
+				<key id="25" time="834" />
+				<key id="26" time="867" />
+				<key id="27" time="900" />
+				<key id="28" time="934" />
+				<key id="29" time="967" />
+				<key id="30" time="1000" />
+				<key id="31" time="1034" />
+				<key id="32" time="1067" />
+				<key id="33" time="1100" />
+				<key id="34" time="1134" />
+				<key id="35" time="1167" />
+				<key id="36" time="1201" />
+				<key id="37" time="1234" />
+				<key id="38" time="1267" />
+				<key id="39" time="1301" />
+				<key id="40" time="1334" />
+			</mainline>
+			<timeline id="0" name="FX copy_0">
+				<key id="0" time="0" spin="1">
+					<object folder="2" file="0" x="75" y="512.7" scale_x="0.0441953" scale_y="0.0437682" angle="99.3866" />
+				</key>
+				<key id="1" time="34" spin="-1">
+					<object folder="2" file="0" x="74.45" y="514.85" scale_x="0.0835299" scale_y="0.103556" angle="87.3936" />
+				</key>
+				<key id="2" time="67" spin="-1">
+					<object folder="2" file="0" x="74" y="518.45" scale_x="0.134814" scale_y="0.221762" angle="87.1329" />
+				</key>
+				<key id="3" time="100" spin="-1">
+					<object folder="2" file="0" x="73.65" y="523.55" scale_x="0.160399" scale_y="0.389698" angle="76.2377" />
+				</key>
+				<key id="4" time="134" spin="-1">
+					<object folder="2" file="0" x="73.25" y="530.15" scale_x="0.218015" scale_y="0.531474" angle="72.7518" />
+				</key>
+				<key id="5" time="167" spin="-1">
+					<object folder="2" file="0" x="73.05" y="538.05" scale_x="0.195301" scale_y="0.764428" angle="61.4943" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="2" file="0" x="72.95" y="547.6" scale_x="0.437456" scale_y="0.83106" angle="64.5043" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="2" file="0" x="73.45" y="556.9" scale_x="0.64475" scale_y="0.728628" angle="73.2623" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="2" file="0" x="74.1" y="567.7" scale_x="0.699022" scale_y="0.73994" angle="73.8161" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="2" file="0" x="74.7" y="580.05" scale_x="0.757448" scale_y="0.753603" angle="74.5666" />
+				</key>
+				<key id="10" time="334" spin="1">
+					<object folder="2" file="0" x="75.35" y="593.85" scale_x="0.628732" scale_y="0.781811" angle="80.0427" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="2" file="0" x="75.35" y="593.75" scale_x="0.478105" scale_y="0.786731" angle="85.3707" />
+				</key>
+				<key id="12" time="400" spin="-1">
+					<object folder="2" file="0" x="75.3" y="593.85" scale_x="0.368275" scale_y="0.892081" angle="80.0418" />
+				</key>
+				<key id="13" time="434" spin="1">
+					<object folder="2" file="0" x="75.75" y="594.35" scale_x="0.338655" scale_y="0.81899" angle="83.053" />
+				</key>
+				<key id="14" time="467" spin="-1">
+					<object folder="2" file="0" x="76.15" y="594.75" scale_x="0.218112" scale_y="0.836636" angle="78.1021" />
+				</key>
+				<key id="15" time="500" spin="1">
+					<object folder="2" file="0" x="76.65" y="595.2" scale_x="0.359237" scale_y="0.668943" angle="87.5816" />
+				</key>
+				<key id="16" time="534" spin="-1">
+					<object folder="2" file="3" x="71" y="587.95" scale_x="1.42609" scale_y="1.01114" angle="0" />
+				</key>
+				<key id="17" time="567" spin="1">
+					<object folder="2" file="4" x="71" y="587.95" scale_x="1.45438" scale_y="1.03116" angle="0" />
+				</key>
+				<key id="18" time="600" spin="1">
+					<object folder="2" file="4" x="71" y="587.95" scale_x="1.53926" scale_y="1.09135" angle="0" />
+				</key>
+				<key id="19" time="634" spin="1">
+					<object folder="2" file="5" x="71" y="587.9" scale_x="1.68076" scale_y="1.19171" angle="0" />
+				</key>
+				<key id="20" time="667" spin="1">
+					<object folder="2" file="0" x="78.2" y="599.45" scale_x="0.159117" scale_y="0.263664" angle="105.431" />
+				</key>
+				<key id="21" time="700" spin="-1">
+					<object folder="2" file="0" x="78.3" y="600.9" scale_x="0.0903797" scale_y="0.218673" angle="97.8458" />
+				</key>
+				<key id="22" time="734" spin="1">
+					<object folder="2" file="0" x="78.4" y="602.3" scale_x="0.0569745" scale_y="0.137875" angle="97.8491" />
+				</key>
+				<key id="23" time="767" spin="-1">
+					<object folder="2" file="0" x="78.5" y="603.7" scale_x="0.0166926" scale_y="0.0637088" angle="89.9206" />
+				</key>
+			</timeline>
+			<timeline id="1" name="spiralfx_0">
+				<key id="0" time="34" spin="1">
+					<object folder="0" file="0" x="73.45" y="514.85" scale_x="0.0189833" scale_y="0.0234222" angle="1.19777" />
+				</key>
+				<key id="1" time="67" spin="-1">
+					<object folder="0" file="0" x="72.6" y="520.6" scale_x="0.0370733" scale_y="0.0387197" angle="341.161" />
+				</key>
+				<key id="2" time="100" spin="-1">
+					<object folder="0" file="0" x="72.75" y="525.85" scale_x="0.103017" scale_y="0.104411" angle="322.131" />
+				</key>
+				<key id="3" time="134" spin="-1">
+					<object folder="0" file="0" x="72.85" y="532.5" scale_x="0.173349" scale_y="0.169558" angle="303.111" />
+				</key>
+				<key id="4" time="167" spin="-1">
+					<object folder="0" file="0" x="73.1" y="540.55" scale_x="0.247776" scale_y="0.236111" angle="284.081" />
+				</key>
+				<key id="5" time="200" spin="-1">
+					<object folder="0" file="0" x="73.4" y="550.25" scale_x="0.324423" scale_y="0.307375" angle="265.433" />
+				</key>
+				<key id="6" time="234" spin="-1">
+					<object folder="0" file="0" x="73.65" y="559.1" scale_x="0.338782" scale_y="0.32641" angle="246.402" />
+				</key>
+				<key id="7" time="267" spin="-1">
+					<object folder="0" file="0" x="74" y="569.45" scale_x="0.351903" scale_y="0.350309" angle="227.377" />
+				</key>
+				<key id="8" time="300" spin="-1">
+					<object folder="0" file="0" x="74.35" y="581.2" scale_x="0.365937" scale_y="0.377097" angle="208.355" />
+				</key>
+				<key id="9" time="334" spin="-1">
+					<object folder="0" file="0" x="74.75" y="594.35" scale_x="0.38377" scale_y="0.404182" angle="189.323" />
+				</key>
+				<key id="10" time="367" spin="-1">
+					<object folder="0" file="0" x="74.4" y="593.75" scale_x="0.393867" scale_y="0.414806" angle="170.676" />
+				</key>
+				<key id="11" time="400" spin="-1">
+					<object folder="0" file="0" x="74.1" y="593.15" scale_x="0.408252" scale_y="0.420697" angle="151.646" />
+				</key>
+				<key id="12" time="434" spin="-1">
+					<object folder="0" file="0" x="74.15" y="593.25" scale_x="0.410511" scale_y="0.408643" angle="132.622" />
+				</key>
+				<key id="13" time="467" spin="-1">
+					<object folder="0" file="0" x="74.35" y="593.7" scale_x="0.402624" scale_y="0.387809" angle="113.593" />
+				</key>
+				<key id="14" time="500" spin="-1">
+					<object folder="0" file="0" x="74.7" y="594.4" scale_x="0.381529" scale_y="0.361205" angle="94.5562" />
+				</key>
+				<key id="15" time="534" spin="-1">
+					<object folder="0" file="0" x="75.15" y="595.45" scale_x="0.345722" scale_y="0.329158" angle="75.8995" />
+				</key>
+				<key id="16" time="567" spin="-1">
+					<object folder="0" file="0" x="75.75" y="596.75" scale_x="0.29711" scale_y="0.290658" angle="56.8596" />
+				</key>
+				<key id="17" time="600" spin="-1">
+					<object folder="0" file="0" x="76.5" y="598.3" scale_x="0.238505" scale_y="0.243153" angle="37.7362" />
+				</key>
+				<key id="18" time="634" spin="-1">
+					<object folder="0" file="0" x="77.35" y="600.2" scale_x="0.173512" scale_y="0.182891" angle="18.6876" />
+				</key>
+				<key id="19" time="667" spin="-1">
+					<object folder="0" file="0" x="78.3" y="602.4" scale_x="0.102178" scale_y="0.109711" angle="359.726" />
+				</key>
+				<key id="20" time="700" spin="-1">
+					<object folder="0" file="0" x="79.45" y="604.85" scale_x="0.0221273" scale_y="0.0256195" angle="359.605" />
+				</key>
+				<key id="21" time="734" spin="-1">
+					<object folder="0" file="0" x="79.45" y="604.85" scale_x="0.0225919" scale_y="0.0251546" angle="340.681" />
+				</key>
+				<key id="22" time="767" spin="-1">
+					<object folder="0" file="0" x="79.45" y="604.85" scale_x="0.023621" scale_y="0.0241613" angle="321.74" />
+				</key>
+			</timeline>
+			<timeline id="2" name="spiralfx_1">
+				<key id="0" time="34" spin="1">
+					<object folder="0" file="1" x="73.45" y="514.85" scale_x="0.0189833" scale_y="0.0234222" angle="1.19777" />
+				</key>
+				<key id="1" time="67" spin="-1">
+					<object folder="0" file="1" x="72.6" y="520.6" scale_x="0.0370733" scale_y="0.0387197" angle="341.161" />
+				</key>
+				<key id="2" time="100" spin="-1">
+					<object folder="0" file="1" x="72.75" y="525.85" scale_x="0.103017" scale_y="0.104411" angle="322.131" />
+				</key>
+				<key id="3" time="134" spin="-1">
+					<object folder="0" file="1" x="72.85" y="532.5" scale_x="0.173349" scale_y="0.169558" angle="303.111" />
+				</key>
+				<key id="4" time="167" spin="-1">
+					<object folder="0" file="1" x="73.1" y="540.55" scale_x="0.247776" scale_y="0.236111" angle="284.081" />
+				</key>
+				<key id="5" time="200" spin="-1">
+					<object folder="0" file="1" x="73.4" y="550.25" scale_x="0.324423" scale_y="0.307375" angle="265.433" />
+				</key>
+				<key id="6" time="234" spin="-1">
+					<object folder="0" file="1" x="73.65" y="559.1" scale_x="0.338782" scale_y="0.32641" angle="246.402" />
+				</key>
+				<key id="7" time="267" spin="-1">
+					<object folder="0" file="1" x="74" y="569.45" scale_x="0.351903" scale_y="0.350309" angle="227.377" />
+				</key>
+				<key id="8" time="300" spin="-1">
+					<object folder="0" file="1" x="74.35" y="581.2" scale_x="0.365937" scale_y="0.377097" angle="208.355" />
+				</key>
+				<key id="9" time="334" spin="-1">
+					<object folder="0" file="1" x="74.75" y="594.35" scale_x="0.38377" scale_y="0.404182" angle="189.323" />
+				</key>
+				<key id="10" time="367" spin="-1">
+					<object folder="0" file="1" x="74.4" y="593.75" scale_x="0.393867" scale_y="0.414806" angle="170.676" />
+				</key>
+				<key id="11" time="400" spin="-1">
+					<object folder="0" file="1" x="74.1" y="593.15" scale_x="0.408252" scale_y="0.420697" angle="151.646" />
+				</key>
+				<key id="12" time="434" spin="-1">
+					<object folder="0" file="1" x="74.15" y="593.25" scale_x="0.410511" scale_y="0.408643" angle="132.622" />
+				</key>
+				<key id="13" time="467" spin="-1">
+					<object folder="0" file="1" x="74.35" y="593.7" scale_x="0.402624" scale_y="0.387809" angle="113.593" />
+				</key>
+				<key id="14" time="500" spin="-1">
+					<object folder="0" file="1" x="74.7" y="594.4" scale_x="0.381529" scale_y="0.361205" angle="94.5562" />
+				</key>
+				<key id="15" time="534" spin="-1">
+					<object folder="0" file="1" x="75.15" y="595.45" scale_x="0.345722" scale_y="0.329158" angle="75.8995" />
+				</key>
+				<key id="16" time="567" spin="-1">
+					<object folder="0" file="1" x="75.75" y="596.75" scale_x="0.29711" scale_y="0.290658" angle="56.8596" />
+				</key>
+				<key id="17" time="600" spin="-1">
+					<object folder="0" file="1" x="76.5" y="598.3" scale_x="0.238505" scale_y="0.243153" angle="37.7362" />
+				</key>
+				<key id="18" time="634" spin="-1">
+					<object folder="0" file="1" x="77.35" y="600.2" scale_x="0.173512" scale_y="0.182891" angle="18.6876" />
+				</key>
+				<key id="19" time="667" spin="-1">
+					<object folder="0" file="1" x="78.3" y="602.4" scale_x="0.102178" scale_y="0.109711" angle="359.726" />
+				</key>
+				<key id="20" time="700" spin="-1">
+					<object folder="0" file="1" x="79.45" y="604.85" scale_x="0.0221273" scale_y="0.0256195" angle="359.605" />
+				</key>
+				<key id="21" time="734" spin="-1">
+					<object folder="0" file="1" x="79.45" y="604.85" scale_x="0.0225919" scale_y="0.0251546" angle="340.681" />
+				</key>
+				<key id="22" time="767" spin="-1">
+					<object folder="0" file="1" x="79.45" y="604.85" scale_x="0.023621" scale_y="0.0241613" angle="321.74" />
+				</key>
+			</timeline>
+			<timeline id="3" name="FX halo">
+				<key id="0" time="134" spin="1">
+					<object folder="1" file="2" x="68.3" y="528" scale_x="0.286911" scale_y="0.20343" angle="0" />
+				</key>
+				<key id="1" time="167" spin="1">
+					<object folder="1" file="2" x="68.6" y="534.4" scale_x="0.634888" scale_y="0.450134" angle="0" />
+				</key>
+				<key id="2" time="200" spin="1">
+					<object folder="1" file="2" x="68.9" y="542.3" scale_x="0.997925" scale_y="0.70755" angle="0" />
+				</key>
+				<key id="3" time="234" spin="1">
+					<object folder="1" file="2" x="69.35" y="551.55" scale_x="0.979004" scale_y="0.694153" angle="0" />
+				</key>
+				<key id="4" time="267" spin="1">
+					<object folder="1" file="2" x="69.9" y="562.2" scale_x="0.874542" scale_y="0.620071" angle="0" />
+				</key>
+				<key id="5" time="300" spin="1">
+					<object folder="1" file="2" x="70.35" y="574.35" scale_x="1.03456" scale_y="0.733536" angle="0" />
+				</key>
+				<key id="6" time="334" spin="1">
+					<object folder="1" file="2" x="71" y="587.9" scale_x="1.1138" scale_y="0.789719" angle="0" />
+				</key>
+				<key id="7" time="367" spin="1">
+					<object folder="1" file="2" x="70.95" y="587.9" scale_x="1.06755" scale_y="0.756927" angle="0" />
+				</key>
+				<key id="8" time="400" spin="1">
+					<object folder="1" file="2" x="71" y="587.9" scale_x="0.92894" scale_y="0.658646" angle="0" />
+				</key>
+				<key id="9" time="434" spin="1">
+					<object folder="1" file="2" x="70.95" y="587.9" scale_x="1.06758" scale_y="0.756943" angle="0" />
+				</key>
+				<key id="10" time="467" spin="1">
+					<object folder="1" file="2" x="71" y="587.9" scale_x="1.1138" scale_y="0.789719" angle="0" />
+				</key>
+				<key id="11" time="500" spin="1">
+					<object folder="1" file="2" x="71" y="587.9" scale_x="1.19176" scale_y="0.844986" angle="0" />
+				</key>
+				<key id="12" time="534" spin="1">
+					<object folder="1" file="2" x="71" y="587.95" scale_x="1.21777" scale_y="0.863434" angle="0" />
+				</key>
+				<key id="13" time="567" spin="1">
+					<object folder="1" file="2" x="71" y="587.95" scale_x="1.08647" scale_y="0.77037" angle="0" />
+				</key>
+				<key id="14" time="600" spin="1">
+					<object folder="1" file="2" x="71" y="587.9" scale_x="0.692749" scale_y="0.491211" angle="0" />
+				</key>
+				<key id="15" time="634" spin="1">
+					<object folder="1" file="2" x="71" y="587.9" scale_x="0.0366211" scale_y="0.0259705" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="4" name="FX copy_1">
+				<key id="0" time="534" spin="1">
+					<object folder="2" file="0" x="77.05" y="595.75" scale_x="0.463362" scale_y="0.519734" angle="96.8567" />
+				</key>
+				<key id="1" time="567" spin="1">
+					<object folder="2" file="0" x="77.5" y="596.15" scale_x="0.433889" scale_y="0.456408" angle="98.1258" />
+				</key>
+				<key id="2" time="600" spin="1">
+					<object folder="2" file="0" x="78" y="596.7" scale_x="0.397617" scale_y="0.393684" angle="99.4014" />
+				</key>
+				<key id="3" time="634" spin="1">
+					<object folder="2" file="0" x="78.1" y="598.1" scale_x="0.264647" scale_y="0.329662" angle="102.396" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

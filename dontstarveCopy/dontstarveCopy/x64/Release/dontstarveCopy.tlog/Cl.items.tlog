@@ -1,1 +1,13 @@
-D:\project\Win32API\dontstarveCopy\dontstarveCopy.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Release\dontstarveCopy.obj
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\Core.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Release\Core.obj
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\dontstarveCopy.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Release\dontstarveCopy.obj
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\KeyMgr.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Release\KeyMgr.obj
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\Object.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Release\Object.obj
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\PathMgr.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Release\PathMgr.obj
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\pch.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Release\pch.obj
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\ResAud.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Release\ResAud.obj
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\ResMgr.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Release\ResMgr.obj
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\ResTex.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Release\ResTex.obj
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\SceneMgr.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Release\SceneMgr.obj
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\Terrain.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Release\Terrain.obj
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\TimeMgr.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Release\TimeMgr.obj
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\World.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Release\World.obj

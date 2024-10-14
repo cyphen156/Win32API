@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="phono_cone">
+		<file id="0" name="phono_cone/phono_cone-0.png" width="220" height="252" pivot_x="0.522384" pivot_y="0.0459345" />
+	</folder>
+	<folder id="1" name="phono_grndshdw">
+		<file id="0" name="phono_grndshdw/phono_grndshdw-0.png" width="272" height="40" pivot_x="0.499906" pivot_y="0.500013" />
+		<file id="1" name="phono_grndshdw/phono_grndshdw-1.png" width="224" height="36" pivot_x="0.502676" pivot_y="0.385431" />
+		<file id="2" name="phono_grndshdw/phono_grndshdw-2.png" width="216" height="48" pivot_x="0.442127" pivot_y="0.477094" />
+		<file id="3" name="phono_grndshdw/phono_grndshdw-3.png" width="248" height="44" pivot_x="0.434171" pivot_y="0.482966" />
+	</folder>
+	<folder id="2" name="phono_gears">
+		<file id="0" name="phono_gears/phono_gears-0.png" width="240" height="108" pivot_x="0.492706" pivot_y="0.501394" />
+	</folder>
+	<folder id="3" name="phono_crank">
+		<file id="0" name="phono_crank/phono_crank-0.png" width="108" height="84" pivot_x="0.106477" pivot_y="0.25953" />
+		<file id="1" name="phono_crank/phono_crank-1.png" width="200" height="64" pivot_x="0.307122" pivot_y="0.437508" />
+	</folder>
+	<folder id="4" name="phono_box">
+		<file id="0" name="phono_box/phono_box-0.png" width="196" height="112" pivot_x="0.483926" pivot_y="0.227237" />
+		<file id="1" name="phono_box/phono_box-1.png" width="196" height="112" pivot_x="0.483926" pivot_y="0.227237" />
+		<file id="2" name="phono_box/phono_box-2.png" width="184" height="308" pivot_x="0.464671" pivot_y="0.0996769" />
+	</folder>
+	<entity id="0" name="phonograph">
+		<animation id="0" name="box" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="phono_box">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="1" x="0.05" y="-10.2" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="4" file="1" x="0.05" y="-10.2" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="phono_grndshdw">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="burnt" length="134">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.464671" abs_pivot_y="0.0996769" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.464671" abs_pivot_y="0.0996769" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.464671" abs_pivot_y="0.0996769" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.464671" abs_pivot_y="0.0996769" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.464671" abs_pivot_y="0.0996769" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="phono_box">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="2" x="0.05" y="-10" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="4" file="2" x="0.05" y="-10" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="4" file="2" x="0.05" y="-10" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="4" file="2" x="0.05" y="-10" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="4" file="2" x="0.05" y="-10" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="2" name="close" length="300">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="2" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="3" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="4" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="4" z_index="2" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="5" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="5" z_index="2" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="6" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="6" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="6" z_index="2" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="7" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="7" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="7" z_index="2" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="8" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="8" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="8" z_index="2" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="9" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="9" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="9" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="phono_cone">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="5.5" y="57.349" scale_x="1.00691" scale_y="0.995148" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="5.35" y="54.799" scale_x="1.04836" scale_y="0.966064" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="5.25" y="54.049" scale_x="1.06216" scale_y="0.95636" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="5" y="56.749" scale_x="1.0322" scale_y="0.987579" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="4.3" y="64.899" scale_x="0.942337" scale_y="1.08116" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="0" x="4.75" y="66.099" scale_x="0.9189" scale_y="1.09521" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="0" x="4.9" y="66.499" scale_x="0.911087" scale_y="1.0999" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="0" file="0" x="5.35" y="59.949" scale_x="0.977768" scale_y="1.02498" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="0" file="0" x="5.55" y="57.749" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="0" file="0" x="5.55" y="57.749" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="phono_crank">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="32.15" y="34.049" scale_x="1.00691" scale_y="0.995148" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="3" file="0" x="33.05" y="32.299" scale_x="1.04836" scale_y="0.966064" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="3" file="0" x="33.4" y="31.699" scale_x="1.06216" scale_y="0.95636" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="3" file="0" x="32.4" y="33.649" scale_x="1.0322" scale_y="0.987579" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="3" file="0" x="29.3" y="39.599" scale_x="0.942337" scale_y="1.08116" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="3" file="0" x="29.1" y="40.449" scale_x="0.9189" scale_y="1.09521" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="3" file="0" x="29.1" y="40.799" scale_x="0.911087" scale_y="1.0999" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="3" file="0" x="31.3" y="35.899" scale_x="0.977768" scale_y="1.02498" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="3" file="0" x="32" y="34.349" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="3" file="0" x="32" y="34.349" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="phono_box">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="0" y="-10.1" scale_x="1.00691" scale_y="0.995148" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="4" file="0" x="-0.399" y="-10.6" scale_x="1.04836" scale_y="0.966064" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="4" file="0" x="-0.549" y="-10.75" scale_x="1.06216" scale_y="0.95636" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="4" file="0" x="-0.649" y="-10.15" scale_x="1.0322" scale_y="0.987579" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="4" file="0" x="-0.849" y="-8.35" scale_x="0.942337" scale_y="1.08116" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="4" file="0" x="-0.299" y="-8.1" scale_x="0.9189" scale_y="1.09521" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="4" file="0" x="-0.099" y="-8" scale_x="0.911087" scale_y="1.0999" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="4" file="0" x="0" y="-9.5" scale_x="0.977768" scale_y="1.02498" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="3" name="phono_grndshdw">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="3" name="cone" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.499906" abs_pivot_y="0.500013" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.499906" abs_pivot_y="0.500013" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="phono_cone">
+				<key id="0" time="0" spin="-1">
+					<object folder="0" file="0" x="-43.799" y="120.749" scale_x="0.85282" scale_y="0.85282" angle="205.085" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-43.799" y="120.749" scale_x="0.85282" scale_y="0.85282" angle="205.085" />
+				</key>
+			</timeline>
+			<timeline id="1" name="phono_grndshdw">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="12.65" y="-23.8" scale_x="0.853897" scale_y="0.853897" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="0" x="12.65" y="-23.8" scale_x="0.853897" scale_y="0.853897" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="4" name="crank" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.307122" abs_pivot_y="0.437508" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.502676" abs_pivot_y="0.385431" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.307122" abs_pivot_y="0.437508" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.502676" abs_pivot_y="0.385431" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="phono_crank">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="1" x="-35.299" y="0.199" scale_x="0.938095" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="3" file="1" x="-35.299" y="0.199" scale_x="0.938095" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="phono_grndshdw">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="1" x="-0.449" y="-17.6" scale_x="0.938095" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="1" x="-0.449" y="-17.6" scale_x="0.938095" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="5" name="gears" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="phono_gears" abs_x="0" abs_y="0" abs_pivot_x="0.492706" abs_pivot_y="0.501394" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="2" />
+					<object_ref id="1" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.434171" abs_pivot_y="0.482966" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="phono_gears" abs_x="0" abs_y="0" abs_pivot_x="0.492706" abs_pivot_y="0.501394" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="2" />
+					<object_ref id="1" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.434171" abs_pivot_y="0.482966" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="phono_gears">
+				<key id="0" time="0" spin="1">
+					<object folder="2" file="0" x="2.35" y="11.099" scale_x="0.832642" scale_y="0.832642" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="2" file="0" x="2.35" y="11.099" scale_x="0.832642" scale_y="0.832642" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="phono_grndshdw">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="3" x="-12.649" y="-17.1" scale_x="0.832642" scale_y="0.832642" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="3" x="-12.649" y="-17.1" scale_x="0.832642" scale_y="0.832642" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="6" name="idle" length="134">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="2" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="3" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="4" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="4" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="phono_cone">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="5.55" y="57.749" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="5.55" y="57.749" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="5.55" y="57.749" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="5.55" y="57.749" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="5.55" y="57.749" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="phono_crank">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="32" y="34.349" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="3" file="0" x="32" y="34.349" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="3" file="0" x="32" y="34.349" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="3" file="0" x="32" y="34.349" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="3" file="0" x="32" y="34.349" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="phono_box">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="3" name="phono_grndshdw">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="7" name="open" length="300">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="2" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="3" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="4" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="4" z_index="2" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="5" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="5" z_index="2" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="6" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="6" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="6" z_index="2" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="7" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="7" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="7" z_index="2" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="8" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="8" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="8" z_index="2" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="9" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="9" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="9" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="phono_cone">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="5.5" y="57.349" scale_x="1.00691" scale_y="0.995148" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="5.35" y="54.799" scale_x="1.04836" scale_y="0.966064" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="5.25" y="54.049" scale_x="1.06216" scale_y="0.95636" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="5" y="56.749" scale_x="1.0322" scale_y="0.987579" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="4.3" y="64.899" scale_x="0.942337" scale_y="1.08116" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="0" x="4.75" y="66.099" scale_x="0.9189" scale_y="1.09521" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="0" x="4.9" y="66.499" scale_x="0.911087" scale_y="1.0999" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="0" file="0" x="5.35" y="59.949" scale_x="0.977768" scale_y="1.02498" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="0" file="0" x="5.55" y="57.749" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="0" file="0" x="5.55" y="57.749" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="1" name="phono_crank">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="32.15" y="34.049" scale_x="1.00691" scale_y="0.995148" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="3" file="0" x="33.05" y="32.299" scale_x="1.04836" scale_y="0.966064" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="3" file="0" x="33.4" y="31.699" scale_x="1.06216" scale_y="0.95636" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="3" file="0" x="32.4" y="33.649" scale_x="1.0322" scale_y="0.987579" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="3" file="0" x="29.3" y="39.599" scale_x="0.942337" scale_y="1.08116" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="3" file="0" x="29.1" y="40.449" scale_x="0.9189" scale_y="1.09521" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="3" file="0" x="29.1" y="40.799" scale_x="0.911087" scale_y="1.0999" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="3" file="0" x="31.3" y="35.899" scale_x="0.977768" scale_y="1.02498" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="3" file="0" x="32" y="34.349" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="3" file="0" x="32" y="34.349" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="2" name="phono_box">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="0" y="-10.1" scale_x="1.00691" scale_y="0.995148" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="4" file="0" x="-0.399" y="-10.6" scale_x="1.04836" scale_y="0.966064" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="4" file="0" x="-0.549" y="-10.75" scale_x="1.06216" scale_y="0.95636" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="4" file="0" x="-0.649" y="-10.15" scale_x="1.0322" scale_y="0.987579" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="4" file="0" x="-0.849" y="-8.35" scale_x="0.942337" scale_y="1.08116" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="4" file="0" x="-0.299" y="-8.1" scale_x="0.9189" scale_y="1.09521" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="4" file="0" x="-0.099" y="-8" scale_x="0.911087" scale_y="1.0999" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="4" file="0" x="0" y="-9.5" scale_x="0.977768" scale_y="1.02498" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="3" name="phono_grndshdw">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="8" name="play_loop" length="534">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="0" z_index="2" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="1" z_index="2" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="2" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="2" z_index="2" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="3" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="3" z_index="2" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="4" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="4" z_index="2" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="5" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="5" z_index="2" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="6" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="6" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="6" z_index="2" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="7" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="7" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="7" z_index="2" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="8" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="8" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="8" z_index="2" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="9" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="9" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="9" z_index="2" />
+				</key>
+				<key id="10" time="334">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="10" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="10" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="10" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="10" z_index="2" />
+				</key>
+				<key id="11" time="367">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="11" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="11" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="11" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="11" z_index="2" />
+				</key>
+				<key id="12" time="400">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="12" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="12" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="12" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="12" z_index="2" />
+				</key>
+				<key id="13" time="434">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="13" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="13" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="13" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="13" z_index="2" />
+				</key>
+				<key id="14" time="467">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="14" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="14" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="14" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="14" z_index="2" />
+				</key>
+				<key id="15" time="500">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="15" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="15" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="15" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="15" z_index="2" />
+				</key>
+				<key id="16" time="534">
+					<object_ref id="0" name="phono_cone" abs_x="0" abs_y="0" abs_pivot_x="0.522384" abs_pivot_y="0.0459345" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="16" z_index="5" />
+					<object_ref id="1" name="phono_crank" abs_x="0" abs_y="0" abs_pivot_x="0.106477" abs_pivot_y="0.25953" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="16" z_index="4" />
+					<object_ref id="2" name="phono_box" abs_x="0" abs_y="0" abs_pivot_x="0.483926" abs_pivot_y="0.227237" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="16" z_index="3" />
+					<object_ref id="3" name="phono_grndshdw" abs_x="0" abs_y="0" abs_pivot_x="0.442127" abs_pivot_y="0.477094" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="16" z_index="2" />
+				</key>
+			</mainline>
+			<timeline id="0" name="phono_cone">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="5.55" y="57.749" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="-1">
+					<object folder="0" file="0" x="5.55" y="57.199" scale_x="1.00712" scale_y="0.993845" angle="359.484" />
+				</key>
+				<key id="2" time="67" spin="-1">
+					<object folder="0" file="0" x="5.55" y="56.649" scale_x="1.01425" scale_y="0.987679" angle="358.968" />
+				</key>
+				<key id="3" time="100" spin="-1">
+					<object folder="0" file="0" x="5.55" y="56.099" scale_x="1.02137" scale_y="0.981544" angle="358.453" />
+				</key>
+				<key id="4" time="134" spin="-1">
+					<object folder="0" file="0" x="5.55" y="55.549" scale_x="1.02861" scale_y="0.975469" angle="357.749" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="0" x="5.5" y="56.149" scale_x="1.01323" scale_y="0.987467" angle="358.453" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="0" x="5.5" y="56.649" scale_x="0.997995" scale_y="0.999567" angle="358.967" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="0" file="0" x="5.55" y="57.299" scale_x="0.982767" scale_y="1.01165" angle="359.484" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="0" file="0" x="5.55" y="57.749" scale_x="0.967545" scale_y="1.02376" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="0" file="0" x="5.5" y="57.199" scale_x="0.978602" scale_y="1.01428" angle="0.518983" />
+				</key>
+				<key id="10" time="334" spin="1">
+					<object folder="0" file="0" x="5.55" y="56.649" scale_x="0.989679" scale_y="1.0048" angle="1.03717" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="0" file="0" x="5.55" y="56.149" scale_x="1.00075" scale_y="0.995316" angle="1.55551" />
+				</key>
+				<key id="12" time="400" spin="1">
+					<object folder="0" file="0" x="5.55" y="55.549" scale_x="1.01191" scale_y="0.985946" angle="2.29758" />
+				</key>
+				<key id="13" time="434" spin="-1">
+					<object folder="0" file="0" x="5.55" y="56.199" scale_x="1.00884" scale_y="0.989376" angle="1.55077" />
+				</key>
+				<key id="14" time="467" spin="-1">
+					<object folder="0" file="0" x="5.5" y="56.649" scale_x="1.00585" scale_y="0.992882" angle="1.02884" />
+				</key>
+				<key id="15" time="500" spin="-1">
+					<object folder="0" file="0" x="5.55" y="57.199" scale_x="1.00294" scale_y="0.996455" angle="0.518167" />
+				</key>
+				<key id="16" time="534" spin="1">
+					<object folder="0" file="0" x="5.55" y="57.199" scale_x="1.00294" scale_y="0.996455" angle="0.518167" />
+				</key>
+			</timeline>
+			<timeline id="1" name="phono_crank">
+				<key id="0" time="0" spin="1">
+					<object folder="3" file="0" x="32" y="34.349" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="-1">
+					<object folder="3" file="0" x="32.3" y="34.049" scale_x="0.999909" scale_y="0.999909" angle="359.451" />
+				</key>
+				<key id="2" time="67" spin="-1">
+					<object folder="3" file="0" x="32.55" y="33.799" scale_x="0.999809" scale_y="0.999809" angle="358.714" />
+				</key>
+				<key id="3" time="100" spin="-1">
+					<object folder="3" file="0" x="32.8" y="33.499" scale_x="0.999708" scale_y="0.999708" angle="357.977" />
+				</key>
+				<key id="4" time="134" spin="-1">
+					<object folder="3" file="0" x="33.1" y="33.249" scale_x="0.999765" scale_y="0.999765" angle="357.211" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="3" file="0" x="32.8" y="33.549" scale_x="0.999708" scale_y="0.999708" angle="357.977" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="3" file="0" x="32.55" y="33.799" scale_x="0.999809" scale_y="0.999809" angle="358.714" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="3" file="0" x="32.3" y="34.099" scale_x="0.999909" scale_y="0.999909" angle="359.451" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="3" file="0" x="32" y="34.349" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="9" time="300" spin="-1">
+					<object folder="3" file="0" x="32.3" y="34.049" scale_x="0.999909" scale_y="0.999909" angle="359.451" />
+				</key>
+				<key id="10" time="334" spin="-1">
+					<object folder="3" file="0" x="32.55" y="33.799" scale_x="0.999809" scale_y="0.999809" angle="358.714" />
+				</key>
+				<key id="11" time="367" spin="-1">
+					<object folder="3" file="0" x="32.8" y="33.499" scale_x="0.999708" scale_y="0.999708" angle="357.977" />
+				</key>
+				<key id="12" time="400" spin="-1">
+					<object folder="3" file="0" x="33.1" y="33.249" scale_x="0.999765" scale_y="0.999765" angle="357.211" />
+				</key>
+				<key id="13" time="434" spin="1">
+					<object folder="3" file="0" x="32.85" y="33.599" scale_x="0.999684" scale_y="0.999684" angle="357.99" />
+				</key>
+				<key id="14" time="467" spin="1">
+					<object folder="3" file="0" x="32.55" y="33.849" scale_x="0.999784" scale_y="0.999784" angle="358.739" />
+				</key>
+				<key id="15" time="500" spin="1">
+					<object folder="3" file="0" x="32.3" y="34.099" scale_x="0.999909" scale_y="0.999909" angle="359.451" />
+				</key>
+				<key id="16" time="534" spin="1">
+					<object folder="3" file="0" x="32.3" y="34.099" scale_x="0.999909" scale_y="0.999909" angle="359.451" />
+				</key>
+			</timeline>
+			<timeline id="2" name="phono_box">
+				<key id="0" time="0" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1.00943" scale_y="0.989517" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1.01886" scale_y="0.979034" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1.02827" scale_y="0.968536" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1.0377" scale_y="0.958054" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1.02829" scale_y="0.968536" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="4" file="0" x="0.05" y="-9.95" scale_x="1.01886" scale_y="0.979034" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1.00945" scale_y="0.989517" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1.00943" scale_y="0.989517" angle="0" />
+				</key>
+				<key id="10" time="334" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1.01886" scale_y="0.979034" angle="0" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1.02827" scale_y="0.968536" angle="0" />
+				</key>
+				<key id="12" time="400" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1.0377" scale_y="0.958054" angle="0" />
+				</key>
+				<key id="13" time="434" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1.02831" scale_y="0.968536" angle="0" />
+				</key>
+				<key id="14" time="467" spin="1">
+					<object folder="4" file="0" x="0.05" y="-9.95" scale_x="1.01886" scale_y="0.979034" angle="0" />
+				</key>
+				<key id="15" time="500" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1.00945" scale_y="0.989517" angle="0" />
+				</key>
+				<key id="16" time="534" spin="1">
+					<object folder="4" file="0" x="0.05" y="-10" scale_x="1.00945" scale_y="0.989517" angle="0" />
+				</key>
+			</timeline>
+			<timeline id="3" name="phono_grndshdw">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="10" time="334" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="12" time="400" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="13" time="434" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="14" time="467" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="15" time="500" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="16" time="534" spin="1">
+					<object folder="1" file="2" x="-12.899" y="-17.6" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

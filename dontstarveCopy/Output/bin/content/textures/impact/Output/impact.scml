@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="hit_2">
+		<file id="0" name="hit_2/hit_2-0.png" width="368" height="412" pivot_x="0.364129" pivot_y="0.422574" />
+		<file id="1" name="hit_2/hit_2-1.png" width="396" height="448" pivot_x="0.366476" pivot_y="0.421485" />
+		<file id="2" name="hit_2/hit_2-2.png" width="460" height="396" pivot_x="0.346847" pivot_y="0.277337" />
+		<file id="3" name="hit_2/hit_2-3.png" width="520" height="360" pivot_x="0.338364" pivot_y="0.35764" />
+		<file id="4" name="hit_2/hit_2-4.png" width="132" height="56" pivot_x="-1.81989" pivot_y="2.43661" />
+	</folder>
+	<entity id="0" name="impact">
+		<animation id="0" name="idle" length="200">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="hit_2" abs_x="0" abs_y="0" abs_pivot_x="0.364129" abs_pivot_y="0.422574" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="hit_2" abs_x="0" abs_y="0" abs_pivot_x="0.366476" abs_pivot_y="0.421485" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="hit_2" abs_x="0" abs_y="0" abs_pivot_x="0.346847" abs_pivot_y="0.277337" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="hit_2" abs_x="0" abs_y="0" abs_pivot_x="0.338364" abs_pivot_y="0.35764" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="hit_2" abs_x="0" abs_y="0" abs_pivot_x="-1.81989" abs_pivot_y="2.43661" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="hit_2" abs_x="0" abs_y="0" abs_pivot_x="-1.81989" abs_pivot_y="2.43661" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="hit_2" abs_x="0" abs_y="0" abs_pivot_x="-1.81989" abs_pivot_y="2.43661" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="hit_2">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-0.499" y="0.099" scale_x="0.5" scale_y="0.5" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="1" x="-0.499" y="0.099" scale_x="0.5" scale_y="0.5" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="2" x="-0.499" y="0.099" scale_x="0.5" scale_y="0.5" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="3" x="-0.499" y="0.099" scale_x="0.5" scale_y="0.5" angle="0" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="4" x="-0.499" y="0.099" scale_x="0.5" scale_y="0.5" angle="0" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="4" x="-0.499" y="0.099" scale_x="0.5" scale_y="0.5" angle="0" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="4" x="-0.499" y="0.099" scale_x="0.5" scale_y="0.5" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>

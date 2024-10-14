@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="fishingrod01">
+		<file id="0" name="fishingrod01/fishingrod01-0.png" width="128" height="272" pivot_x="0.564645" pivot_y="0.48116" />
+	</folder>
+	<folder id="1" name="swap_fishingrod_water">
+		<file id="0" name="swap_fishingrod_water/swap_fishingrod_water-0.png" width="252" height="88" pivot_x="0.433133" pivot_y="0.650858" />
+	</folder>
+	<entity id="0" name="fishingrod">
+		<animation id="0" name="idle" length="34">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="fishingrod01" abs_x="0" abs_y="0" abs_pivot_x="0.564645" abs_pivot_y="0.48116" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="fishingrod01" abs_x="0" abs_y="0" abs_pivot_x="0.564645" abs_pivot_y="0.48116" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="fishingrod01">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="17.25" y="114.249" scale_x="1" scale_y="1" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="17.25" y="114.249" scale_x="1" scale_y="1" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="idle_water" length="1200">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="5" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="5" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="5" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="5" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="5" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="5" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="5" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="5" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="5" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="5" />
+				</key>
+				<key id="10" time="334">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="10" z_index="5" />
+				</key>
+				<key id="11" time="367">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="11" z_index="5" />
+				</key>
+				<key id="12" time="400">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="12" z_index="5" />
+				</key>
+				<key id="13" time="434">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="13" z_index="5" />
+				</key>
+				<key id="14" time="467">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="14" z_index="5" />
+				</key>
+				<key id="15" time="500">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="15" z_index="5" />
+				</key>
+				<key id="16" time="534">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="16" z_index="5" />
+				</key>
+				<key id="17" time="567">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="17" z_index="5" />
+				</key>
+				<key id="18" time="600">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="18" z_index="5" />
+				</key>
+				<key id="19" time="634">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="19" z_index="5" />
+				</key>
+				<key id="20" time="667">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="20" z_index="5" />
+				</key>
+				<key id="21" time="700">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="21" z_index="5" />
+				</key>
+				<key id="22" time="734">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="22" z_index="5" />
+				</key>
+				<key id="23" time="767">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="23" z_index="5" />
+				</key>
+				<key id="24" time="800">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="24" z_index="5" />
+				</key>
+				<key id="25" time="834">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="25" z_index="5" />
+				</key>
+				<key id="26" time="867">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="26" z_index="5" />
+				</key>
+				<key id="27" time="900">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="27" z_index="5" />
+				</key>
+				<key id="28" time="934">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="28" z_index="5" />
+				</key>
+				<key id="29" time="967">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="29" z_index="5" />
+				</key>
+				<key id="30" time="1000">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="30" z_index="5" />
+				</key>
+				<key id="31" time="1034">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="31" z_index="5" />
+				</key>
+				<key id="32" time="1067">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="32" z_index="5" />
+				</key>
+				<key id="33" time="1100">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="33" z_index="5" />
+				</key>
+				<key id="34" time="1134">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="34" z_index="5" />
+				</key>
+				<key id="35" time="1167">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="35" z_index="5" />
+				</key>
+				<key id="36" time="1201">
+					<object_ref id="0" name="swap_fishingrod_water" abs_x="0" abs_y="0" abs_pivot_x="0.433133" abs_pivot_y="0.650858" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="36" z_index="5" />
+				</key>
+			</mainline>
+			<timeline id="0" name="swap_fishingrod_water">
+				<key id="0" time="0" spin="1">
+					<object folder="1" file="0" x="-10.449" y="25.149" scale_x="1.0109" scale_y="1" angle="4.2109" />
+				</key>
+				<key id="1" time="34" spin="-1">
+					<object folder="1" file="0" x="-10.449" y="24.999" scale_x="1.01086" scale_y="0.996567" angle="4.14859" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="1" file="0" x="-10.449" y="24.949" scale_x="1.01127" scale_y="0.993149" angle="4.14862" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="1" file="0" x="-10.399" y="24.799" scale_x="1.01167" scale_y="0.989716" angle="4.14871" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="1" file="0" x="-10.399" y="24.699" scale_x="1.01209" scale_y="0.986282" angle="4.14873" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="1" file="0" x="-10.399" y="24.599" scale_x="1.01251" scale_y="0.982849" angle="4.14876" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="1" file="0" x="-10.399" y="24.549" scale_x="1.01291" scale_y="0.979431" angle="4.14885" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="1" file="0" x="-10.449" y="24.399" scale_x="1.01332" scale_y="0.975998" angle="4.14887" />
+				</key>
+				<key id="8" time="267" spin="-1">
+					<object folder="1" file="0" x="-10.449" y="24.299" scale_x="1.01374" scale_y="0.972565" angle="4.14847" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="1" file="0" x="-10.449" y="24.099" scale_x="1.01415" scale_y="0.969147" angle="4.1485" />
+				</key>
+				<key id="10" time="334" spin="1">
+					<object folder="1" file="0" x="-10.449" y="24.049" scale_x="1.01457" scale_y="0.965714" angle="4.14853" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="1" file="0" x="-10.449" y="23.949" scale_x="1.01499" scale_y="0.96228" angle="4.14855" />
+				</key>
+				<key id="12" time="400" spin="1">
+					<object folder="1" file="0" x="-10.449" y="23.799" scale_x="1.0154" scale_y="0.958847" angle="4.14858" />
+				</key>
+				<key id="13" time="434" spin="1">
+					<object folder="1" file="0" x="-10.449" y="23.749" scale_x="1.01581" scale_y="0.955429" angle="4.14867" />
+				</key>
+				<key id="14" time="467" spin="1">
+					<object folder="1" file="0" x="-10.449" y="23.649" scale_x="1.01622" scale_y="0.951996" angle="4.1487" />
+				</key>
+				<key id="15" time="500" spin="1">
+					<object folder="1" file="0" x="-10.399" y="23.499" scale_x="1.01664" scale_y="0.948563" angle="4.14872" />
+				</key>
+				<key id="16" time="534" spin="1">
+					<object folder="1" file="0" x="-10.399" y="23.349" scale_x="1.01704" scale_y="0.945129" angle="4.14881" />
+				</key>
+				<key id="17" time="567" spin="1">
+					<object folder="1" file="0" x="-10.399" y="23.249" scale_x="1.01746" scale_y="0.941711" angle="4.14884" />
+				</key>
+				<key id="18" time="600" spin="1">
+					<object folder="1" file="0" x="-10.449" y="23.149" scale_x="1.01833" scale_y="0.938278" angle="4.21075" />
+				</key>
+				<key id="19" time="634" spin="-1">
+					<object folder="1" file="0" x="-10.449" y="23.299" scale_x="1.01741" scale_y="0.94191" angle="4.14945" />
+				</key>
+				<key id="20" time="667" spin="-1">
+					<object folder="1" file="0" x="-10.449" y="23.449" scale_x="1.01701" scale_y="0.945541" angle="4.14894" />
+				</key>
+				<key id="21" time="700" spin="1">
+					<object folder="1" file="0" x="-10.449" y="23.499" scale_x="1.01655" scale_y="0.949173" angle="4.1491" />
+				</key>
+				<key id="22" time="734" spin="1">
+					<object folder="1" file="0" x="-10.499" y="23.599" scale_x="1.0161" scale_y="0.952805" angle="4.14919" />
+				</key>
+				<key id="23" time="767" spin="-1">
+					<object folder="1" file="0" x="-10.499" y="23.749" scale_x="1.01568" scale_y="0.956436" angle="4.14874" />
+				</key>
+				<key id="24" time="800" spin="1">
+					<object folder="1" file="0" x="-10.449" y="23.849" scale_x="1.01524" scale_y="0.960068" angle="4.14884" />
+				</key>
+				<key id="25" time="834" spin="1">
+					<object folder="1" file="0" x="-10.449" y="23.949" scale_x="1.01479" scale_y="0.963699" angle="4.14894" />
+				</key>
+				<key id="26" time="867" spin="-1">
+					<object folder="1" file="0" x="-10.449" y="24.099" scale_x="1.01437" scale_y="0.967331" angle="4.14891" />
+				</key>
+				<key id="27" time="900" spin="-1">
+					<object folder="1" file="0" x="-10.449" y="24.199" scale_x="1.01392" scale_y="0.970947" angle="4.14858" />
+				</key>
+				<key id="28" time="934" spin="1">
+					<object folder="1" file="0" x="-10.449" y="24.349" scale_x="1.01349" scale_y="0.974579" angle="4.14904" />
+				</key>
+				<key id="29" time="967" spin="-1">
+					<object folder="1" file="0" x="-10.449" y="24.449" scale_x="1.01308" scale_y="0.97821" angle="4.14902" />
+				</key>
+				<key id="30" time="1000" spin="1">
+					<object folder="1" file="0" x="-10.449" y="24.549" scale_x="1.01262" scale_y="0.981842" angle="4.14918" />
+				</key>
+				<key id="31" time="1034" spin="1">
+					<object folder="1" file="0" x="-10.449" y="24.699" scale_x="1.01218" scale_y="0.985474" angle="4.14921" />
+				</key>
+				<key id="32" time="1067" spin="1">
+					<object folder="1" file="0" x="-10.449" y="24.799" scale_x="1.01175" scale_y="0.989105" angle="4.14925" />
+				</key>
+				<key id="33" time="1100" spin="-1">
+					<object folder="1" file="0" x="-10.499" y="24.899" scale_x="1.0113" scale_y="0.992737" angle="4.14892" />
+				</key>
+				<key id="34" time="1134" spin="1">
+					<object folder="1" file="0" x="-10.499" y="25.099" scale_x="1.01089" scale_y="0.996368" angle="4.14932" />
+				</key>
+				<key id="35" time="1167" spin="1">
+					<object folder="1" file="0" x="-10.449" y="25.149" scale_x="1.0109" scale_y="1" angle="4.2109" />
+				</key>
+				<key id="36" time="1201" spin="1">
+					<object folder="1" file="0" x="-10.449" y="25.149" scale_x="1.0109" scale_y="1" angle="4.2109" />
+				</key>
+			</timeline>
+		</animation>
+	</entity>
+</spriter_data>
