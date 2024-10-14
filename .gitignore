@@ -1,2 +1,25 @@
-# Ignore the resources folder and its contents
+# Ignore Visual Studio specific files
+.vscode/
+.vs/
+*.vcxproj.user
+*.suo
+*.user
+*.ipch
+*.pdb
+*.obj
+*.tlog
+*.log
+*.idb
+*.opendb
+*.VC.db
+
+# Ignore build folders
+Build/
+bin/
+Debug/
+Release/
+x64/
+x86/
+
+# Ignore the resources folder
 resources/
