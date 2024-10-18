@@ -14,8 +14,9 @@ public:
     Monster();
     ~Monster();
 
+    virtual void OnCollisionEnter(Collider* pOther);
     virtual void update();
-    void render();
+    virtual void render(HDC hdc);
 
     Vec2D GetCenterPos() { return m_vCenterPos; }
     void SetCenterPos(Vec2D centerPos) { m_vCenterPos = centerPos; }

@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Win32API\dontstarveCopy\Output\bin_debug\dontstarveCopy.exe</FullPath>
+      <FullPath>D:\project\Win32API\dontstarveCopy\Output\bin_debug\dontstarveCopy.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

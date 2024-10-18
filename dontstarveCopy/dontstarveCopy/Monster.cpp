@@ -8,10 +8,22 @@ Monster::Monster() :
 	, m_fMaxDist(50.f)
 	, m_iDirection(1)
 {
+	CreateCollider();
+	GetCollider()->SetOffsetPos(Vec2D(0.f, 0.f));
+	GetCollider()->SetColliderSize(Vec2D(100.f, 100.f));
 }
 
 Monster::~Monster()
 {
+}
+
+void Monster::OnCollisionEnter(Collider* pOther)
+{
+	Object* pOtherObj = pOther->GetObj();
+	if (pOtherObj->GetObjName() == L"Player")
+	{
+		DeleteObject(this);
+	}
 }
 
 void Monster::update()
@@ -32,6 +44,6 @@ void Monster::update()
 	SetPos(vPos);
 }
 
-void Monster::render()
+void Monster::render(HDC hdc)
 {
 }

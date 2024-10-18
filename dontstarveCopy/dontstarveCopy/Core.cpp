@@ -5,8 +5,20 @@
 #include "PathMgr.h"
 #include "KeyMgr.h"
 #include "SceneMgr.h"
+#include "ResMgr.h"
+#include "CollisionMgr.h"
+#include "EventMgr.h"
 
-Core::Core() : m_hWnd(0), m_ptWinInfo(nullptr), m_hdc(0), m_hBit(0), m_MemDC(0) {};
+
+Core::Core()
+	: m_hWnd(0)
+	, m_ptWinInfo(nullptr)
+	, m_hdc(0)
+	, m_hBit(0)
+	, m_MemDC(0)
+	, m_arrBrush{}
+	, m_arrPen{}
+{};
 
 Core::~Core() 
 {
@@ -14,6 +26,11 @@ Core::~Core()
 
 	DeleteDC(m_MemDC);
 	DeleteObject(m_hBit);
+
+	for (int i = 0; i < (UINT)PEN_TYPE::END; ++i)
+	{
+		DeleteObject(m_arrPen[i]);
+	}
 };
 
 int Core::init(HWND hWnd, RECT* windowInfo)
@@ -23,11 +40,14 @@ int Core::init(HWND hWnd, RECT* windowInfo)
 	
 	m_hdc = GetDC(m_hWnd);
 	
+	// 기본 GDI 인스턴스 생성
+	CreateBrushPen();
 	// 매니저 초기화
 	TimeMgr::GetInst()->init();
 	PathMgr::GetInst()->init();
 	KeyMgr::GetInst()->init();
 	SceneMgr::GetInst()->init();
+
 
 	// 비트맵 설정
 	m_hBit = CreateCompatibleBitmap(m_hdc, (int)(m_ptWinInfo->right - m_ptWinInfo->left), (int)(m_ptWinInfo->bottom - m_ptWinInfo->top));
@@ -39,20 +59,43 @@ int Core::init(HWND hWnd, RECT* windowInfo)
 }
 void Core::progress()
 {
+	update();
 	// 초당 프레임 동기화
 	TimeMgr::GetInst()->update();
+	
 	KeyMgr::GetInst()->update();
 	SceneMgr::GetInst()->update();
+	CollisionMgr::GetInst()->update();
 
-	update();
 
 	render();
+	SceneMgr::GetInst()->render(m_hdc);
+	//TimeMgr::GetInst()->render(m_hdc);
+
+	// event 처리
+	EventMgr::GetInst()->update();
+}
+
+POINT Core::GetReslution()
+{
+    POINT resolution;
+    resolution.x = m_ptWinInfo->right;
+    resolution.y = m_ptWinInfo->bottom;
+    return resolution;
+}
+;
+
+void Core::CreateBrushPen()
+{
+	// brush
+	m_arrBrush[(UINT)BRUSH_TYPE::HOLLOW] = (HBRUSH)GetStockObject(HOLLOW_BRUSH);
+
+	// pen
+	m_arrPen[(UINT)PEN_TYPE::RED] = (HPEN)CreatePen(PS_SOLID, 1, RGB(255, 0, 0));
+	m_arrPen[(UINT)PEN_TYPE::GREEM] = (HPEN)CreatePen(PS_SOLID, 1, RGB(0, 255, 0));
+	m_arrPen[(UINT)PEN_TYPE::BLUE] = (HPEN)CreatePen(PS_SOLID, 1, RGB(0, 0, 255));
 
 }
-HWND Core::GetMainHWND()
-{
-	return m_hWnd;
-};
 
 void Core::update()
 {
@@ -79,3 +122,4 @@ void Core::render()
 	DeleteObject(hOldBit);
 	
 }
+

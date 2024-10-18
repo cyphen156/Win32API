@@ -2,7 +2,14 @@
 #include "TimeMgr.h"
 #include "Core.h"
 
-TimeMgr::TimeMgr() : m_liPrevCnt{}, m_liCurrCnt{}, m_liFrequency{}, m_dDT(0.), m_dAccT(0.), m_iCallCnt(0), m_iFPS(0)
+TimeMgr::TimeMgr()
+	: m_liPrevCnt{}
+	, m_liCurrCnt{}
+	, m_liFrequency{}
+	, m_dDT(0.)
+	, m_dAccT(0.)
+	, m_iCallCnt(0)
+	, m_iFPS(0)
 {
 }
 
@@ -40,4 +47,14 @@ void TimeMgr::update()
 		swprintf_s(szBuff, L"fps : %d, DT : %lf", m_iFPS, m_dDT);
 		SetWindowText(Core::GetInst()->GetMainHWND(), szBuff);
 	}
+
+#ifdef _DEBUG
+	if (m_dDT > (1. / 60.))
+		m_dDT = (1. / 60.);
+#endif
+
+}
+
+void TimeMgr::render()
+{
 }

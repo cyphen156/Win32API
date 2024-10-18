@@ -18,15 +18,17 @@ public:
 	wstring GetSceneName() { return m_sceneName; }
 
 	void update();
+	void finalupdate();
 	void render(HDC hdc);
 
 	virtual void Enter() = 0;
 	virtual void Exit() = 0;
 
-protected:
 	void AddObj(Object* pObj, ObjType objType)
 	{
 		m_arrObj[(UINT)objType].push_back(pObj);
 	}
+
+	const vector<Object*>& GetObjectGroup(ObjType objType) { return m_arrObj[(UINT)objType]; }
 };
 

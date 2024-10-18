@@ -23,3 +23,5 @@ x86/
 
 # Ignore the resources folder
 resources/
+/dontstarveCopy/dontstarveCopy/x64
+/dontstarveCopy/Output

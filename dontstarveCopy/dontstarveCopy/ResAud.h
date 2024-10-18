@@ -1,7 +1,7 @@
 #pragma once
 #include "ResMgr.h"
 
-class ResAud : public ResMgr
+class ResAud : public Res
 {
 };
 

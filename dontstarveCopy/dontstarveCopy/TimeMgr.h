@@ -18,7 +18,7 @@ private:
 public:
 	void init();
 	void update();
-
+	void render();
 	double GetfDeltaTime() { return m_dDT; }
 	float GetDeltaTime() { return (float)m_dDT; }
 };

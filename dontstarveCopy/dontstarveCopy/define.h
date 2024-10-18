@@ -22,8 +22,8 @@
 
 enum class SceneType
 {
-	TOOL,
 	START,
+	CAVE,
 
 	END
 };
@@ -32,8 +32,8 @@ enum class ObjType
 {
 	WORLD,
 	UI,
-	INSTANCE,
-	INVENTORY,
+	Player,
+	Monster,
 
 	END
 };
@@ -63,4 +63,31 @@ enum class BiomeType {
 	Rock,
 
 	END
+};
+
+enum class BRUSH_TYPE
+{
+	HOLLOW,
+
+	END
+};
+
+enum class PEN_TYPE
+{
+	RED,
+	GREEM,
+	BLUE,
+	BLACK,
+	WHITE,
+
+	END
+};
+
+enum class EVENT_TYPE
+{
+	CREATE_OBJ,
+	DELETE_OBJ,
+	CHANGE_SCENE,
+
+	END,
 };

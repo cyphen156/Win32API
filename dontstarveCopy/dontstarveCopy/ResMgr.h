@@ -1,18 +1,19 @@
 #pragma once
+#include "ResTex.h"
+#include "ResAud.h"
+#include <map>
+
+class ResTex;
 
 class ResMgr
 {
+	SINGLE(ResMgr);
+
 private:
-    wstring m_resID;
-    wstring m_resPath;
+	map<wstring, ResTex*>	m_mapTex;
 
 public:
-    ResMgr();
-    ~ResMgr();
-    
-    const wstring& GetKey() { return m_resID; }
-    const wstring& GetPath() { return m_resPath; }
-    
-    void SetKey(const wstring& resID) { m_resID = resID; }
-    void SetPaht(const wstring& resPath) { m_resPath = resPath; }
+	ResTex* LoadTex(const wstring& texID, const wstring& texPath);
+	ResTex* FindTex(const wstring& texID);
 };
+

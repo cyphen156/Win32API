@@ -7,7 +7,7 @@ Scene::Scene()
 
 Scene::~Scene()
 {
-	for (UINT i = 0; i < (UINT)SceneType::END; ++i)
+	for (UINT i = 0; i < (UINT)ObjType::END; ++i)
 	{
 		for (size_t j = 0; j < m_arrObj[i].size(); ++j)
 		{
@@ -18,22 +18,46 @@ Scene::~Scene()
 
 void Scene::update()
 {
-	for (UINT i = 0; i < (UINT)SceneType::END; ++i)
+	for (UINT i = 0; i < (UINT)ObjType::END; ++i)
 	{
 		for (size_t j = 0; j < m_arrObj[i].size(); ++j)
 		{
-			m_arrObj[i][j]->update();
+			if (m_arrObj[i][j]->isDead())
+			{
+				m_arrObj[i][j]->update();
+			}
+		}
+	}
+}
+
+void Scene::finalupdate()
+{
+	for (UINT i = 0; i < (UINT)ObjType::END; ++i)
+	{
+		for (size_t j = 0; j < m_arrObj[i].size(); ++j)
+		{
+			m_arrObj[i][j]->finalupdate();
 		}
 	}
 }
 
 void Scene::render(HDC hdc)
 {
-	for (UINT i = 0; i < (UINT)SceneType::END; ++i)
+	for (UINT i = 0; i < (UINT)ObjType::END; ++i)
 	{
-		for (size_t j = 0; j < m_arrObj[i].size(); ++j)
+		vector<Object*>::iterator iter = m_arrObj[i].begin();
+
+		for (; iter != m_arrObj[i].end();)
 		{
-			m_arrObj[i][j]->render(hdc);
+			if (!(*iter)->isDead())
+			{
+				(*iter)->render(hdc);
+				++iter;
+			}
+			else 
+			{
+				iter = m_arrObj[i].erase(iter);
+			}
 		}
 	}
 }

@@ -15,4 +15,5 @@ public:
 	void update();
 	void render(HDC hdc);
 	Scene* GetCurScene() { return m_pCurScene; }
+	void ChangeScene(SceneType next);
 };
