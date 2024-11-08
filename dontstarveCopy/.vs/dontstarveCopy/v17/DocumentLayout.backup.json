@@ -3,84 +3,152 @@
   "WorkspaceRootPath": "D:\\project\\Win32API\\dontstarveCopy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\CollisionMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\CollisionMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Animator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Animator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\TimeMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\TimeMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Animator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Animator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Collider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Collider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Collider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Collider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\func.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\func.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\func.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\func.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\EventMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\EventMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Object.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Object.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\EventMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\EventMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\SceneMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\SceneMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Core.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Core.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Collider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Collider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene_Start.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Scene_Start.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\ResMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\ResMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Animation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Animation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\ResTex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\ResTex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\ResMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\ResMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Res.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Res.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\func.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\func.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene_Start.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Scene_Start.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene_Cave.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Scene_Cave.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene_Cave.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Scene_Cave.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\SceneMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\SceneMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\dontstarveCopy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\dontstarveCopy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\ResTex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\ResTex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\PathMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\PathMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Core.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Core.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\KeyMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\KeyMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\KeyMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\KeyMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Todos.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Todos.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Struct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\Struct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\PathMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\PathMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\SelectGDI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37F2BF82-4AF9-41BC-A896-698C7DFFE371}|dontstarveCopy\\dontstarveCopy.vcxproj|solutionrelative:dontstarveCopy\\SelectGDI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -89,259 +157,491 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "DockedWidth": 195,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "dontstarveCopy.cpp",
               "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\dontstarveCopy.cpp",
               "RelativeDocumentMoniker": "dontstarveCopy\\dontstarveCopy.cpp",
               "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\dontstarveCopy.cpp",
               "RelativeToolTip": "dontstarveCopy\\dontstarveCopy.cpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAqwD0AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAxwKMAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-13T15:30:50.094Z",
-              "IsPinned": true
+              "WhenOpened": "2024-10-19T03:09:32.447Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "define.h",
-              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\define.h",
-              "RelativeDocumentMoniker": "dontstarveCopy\\define.h",
-              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\define.h",
-              "RelativeToolTip": "dontstarveCopy\\define.h",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAwwFcAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-14T06:16:40.448Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "pch.h",
-              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\pch.h",
-              "RelativeDocumentMoniker": "dontstarveCopy\\pch.h",
-              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\pch.h",
-              "RelativeToolTip": "dontstarveCopy\\pch.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-17T05:25:02.091Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "func.cpp",
-              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\func.cpp",
-              "RelativeDocumentMoniker": "dontstarveCopy\\func.cpp",
-              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\func.cpp",
-              "RelativeToolTip": "dontstarveCopy\\func.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-17T08:49:11.562Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 6,
               "Title": "Core.cpp",
               "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Core.cpp",
               "RelativeDocumentMoniker": "dontstarveCopy\\Core.cpp",
               "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Core.cpp",
               "RelativeToolTip": "dontstarveCopy\\Core.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAEEAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAzwH8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-13T15:51:57.624Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Core.h",
-              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Core.h",
-              "RelativeDocumentMoniker": "dontstarveCopy\\Core.h",
-              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Core.h",
-              "RelativeToolTip": "dontstarveCopy\\Core.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-14T16:09:28.447Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CollisionMgr.cpp",
-              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\CollisionMgr.cpp",
-              "RelativeDocumentMoniker": "dontstarveCopy\\CollisionMgr.cpp",
-              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\CollisionMgr.cpp",
-              "RelativeToolTip": "dontstarveCopy\\CollisionMgr.cpp",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAgwCUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-17T11:52:54.744Z",
+              "WhenOpened": "2024-10-19T03:10:09.583Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TimeMgr.cpp",
-              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\TimeMgr.cpp",
-              "RelativeDocumentMoniker": "dontstarveCopy\\TimeMgr.cpp",
-              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\TimeMgr.cpp",
-              "RelativeToolTip": "dontstarveCopy\\TimeMgr.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowBwAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-17T10:05:43.135Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Scene.cpp",
-              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene.cpp",
-              "RelativeDocumentMoniker": "dontstarveCopy\\Scene.cpp",
-              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene.cpp",
-              "RelativeToolTip": "dontstarveCopy\\Scene.cpp",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCUAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-17T09:40:59.724Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Monster.h",
-              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Monster.h",
-              "RelativeDocumentMoniker": "dontstarveCopy\\Monster.h",
-              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Monster.h",
-              "RelativeToolTip": "dontstarveCopy\\Monster.h",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAQwBAAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "pch.h",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\pch.h",
+              "RelativeDocumentMoniker": "dontstarveCopy\\pch.h",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\pch.h",
+              "RelativeToolTip": "dontstarveCopy\\pch.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-17T09:36:56.868Z"
+              "WhenOpened": "2024-10-19T03:09:42.775Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Monster.cpp",
-              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Monster.cpp",
-              "RelativeDocumentMoniker": "dontstarveCopy\\Monster.cpp",
-              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Monster.cpp",
-              "RelativeToolTip": "dontstarveCopy\\Monster.cpp",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAgwBAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-17T09:36:48.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SceneMgr.cpp",
-              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\SceneMgr.cpp",
-              "RelativeDocumentMoniker": "dontstarveCopy\\SceneMgr.cpp",
-              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\SceneMgr.cpp",
-              "RelativeToolTip": "dontstarveCopy\\SceneMgr.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-17T09:08:08.375Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 20,
               "Title": "func.h",
               "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\func.h",
               "RelativeDocumentMoniker": "dontstarveCopy\\func.h",
               "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\func.h",
               "RelativeToolTip": "dontstarveCopy\\func.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-17T08:49:21.66Z"
+              "WhenOpened": "2024-10-19T03:09:52.243Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "define.h",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\define.h",
+              "RelativeDocumentMoniker": "dontstarveCopy\\define.h",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\define.h",
+              "RelativeToolTip": "dontstarveCopy\\define.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-19T03:09:50.968Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "EventMgr.cpp",
-              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\EventMgr.cpp",
-              "RelativeDocumentMoniker": "dontstarveCopy\\EventMgr.cpp",
-              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\EventMgr.cpp",
-              "RelativeToolTip": "dontstarveCopy\\EventMgr.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAADAAAAAAAAAA==",
+              "Title": "Scene_Start.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene_Start.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Scene_Start.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene_Start.cpp",
+              "RelativeToolTip": "dontstarveCopy\\Scene_Start.cpp",
+              "ViewState": "AgIAACEAAAAAAAAAAAAzwCsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-17T08:32:00.513Z"
+              "WhenOpened": "2024-10-19T03:12:24.464Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EventMgr.h",
-              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\EventMgr.h",
-              "RelativeDocumentMoniker": "dontstarveCopy\\EventMgr.h",
-              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\EventMgr.h",
-              "RelativeToolTip": "dontstarveCopy\\EventMgr.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-17T05:19:18.93Z"
+              "DocumentIndex": 1,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Player.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Player.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Player.cpp",
+              "RelativeToolTip": "dontstarveCopy\\Player.cpp",
+              "ViewState": "AgIAABQAAAAAAAAAAIAxwCEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-19T03:12:10.589Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Monster.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Monster.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Monster.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Monster.cpp",
+              "RelativeToolTip": "dontstarveCopy\\Monster.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-19T03:12:15.081Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "ResMgr.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\ResMgr.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy\\ResMgr.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\ResMgr.cpp",
+              "RelativeToolTip": "dontstarveCopy\\ResMgr.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-19T03:12:33.47Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ResTex.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\ResTex.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy\\ResTex.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\ResTex.cpp",
+              "RelativeToolTip": "dontstarveCopy\\ResTex.cpp",
+              "ViewState": "AgIAAAEAAAAAAAAAAAA5wAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-19T03:12:40.019Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PathMgr.h",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\PathMgr.h",
+              "RelativeDocumentMoniker": "dontstarveCopy\\PathMgr.h",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\PathMgr.h",
+              "RelativeToolTip": "dontstarveCopy\\PathMgr.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-20T10:19:02.359Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Animator.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Animator.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Animator.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Animator.cpp",
+              "RelativeToolTip": "dontstarveCopy\\Animator.cpp",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAMwD8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-08T18:27:54.716Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Scene.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Scene.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene.cpp",
+              "RelativeToolTip": "dontstarveCopy\\Scene.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAIAxwCYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-08T18:00:54.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Animation.h",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Animation.h",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Animation.h",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Animation.h",
+              "RelativeToolTip": "dontstarveCopy\\Animation.h",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwA4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-20T10:19:42.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Object.h",
               "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Object.h",
               "RelativeDocumentMoniker": "dontstarveCopy\\Object.h",
               "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Object.h",
               "RelativeToolTip": "dontstarveCopy\\Object.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAwwCIAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAhwAMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-17T05:05:50.829Z"
+              "WhenOpened": "2024-11-07T10:56:08.294Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
               "Title": "Object.cpp",
               "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Object.cpp",
               "RelativeDocumentMoniker": "dontstarveCopy\\Object.cpp",
               "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Object.cpp",
               "RelativeToolTip": "dontstarveCopy\\Object.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAIAxwEQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-17T05:05:46.054Z"
+              "WhenOpened": "2024-11-08T08:46:53.269Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Collider.cpp",
-              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Collider.cpp",
-              "RelativeDocumentMoniker": "dontstarveCopy\\Collider.cpp",
-              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Collider.cpp",
-              "RelativeToolTip": "dontstarveCopy\\Collider.cpp",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCEAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Animation.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Animation.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Animation.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Animation.cpp",
+              "RelativeToolTip": "dontstarveCopy\\Animation.cpp",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-17T05:05:14.342Z"
+              "WhenOpened": "2024-11-07T08:56:40.146Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Collider.h",
-              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Collider.h",
-              "RelativeDocumentMoniker": "dontstarveCopy\\Collider.h",
-              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Collider.h",
-              "RelativeToolTip": "dontstarveCopy\\Collider.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAgwA4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-16T06:44:22.185Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 17,
               "Title": "Scene.h",
               "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene.h",
               "RelativeDocumentMoniker": "dontstarveCopy\\Scene.h",
               "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene.h",
               "RelativeToolTip": "dontstarveCopy\\Scene.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAywBcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-15T08:19:47.492Z"
+              "WhenOpened": "2024-11-08T17:27:46.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Player.h",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Player.h",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Player.h",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Player.h",
+              "RelativeToolTip": "dontstarveCopy\\Player.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-20T08:54:17.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SceneMgr.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\SceneMgr.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy\\SceneMgr.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\SceneMgr.cpp",
+              "RelativeToolTip": "dontstarveCopy\\SceneMgr.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-08T17:16:15.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Animator.h",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Animator.h",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Animator.h",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Animator.h",
+              "RelativeToolTip": "dontstarveCopy\\Animator.h",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwBkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-20T10:19:27.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Scene_Cave.h",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene_Cave.h",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Scene_Cave.h",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene_Cave.h",
+              "RelativeToolTip": "dontstarveCopy\\Scene_Cave.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-08T17:59:27.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ResTex.h",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\ResTex.h",
+              "RelativeDocumentMoniker": "dontstarveCopy\\ResTex.h",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\ResTex.h",
+              "RelativeToolTip": "dontstarveCopy\\ResTex.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-20T08:54:59.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Scene_Start.h",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene_Start.h",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Scene_Start.h",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene_Start.h",
+              "RelativeToolTip": "dontstarveCopy\\Scene_Start.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-08T17:27:45.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Scene_Cave.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene_Cave.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Scene_Cave.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Scene_Cave.cpp",
+              "RelativeToolTip": "dontstarveCopy\\Scene_Cave.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-08T17:59:15.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ResMgr.h",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\ResMgr.h",
+              "RelativeDocumentMoniker": "dontstarveCopy\\ResMgr.h",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\ResMgr.h",
+              "RelativeToolTip": "dontstarveCopy\\ResMgr.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-20T08:57:04.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Monster.h",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Monster.h",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Monster.h",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Monster.h",
+              "RelativeToolTip": "dontstarveCopy\\Monster.h",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwB4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-20T09:45:54.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SceneMgr.h",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\SceneMgr.h",
+              "RelativeDocumentMoniker": "dontstarveCopy\\SceneMgr.h",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\SceneMgr.h",
+              "RelativeToolTip": "dontstarveCopy\\SceneMgr.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-08T17:23:43.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Core.h",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Core.h",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Core.h",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Core.h",
+              "RelativeToolTip": "dontstarveCopy\\Core.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-08T09:25:19.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Collider.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Collider.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Collider.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Collider.cpp",
+              "RelativeToolTip": "dontstarveCopy\\Collider.cpp",
+              "ViewState": "AgIAABEAAAAAAAAAAIAxwB8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-20T11:59:12.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Res.h",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Res.h",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Res.h",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Res.h",
+              "RelativeToolTip": "dontstarveCopy\\Res.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-07T08:52:37.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Struct.h",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Struct.h",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Struct.h",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Struct.h",
+              "RelativeToolTip": "dontstarveCopy\\Struct.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-07T08:52:42.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "KeyMgr.h",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\KeyMgr.h",
+              "RelativeDocumentMoniker": "dontstarveCopy\\KeyMgr.h",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\KeyMgr.h",
+              "RelativeToolTip": "dontstarveCopy\\KeyMgr.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-08T08:06:11.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Todos.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Todos.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy\\Todos.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\Todos.cpp",
+              "RelativeToolTip": "dontstarveCopy\\Todos.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-08T08:00:15.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "KeyMgr.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\KeyMgr.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy\\KeyMgr.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\KeyMgr.cpp",
+              "RelativeToolTip": "dontstarveCopy\\KeyMgr.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-08T08:06:02.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PathMgr.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\PathMgr.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy\\PathMgr.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\PathMgr.cpp",
+              "RelativeToolTip": "dontstarveCopy\\PathMgr.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwBQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-20T10:46:22.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "SelectGDI.cpp",
+              "DocumentMoniker": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\SelectGDI.cpp",
+              "RelativeDocumentMoniker": "dontstarveCopy\\SelectGDI.cpp",
+              "ToolTip": "D:\\project\\Win32API\\dontstarveCopy\\dontstarveCopy\\SelectGDI.cpp",
+              "RelativeToolTip": "dontstarveCopy\\SelectGDI.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-20T09:21:55.922Z"
             }
           ]
         }

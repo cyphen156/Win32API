@@ -1,5 +1,4 @@
 #pragma once
-#include <vector>
 #include "Object.h"
 
 class Object;
@@ -17,9 +16,9 @@ public:
 	void SetName(const wstring name) { m_sceneName = name; }
 	wstring GetSceneName() { return m_sceneName; }
 
-	void update();
-	void finalupdate();
-	void render(HDC hdc);
+	virtual void update();
+	virtual void finalupdate();
+	virtual void render(HDC hdc);
 
 	virtual void Enter() = 0;
 	virtual void Exit() = 0;
@@ -30,5 +29,8 @@ public:
 	}
 
 	const vector<Object*>& GetObjectGroup(ObjType objType) { return m_arrObj[(UINT)objType]; }
+	
+	void DeleteAll();
+	void DeleteGroup(ObjType target);
 };
 

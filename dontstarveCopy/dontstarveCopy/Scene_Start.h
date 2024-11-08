@@ -9,6 +9,7 @@ public:
     ~Scene_Start();
 
     virtual void update();
+    virtual void render(HDC hdc);
     virtual void Enter();
     virtual void Exit();
 };

@@ -8,6 +8,7 @@ UINT Collider::g_iNextID = 0;
 Collider::Collider()
 	: m_pOwner(nullptr)
 	, m_iColliderID(g_iNextID++)
+	, m_bCol(false)
 {
 }
 
@@ -16,7 +17,7 @@ Collider::Collider(const Collider& origin)
 	, m_vOffSetPos(origin.m_vOffSetPos)
 	, m_vColliderSize(origin.m_vColliderSize)
 	, m_iColliderID(g_iNextID++)
-
+	, m_bCol(false)
 {
 	UINT m_iColliderId;
 }

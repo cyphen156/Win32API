@@ -12,9 +12,11 @@ private:
 
 public:
     Monster();
+    Monster(const Monster& origin);
     ~Monster();
 
     virtual void OnCollisionEnter(Collider* pOther);
+    virtual void GetAnimations(wstring& TexPath);
     virtual void update();
     virtual void render(HDC hdc);
 
@@ -25,5 +27,7 @@ public:
     void SetSpeed(float speed) { m_fspeed = speed; }
 
     void SetMaxMoveDistance(float distance) { m_fMaxDist = distance; }
+
+    Monster* Clone() { return new Monster(*this); }
 };
 

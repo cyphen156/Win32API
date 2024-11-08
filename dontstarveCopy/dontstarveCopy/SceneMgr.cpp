@@ -1,7 +1,8 @@
 #include "pch.h"
 #include "SceneMgr.h"
 #include "Scene_Start.h"
-#include "SceneCave.h"
+#include "Scene_Cave.h"
+#include "EventMgr.h"
 
 SceneMgr::SceneMgr() : m_arrScene{}, m_pCurScene{} {};
 
@@ -19,7 +20,7 @@ void SceneMgr::init()
 {
 	m_arrScene[(UINT)SceneType::START] = new Scene_Start;
 	m_arrScene[(UINT)SceneType::START]->SetName(L"Start Scene");
-	m_arrScene[(UINT)SceneType::CAVE] = new Scene_Start;
+	m_arrScene[(UINT)SceneType::CAVE] = new Scene_Cave;
 	m_arrScene[(UINT)SceneType::CAVE]->SetName(L"Cave Scene");
 
 	// ½ÃÀÛ ¾À ÁöÁ¤
@@ -41,6 +42,8 @@ void SceneMgr::render(HDC hdc)
 
 void SceneMgr::ChangeScene(SceneType next)
 {
-	m_pCurScene = m_arrScene[(UINT)SceneType::next];
+	m_pCurScene->Exit();
+	m_pCurScene = m_arrScene[(UINT)next];
 	m_pCurScene->Enter();
+
 }

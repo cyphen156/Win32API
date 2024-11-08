@@ -22,6 +22,7 @@ Core::Core()
 
 Core::~Core() 
 {
+	GdiplusShutdown(gdiplusToken);
 	ReleaseDC(m_hWnd, m_hdc);
 
 	DeleteDC(m_MemDC);
@@ -37,9 +38,27 @@ int Core::init(HWND hWnd, RECT* windowInfo)
 {
 	m_hWnd = hWnd;
 	m_ptWinInfo = windowInfo;
-	
+
+	GdiplusStartupInput gdiplusStartupInput;
+	if (::GdiplusStartup(&gdiplusToken, &gdiplusStartupInput, NULL) != Ok) 
+	{
+		MessageBox(nullptr, L"GDI+ Initialization failed!", L"Error", MB_OK);
+		return E_FAIL; // 초기화 실패
+	}
+
 	m_hdc = GetDC(m_hWnd);
 	
+	/*Graphics graphics(m_hdc);
+
+	Image* image = Image::FromFile(L"D:\\project\\Win32API\\dontstarveCopy\\Output\\bin\\content\\Textures\\Player\\Idle\\Down\\Player_IDLE_DOWN_000.png");
+	if (image->GetLastStatus() != Ok)
+	{
+		MessageBox(nullptr, L"Failed to load image.", L"Error", MB_OK);
+	}
+
+	graphics.DrawImage(image, 100, 100);*/
+
+
 	// 기본 GDI 인스턴스 생성
 	CreateBrushPen();
 	// 매니저 초기화
@@ -60,17 +79,9 @@ int Core::init(HWND hWnd, RECT* windowInfo)
 void Core::progress()
 {
 	update();
-	// 초당 프레임 동기화
-	TimeMgr::GetInst()->update();
-	
-	KeyMgr::GetInst()->update();
-	SceneMgr::GetInst()->update();
-	CollisionMgr::GetInst()->update();
-
 
 	render();
-	SceneMgr::GetInst()->render(m_hdc);
-	//TimeMgr::GetInst()->render(m_hdc);
+	
 
 	// event 처리
 	EventMgr::GetInst()->update();
@@ -99,19 +110,26 @@ void Core::CreateBrushPen()
 
 void Core::update()
 {
-	// 플레이어 렌더링
+	// 초당 프레임 동기화
+	TimeMgr::GetInst()->update();
 
-	// 몬스터 업데이트
-
-	// 월드맵 업데이트
+	KeyMgr::GetInst()->update();
+	// 씬 업데이트
+	SceneMgr::GetInst()->update();
+	// 충돌체 업데이트
+	CollisionMgr::GetInst()->update();
 }
 
 void Core::render()
 {
+	TimeMgr::GetInst()->render();
+
+	// 씬 렌더링
+	SceneMgr::GetInst()->render(m_hdc);
 	// 월드맵 텍스쳐 렌더링
 
 	// 플레이어 렌더링
-
+	
 	// 몬스터 렌더링
 	HBITMAP hOldBit = (HBITMAP)SelectObject(m_MemDC, m_hBit);
 

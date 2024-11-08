@@ -1,3 +1,5 @@
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\Animation.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Debug\Animation.obj
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\Animator.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Debug\Animator.obj
 D:\project\Win32API\dontstarveCopy\dontstarveCopy\Attack.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Debug\Attack.obj
 D:\project\Win32API\dontstarveCopy\dontstarveCopy\Collider.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Debug\Collider.obj
 D:\project\Win32API\dontstarveCopy\dontstarveCopy\CollisionMgr.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Debug\CollisionMgr.obj
@@ -16,6 +18,7 @@ D:\project\Win32API\dontstarveCopy\dontstarveCopy\Res.cpp;D:\project\Win32API\do
 D:\project\Win32API\dontstarveCopy\dontstarveCopy\ResMgr.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Debug\ResMgr.obj
 D:\project\Win32API\dontstarveCopy\dontstarveCopy\ResTex.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Debug\ResTex.obj
 D:\project\Win32API\dontstarveCopy\dontstarveCopy\Scene.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Debug\Scene.obj
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\Scene_Cave.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Debug\Scene_Cave.obj
 D:\project\Win32API\dontstarveCopy\dontstarveCopy\SceneMgr.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Debug\SceneMgr.obj
 D:\project\Win32API\dontstarveCopy\dontstarveCopy\Scene_Start.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Debug\Scene_Start.obj
 D:\project\Win32API\dontstarveCopy\dontstarveCopy\SelectGDI.cpp;D:\project\Win32API\dontstarveCopy\dontstarveCopy\x64\Debug\SelectGDI.obj

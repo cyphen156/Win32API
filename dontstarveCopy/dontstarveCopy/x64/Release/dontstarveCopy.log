@@ -1,9 +1,66 @@
-﻿  Core.cpp
+﻿  pch.cpp
+  Animation.cpp
+  Animator.cpp
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\func.h(31,13): warning C4150: 불완전한 형식 'Animation'에 대한 포인터를 삭제했습니다. 소멸자가 호출되지 않습니다.
+  (소스 파일 '/Animator.cpp'을(를) 컴파일하는 중)
+      D:\project\Win32API\dontstarveCopy\dontstarveCopy\Animator.h(5,7):
+      'Animation' 선언을 참조하십시오.
+      D:\project\Win32API\dontstarveCopy\dontstarveCopy\func.h(31,13):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          D:\project\Win32API\dontstarveCopy\dontstarveCopy\Animator.cpp(12,2):
+          컴파일되는 함수 템플릿 인스턴스화 'void Safe_Delete_Map<std::wstring,Animation*>(std::map<std::wstring,Animation *,std::less<std::wstring>,std::allocator<std::pair<const std::wstring,Animation *>>> &)'에 대한 참조를 확인하세요.
+  
+  Attack.cpp
+  Collider.cpp
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\Collider.cpp(22,7): warning C4101: 'm_iColliderId' :참조되지 않은 지역 변수입니다.
+  (소스 파일 '/Collider.cpp'을(를) 컴파일하는 중)
+  
+  CollisionMgr.cpp
+  Core.cpp
+  dontstarveCopy.cpp
   EventMgr.cpp
-  ResTex.cpp
   func.cpp
-  코드를 생성하고 있습니다.
-  Compiler switch has changed, fall back to full compilation.
-  All 655 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  코드를 생성했습니다.
-  dontstarveCopy.vcxproj -> D:\project\Win32API\dontstarveCopy\Output\bin\dontstarveCopy.exe
+  KeyMgr.cpp
+  Monster.cpp
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\Monster.cpp(40,36): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Monster.cpp'을(를) 컴파일하는 중)
+  
+  Object.cpp
+  PathMgr.cpp
+  Player.cpp
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\Player.cpp(30,22): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Player.cpp'을(를) 컴파일하는 중)
+  
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\Player.cpp(34,22): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Player.cpp'을(를) 컴파일하는 중)
+  
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\Player.cpp(38,22): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Player.cpp'을(를) 컴파일하는 중)
+  
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\Player.cpp(42,22): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Player.cpp'을(를) 컴파일하는 중)
+  
+  ResAud.cpp
+  Res.cpp
+  ResMgr.cpp
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\func.h(31,13): error C2248: 'ResTex::~ResTex': private 멤버('ResTex' 클래스에서 선언)에 액세스할 수 없습니다.
+  (소스 파일 '/ResMgr.cpp'을(를) 컴파일하는 중)
+      D:\project\Win32API\dontstarveCopy\dontstarveCopy\ResTex.h(24,1):
+      컴파일러에서 여기에 'ResTex::~ResTex'을(를) 생성했습니다.
+      D:\project\Win32API\dontstarveCopy\dontstarveCopy\ResTex.h(7,7):
+      'ResTex' 선언을 참조하십시오.
+      D:\project\Win32API\dontstarveCopy\dontstarveCopy\func.h(31,13):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          D:\project\Win32API\dontstarveCopy\dontstarveCopy\ResMgr.cpp(12,2):
+          컴파일되는 함수 템플릿 인스턴스화 'void Safe_Delete_Map<std::wstring,ResTex*>(std::map<std::wstring,ResTex *,std::less<std::wstring>,std::allocator<std::pair<const std::wstring,ResTex *>>> &)'에 대한 참조를 확인하세요.
+  
+  ResTex.cpp
+  Scene.cpp
+  SceneCave.cpp
+  컴파일하고 있습니다...
+  SceneMgr.cpp
+  Scene_Start.cpp
+  SelectGDI.cpp
+  Terrain.cpp
+  TimeMgr.cpp
+  World.cpp

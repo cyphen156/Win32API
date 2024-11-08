@@ -7,6 +7,8 @@
 #include "PathMgr.h"
 #include "ResMgr.h"
 #include "CollisionMgr.h"
+#include "SceneMgr.h"
+#include "KeyMgr.h"
 
 Scene_Start::Scene_Start()
 {
@@ -19,6 +21,16 @@ Scene_Start::~Scene_Start()
 void Scene_Start::update()
 {
 	Scene::update();
+
+	if (KEY_DOWN(KEY::ENTER))
+	{
+		ChangeScene(SceneType::CAVE);
+	}
+}
+
+void Scene_Start::render(HDC hdc)
+{
+	Scene::render(hdc);
 }
 
 void Scene_Start::Enter()
@@ -30,7 +42,6 @@ void Scene_Start::Enter()
 	pObj->SetScale(Vec2D{100.f, 100.f});
 
 	AddObj(pObj, ObjType::Player);
-
 
 	// 몬스터 그룹 추가
 	int iMonsterCnt = 0;
@@ -56,5 +67,7 @@ void Scene_Start::Enter()
 
 void Scene_Start::Exit()
 {
+	DeleteAll();
+
 	CollisionMgr::GetInst()->Reset();
 }

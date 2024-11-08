@@ -46,7 +46,7 @@ enum class KEY
 	LCONTROL,
 	LMENU,		//ALT
 	LSHIFT,
-	RETURN,
+	ENTER,
 	SPACE,
 	ESCAPE,
 	TAB,

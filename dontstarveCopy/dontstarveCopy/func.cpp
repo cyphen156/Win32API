@@ -21,3 +21,12 @@ void DeleteObj(Object* deleteObj)
 	EventMgr::GetInst()->AddEvent(event);
 }
 
+void ChangeScene(SceneType next)
+{
+	tEvent event = {};
+	event.eEvent = EVENT_TYPE::CHANGE_SCENE;
+	event.lParam = (DWORD)next;
+
+	EventMgr::GetInst()->AddEvent(event);
+}
+

@@ -62,10 +62,15 @@ void Scene::render(HDC hdc)
 	}
 }
 
-void Scene::Enter()
+void Scene::DeleteAll()
 {
+	for (UINT i = 0; i < (UINT)ObjType::END; ++i)
+	{
+		DeleteGroup((ObjType)i);
+	}
 }
 
-void Scene::Exit()
+void Scene::DeleteGroup(ObjType target)
 {
+	Safe_Delete_Vec<Object*>(m_arrObj[(UINT)target]);
 }

@@ -19,6 +19,9 @@ private:
 	void render();
 
 	void CreateBrushPen();
+
+	ULONG_PTR gdiplusToken;
+	Graphics* graphics;
 public:
 
 	int init(HWND hWnd, RECT* windowInfo);

@@ -35,6 +35,12 @@ public:
 		return Vec2D(x + vOther.x, y + vOther.y);
 	}
 
+	void operator += (Vec2D other)
+	{
+		x += other.x;
+		y += other.y;
+	}
+
 	Vec2D operator - (Vec2D vOther)
 	{
 		return Vec2D(x - vOther.x, y - vOther.y);
@@ -43,6 +49,12 @@ public:
 	{
 		return Vec2D(x * vOther.x, y * vOther.y);
 	}
+
+	Vec2D operator * (int i)
+	{
+		return Vec2D(x * (float)i, y * (float)i);
+	}
+
 	Vec2D operator / (Vec2D vOther)
 	{
 		assert(!(0.f == vOther.x || 0.f == vOther.y));

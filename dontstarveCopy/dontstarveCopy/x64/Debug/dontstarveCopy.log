@@ -1,2 +1,14 @@
-﻿  CollisionMgr.cpp
+﻿  Player.cpp
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\Player.cpp(126,22): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Player.cpp'을(를) 컴파일하는 중)
+  
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\Player.cpp(131,22): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Player.cpp'을(를) 컴파일하는 중)
+  
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\Player.cpp(137,22): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Player.cpp'을(를) 컴파일하는 중)
+  
+D:\project\Win32API\dontstarveCopy\dontstarveCopy\Player.cpp(142,22): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Player.cpp'을(를) 컴파일하는 중)
+  
   dontstarveCopy.vcxproj -> D:\project\Win32API\dontstarveCopy\Output\bin_debug\dontstarveCopy.exe

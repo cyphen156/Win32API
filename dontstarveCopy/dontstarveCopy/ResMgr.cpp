@@ -1,6 +1,10 @@
 #include "pch.h"
 #include "ResMgr.h"
+#include "Res.h"
+#include "ResTex.h"
 #include "PathMgr.h"
+#include <map>
+#include <filesystem>
 
 ResMgr::ResMgr()
 {
@@ -8,12 +12,7 @@ ResMgr::ResMgr()
 
 ResMgr::~ResMgr()
 {
-	map<wstring, ResTex*>::iterator iter = m_mapTex.begin();
-
-	for (; iter != m_mapTex.end(); ++iter)
-	{
-		delete iter->second;
-	}
+	Safe_Delete_Map(m_mapTex);
 };
 
 ResTex* ResMgr::LoadTex(const wstring& texID, const wstring& texPath)
@@ -26,12 +25,12 @@ ResTex* ResMgr::LoadTex(const wstring& texID, const wstring& texPath)
 	
 	// 이미지 로드
 	wstring TexPath = PathMgr::GetInst()->GetContentPath();
-	TexPath += texPath;
+	TexPath = texPath;
 
 	ResTex* pTex = new ResTex;
 	pTex->Load(TexPath);
 	pTex->SetKey(texID);
-	pTex->SetPaht(texPath);
+	pTex->SetPath(texPath);
 
 	m_mapTex.insert(make_pair(texID, pTex));
 
@@ -40,12 +39,12 @@ ResTex* ResMgr::LoadTex(const wstring& texID, const wstring& texPath)
 
 ResTex* ResMgr::FindTex(const wstring& texID)
 {
-	map<wstring, ResTex*>::iterator iter = m_mapTex.find(texID);
+	map<wstring, Res*>::iterator iter = m_mapTex.find(texID);
 
 	if (m_mapTex.end() == iter)
 	{
 		return nullptr;
 	}
 
-	return iter->second;
+	return (ResTex*)iter->second;
 }

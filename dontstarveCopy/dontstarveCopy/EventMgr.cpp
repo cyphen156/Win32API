@@ -30,7 +30,8 @@ void EventMgr::Execute(const tEvent& event)
 		}
 		case EVENT_TYPE::CHANGE_SCENE:
 		{
-
+			SceneMgr::GetInst()->ChangeScene((SceneType)event.lParam);
+			break;
 		}
 	}
 }

@@ -2,8 +2,8 @@
 #include "Monster.h"
 #include "TimeMgr.h"
 
-Monster::Monster() : 
-	m_vCenterPos(Vec2D(0.f, 0.f))
+Monster::Monster()
+	: m_vCenterPos(Vec2D(0.f, 0.f))
 	, m_fspeed(100.f)
 	, m_fMaxDist(50.f)
 	, m_iDirection(1)
@@ -13,6 +13,17 @@ Monster::Monster() :
 	GetCollider()->SetColliderSize(Vec2D(100.f, 100.f));
 }
 
+Monster::Monster(const Monster& origin)
+	: Object(origin)
+	, m_vCenterPos(origin.m_vCenterPos)
+	, m_fspeed(origin.m_fspeed)
+	, m_fMaxDist(origin.m_fMaxDist)
+	, m_iDirection(origin.m_iDirection)
+{
+	CreateCollider();
+	GetCollider()->SetOffsetPos(Vec2D(0.f, 0.f));
+	GetCollider()->SetColliderSize(Vec2D(100.f, 100.f));
+}
 Monster::~Monster()
 {
 }
@@ -24,6 +35,10 @@ void Monster::OnCollisionEnter(Collider* pOther)
 	{
 		DeleteObject(this);
 	}
+}
+
+void Monster::GetAnimations(wstring& TexPath)
+{
 }
 
 void Monster::update()

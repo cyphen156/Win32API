@@ -1,8 +1,6 @@
 #pragma once
-#include "ResTex.h"
-#include "ResAud.h"
-#include <map>
 
+class Res;
 class ResTex;
 
 class ResMgr
@@ -10,7 +8,7 @@ class ResMgr
 	SINGLE(ResMgr);
 
 private:
-	map<wstring, ResTex*>	m_mapTex;
+	map<wstring, Res*>	m_mapTex;
 
 public:
 	ResTex* LoadTex(const wstring& texID, const wstring& texPath);
