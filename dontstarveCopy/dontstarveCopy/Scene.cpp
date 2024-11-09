@@ -22,7 +22,7 @@ void Scene::update()
 	{
 		for (size_t j = 0; j < m_arrObj[i].size(); ++j)
 		{
-			if (m_arrObj[i][j]->isDead())
+			if (!m_arrObj[i][j]->isDead())
 			{
 				m_arrObj[i][j]->update();
 			}

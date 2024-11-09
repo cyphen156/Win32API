@@ -16,7 +16,8 @@ public:
     ~Monster();
 
     virtual void OnCollisionEnter(Collider* pOther);
-    virtual void GetAnimations(wstring& TexPath);
+    virtual void GenerateAnimations(wstring& TexPath);
+    virtual void GetAnimations(vector<ResTex*> frames, wstring& animationName, wstring& TexPath);
     virtual void update();
     virtual void render(HDC hdc);
 

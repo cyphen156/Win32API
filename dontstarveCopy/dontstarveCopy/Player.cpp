@@ -6,18 +6,12 @@
 #include "ResMgr.h"
 #include "Animator.h"
 #include "Animation.h"
-#include "PathMgr.h"
 
 Player::Player()
 	: m_fspeed(100.f)
 	, bisRight(true)
 {
 	// 리소스 로딩 - Texture
-	
-
-	CreateCollider();
-	GetCollider()->SetOffsetPos(Vec2D(0.f, 0.f));
-	GetCollider()->SetColliderSize(Vec2D(100.f, 100.f));
 
 	wstring resPath = PathMgr::GetInst()->GetContentPath();
 	resPath += L"Textures\\Player";
@@ -31,8 +25,26 @@ Player::Player()
 	MessageBox(nullptr, (L"All Resource has Loaded"), L"Notice", MB_OK);
 	SetCurrDir(L"Down");
 	wstring dir = GetCurrDir();
-	GetAnimator()->Play(ObjType::Player, L"Run", false, dir);
+	GetAnimator()->Play(ObjType::Player, L"Attack", true, dir);
+	ResTex* pTex = GetAnimator()->FindAnimation(L"Player_Attack_Down")->GetFrame(0);
+		//GetAnimation()->GetFrame()
+	Image* img = pTex->GetImage();
+	float width = (float)img->GetWidth();
+	float height= (float)img->GetHeight();
+	Vec2D baseScale(width, height);
+	SetPos(Vec2D(300.f, 300.f));
+	SetScale(baseScale);
 
+	Vec2D reScale(0.8f, 0.8f);
+	Vec2D colSize = GetScale();
+	
+	CreateCollider();
+	GetCollider()->SetOffsetPos(colSize/Vec2D(2, 2));
+
+	colSize = colSize * reScale;
+	GetCollider()->SetColliderSize(colSize);
+
+	//MessageBox(nullptr, (L"All Resource has Loaded"), L"Notice", MB_OK);
 
 }
 
@@ -44,11 +56,13 @@ Player::~Player()
 void Player::GenerateAnimations(wstring& TexPath)
 {
 	vector<ResTex*> frames;
-	wstring animationName;
+	wstring animationName = L"";
 
 	GetAnimations(frames, animationName, TexPath);
+	//GetAnimations(TexPath);
 }
-void Player::GetAnimations(vector<ResTex*> frames, wstring animationName, wstring& TexPath)
+void Player::GetAnimations(vector<ResTex*> frames, wstring& animationName, wstring& TexPath)
+//void Player::GetAnimations(wstring& TexPath)
 {
 	WIN32_FIND_DATA findDir;
 	HANDLE hFind = FindFirstFile((TexPath + L"\\*").c_str(), &findDir);
@@ -73,7 +87,8 @@ void Player::GetAnimations(vector<ResTex*> frames, wstring animationName, wstrin
 			if (findDir.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
 			{
 				// 하위 폴더가 있는 경우 재귀 호출
-				GetAnimations(fullPath);
+				GetAnimations(frames, animationName, fullPath);
+				//GetAnimations(fullPath);
 			}
 			else if (wstring(findDir.cFileName).find(L".png") != wstring::npos)
 			{
@@ -109,7 +124,10 @@ void Player::GetAnimations(vector<ResTex*> frames, wstring animationName, wstrin
 	// 애니메이션 생성
 	if (!frames.empty())
 	{
-		GetAnimator()->CreateAnimation(animationName, frames, 0.5f); // 각 프레임의 지속 시간 0.1초
+		double sec = 1;
+		double frameTime = (frames.size() / (double)1000 * sec);	// size = deltatime * sec;
+
+		GetAnimator()->CreateAnimation(animationName, frames, frameTime);
 		//MessageBox(nullptr, (animationName + L" is loaded " + std::to_wstring(frames.size()) + L" frames").c_str(), L"Notice", MB_OK);
 		frames.clear();
 		animationName = L"";
@@ -165,15 +183,20 @@ void Player::render(HDC hdc)
 	//리소스 개별로딩때 써먹엇던 코드
 
 	Vec2D vPlayerPos = GetPos();
-
-	UINT iWidth = 20;
-	UINT iHeight = 20;
+	Vec2D vPlayerScale = GetScale();
+	/*UINT iWidth = 20;
+	UINT iHeight = 20;*/
 	//MessageBox(nullptr, (L"Before Call Anim Render"), L"Notice", MB_OK);
+	HPEN hOldPen = (HPEN)CreatePen(PS_SOLID, 5, RGB(0, 0, 255));
+	SelectObject(hdc, hOldPen);
+	Rectangle(hdc, vPlayerPos.x
+		, vPlayerPos.y
+		, vPlayerPos.x + vPlayerScale.x
+		, vPlayerPos.y + vPlayerScale.y);
+	DeleteObject(hOldPen);
+	
+	//GetAnimator()->render(hdc);
 
-
-	GetAnimator()->render(hdc);
-
-	/*Rectangle(hdc, 50, 50, iWidth, iHeight);*/
 
 	// 애니메이션 렌더링
 

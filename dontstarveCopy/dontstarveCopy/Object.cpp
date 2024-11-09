@@ -72,7 +72,6 @@ void Object::finalupdate()
 
 void Object::render(HDC hdc)
 {
-
 	componentRender(hdc);
 }
 

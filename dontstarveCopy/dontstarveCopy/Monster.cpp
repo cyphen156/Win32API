@@ -37,7 +37,11 @@ void Monster::OnCollisionEnter(Collider* pOther)
 	}
 }
 
-void Monster::GetAnimations(wstring& TexPath)
+void Monster::GenerateAnimations(wstring& TexPath)
+{
+}
+
+void Monster::GetAnimations(vector<ResTex*> frames, wstring& animationName, wstring& TexPath)
 {
 }
 

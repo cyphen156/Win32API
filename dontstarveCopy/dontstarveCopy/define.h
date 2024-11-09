@@ -23,6 +23,10 @@
 
 #define CLONE(type) type* Clone {return new type(*this);}
 
+#define WSREGULAR 500
+#define WSLARGE 1000
+
+
 enum class SceneType
 {
 	START,
@@ -47,6 +51,14 @@ enum class InstType
 	PLAYER,
 	MONSTER,
 	ITEM,
+
+	END
+};
+
+enum class MONSTER
+{
+	Spider,
+	Pig,
 
 	END
 };
@@ -91,6 +103,8 @@ enum class EVENT_TYPE
 	CREATE_OBJ,
 	DELETE_OBJ,
 	CHANGE_SCENE,
+	ATTACK,
+	HIT,
 
 	END,
 };

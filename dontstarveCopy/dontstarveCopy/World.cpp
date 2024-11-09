@@ -9,12 +9,12 @@
 
 static int cnt = 0;
 
-World::World(RECT* wlSize) : worldWidth(wlSize->right), worldHeight(wlSize->bottom) 
+World::World(SceneType type)
+    : wldSize(0, 0)
+    , worldMap{}
+	, tiles{}
+    , tileSize(0)
 {
-    tileSize = 50;
-    // 전체 월드 생성, default Biome : water
-    worldMap.resize(worldWidth, std::vector<Terrain>(worldHeight, BiomeType::Water));
-
     // 랜덤 시드 초기화
     srand(static_cast<unsigned>(time(0)));
 }
@@ -23,7 +23,77 @@ World::~World()
 {
 }
 
+void World::SetWorldSize(bool isLarge)
+{
+    if (isLarge)
+    {
+        wldSize.x = WSLARGE;
+        wldSize.y = WSLARGE;
+    }
+    else 
+    {
+        wldSize.x = WSREGULAR;
+        wldSize.y = WSREGULAR;
+    }
+}
 
+void World::generateWorld()
+{
+    wstring resPath = PathMgr::GetInst()->GetContentPath();
+    resPath += L"\\Textures\\Particle";
+    
+    LoadTile(resPath);
+	setTileSize(50);
+	// 전체 월드 생성, default Biome : water
+    worldMap.resize(wldSize.x, std::vector<Terrain>(wldSize.y, BiomeType::Water));
+}
+
+void World::LoadTile(wstring& TexPath)
+{
+    WIN32_FIND_DATA findDir;
+	HANDLE hFind = FindFirstFile((TexPath + L"\\*").c_str(), &findDir);
+
+	if (hFind == INVALID_HANDLE_VALUE)
+	{
+		// 로더 경로명 문제 발생
+		MessageBox(nullptr, (L"Cannot find Dir" + TexPath + L" Error :: Invalid Path.").c_str(), L"Error", MB_OK);
+		return;
+	}
+	
+	bool isEmpty = true;
+
+	do {
+		if (wcscmp(findDir.cFileName, L".") != 0 && wcscmp(findDir.cFileName, L"..") != 0)
+		{
+			isEmpty = false;
+			wstring fullPath = TexPath + L"\\" + findDir.cFileName;
+
+			if (findDir.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
+			{
+				LoadTile(fullPath);
+			}
+			else if (wstring(findDir.cFileName).find(L".png") != wstring::npos)
+			{
+				// 하위 폴더가 없고, png파일이 있다면
+				wstring fileName = findDir.cFileName;
+
+				ResTex* pTex = ResMgr::GetInst()->LoadTex(fileName, fullPath);
+				if (pTex)
+				{
+					tiles.push_back(pTex);
+					//MessageBox(nullptr, (fileName + L" is loaded " + std::to_wstring(frames.size()) + L" frames").c_str(), L"Notice", MB_OK);
+				}
+			}
+		}
+	} while (FindNextFile(hFind, &findDir));
+
+	if (isEmpty)
+	{
+		// 폴더는 있지만 하위에 파일이나 폴더가 없는 경우
+		MessageBox(nullptr, (L"Find " + TexPath + L"but it is Empty Dir.").c_str(), L"Notice", MB_OK);
+	}
+	FindClose(hFind);
+}
 //int calcDist(const POINT& a, const POINT& b)
 //{
 //    return sqrt(pow(a.x - b.x, 2) + pow(a.y - b.y, 2));

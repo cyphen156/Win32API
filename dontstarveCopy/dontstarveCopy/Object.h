@@ -47,7 +47,9 @@ public:
     /*void SetKeyState(KEY_STATE state) { m_currentKeyState = state; }
     KEY_STATE GetKeyState() const { return m_currentKeyState; }*/
 
-    virtual void GetAnimations(wstring& TexPath) = 0;
+    virtual void GenerateAnimations(wstring& TexPath) = 0;
+    virtual void GetAnimations(vector<ResTex*> frames, wstring& animationName, wstring& TexPath) = 0;
+    //virtual void GetAnimations(wstring& TexPath) = 0;
     virtual void update() = 0;
     virtual void finalupdate() final;
     virtual void render(HDC hdc);

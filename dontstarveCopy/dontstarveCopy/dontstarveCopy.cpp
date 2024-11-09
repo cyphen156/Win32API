@@ -4,12 +4,9 @@
 #include "pch.h"
 #include "framework.h"
 #include "dontstarveCopy.h"
-#include "World.h"
 #include "Core.h"
 
 #define MAX_LOADSTRING 100
-#define WSREGULAR 50
-#define WSLARGE 100
 
 // 전역 변수:
 HINSTANCE hInst;                                // 현재 인스턴스입니다.
@@ -18,7 +15,6 @@ WCHAR szTitle[MAX_LOADSTRING];                  // 제목 표시줄 텍스트입
 WCHAR szWindowClass[MAX_LOADSTRING];            // 기본 창 클래스 이름입니다.
 
 // 커스텀 전역변수
-RECT worldSize;
 RECT windowInfo;
 POINT charWorldPos;
 POINT charWinPos;
@@ -32,9 +28,6 @@ ATOM                MyRegisterClass(HINSTANCE hInstance);
 BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
-
-// 월드 크기 지정
-void SetWorldSize(bool isLarge);
 
 // 화면에 렌더링하기
 void Rendering();
@@ -77,15 +70,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
     // TODO: 여기에 코드를 입력합니다.
     // 커스텀 전역변수 초기화
-    SetWorldSize(true);  // true면 Large, false면 Regular
     charWinPos = { (windowInfo.bottom - windowInfo.top) / 2, (windowInfo.right - windowInfo.left) / 2 };              // 기본 좌표 : 화면정중앙
-    charWorldPos = { (worldSize.bottom - worldSize.top) / 2, (worldSize.right - worldSize.left) / 2};            // 기본 좌표 : 월드 정중앙
     // 풀스크린 변수 초기화
     isFScreen = true;
-
-    // 월드 생성, 초기화
-    World wld(&worldSize);
-    //wld.generateWorld(&charWorldPos);
 
     // 메세지 루프
     while (1)
@@ -261,15 +248,6 @@ INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
     return (INT_PTR)FALSE;
 }
 
-
-void SetWorldSize(bool isLarge) {
-    if (isLarge) {
-        worldSize = { 0, 0, WSLARGE, WSLARGE };
-    }
-    else {
-        worldSize = { 0, 0, WSREGULAR, WSREGULAR };
-    }
-}
 
 void Rendering()
 {

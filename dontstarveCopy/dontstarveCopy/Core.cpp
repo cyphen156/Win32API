@@ -9,7 +9,6 @@
 #include "CollisionMgr.h"
 #include "EventMgr.h"
 
-
 Core::Core()
 	: m_hWnd(0)
 	, m_ptWinInfo(nullptr)
@@ -122,21 +121,20 @@ void Core::update()
 
 void Core::render()
 {
-	TimeMgr::GetInst()->render();
-
-	// ¾À ·»´õ¸µ
-	SceneMgr::GetInst()->render(m_hdc);
-	// ¿ùµå¸Ê ÅØ½ºÃÄ ·»´õ¸µ
-
-	// ÇÃ·¹ÀÌ¾î ·»´õ¸µ
-	
-	// ¸ó½ºÅÍ ·»´õ¸µ
+	// ·»´õ ºñÆ®¸Ê»ý¼º
 	HBITMAP hOldBit = (HBITMAP)SelectObject(m_MemDC, m_hBit);
 
+	TimeMgr::GetInst()->render();
+
+	// cliped ¿ùµå¸Ê ÅØ½ºÃÄ ·»´õ¸µ
 	Rectangle(m_MemDC, 0, 0, m_ptWinInfo->right, m_ptWinInfo->bottom);
+
+	// ¾À ·»´õ¸µ
+	SceneMgr::GetInst()->render(m_MemDC);
+
+
 	// ¹é ¹öÆÛ¿¡¼­ ¸ÞÀÎ DC·Î ±×¸®±â
 	BitBlt(m_hdc, 0, 0, (int)m_ptWinInfo->right, (int)m_ptWinInfo->bottom, m_MemDC, 0, 0, SRCCOPY);
-	
 	DeleteObject(hOldBit);
 	
 }

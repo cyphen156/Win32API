@@ -9,6 +9,7 @@
 #include "CollisionMgr.h"
 #include "SceneMgr.h"
 #include "KeyMgr.h"
+#include "World.h"
 
 Scene_Start::Scene_Start()
 {
@@ -22,10 +23,10 @@ void Scene_Start::update()
 {
 	Scene::update();
 
-	if (KEY_DOWN(KEY::ENTER))
+	/*if (KEY_DOWN(KEY::ENTER))
 	{
 		ChangeScene(SceneType::CAVE);
-	}
+	}*/
 }
 
 void Scene_Start::render(HDC hdc)
@@ -35,12 +36,18 @@ void Scene_Start::render(HDC hdc)
 
 void Scene_Start::Enter()
 {
+	BOOL WLDSIZE = false;
+	
+	// 월드 생성, 초기화
+	World wld(SceneType::START);
+	wld.SetWorldSize(WLDSIZE);
+	Vec2D charWorldPos = wld.getWorldSize() / Vec2D(2, 2); // 캐릭터 기본 좌표 : 월드 정중앙
+	//wld.generateWorld(&charWorldPos);
+	wld.generateWorld();
+
 	// 플레이어 추가
 	Object* pObj = new Player;
-
-	pObj->SetPos(Vec2D{ 640.f, 384.f });
-	pObj->SetScale(Vec2D{100.f, 100.f});
-
+	pObj->SetPos(charWorldPos);
 	AddObj(pObj, ObjType::Player);
 
 	// 몬스터 그룹 추가
