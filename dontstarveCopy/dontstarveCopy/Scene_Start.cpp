@@ -40,10 +40,12 @@ void Scene_Start::Enter()
 	
 	// 월드 생성, 초기화
 	World wld(SceneType::START);
+	wstring wldName = to_wstring(SceneType::START);
+	wld.setWldName(wldName);
 	wld.SetWorldSize(WLDSIZE);
+	wld.generateWorld();
 	Vec2D charWorldPos = wld.getWorldSize() / Vec2D(2, 2); // 캐릭터 기본 좌표 : 월드 정중앙
 	//wld.generateWorld(&charWorldPos);
-	wld.generateWorld();
 
 	// 플레이어 추가
 	Object* pObj = new Player;

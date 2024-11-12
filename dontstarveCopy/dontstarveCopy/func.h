@@ -33,3 +33,14 @@ void Safe_Delete_Map(std::map<T1, T2>& _map)
     }
     _map.clear();
 }
+
+
+std::wstring to_wstring(SceneType type) {
+    switch (type) {
+    case SceneType::START: return L"START";
+    case SceneType::CAVE:  return L"CAVE";
+
+    case SceneType::END:   return L"END";
+    default:               return L"END";
+    }
+}
