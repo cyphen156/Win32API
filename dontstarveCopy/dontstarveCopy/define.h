@@ -44,19 +44,6 @@ enum class ObjType
 	END
 };
 
-enum class MONSTER
-{
-	Pig,
-	Spider,
-
-	END
-};
-
-struct ObjectGroup {
-	ObjType Type;
-	std::wstring ObjectPath;
-};
-
 // 열거형 오브젝트 타입
 // 바이옴 타입
 

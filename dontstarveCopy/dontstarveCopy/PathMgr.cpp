@@ -3,7 +3,7 @@
 #include "Core.h"
 
 PathMgr::PathMgr() : m_szContentPath{}
-	, m_ObjectGroup{}
+	, m_objGroups{}
 {
 
 }
@@ -29,29 +29,46 @@ void PathMgr::init()
 	}
 	wcscat_s(m_szContentPath, 255, L"\\bin\\content\\");
 
+	chkDirectory(m_szContentPath);
 	SetWindowText(Core::GetInst()->GetMainHWND(), m_szContentPath);
 
 }
 
-void PathMgr::SetObjectGroup(ObjType type, const wstring& path)
+bool PathMgr::chkDirectory(const wstring& path)
 {
-	for (const auto& group : m_ObjectGroup) {
-		if (group.Type == type) {
-			return;
-		}
+	WIN32_FIND_DATA findDir;
+	HANDLE hFind = FindFirstFile((path + L"\\*").c_str(), &findDir);
+	if (hFind == INVALID_HANDLE_VALUE)
+	{
+		// 디렉토리가 없음
+		MessageBox(nullptr, (L"Cannot find Dir" + path + L" Error :: Invalid Path.").c_str(), L"Error", MB_OK);
+		FindClose(hFind);
+		return false;
 	}
-	m_ObjectGroup.push_back({ type, path });
+	
+	// 디렉토리가 있음
+	FindClose(hFind);
+	return true;
 }
 
-const wstring PathMgr::GetObjectGroup(ObjType type)
-{
-	for (const auto& group : m_ObjectGroup) {
-		if (group.Type == type) {
-			return group.ObjectPath;
-		}
-	}
-
-	MessageBox(nullptr, L"PathMgr:: GetObjGroup Error, there Invalid Path", L"Error", MB_OK);
-	return L"";
-
-}
+//void PathMgr::SetObjectGroup(ObjType type, const wstring& path)
+//{
+//	for (const auto& group : m_ObjectGroup) {
+//		if (group.Type == type) {
+//			return;
+//		}
+//	}
+//	m_ObjectGroup.push_back({ type, path });
+//}
+//
+//const wstring PathMgr::GetObjectGroup(ObjType type)
+//{
+//	for (const auto& group : m_ObjectGroup) {
+//		if (group.Type == type) {
+//			return group.ObjectPath;
+//		}
+//	}
+//
+//	MessageBox(nullptr, L"PathMgr:: GetObjGroup Error, there Invalid Path", L"Error", MB_OK);
+//	return L"";
+//}
