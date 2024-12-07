@@ -5,9 +5,6 @@ void CreateObj(Object* createObj, ObjType objType);
 void DeleteObj(Object* createObj);
 void ChangeScene(SceneType next);
 
-
-
-
 template<typename T>
 void Safe_Delete_Vec(std::vector<T>& _vec)
 {
@@ -17,7 +14,6 @@ void Safe_Delete_Vec(std::vector<T>& _vec)
     }
     _vec.clear();
 }
-
 
 template<typename T1, typename T2>
 void Safe_Delete_Map(std::map<T1, T2>& _map)
@@ -32,15 +28,4 @@ void Safe_Delete_Map(std::map<T1, T2>& _map)
         }
     }
     _map.clear();
-}
-
-
-std::wstring to_wstring(SceneType type) {
-    switch (type) {
-    case SceneType::START: return L"START";
-    case SceneType::CAVE:  return L"CAVE";
-
-    case SceneType::END:   return L"END";
-    default:               return L"END";
-    }
 }

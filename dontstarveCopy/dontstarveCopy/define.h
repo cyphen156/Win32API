@@ -26,7 +26,6 @@
 #define WSREGULAR 500
 #define WSLARGE 1000
 
-
 enum class SceneType
 {
 	START,
@@ -37,30 +36,25 @@ enum class SceneType
 
 enum class ObjType
 {
-	WORLD,
-	UI,
+	Environment,
 	Player,
 	Monster,
-
-	END
-};
-
-enum class InstType
-{
-	ENVIRONMENT,
-	PLAYER,
-	MONSTER,
-	ITEM,
+	Component,
 
 	END
 };
 
 enum class MONSTER
 {
-	Spider,
 	Pig,
+	Spider,
 
 	END
+};
+
+struct ObjectGroup {
+	ObjType Type;
+	std::wstring ObjectPath;
 };
 
 // 열거형 오브젝트 타입

@@ -3,6 +3,7 @@
 #include "Core.h"
 
 PathMgr::PathMgr() : m_szContentPath{}
+	, m_ObjectGroup{}
 {
 
 }
@@ -29,5 +30,28 @@ void PathMgr::init()
 	wcscat_s(m_szContentPath, 255, L"\\bin\\content\\");
 
 	SetWindowText(Core::GetInst()->GetMainHWND(), m_szContentPath);
+
 }
 
+void PathMgr::SetObjectGroup(ObjType type, const wstring& path)
+{
+	for (const auto& group : m_ObjectGroup) {
+		if (group.Type == type) {
+			return;
+		}
+	}
+	m_ObjectGroup.push_back({ type, path });
+}
+
+const wstring PathMgr::GetObjectGroup(ObjType type)
+{
+	for (const auto& group : m_ObjectGroup) {
+		if (group.Type == type) {
+			return group.ObjectPath;
+		}
+	}
+
+	MessageBox(nullptr, L"PathMgr:: GetObjGroup Error, there Invalid Path", L"Error", MB_OK);
+	return L"";
+
+}

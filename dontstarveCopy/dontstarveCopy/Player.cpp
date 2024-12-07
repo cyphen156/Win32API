@@ -22,12 +22,12 @@ Player::Player()
 	}*/
 	CreateAnimator();
 	GenerateAnimations(resPath);
-	MessageBox(nullptr, (L"All Resource has Loaded"), L"Notice", MB_OK);
+	MessageBox(nullptr, (L"Player Resource has Loaded"), L"Notice", MB_OK);
 	SetCurrDir(L"Down");
 	wstring dir = GetCurrDir();
 	GetAnimator()->Play(ObjType::Player, L"Attack", true, dir);
 	ResTex* pTex = GetAnimator()->FindAnimation(L"Player_Attack_Down")->GetFrame(0);
-		//GetAnimation()->GetFrame()
+	//GetAnimation()->GetFrame()
 	Image* img = pTex->GetImage();
 	float width = (float)img->GetWidth();
 	float height= (float)img->GetHeight();

@@ -1,5 +1,8 @@
 #pragma once
 #include "Object.h"
+#include "ResTex.h"
+
+class ResTex;
 
 class Monster :
     public Object
@@ -9,6 +12,7 @@ private:
     float   m_fspeed;
     float   m_fMaxDist;
     int     m_iDirection;
+    bool    bisRight;
 
 public:
     Monster();

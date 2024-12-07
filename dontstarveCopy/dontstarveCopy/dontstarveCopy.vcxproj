@@ -148,6 +148,7 @@
     <ClInclude Include="EventMgr.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="func.h" />
+    <ClInclude Include="func2.h" />
     <ClInclude Include="KeyMgr.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Object.h" />
@@ -202,6 +203,7 @@
     </ClCompile>
     <ClCompile Include="EventMgr.cpp" />
     <ClCompile Include="func.cpp" />
+    <ClCompile Include="func2.cpp" />
     <ClCompile Include="KeyMgr.cpp" />
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Object.cpp" />

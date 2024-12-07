@@ -10,6 +10,7 @@
 #include "SceneMgr.h"
 #include "KeyMgr.h"
 #include "World.h"
+#include "func2.h"
 
 Scene_Start::Scene_Start()
 {
@@ -37,10 +38,11 @@ void Scene_Start::render(HDC hdc)
 void Scene_Start::Enter()
 {
 	BOOL WLDSIZE = false;
-	
+	wstring defaultPath = PathMgr::GetInst()->GetContentPath();
+
 	// 월드 생성, 초기화
 	World wld(SceneType::START);
-	wstring wldName = to_wstring(SceneType::START);
+	wstring wldName = func2::Enum_To_Wstring(SceneType::START);
 	wld.setWldName(wldName);
 	wld.SetWorldSize(WLDSIZE);
 	wld.generateWorld();
@@ -48,11 +50,27 @@ void Scene_Start::Enter()
 	//wld.generateWorld(&charWorldPos);
 
 	// 플레이어 추가
+	wstring PlayerPath = defaultPath;
+	PlayerPath += L"Textures\\Player";
 	Object* pObj = new Player;
 	pObj->SetPos(charWorldPos);
 	AddObj(pObj, ObjType::Player);
 
-	// 몬스터 그룹 추가
+	// 몬스터 그룹 
+
+	/*WIN32_FIND_DATA findDir;
+	HANDLE hFind = FindFirstFile((MonsterGroupPath + L"\\*").c_str(), &findDir);
+	if (hFind == INVALID_HANDLE_VALUE)
+	{
+		MessageBox(nullptr, (L"Cannot find Dir" + MonsterGroupPath + L" Error :: Invalid Path.").c_str(), L"Error", MB_OK);
+		return;
+	}
+	bool isEmpty = true;*/
+
+	/*while (1)
+	{
+		if ()
+	}*/
 	int iMonsterCnt = 0;
 	float fMonsterMaxDist = 50.f;
 	float fMonsterScale = 50.f;

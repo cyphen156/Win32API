@@ -135,6 +135,9 @@
     <ClInclude Include="Animation.h">
       <Filter>헤더 파일\Core</Filter>
     </ClInclude>
+    <ClInclude Include="func2.h">
+      <Filter>헤더 파일\Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dontstarveCopy.cpp">
@@ -232,6 +235,9 @@
     </ClCompile>
     <ClCompile Include="Todos.cpp">
       <Filter>소스 파일\ATodos</Filter>
+    </ClCompile>
+    <ClCompile Include="func2.cpp">
+      <Filter>소스 파일\Core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
