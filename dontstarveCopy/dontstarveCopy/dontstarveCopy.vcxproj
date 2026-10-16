@@ -82,6 +82,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Core;$(ProjectDir)Manager;$(ProjectDir)Scene;$(ProjectDir)Object;$(ProjectDir)Component;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -96,6 +97,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Core;$(ProjectDir)Manager;$(ProjectDir)Scene;$(ProjectDir)Object;$(ProjectDir)Component;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -110,6 +112,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Core;$(ProjectDir)Manager;$(ProjectDir)Scene;$(ProjectDir)Object;$(ProjectDir)Component;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -126,6 +129,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Core;$(ProjectDir)Manager;$(ProjectDir)Scene;$(ProjectDir)Object;$(ProjectDir)Component;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -137,49 +141,49 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Animation.h" />
-    <ClInclude Include="Animator.h" />
-    <ClInclude Include="Attack.h" />
-    <ClInclude Include="Collider.h" />
-    <ClInclude Include="CollisionMgr.h" />
-    <ClInclude Include="Core.h" />
-    <ClInclude Include="define.h" />
+    <ClInclude Include="Core\Animation.h" />
+    <ClInclude Include="Component\Animator.h" />
+    <ClInclude Include="Object\Attack.h" />
+    <ClInclude Include="Component\Collider.h" />
+    <ClInclude Include="Manager\CollisionMgr.h" />
+    <ClInclude Include="Core\Core.h" />
+    <ClInclude Include="Core\define.h" />
     <ClInclude Include="dontstarveCopy.h" />
-    <ClInclude Include="EventMgr.h" />
+    <ClInclude Include="Manager\EventMgr.h" />
     <ClInclude Include="framework.h" />
-    <ClInclude Include="func.h" />
-    <ClInclude Include="func2.h" />
-    <ClInclude Include="KeyMgr.h" />
-    <ClInclude Include="Monster.h" />
-    <ClInclude Include="Object.h" />
-    <ClInclude Include="PathMgr.h" />
-    <ClInclude Include="pch.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="ResAud.h" />
-    <ClInclude Include="Res.h" />
-    <ClInclude Include="ResMgr.h" />
+    <ClInclude Include="Core\func.h" />
+    <ClInclude Include="Core\EnumString.h" />
+    <ClInclude Include="Manager\KeyMgr.h" />
+    <ClInclude Include="Object\Monster.h" />
+    <ClInclude Include="Object\Object.h" />
+    <ClInclude Include="Manager\PathMgr.h" />
+    <ClInclude Include="Core\pch.h" />
+    <ClInclude Include="Object\Player.h" />
+    <ClInclude Include="Core\Audio.h" />
+    <ClInclude Include="Core\Resource.h" />
+    <ClInclude Include="Manager\ResourceMgr.h" />
     <ClInclude Include="Resource.h" />
-    <ClInclude Include="ResTex.h" />
-    <ClInclude Include="Scene.h" />
-    <ClInclude Include="Scene_Cave.h" />
-    <ClInclude Include="SceneMgr.h" />
-    <ClInclude Include="Scene_Start.h" />
-    <ClInclude Include="SelectGDI.h" />
-    <ClInclude Include="Struct.h" />
+    <ClInclude Include="Core\Texture.h" />
+    <ClInclude Include="Scene\Scene.h" />
+    <ClInclude Include="Scene\Scene_Cave.h" />
+    <ClInclude Include="Manager\SceneMgr.h" />
+    <ClInclude Include="Scene\Scene_Start.h" />
+    <ClInclude Include="Core\SelectGDI.h" />
+    <ClInclude Include="Core\Vec2D.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="Terrain.h" />
-    <ClInclude Include="TimeMgr.h" />
-    <ClInclude Include="World.h">
+    <ClInclude Include="Core\Terrain.h" />
+    <ClInclude Include="Manager\TimeMgr.h" />
+    <ClInclude Include="Core\World.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Animation.cpp" />
-    <ClCompile Include="Animator.cpp" />
-    <ClCompile Include="Attack.cpp" />
-    <ClCompile Include="Collider.cpp" />
-    <ClCompile Include="CollisionMgr.cpp" />
-    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Core\Animation.cpp" />
+    <ClCompile Include="Component\Animator.cpp" />
+    <ClCompile Include="Object\Attack.cpp" />
+    <ClCompile Include="Component\Collider.cpp" />
+    <ClCompile Include="Manager\CollisionMgr.cpp" />
+    <ClCompile Include="Core\Core.cpp" />
     <ClCompile Include="dontstarveCopy.cpp" />
     <ClCompile Include="DST_2.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -201,33 +205,30 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="EventMgr.cpp" />
-    <ClCompile Include="func.cpp" />
-    <ClCompile Include="func2.cpp" />
-    <ClCompile Include="KeyMgr.cpp" />
-    <ClCompile Include="Monster.cpp" />
-    <ClCompile Include="Object.cpp" />
-    <ClCompile Include="PathMgr.cpp" />
-    <ClCompile Include="pch.cpp">
+    <ClCompile Include="Manager\EventMgr.cpp" />
+    <ClCompile Include="Core\func.cpp" />
+    <ClCompile Include="Core\EnumString.cpp" />
+    <ClCompile Include="Manager\KeyMgr.cpp" />
+    <ClCompile Include="Object\Monster.cpp" />
+    <ClCompile Include="Object\Object.cpp" />
+    <ClCompile Include="Manager\PathMgr.cpp" />
+    <ClCompile Include="Core\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="ResAud.cpp" />
-    <ClCompile Include="Res.cpp" />
-    <ClCompile Include="ResMgr.cpp" />
-    <ClCompile Include="ResTex.cpp" />
-    <ClCompile Include="Scene.cpp" />
-    <ClCompile Include="Scene_Cave.cpp" />
-    <ClCompile Include="SceneMgr.cpp" />
-    <ClCompile Include="Scene_Start.cpp" />
-    <ClCompile Include="SelectGDI.cpp" />
-    <ClCompile Include="Terrain.cpp" />
-    <ClCompile Include="TimeMgr.cpp" />
-    <ClCompile Include="Todos.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="World.cpp">
+    <ClCompile Include="Object\Player.cpp" />
+    <ClCompile Include="Core\Audio.cpp" />
+    <ClCompile Include="Core\Resource.cpp" />
+    <ClCompile Include="Manager\ResourceMgr.cpp" />
+    <ClCompile Include="Core\Texture.cpp" />
+    <ClCompile Include="Scene\Scene.cpp" />
+    <ClCompile Include="Scene\Scene_Cave.cpp" />
+    <ClCompile Include="Manager\SceneMgr.cpp" />
+    <ClCompile Include="Scene\Scene_Start.cpp" />
+    <ClCompile Include="Core\SelectGDI.cpp" />
+    <ClCompile Include="Core\Terrain.cpp" />
+    <ClCompile Include="Manager\TimeMgr.cpp" />
+    <ClCompile Include="Core\World.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>
