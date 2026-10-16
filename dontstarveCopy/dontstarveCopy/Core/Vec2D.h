@@ -28,6 +28,7 @@ public:
 	{
 		x = (float)pt.x;
 		y = (float)pt.y;
+		return *this;
 	}
 
 	Vec2D operator + (Vec2D vOther)

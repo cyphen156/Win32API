@@ -24,15 +24,15 @@ void CollisionMgr::CollisionObjUpdate(ObjType left, ObjType right)
 
 	for (size_t i = 0; i < rowObj.size(); ++i)
 	{
-		// Ãæµ¹Ã¼°¡ ¾ø´Â °æ¿ì
+		// ì¶©ëŒì²´ê°€ ì—†ëŠ” ê²½ìš°
 		if (rowObj[i]->GetCollider() == nullptr)
 		{
 			continue;
 		}
 		for (size_t j = 0; j < colObj.size(); ++j)
 		{
-			// Ãæµ¹Ã¼°¡ ¾ø°Å³ª ÀÚ±âÀÚ½ÅÀÎ°æ¿ì
-			if (colObj[i]->GetCollider() == nullptr || rowObj[i] == colObj[j])
+			// ì¶©ëŒì²´ê°€ ì—†ê±°ë‚˜ ìžê¸°ìžì‹ ì¸ê²½ìš°
+			if (colObj[j]->GetCollider() == nullptr || rowObj[i] == colObj[j])
 			{
 				continue;
 			}
@@ -45,17 +45,17 @@ void CollisionMgr::CollisionObjUpdate(ObjType left, ObjType right)
 
 			iter = m_mapColInfo.find(ID.ID);
 
-			// Ãæµ¹ Á¤º¸ ¹Ìµî·ÏÀÎ °æ¿ì
+			// ì¶©ëŒ ì •ë³´ ë¯¸ë“±ë¡ì¸ ê²½ìš°
 			if (m_mapColInfo.end() == iter)
 			{
 				m_mapColInfo.insert(make_pair(ID.ID, false));
 				iter = m_mapColInfo.find(ID.ID);
 			}
 			
-			// ÇöÀç Ãæµ¹Áß
+			// í˜„ìž¬ ì¶©ëŒì¤‘
 			if (isCollision(pLeft, pRight))
 			{
-				// ÀÌÀü¿¡µµ Ãæµ¹Áß
+				// ì´ì „ì—ë„ ì¶©ëŒì¤‘
 				if (iter->second) 
 				{
 					if (rowObj[i]->isDead() || colObj[j]->isDead())
@@ -72,8 +72,8 @@ void CollisionMgr::CollisionObjUpdate(ObjType left, ObjType right)
 				}
 				else
 				{
-					// ÀÌÀü¿¡´Â Ãæµ¹ ¾ÈÇÔ
-					if (!rowObj[i]->isDead() || !colObj[j]->isDead())
+					// ì´ì „ì—ëŠ” ì¶©ëŒ ì•ˆí•¨
+					if (!rowObj[i]->isDead() && !colObj[j]->isDead())
 					{
 						pLeft->OnCollisionEnter(pRight);
 						pRight->OnCollisionEnter(pLeft);
@@ -81,13 +81,13 @@ void CollisionMgr::CollisionObjUpdate(ObjType left, ObjType right)
 					}
 				}
 			}
-			//ÇöÀç Ãæµ¹¾ÈÇÔ
+			//í˜„ìž¬ ì¶©ëŒì•ˆí•¨
 			else
 			{
-				// ÀÌÀü¿¡´Â Ãæµ¹
+				// ì´ì „ì—ëŠ” ì¶©ëŒ
 				if (iter->second)
 				{
-					// ÀÌÀü¿¡´Â Ãæµ¹ ¾ÈÇÔ
+					// ì´ì „ì—ëŠ” ì¶©ëŒ ì•ˆí•¨
 					pLeft->OnCollisionExit(pRight);
 					pRight->OnCollisionExit(pLeft);
 					iter->second = false;
@@ -106,7 +106,7 @@ bool CollisionMgr::isCollision(Collider* pLColli, Collider* pRColli)
 	Vec2D vRightScale = pRColli->GetColliderSize();
 
 	if (abs(vLeftPos.x - vRightPos.x) < (vLeftScale.x + vRightScale.x) / 2.f
-		&& abs(vLeftPos.x - vRightPos.x) < (vLeftScale.x + vRightScale.x) / 2.f)
+		&& abs(vLeftPos.y - vRightPos.y) < (vLeftScale.y + vRightScale.y) / 2.f)
 	{
 		return true;
 	}

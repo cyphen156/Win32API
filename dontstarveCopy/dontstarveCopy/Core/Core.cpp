@@ -42,7 +42,7 @@ int Core::init(HWND hWnd, RECT* windowInfo)
 	if (::GdiplusStartup(&gdiplusToken, &gdiplusStartupInput, NULL) != Ok) 
 	{
 		MessageBox(nullptr, L"GDI+ Initialization failed!", L"Error", MB_OK);
-		return E_FAIL; // ÃÊ±âÈ­ ½ÇÆÐ
+		return E_FAIL; // ì´ˆê¸°í™” ì‹¤íŒ¨
 	}
 
 	m_hdc = GetDC(m_hWnd);
@@ -58,20 +58,17 @@ int Core::init(HWND hWnd, RECT* windowInfo)
 	graphics.DrawImage(image, 100, 100);*/
 
 
-	// ±âº» GDI ÀÎ½ºÅÏ½º »ý¼º
+	// ê¸°ë³¸ GDI ì¸ìŠ¤í„´ìŠ¤ ìƒì„±
 	CreateBrushPen();
-	// ¸Å´ÏÀú ÃÊ±âÈ­
+	// ë§¤ë‹ˆì € ì´ˆê¸°í™”
 	TimeMgr::GetInst()->init();
 	PathMgr::GetInst()->init();
 	KeyMgr::GetInst()->init();
 	SceneMgr::GetInst()->init();
 
-
-	// ºñÆ®¸Ê ¼³Á¤
+	// ë¹„íŠ¸ë§µ ì„¤ì •
 	m_hBit = CreateCompatibleBitmap(m_hdc, (int)(m_ptWinInfo->right - m_ptWinInfo->left), (int)(m_ptWinInfo->bottom - m_ptWinInfo->top));
 	m_MemDC = CreateCompatibleDC(m_hdc);
-
-	
 
 	return S_OK;
 }
@@ -81,8 +78,7 @@ void Core::progress()
 
 	render();
 	
-
-	// event Ã³¸®
+	// event ì²˜ë¦¬
 	EventMgr::GetInst()->update();
 }
 
@@ -109,33 +105,33 @@ void Core::CreateBrushPen()
 
 void Core::update()
 {
-	// ÃÊ´ç ÇÁ·¹ÀÓ µ¿±âÈ­
+	// ì´ˆë‹¹ í”„ë ˆìž„ ë™ê¸°í™”
 	TimeMgr::GetInst()->update();
 
 	KeyMgr::GetInst()->update();
-	// ¾À ¾÷µ¥ÀÌÆ®
+	// ì”¬ ì—…ë°ì´íŠ¸
 	SceneMgr::GetInst()->update();
-	// Ãæµ¹Ã¼ ¾÷µ¥ÀÌÆ®
+	// ì¶©ëŒì²´ ì—…ë°ì´íŠ¸
 	CollisionMgr::GetInst()->update();
 }
 
 void Core::render()
 {
-	// ·»´õ ºñÆ®¸Ê»ý¼º
+	// ë Œë” ë¹„íŠ¸ë§µìƒì„±
 	HBITMAP hOldBit = (HBITMAP)SelectObject(m_MemDC, m_hBit);
 
 	TimeMgr::GetInst()->render();
 
-	// cliped ¿ùµå¸Ê ÅØ½ºÃÄ ·»´õ¸µ
+	// cliped ì›”ë“œë§µ í…ìŠ¤ì³ ë Œë”ë§
 	Rectangle(m_MemDC, 0, 0, m_ptWinInfo->right, m_ptWinInfo->bottom);
 
-	// ¾À ·»´õ¸µ
+	// ì”¬ ë Œë”ë§
 	SceneMgr::GetInst()->render(m_MemDC);
 
 
-	// ¹é ¹öÆÛ¿¡¼­ ¸ÞÀÎ DC·Î ±×¸®±â
+	// ë°± ë²„í¼ì—ì„œ ë©”ì¸ DCë¡œ ê·¸ë¦¬ê¸°
 	BitBlt(m_hdc, 0, 0, (int)m_ptWinInfo->right, (int)m_ptWinInfo->bottom, m_MemDC, 0, 0, SRCCOPY);
-	DeleteObject(hOldBit);
+	SelectObject(m_MemDC, hOldBit);
 	
 }
 

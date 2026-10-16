@@ -188,11 +188,12 @@ void Player::render(HDC hdc)
 	UINT iHeight = 20;*/
 	//MessageBox(nullptr, (L"Before Call Anim Render"), L"Notice", MB_OK);
 	HPEN hOldPen = (HPEN)CreatePen(PS_SOLID, 5, RGB(0, 0, 255));
-	SelectObject(hdc, hOldPen);
+	HPEN hPrevPen = (HPEN)SelectObject(hdc, hOldPen);
 	Rectangle(hdc, vPlayerPos.x
 		, vPlayerPos.y
 		, vPlayerPos.x + vPlayerScale.x
 		, vPlayerPos.y + vPlayerScale.y);
+	SelectObject(hdc, hPrevPen);
 	DeleteObject(hOldPen);
 	
 	//GetAnimator()->render(hdc);

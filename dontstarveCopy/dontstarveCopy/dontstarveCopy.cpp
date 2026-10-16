@@ -72,7 +72,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     // 커스텀 전역변수 초기화
     charWinPos = { (windowInfo.bottom - windowInfo.top) / 2, (windowInfo.right - windowInfo.left) / 2 };              // 기본 좌표 : 화면정중앙
     // 풀스크린 변수 초기화
-    isFScreen = true;
+    isFScreen = false;
 
     // 메세지 루프
     while (1)
@@ -198,6 +198,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
                 // 창 모드로 전환 (HD : 1280 X 720)
                 SetWindowLong(hWnd, GWL_STYLE, WS_OVERLAPPEDWINDOW | WS_VISIBLE);
                 SetWindowPos(hWnd, HWND_TOP, 100, 100, 800, 600, SWP_NOZORDER | SWP_FRAMECHANGED);
+                GetClientRect(hWnd, &windowInfo);
                 isFScreen = false;
             }
             else {
@@ -206,6 +207,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
                 int screenWidth = GetSystemMetrics(SM_CXSCREEN);
                 int screenHeight = GetSystemMetrics(SM_CYSCREEN);
                 SetWindowPos(hWnd, HWND_TOP, 0, 0, screenWidth, screenHeight, SWP_NOZORDER | SWP_FRAMECHANGED);
+                GetClientRect(hWnd, &windowInfo);
                 isFScreen = true;
             }
         }

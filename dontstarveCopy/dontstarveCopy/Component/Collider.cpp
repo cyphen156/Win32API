@@ -37,14 +37,15 @@ void Collider::finalupdate()
 void Collider::render(HDC hdc)
 {
 	SelectGDI p (hdc, PEN_TYPE::RED);
+	SelectGDI b (hdc, BRUSH_TYPE::HOLLOW);
 
 	Vec2D colSize = GetColliderSize();
 
 	Rectangle(hdc
-		, m_vFinalPos.x - colSize.x / 4
-		, m_vFinalPos.y - colSize.y / 4
-		, m_vFinalPos.x + colSize.x / 4
-		, m_vFinalPos.y + colSize.y / 4);
+		, m_vFinalPos.x - colSize.x / 2
+		, m_vFinalPos.y - colSize.y / 2
+		, m_vFinalPos.x + colSize.x / 2
+		, m_vFinalPos.y + colSize.y / 2);
 	colSize = GetColliderSize();
 
 }

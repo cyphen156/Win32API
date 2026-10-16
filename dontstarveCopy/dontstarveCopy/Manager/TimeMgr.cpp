@@ -21,6 +21,7 @@ void TimeMgr::init()
 {
 	// 현재 카운트
 	QueryPerformanceCounter(&m_liCurrCnt);
+	m_liPrevCnt = m_liCurrCnt;
 
 	// 초당 카운트
 	QueryPerformanceFrequency(&m_liFrequency);

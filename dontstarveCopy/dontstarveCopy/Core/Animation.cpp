@@ -79,10 +79,11 @@ void Animation::render(HDC hdc)
 	//		RGB(255, 0, 255)); // 투명색
 	//}
 
-	if (currentFrameTex)
+	if (currentFrameTex && currentFrameTex->GetImage())
 	{
 		Graphics graphics(hdc);
+		Image* img = currentFrameTex->GetImage();
 		// 현재 프레임의 이미지를 현재 객체 위치에 그리기
-		graphics.DrawImage(currentFrameTex->GetImage(), (int)vPos.x, (int)vPos.y);
+		graphics.DrawImage(img, (int)vPos.x, (int)vPos.y, (int)img->GetWidth(), (int)img->GetHeight());
 	}
 }

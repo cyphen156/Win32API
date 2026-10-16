@@ -29,7 +29,7 @@ Monster::Monster()
 	SetCurrDir(L"Down");
 	wstring dir = GetCurrDir();
 	GetAnimator()->Play(ObjType::Player, L"Attack", true, dir);
-	Texture* pTex = GetAnimator()->FindAnimation(L"Player_Attack_Down")->GetFrame(0);
+	Texture* pTex = GetAnimator()->FindAnimation(L"Pig_Idle_Down")->GetFrame(0);
 	//GetAnimation()->GetFrame()
 	Image* img = pTex->GetImage();
 	float width = (float)img->GetWidth();
@@ -69,7 +69,7 @@ void Monster::OnCollisionEnter(Collider* pOther)
 	Object* pOtherObj = pOther->GetOwner();
 	if (pOtherObj->GetObjName() == L"Player")
 	{
-		DeleteObject(this);
+		DeleteObj(this);
 	}
 }
 
