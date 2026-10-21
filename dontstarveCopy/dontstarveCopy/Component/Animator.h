@@ -18,7 +18,7 @@ public:
 	~Animator();
 
 	/**
-	* CreateAnimation(ÅØ½ºÃÄ, ½ÃÀÛÀ§Ä¡, ÇÁ·¹ÀÓ »çÀÌÁî, ÇÁ·¹ÀÓ °£°İ)
+	* CreateAnimation(í…ìŠ¤ì³, ì‹œì‘ìœ„ì¹˜, í”„ë ˆì„ ì‚¬ì´ì¦ˆ, í”„ë ˆì„ ê°„ê²©)
 	*/
 	void CreateAnimation(const wstring& name
 		, vector<Texture*> frames

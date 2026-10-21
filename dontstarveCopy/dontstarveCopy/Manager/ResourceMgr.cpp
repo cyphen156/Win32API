@@ -23,7 +23,7 @@ Texture* ResourceMgr::LoadTexture(const wstring& texID, const wstring& texPath)
 		return chkTex;
 	}
 	
-	// ÀÌ¹ÌÁö ·Îµå
+	// ì´ë¯¸ì§€ ë¡œë“œ
 	wstring TexPath = PathMgr::GetInst()->GetContentPath();
 	TexPath = texPath;
 

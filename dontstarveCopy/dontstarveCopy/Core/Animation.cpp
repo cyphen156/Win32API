@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "Animation.h"
+#include "CameraMgr.h"
 #include "Animator.h"
 #include "Object.h"
 #include "Texture.h"
@@ -22,13 +23,13 @@ Animation::~Animation()
 
 void Animation::Create(vector<Texture*> frames, float fDuration)
 {
-	m_vecFrames = frames; // ÇÁ·¹ÀÓ º¤ÅÍ¸¦ Á÷Á¢ ÀúÀå
-	m_fFrameDuration = fDuration; // Àç»ý ÁÖ±â ÀúÀå
+	m_vecFrames = frames; // í”„ë ˆìž„ ë²¡í„°ë¥¼ ì§ì ‘ ì €ìž¥
+	m_fFrameDuration = fDuration; // ìž¬ìƒ ì£¼ê¸° ì €ìž¥
 }
 
 void Animation::update()
 {
-	// Àç»ý Á¾·á ½ÃÄý½º
+	// ìž¬ìƒ ì¢…ë£Œ ì‹œí€¸ìŠ¤
 	if (m_bFinish)
 	{
 		return;
@@ -36,7 +37,7 @@ void Animation::update()
 
 	m_fAccTime += fDT;
 
-	if (m_fAccTime > m_fFrameDuration) // ¾Ö´Ï¸ÞÀÌ¼Ç ÇÁ·¹ÀÓ Á¤º¸
+	if (m_fAccTime > m_fFrameDuration) // ì• ë‹ˆë©”ì´ì…˜ í”„ë ˆìž„ ì •ë³´
 	{
 		++m_iCurFrame;
 
@@ -53,37 +54,42 @@ void Animation::update()
 
 void Animation::render(HDC hdc)
 {
-	// Àç»ý Á¾·á ½ÃÄý½º
+	// ìž¬ìƒ ì¢…ë£Œ ì‹œí€¸ìŠ¤
 	if (m_bFinish)
 	{
 		return;
 	}
 
 	Object* pObj = m_pAnimator->GetOwner();
-	Vec2D	vPos = pObj->GetPos();
+	Vec2D	vScale = pObj->GetScale();
+	Vec2D	vAnchor = pObj->GetFootAnchor();
+	Vec2D	vFoot = CameraMgr::GetInst()->GetRenderPos(pObj->GetPos() + Vec2D(vScale.x / 2.f + vAnchor.x, vScale.y / 2.f + vAnchor.y));
+	float	fZoom = CameraMgr::GetInst()->GetZoom();
+	Vec2D	vCenter = Vec2D(vFoot.x - vAnchor.x * fZoom, vFoot.y - vAnchor.y * fZoom);
 	
 	Texture* currentFrameTex = GetFrame(m_iCurFrame);
 	//if (currentFrameTex)
 	//{
 	//	HDC imgDC = currentFrameTex->GetDC();
-	//	// ÇöÀç ÇÁ·¹ÀÓÀÇ ºñÆ®¸ÊÀ» HDC¿¡ ±×¸®±â
+	//	// í˜„ìž¬ í”„ë ˆìž„ì˜ ë¹„íŠ¸ë§µì„ HDCì— ê·¸ë¦¬ê¸°
 	//	TransparentBlt(hdc,
-	//		(int)vPos.x - (currentFrameTex->Width() / 2), // X ÁÂÇ¥
-	//		(int)vPos.y - (currentFrameTex->Height() / 2), // Y ÁÂÇ¥
-	//		currentFrameTex->Width(), // ³Êºñ
-	//		currentFrameTex->Height(), // ³ôÀÌ
-	//		imgDC, // ÀÌ¹ÌÁö DC
-	//		0, 0, // ÀÌ¹ÌÁö ¿øÁ¡
-	//		currentFrameTex->Width(), // ¿øº» ÀÌ¹ÌÁö ³Êºñ
-	//		currentFrameTex->Height(), // ¿øº» ÀÌ¹ÌÁö ³ôÀÌ
-	//		RGB(255, 0, 255)); // Åõ¸í»ö
+	//		(int)vPos.x - (currentFrameTex->Width() / 2), // X ì¢Œí‘œ
+	//		(int)vPos.y - (currentFrameTex->Height() / 2), // Y ì¢Œí‘œ
+	//		currentFrameTex->Width(), // ë„ˆë¹„
+	//		currentFrameTex->Height(), // ë†’ì´
+	//		imgDC, // ì´ë¯¸ì§€ DC
+	//		0, 0, // ì´ë¯¸ì§€ ì›ì 
+	//		currentFrameTex->Width(), // ì›ë³¸ ì´ë¯¸ì§€ ë„ˆë¹„
+	//		currentFrameTex->Height(), // ì›ë³¸ ì´ë¯¸ì§€ ë†’ì´
+	//		RGB(255, 0, 255)); // íˆ¬ëª…ìƒ‰
 	//}
 
 	if (currentFrameTex && currentFrameTex->GetImage())
 	{
 		Graphics graphics(hdc);
 		Image* img = currentFrameTex->GetImage();
-		// ÇöÀç ÇÁ·¹ÀÓÀÇ ÀÌ¹ÌÁö¸¦ ÇöÀç °´Ã¼ À§Ä¡¿¡ ±×¸®±â
-		graphics.DrawImage(img, (int)vPos.x, (int)vPos.y, (int)img->GetWidth(), (int)img->GetHeight());
+		// í˜„ìž¬ í”„ë ˆìž„ì˜ ì´ë¯¸ì§€ë¥¼ í˜„ìž¬ ê°ì²´ ìœ„ì¹˜ì— ê·¸ë¦¬ê¸°
+		REAL width = img->GetWidth() * fZoom, height = img->GetHeight() * fZoom;
+		graphics.DrawImage(img, vCenter.x - width / 2.f, vCenter.y - height / 2.f, width, height);
 	}
 }

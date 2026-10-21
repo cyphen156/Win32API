@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "Collider.h"
+#include "CameraMgr.h"
 #include "Core.h"
 #include "SelectGDI.h"
 
@@ -40,12 +41,17 @@ void Collider::render(HDC hdc)
 	SelectGDI b (hdc, BRUSH_TYPE::HOLLOW);
 
 	Vec2D colSize = GetColliderSize();
+	Vec2D ownerScale = m_pOwner->GetScale();
+	Vec2D ownerAnchor = m_pOwner->GetFootAnchor();
+	Vec2D ownerFoot = m_pOwner->GetPos() + Vec2D(ownerScale.x / 2.f + ownerAnchor.x, ownerScale.y / 2.f + ownerAnchor.y);
+	float zoom = CameraMgr::GetInst()->GetZoom();
+	Vec2D renderCenter = CameraMgr::GetInst()->GetRenderPos(ownerFoot) + (m_vFinalPos - ownerFoot) * Vec2D(zoom, zoom);
 
 	Rectangle(hdc
-		, m_vFinalPos.x - colSize.x / 2
-		, m_vFinalPos.y - colSize.y / 2
-		, m_vFinalPos.x + colSize.x / 2
-		, m_vFinalPos.y + colSize.y / 2);
+		, (int)(renderCenter.x - colSize.x * zoom / 2)
+		, (int)(renderCenter.y - colSize.y * zoom / 2)
+		, (int)(renderCenter.x + colSize.x * zoom / 2)
+		, (int)(renderCenter.y + colSize.y * zoom / 2));
 	colSize = GetColliderSize();
 
 }

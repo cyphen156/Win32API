@@ -40,13 +40,13 @@ bool PathMgr::chkDirectory(const wstring& path)
 	HANDLE hFind = FindFirstFile((path + L"\\*").c_str(), &findDir);
 	if (hFind == INVALID_HANDLE_VALUE)
 	{
-		// µğ·ºÅä¸®°¡ ¾øÀ½
+		// ë””ë ‰í† ë¦¬ê°€ ì—†ìŒ
 		MessageBox(nullptr, (L"Cannot find Dir" + path + L" Error :: Invalid Path.").c_str(), L"Error", MB_OK);
 		FindClose(hFind);
 		return false;
 	}
 	
-	// µğ·ºÅä¸®°¡ ÀÖÀ½
+	// ë””ë ‰í† ë¦¬ê°€ ìˆìŒ
 	FindClose(hFind);
 	return true;
 }

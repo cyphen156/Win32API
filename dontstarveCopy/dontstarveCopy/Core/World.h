@@ -15,18 +15,21 @@ private:
     vector<Texture*> tiles;
     vector<vector<Terrain>> worldMap;
     int tileSize;
+    HBRUSH biomeBrush[(UINT)BiomeType::END];
 
 public:
     World(SceneType Type);
     ~World();
 
-    // ¿ùµå Å©±â ÁöÁ¤
+    // ì›”ë“œ í¬ê¸° ì§€ì •
     
     void setWldName(wstring type) { worldName = type; }
     void SetWorldSize(bool isLarge);
     void setTileSize(int size) { tileSize = size; }
 
     void generateWorld();
+
+    void Render(HDC hdc);
 
     void LoadTile(wstring& TexPath);
     

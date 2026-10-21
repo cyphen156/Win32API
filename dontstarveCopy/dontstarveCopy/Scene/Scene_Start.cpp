@@ -11,6 +11,7 @@
 #include "KeyMgr.h"
 #include "World.h"
 #include "EnumString.h"
+#include "CameraMgr.h"
 
 Scene_Start::Scene_Start()
 {
@@ -40,23 +41,28 @@ void Scene_Start::Enter()
 	BOOL WLDSIZE = false;
 	wstring defaultPath = PathMgr::GetInst()->GetContentPath();
 
-	// ¿ùµå »ý¼º, ÃÊ±âÈ­
-	World wld(SceneType::START);
-	wstring wldName = EnumString::ToWString(SceneType::START);
-	wld.setWldName(wldName);
-	wld.SetWorldSize(WLDSIZE);
-	wld.generateWorld();
-	Vec2D charWorldPos = wld.getWorldSize() / Vec2D(2, 2); // Ä³¸¯ÅÍ ±âº» ÁÂÇ¥ : ¿ùµå Á¤Áß¾Ó
+	// ì›”ë“œ ìƒì„±, ì´ˆê¸°í™”
+	if (GetWorld() == nullptr)
+	{
+		World* wld = new World(SceneType::START);
+		wstring wldName = EnumString::ToWString(SceneType::START);
+		wld->setWldName(wldName);
+		wld->SetWorldSize(WLDSIZE);
+		wld->generateWorld();
+		SetWorld(wld);
+	}
+	Vec2D charWorldPos = GetWorld()->getWorldSize() * Vec2D(GetWorld()->getTileSize(), GetWorld()->getTileSize()) / Vec2D(2, 2); // ìºë¦­í„° ê¸°ë³¸ ì¢Œí‘œ : ì›”ë“œ ì •ì¤‘ì•™
 	//wld.generateWorld(&charWorldPos);
 
-	// ÇÃ·¹ÀÌ¾î Ãß°¡
+	// í”Œë ˆì´ì–´ ì¶”ê°€
 	wstring PlayerPath = defaultPath;
-	PlayerPath += L"Textures\\Player";
+	PlayerPath += L"Textures\\Character\\Wilson";
 	Object* pObj = new Player;
-	pObj->SetPos(charWorldPos);
+	pObj->SetPos(charWorldPos - Vec2D(pObj->GetScale().x / 2.f + pObj->GetFootAnchor().x, pObj->GetScale().y / 2.f + pObj->GetFootAnchor().y));
 	AddObj(pObj, ObjType::Player);
+	CameraMgr::GetInst()->SetTarget(pObj);
 
-	// ¸ó½ºÅÍ ±×·ì 
+	// ëª¬ìŠ¤í„° ê·¸ë£¹ 
 
 	/*WIN32_FIND_DATA findDir;
 	HANDLE hFind = FindFirstFile((MonsterGroupPath + L"\\*").c_str(), &findDir);
@@ -88,7 +94,7 @@ void Scene_Start::Enter()
 		AddObj(pMonsterObj, ObjType::Monster);
 	}
 
-	// Ãæµ¹ ¿ÀºêÁ§Æ® ÁöÁ¤
+	// ì¶©ëŒ ì˜¤ë¸Œì íŠ¸ ì§€ì •
 	CollisionMgr::GetInst()->CheckObjType(ObjType::Player, ObjType::Monster);
 }
 

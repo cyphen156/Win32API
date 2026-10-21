@@ -19,8 +19,8 @@ class CollisionMgr
 
 private:
 	
-	map<ULONGLONG, bool>	m_mapColInfo;		// ÀÌÀü ÇÁ·¹ÀÓ¿¡¼­ÀÇ Ãæµ¹Ã¼°£ Ãæµ¹Á¤º¸
-	UINT	m_arrCheck[(UINT)ObjType::END];	// ±×·ì°£ Ãæµ¹ Ã¼Å© ÁıÇÕ
+	map<ULONGLONG, bool>	m_mapColInfo;		// ì´ì „ í”„ë ˆì„ì—ì„œì˜ ì¶©ëŒì²´ê°„ ì¶©ëŒì •ë³´
+	UINT	m_arrCheck[(UINT)ObjType::END];	// ê·¸ë£¹ê°„ ì¶©ëŒ ì²´í¬ ì§‘í•©
 
 	void CollisionObjUpdate(ObjType left, ObjType right);
 	bool isCollision(Collider* pLColli,Collider* pRColli);

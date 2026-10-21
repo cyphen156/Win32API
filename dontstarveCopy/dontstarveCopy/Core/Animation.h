@@ -17,10 +17,10 @@ class Animation
 private:
     wstring m_strName;
     Animator* m_pAnimator;
-    vector<Texture*> m_vecFrames; // °¢ ÇÁ·¹ÀÓÀ» ÀúÀåÇÏ´Â º¤ÅÍ
+    vector<Texture*> m_vecFrames; // ê° í”„ë ˆì„ì„ ì €ì¥í•˜ëŠ” ë²¡í„°
     int m_iCurFrame;
     float m_fAccTime;
-    float m_fFrameDuration; // ÇÁ·¹ÀÓÀÇ Áö¼Ó ½Ã°£
+    float m_fFrameDuration; // í”„ë ˆì„ì˜ ì§€ì† ì‹œê°„
     bool m_bFinish;
 
     void SetName(const wstring& name) { m_strName = name; }

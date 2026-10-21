@@ -18,10 +18,10 @@ void Animator::CreateAnimation(const wstring& name
 	, vector<Texture*> frames
 	, float fDuration)
 {
-	// ¾Ö´Ï¸ŞÀÌ¼ÇÀÌ ÀÌ¹Ì Á¸ÀçÇÏ´ÂÁö È®ÀÎ
+	// ì• ë‹ˆë©”ì´ì…˜ì´ ì´ë¯¸ ì¡´ì¬í•˜ëŠ”ì§€ í™•ì¸
 	if (FindAnimation(name) != nullptr)
 	{
-		// Áßº¹µÈ ¾Ö´Ï¸ŞÀÌ¼Ç¿¡ ´ëÇÑ µğ¹ö±× ¸Ş½ÃÁö Ãâ·Â
+		// ì¤‘ë³µëœ ì• ë‹ˆë©”ì´ì…˜ì— ëŒ€í•œ ë””ë²„ê·¸ ë©”ì‹œì§€ ì¶œë ¥
 		wcout << L"Warning: Animation '" << name << L"' already exists. Skipping creation." << endl;
 		return;
 	}
@@ -53,9 +53,9 @@ void Animator::Play(ObjType objType, const wstring& strName, bool isRepeat, wstr
 	wstring objTypeStr;
 	switch (objType)
 	{
-	case ObjType::Player:  objTypeStr = L"Player_"; break;
-	case ObjType::Monster: objTypeStr = L"Monster_"; break;
-		// ÇÊ¿ä¿¡ µû¶ó ´Ù¸¥ °´Ã¼ Å¸ÀÔ Ãß°¡
+	case ObjType::Player:  objTypeStr = L"Wilson_"; break;
+	case ObjType::Monster: objTypeStr = L"Pigman_"; break;
+		// í•„ìš”ì— ë”°ë¼ ë‹¤ë¥¸ ê°ì²´ íƒ€ì… ì¶”ê°€
 	default: objTypeStr = L""; break;
 	}
 
@@ -75,7 +75,7 @@ void Animator::update()
 		}
 		m_pCurAnimation->update();
 	}
-	// ¾Ö´Ï¸ŞÀÌ¼Ç Àç»ı
+	// ì• ë‹ˆë©”ì´ì…˜ ì¬ìƒ
 }
 
 void Animator::render(HDC hdc)
@@ -90,5 +90,5 @@ void Animator::render(HDC hdc)
 		}
 		m_pCurAnimation->render(hdc);
 	}
-	// ¾Ö´Ï¸ŞÀÌ¼Ç ·»´õ¸µ
+	// ì• ë‹ˆë©”ì´ì…˜ ë Œë”ë§
 }

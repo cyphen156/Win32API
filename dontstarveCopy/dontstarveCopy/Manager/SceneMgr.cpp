@@ -23,7 +23,7 @@ void SceneMgr::init()
 	m_arrScene[(UINT)SceneType::CAVE] = new Scene_Cave;
 	m_arrScene[(UINT)SceneType::CAVE]->SetName(L"Cave Scene");
 
-	// ½ÃÀÛ ¾À ÁöÁ¤
+	// ì‹œì‘ ì”¬ ì§€ì •
 	m_pCurScene = m_arrScene[(UINT)SceneType::START];
 	m_pCurScene->Enter();
 }

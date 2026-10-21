@@ -70,7 +70,7 @@ void KeyMgr::update()
 	{
 		for (int i = 00; i < (int)KEY::LAST; ++i)
 		{
-			// Å°°¡ ´­·Á ÀÖ´Ù.
+			// í‚¤ê°€ ëˆŒë ¤ ìžˆë‹¤.
 			if (GetAsyncKeyState(g_arrVK[i]) & 0x8000)
 			{
 				if (m_vecKey[i].bPrev)

@@ -1,7 +1,9 @@
 #include "pch.h"
 #include "Scene.h"
+#include "World.h"
 
 Scene::Scene()
+	: world(nullptr)
 {
 }
 
@@ -14,6 +16,7 @@ Scene::~Scene()
 			delete m_arrObj[i][j];
 		}
 	}
+	delete world;
 }
 
 void Scene::update()
@@ -43,6 +46,11 @@ void Scene::finalupdate()
 
 void Scene::render(HDC hdc)
 {
+	if (world != nullptr)
+	{
+		world->Render(hdc);
+	}
+
 	for (UINT i = 0; i < (UINT)ObjType::END; ++i)
 	{
 		vector<Object*>::iterator iter = m_arrObj[i].begin();

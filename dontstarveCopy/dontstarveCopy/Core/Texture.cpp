@@ -17,8 +17,8 @@ void Texture::Load(const wstring& resPath)
 {
     m_img = Image::FromFile(resPath.c_str());
     if (m_img->GetLastStatus() != Ok) {
-        MessageBox(nullptr, L"ÀÌ¹ÌÁö ·Îµå ½ÇÆÐ!", L"Error", MB_OK);
-        delete m_img; // ·Îµå ½ÇÆÐ ½Ã ¸Þ¸ð¸® ÇØÁ¦
+        MessageBox(nullptr, L"ì´ë¯¸ì§€ ë¡œë“œ ì‹¤íŒ¨!", L"Error", MB_OK);
+        delete m_img; // ë¡œë“œ ì‹¤íŒ¨ ì‹œ ë©”ëª¨ë¦¬ í•´ì œ
         m_img = nullptr;
         return;
     }
@@ -28,13 +28,13 @@ void Texture::Load(const wstring& resPath)
     //Bitmap* bitmap = new Bitmap(width, height, PixelFormat32bppRGB);
     //Graphics graphics(bitmap);
 
-    //// ¿øº» ÀÌ¹ÌÁö¸¦ ºñÆ®¸ÊÀ¸·Î ±×¸®±â
+    //// ì›ë³¸ ì´ë¯¸ì§€ë¥¼ ë¹„íŠ¸ë§µìœ¼ë¡œ ê·¸ë¦¬ê¸°
     //graphics.DrawImage(m_img, 0, 0, width, height);
 
     //bitmap->GetHBITMAP(Color(0, 0, 0, 0), &m_hBit);
     //delete bitmap;
 
-    //MessageBox(nullptr, L"ÀÌ¹ÌÁö ·Îµå ¼º°ø!", L"Error", MB_OK);
+    //MessageBox(nullptr, L"ì´ë¯¸ì§€ ë¡œë“œ ì„±ê³µ!", L"Error", MB_OK);
 	//m_hBit = (HBITMAP)m_img->GetHBITMAP(Color(0, 0, 0, 0));
 	//m_hBit = (HBITMAP)LoadImage(nullptr, resPath.c_str(), IMAGE_BITMAP, 0, 0, LR_CREATEDIBSECTION | LR_LOADFROMFILE);
 

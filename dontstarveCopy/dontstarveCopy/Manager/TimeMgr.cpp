@@ -19,11 +19,11 @@ TimeMgr::~TimeMgr()
 
 void TimeMgr::init()
 {
-	// ÇöÀç Ä«¿îÆ®
+	// í˜„ìž¬ ì¹´ìš´íŠ¸
 	QueryPerformanceCounter(&m_liCurrCnt);
 	m_liPrevCnt = m_liCurrCnt;
 
-	// ÃÊ´ç Ä«¿îÆ®
+	// ì´ˆë‹¹ ì¹´ìš´íŠ¸
 	QueryPerformanceFrequency(&m_liFrequency);
 }
 

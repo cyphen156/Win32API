@@ -6,6 +6,7 @@
 Object::Object()
 	: m_Pos{}
 	, m_objScale{}
+	, footAnchor{}
 	, m_pCollider(nullptr)
 	, m_ObjName()
 	, m_bisDead(false)
@@ -16,6 +17,7 @@ Object::Object()
 Object::Object(const Object& origin)
 	: m_Pos{ origin.m_Pos }
 	, m_objScale{ origin.m_objScale }
+	, footAnchor{ origin.footAnchor }
 	, m_pCollider(nullptr)
 	, m_ObjName(origin.m_ObjName)
 	, m_bisDead(false)

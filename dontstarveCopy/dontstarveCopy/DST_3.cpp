@@ -1,4 +1,4 @@
-// dontstarveCopy.cpp : ¾ÖÇÃ¸®ÄÉÀÌ¼Ç¿¡ ´ëÇÑ ÁøÀÔÁ¡À» Á¤ÀÇÇÕ´Ï´Ù.
+// dontstarveCopy.cpp : ì• í”Œë¦¬ì¼€ì´ì…˜ì— ëŒ€í•œ ì§„ì…ì ì„ ì •ì˜í•©ë‹ˆë‹¤.
 //
 
 #include "framework.h"
@@ -10,11 +10,11 @@ using namespace Gdiplus;
 
 static HWND hWnd;
 
-// GDIPlus ÅäÅ« ÃÊ±âÈ­
+// GDIPlus í† í° ì´ˆê¸°í™”
 ULONG_PTR gdiplusToken;
 
 
-// ÁÂÇ¥ º¯¼ö 
+// ì¢Œí‘œ ë³€ìˆ˜ 
 static POINT point;
 static BOOL reverse;
 static POINT endPos;
@@ -23,12 +23,12 @@ static int scaledWidth;
 static int scaledHeight;
 #define MAX_LOADSTRING 100
 
-// Àü¿ª º¯¼ö:
-HINSTANCE hInst;                                // ÇöÀç ÀÎ½ºÅÏ½ºÀÔ´Ï´Ù.
-WCHAR szTitle[MAX_LOADSTRING];                  // Á¦¸ñ Ç¥½ÃÁÙ ÅØ½ºÆ®ÀÔ´Ï´Ù.
-WCHAR szWindowClass[MAX_LOADSTRING];            // ±âº» Ã¢ Å¬·¡½º ÀÌ¸§ÀÔ´Ï´Ù.
+// ì „ì—­ ë³€ìˆ˜:
+HINSTANCE hInst;                                // í˜„ì¬ ì¸ìŠ¤í„´ìŠ¤ì…ë‹ˆë‹¤.
+WCHAR szTitle[MAX_LOADSTRING];                  // ì œëª© í‘œì‹œì¤„ í…ìŠ¤íŠ¸ì…ë‹ˆë‹¤.
+WCHAR szWindowClass[MAX_LOADSTRING];            // ê¸°ë³¸ ì°½ í´ë˜ìŠ¤ ì´ë¦„ì…ë‹ˆë‹¤.
 
-// ÀÌ ÄÚµå ¸ğµâ¿¡ Æ÷ÇÔµÈ ÇÔ¼öÀÇ ¼±¾ğÀ» Àü´ŞÇÕ´Ï´Ù:
+// ì´ ì½”ë“œ ëª¨ë“ˆì— í¬í•¨ëœ í•¨ìˆ˜ì˜ ì„ ì–¸ì„ ì „ë‹¬í•©ë‹ˆë‹¤:
 ATOM                MyRegisterClass(HINSTANCE hInstance);
 BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
@@ -49,7 +49,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     _In_ LPWSTR    lpCmdLine,
     _In_ int       nCmdShow)
 {
-    // GDI+ ÃÊ±âÈ­
+    // GDI+ ì´ˆê¸°í™”
     GdiplusStartupInput gpsi;
     GdiplusStartup(&gdiplusToken, &gpsi, nullptr);
 
@@ -57,29 +57,29 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     UNREFERENCED_PARAMETER(lpCmdLine);
 
 
-    // TODO: ¿©±â¿¡ ÄÚµå¸¦ ÀÔ·ÂÇÕ´Ï´Ù.
+    // TODO: ì—¬ê¸°ì— ì½”ë“œë¥¼ ì…ë ¥í•©ë‹ˆë‹¤.
     // 
     // 
 
-    // Àü¿ª ¹®ÀÚ¿­À» ÃÊ±âÈ­ÇÕ´Ï´Ù.
+    // ì „ì—­ ë¬¸ìì—´ì„ ì´ˆê¸°í™”í•©ë‹ˆë‹¤.
     LoadStringW(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
     LoadStringW(hInstance, IDC_DONTSTARVECOPY, szWindowClass, MAX_LOADSTRING);
     MyRegisterClass(hInstance);
 
-    // ¾ÖÇÃ¸®ÄÉÀÌ¼Ç ÃÊ±âÈ­¸¦ ¼öÇàÇÕ´Ï´Ù:
+    // ì• í”Œë¦¬ì¼€ì´ì…˜ ì´ˆê¸°í™”ë¥¼ ìˆ˜í–‰í•©ë‹ˆë‹¤:
     if (!InitInstance(hInstance, nCmdShow))
     {
         return FALSE;
     }
-    // ±âº» ÁÂÇ¥ ¼³Á¤
+    // ê¸°ë³¸ ì¢Œí‘œ ì„¤ì •
     point = { 0, 0 };
 
-    // ÀÌ¹ÌÁö ¿ªÀü ¼³Á¤
+    // ì´ë¯¸ì§€ ì—­ì „ ì„¤ì •
     reverse = true;
 
     changedhWndSize = false;
 
-    // ºñÆ®¸Ê ·Îµå
+    // ë¹„íŠ¸ë§µ ë¡œë“œ
     // 
 
     /*hBitmaps[0] = LoadBitmap(hInst, MAKEINTRESOURCE(IDB_BITMAP1));
@@ -92,7 +92,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     /*for (int i = 0; i < 5; ++i)
     {
         if (hBitmaps[i] == NULL) {
-            MessageBox(NULL, L"ºñÆ®¸ÊÀ» ·ÎµåÇÒ ¼ö ¾ø½À´Ï´Ù.", L"Error", MB_OK);
+            MessageBox(NULL, L"ë¹„íŠ¸ë§µì„ ë¡œë“œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.", L"Error", MB_OK);
         }
     }*/
     HACCEL hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_DONTSTARVECOPY));
@@ -100,10 +100,10 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     MSG msg;
 
 
-    // ¸Ş¼¼Áö ·çÇÁ
+    // ë©”ì„¸ì§€ ë£¨í”„
     while (1)
     {
-        // »ç¿ëÀÚ ÀÔ·Â Ã³¸®
+        // ì‚¬ìš©ì ì…ë ¥ ì²˜ë¦¬
         if (PeekMessage(&msg, nullptr, 0, 0, PM_REMOVE))
         {
             if (WM_QUIT == msg.message)
@@ -116,7 +116,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                 DispatchMessage(&msg);
             }
         }
-        // ºĞ±â¿¡ °É¸®Áö ¾Ê´Â ¹é±×¶ó¿îµå ÇÁ·Î¼¼½Ì ÀÛ¼º
+        // ë¶„ê¸°ì— ê±¸ë¦¬ì§€ ì•ŠëŠ” ë°±ê·¸ë¼ìš´ë“œ í”„ë¡œì„¸ì‹± ì‘ì„±
         else
         {
             if (reverse)
@@ -141,7 +141,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         }
     }
 
-    // GDI Plus ÇØÁ¦
+    // GDI Plus í•´ì œ
     GdiplusShutdown(gdiplusToken);
 
     return (int)msg.wParam;
@@ -150,9 +150,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
 
 //
-//  ÇÔ¼ö: MyRegisterClass()
+//  í•¨ìˆ˜: MyRegisterClass()
 //
-//  ¿ëµµ: Ã¢ Å¬·¡½º¸¦ µî·ÏÇÕ´Ï´Ù.
+//  ìš©ë„: ì°½ í´ë˜ìŠ¤ë¥¼ ë“±ë¡í•©ë‹ˆë‹¤.
 //
 ATOM MyRegisterClass(HINSTANCE hInstance)
 {
@@ -176,18 +176,18 @@ ATOM MyRegisterClass(HINSTANCE hInstance)
 }
 
 //
-//   ÇÔ¼ö: InitInstance(HINSTANCE, int)
+//   í•¨ìˆ˜: InitInstance(HINSTANCE, int)
 //
-//   ¿ëµµ: ÀÎ½ºÅÏ½º ÇÚµéÀ» ÀúÀåÇÏ°í ÁÖ Ã¢À» ¸¸µì´Ï´Ù.
+//   ìš©ë„: ì¸ìŠ¤í„´ìŠ¤ í•¸ë“¤ì„ ì €ì¥í•˜ê³  ì£¼ ì°½ì„ ë§Œë“­ë‹ˆë‹¤.
 //
-//   ÁÖ¼®:
+//   ì£¼ì„:
 //
-//        ÀÌ ÇÔ¼ö¸¦ ÅëÇØ ÀÎ½ºÅÏ½º ÇÚµéÀ» Àü¿ª º¯¼ö¿¡ ÀúÀåÇÏ°í
-//        ÁÖ ÇÁ·Î±×·¥ Ã¢À» ¸¸µç ´ÙÀ½ Ç¥½ÃÇÕ´Ï´Ù.
+//        ì´ í•¨ìˆ˜ë¥¼ í†µí•´ ì¸ìŠ¤í„´ìŠ¤ í•¸ë“¤ì„ ì „ì—­ ë³€ìˆ˜ì— ì €ì¥í•˜ê³ 
+//        ì£¼ í”„ë¡œê·¸ë¨ ì°½ì„ ë§Œë“  ë‹¤ìŒ í‘œì‹œí•©ë‹ˆë‹¤.
 //
 BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 {
-    hInst = hInstance; // ÀÎ½ºÅÏ½º ÇÚµéÀ» Àü¿ª º¯¼ö¿¡ ÀúÀåÇÕ´Ï´Ù.
+    hInst = hInstance; // ì¸ìŠ¤í„´ìŠ¤ í•¸ë“¤ì„ ì „ì—­ ë³€ìˆ˜ì— ì €ì¥í•©ë‹ˆë‹¤.
 
     hWnd = CreateWindowW(szWindowClass, szTitle, WS_OVERLAPPEDWINDOW,
         CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, nullptr, nullptr, hInstance, nullptr);
@@ -204,13 +204,13 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 }
 
 //
-//  ÇÔ¼ö: WndProc(HWND, UINT, WPARAM, LPARAM)
+//  í•¨ìˆ˜: WndProc(HWND, UINT, WPARAM, LPARAM)
 //
-//  ¿ëµµ: ÁÖ Ã¢ÀÇ ¸Ş½ÃÁö¸¦ Ã³¸®ÇÕ´Ï´Ù.
+//  ìš©ë„: ì£¼ ì°½ì˜ ë©”ì‹œì§€ë¥¼ ì²˜ë¦¬í•©ë‹ˆë‹¤.
 //
-//  WM_COMMAND  - ¾ÖÇÃ¸®ÄÉÀÌ¼Ç ¸Ş´º¸¦ Ã³¸®ÇÕ´Ï´Ù.
-//  WM_PAINT    - ÁÖ Ã¢À» ±×¸³´Ï´Ù.
-//  WM_DESTROY  - Á¾·á ¸Ş½ÃÁö¸¦ °Ô½ÃÇÏ°í ¹İÈ¯ÇÕ´Ï´Ù.
+//  WM_COMMAND  - ì• í”Œë¦¬ì¼€ì´ì…˜ ë©”ë‰´ë¥¼ ì²˜ë¦¬í•©ë‹ˆë‹¤.
+//  WM_PAINT    - ì£¼ ì°½ì„ ê·¸ë¦½ë‹ˆë‹¤.
+//  WM_DESTROY  - ì¢…ë£Œ ë©”ì‹œì§€ë¥¼ ê²Œì‹œí•˜ê³  ë°˜í™˜í•©ë‹ˆë‹¤.
 //
 //
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
@@ -220,7 +220,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     case WM_COMMAND:
     {
         int wmId = LOWORD(wParam);
-        // ¸Ş´º ¼±ÅÃÀ» ±¸¹® ºĞ¼®ÇÕ´Ï´Ù:
+        // ë©”ë‰´ ì„ íƒì„ êµ¬ë¬¸ ë¶„ì„í•©ë‹ˆë‹¤:
         switch (wmId)
         {
         case IDM_ABOUT:
@@ -235,7 +235,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     }
     break;
     case WM_SIZE:
-        // À©µµ¿ì Å©±â º¯°æ ½Ã RECT °ª ¾÷µ¥ÀÌÆ®
+        // ìœˆë„ìš° í¬ê¸° ë³€ê²½ ì‹œ RECT ê°’ ì—…ë°ì´íŠ¸
         GetWindowRect(hWnd, &hWndInfo);
         endPos.x = hWndInfo.right - hWndInfo.left;
         endPos.y = hWndInfo.bottom - hWndInfo.top;
@@ -246,7 +246,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         PAINTSTRUCT ps;
         HDC hdc = BeginPaint(hWnd, &ps);
 
-        // MemDC°¡ Ã³À½ÀÏ ¶§¸¸ »ı¼º
+        // MemDCê°€ ì²˜ìŒì¼ ë•Œë§Œ ìƒì„±
         if (MemDC == NULL) {
             MemDC = CreateCompatibleDC(hdc);
             HBITMAP hMemBitmap = CreateCompatibleBitmap(hdc, ps.rcPaint.right - ps.rcPaint.left, ps.rcPaint.bottom - ps.rcPaint.top);
@@ -260,10 +260,10 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             changedhWndSize = false;
         }
 
-        // ¹é ¹öÆÛ(MemDC)¿¡ ¹è°æ ±×¸®±â
+        // ë°± ë²„í¼(MemDC)ì— ë°°ê²½ ê·¸ë¦¬ê¸°
         FillRect(MemDC, &ps.rcPaint, (HBRUSH)(COLOR_WINDOW + 1));
 
-        // ¹Ì¸® ·ÎµåµÈ ºñÆ®¸ÊÀ» ¹é ¹öÆÛ¿¡ ±×¸®±â
+        // ë¯¸ë¦¬ ë¡œë“œëœ ë¹„íŠ¸ë§µì„ ë°± ë²„í¼ì— ê·¸ë¦¬ê¸°
         hBitmap = LoadBitmap(hInst, MAKEINTRESOURCE(IDB_BITMAP1 + (iFrame / 5)));
         HDC hTempDC = CreateCompatibleDC(MemDC);
         HBITMAP hOldBitmap = (HBITMAP)SelectObject(hTempDC, hBitmap);
@@ -276,7 +276,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         scaledWidth = originalWidth / 10;
         scaledHeight = originalHeight / 10;
 
-        // ºñÆ®¸ÊÀ» ¹é ¹öÆÛ¿¡ ±×¸®±â
+        // ë¹„íŠ¸ë§µì„ ë°± ë²„í¼ì— ê·¸ë¦¬ê¸°
         if (reverse) {
             StretchBlt(MemDC, point.x + scaledWidth, point.y, -scaledWidth, scaledHeight, hTempDC, 0, 0, originalWidth, originalHeight, SRCCOPY);
         }
@@ -284,10 +284,10 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             StretchBlt(MemDC, point.x, point.y, scaledWidth, scaledHeight, hTempDC, 0, 0, originalWidth, originalHeight, SRCCOPY);
         }
 
-        // ¹é ¹öÆÛ(MemDC) ³»¿ëÀ» È­¸é(hdc)¿¡ º¹»ç
+        // ë°± ë²„í¼(MemDC) ë‚´ìš©ì„ í™”ë©´(hdc)ì— ë³µì‚¬
         BitBlt(hdc, 0, 0, ps.rcPaint.right - ps.rcPaint.left, ps.rcPaint.bottom - ps.rcPaint.top, MemDC, 0, 0, SRCCOPY);
 
-        // ÀÚ¿ø ÇØÁ¦
+        // ìì› í•´ì œ
         SelectObject(hTempDC, hOldBitmap);
         DeleteDC(hTempDC);
 
@@ -340,7 +340,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     return 0;
 }
 
-// Á¤º¸ ´ëÈ­ »óÀÚÀÇ ¸Ş½ÃÁö Ã³¸®±âÀÔ´Ï´Ù.
+// ì •ë³´ ëŒ€í™” ìƒìì˜ ë©”ì‹œì§€ ì²˜ë¦¬ê¸°ì…ë‹ˆë‹¤.
 INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 {
     UNREFERENCED_PARAMETER(lParam);

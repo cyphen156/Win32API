@@ -55,13 +55,13 @@ enum class KEY
 	LBUTTON,
 	RBUTTON,
 
-	LAST,		// ╦╤аЖ╦╥ е╟
+	LAST,		// К╖┬Л╖─К╖┴ М┌╓
 };
 
 struct tKeyInfo 
 {
-	KEY_STATE	eState;	// гЖюГюг ╩Себ
-	bool		bPrev;	// юлюЭ га╥╧юсюг ют╥б ╩Себ
+	KEY_STATE	eState;	// М≤└Л·╛Л²≤ Л┐│М┐°
+	bool		bPrev;	// Л²╢Л═└ М■└К═┬Л·└Л²≤ Л·┘К═╔ Л┐│М┐°
 };
 class KeyMgr 
 {

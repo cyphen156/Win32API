@@ -6,6 +6,7 @@
 #include "ResourceMgr.h"
 #include "Animator.h"
 #include "Animation.h"
+#include "CameraMgr.h"
 
 Player::Player()
 	: m_fspeed(100.f)
@@ -14,7 +15,7 @@ Player::Player()
 	// 리소스 로딩 - Texture
 
 	wstring resPath = PathMgr::GetInst()->GetContentPath();
-	resPath += L"Textures\\Player";
+	resPath += L"Textures\\Character\\Wilson";
 	// 캐릭터 선택 여부 확인
 	/*if (!wcscmp(character, "wilson"))
 	{
@@ -25,8 +26,8 @@ Player::Player()
 	MessageBox(nullptr, (L"Player Resource has Loaded"), L"Notice", MB_OK);
 	SetCurrDir(L"Down");
 	wstring dir = GetCurrDir();
-	GetAnimator()->Play(ObjType::Player, L"Attack", true, dir);
-	Texture* pTex = GetAnimator()->FindAnimation(L"Player_Attack_Down")->GetFrame(0);
+	GetAnimator()->Play(ObjType::Player, L"IdleLoop", true, dir);
+	Texture* pTex = GetAnimator()->FindAnimation(L"Wilson_IdleLoop_Down")->GetFrame(0);
 	//GetAnimation()->GetFrame()
 	Image* img = pTex->GetImage();
 	float width = (float)img->GetWidth();
@@ -34,6 +35,7 @@ Player::Player()
 	Vec2D baseScale(width, height);
 	SetPos(Vec2D(300.f, 300.f));
 	SetScale(baseScale);
+	SetFootAnchor(Vec2D(0.f, 45.f));
 
 	Vec2D reScale(0.8f, 0.8f);
 	Vec2D colSize = GetScale();
@@ -124,8 +126,7 @@ void Player::GetAnimations(vector<Texture*> frames, wstring& animationName, wstr
 	// 애니메이션 생성
 	if (!frames.empty())
 	{
-		double sec = 1;
-		double frameTime = (frames.size() / (double)1000 * sec);	// size = deltatime * sec;
+		double frameTime = 1.0 / 30.0;
 
 		GetAnimator()->CreateAnimation(animationName, frames, frameTime);
 		//MessageBox(nullptr, (animationName + L" is loaded " + std::to_wstring(frames.size()) + L" frames").c_str(), L"Notice", MB_OK);
@@ -182,17 +183,20 @@ void Player::render(HDC hdc)
 
 	//리소스 개별로딩때 써먹엇던 코드
 
-	Vec2D vPlayerPos = GetPos();
 	Vec2D vPlayerScale = GetScale();
+	Vec2D vPlayerAnchor = GetFootAnchor();
+	Vec2D vPlayerFoot = CameraMgr::GetInst()->GetRenderPos(GetPos() + Vec2D(vPlayerScale.x / 2.f + vPlayerAnchor.x, vPlayerScale.y / 2.f + vPlayerAnchor.y));
+	float fZoom = CameraMgr::GetInst()->GetZoom();
+	Vec2D vPlayerCenter = Vec2D(vPlayerFoot.x - vPlayerAnchor.x * fZoom, vPlayerFoot.y - vPlayerAnchor.y * fZoom);
 	/*UINT iWidth = 20;
 	UINT iHeight = 20;*/
 	//MessageBox(nullptr, (L"Before Call Anim Render"), L"Notice", MB_OK);
 	HPEN hOldPen = (HPEN)CreatePen(PS_SOLID, 5, RGB(0, 0, 255));
 	HPEN hPrevPen = (HPEN)SelectObject(hdc, hOldPen);
-	Rectangle(hdc, vPlayerPos.x
-		, vPlayerPos.y
-		, vPlayerPos.x + vPlayerScale.x
-		, vPlayerPos.y + vPlayerScale.y);
+	Rectangle(hdc, (int)(vPlayerCenter.x - vPlayerScale.x * fZoom / 2.f)
+		, (int)(vPlayerCenter.y - vPlayerScale.y * fZoom / 2.f)
+		, (int)(vPlayerCenter.x + vPlayerScale.x * fZoom / 2.f)
+		, (int)(vPlayerCenter.y + vPlayerScale.y * fZoom / 2.f));
 	SelectObject(hdc, hPrevPen);
 	DeleteObject(hOldPen);
 	

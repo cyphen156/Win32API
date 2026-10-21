@@ -1,5 +1,7 @@
 #include "pch.h"
 #include "World.h"
+#include "CameraMgr.h"
+#include <cmath>
 #include <cstdlib>
 #include <ctime>
 #include <algorithm>
@@ -14,13 +16,27 @@ World::World(SceneType type)
     , worldMap{}
 	, tiles{}
     , tileSize(0)
+    , biomeBrush{}
 {
-    // ·£´ı ½Ãµå ÃÊ±âÈ­
+    const COLORREF biomeColors[(UINT)BiomeType::END] =
+    {
+        RGB(64, 120, 190), RGB(250, 199, 117), RGB(59, 109, 17), RGB(200, 180, 70), RGB(160, 95, 40),
+        RGB(90, 80, 110), RGB(235, 160, 90), RGB(151, 196, 89), RGB(140, 140, 140),
+    };
+    for (UINT i = 0; i < (UINT)BiomeType::END; ++i)
+    {
+        biomeBrush[i] = CreateSolidBrush(biomeColors[i]);
+    }
+    // ëœë¤ ì‹œë“œ ì´ˆê¸°í™”
     srand(static_cast<unsigned>(time(0)));
 }
 
 World::~World() 
 {
+    for (UINT i = 0; i < (UINT)BiomeType::END; ++i)
+    {
+        DeleteObject(biomeBrush[i]);
+    }
 }
 
 void World::SetWorldSize(bool isLarge)
@@ -43,9 +59,42 @@ void World::generateWorld()
     resPath += L"\\Textures\\Particle";
     
     LoadTile(resPath);
-	setTileSize(50);
-	// ÀüÃ¼ ¿ùµå »ı¼º, default Biome : water
+	setTileSize(120);
+	// ì „ì²´ ì›”ë“œ ìƒì„±, default Biome : water
     worldMap.resize(wldSize.x, std::vector<Terrain>(wldSize.y, BiomeType::Water));
+}
+
+void World::Render(HDC hdc)
+{
+    if (worldMap.empty() || tileSize <= 0)
+    {
+        return;
+    }
+
+    CameraMgr* camera = CameraMgr::GetInst();
+    Vec2D lookAt = camera->GetLookAt();
+    Vec2D resolution = camera->GetResolution();
+    float zoom = camera->GetZoom();
+    float groundZoom = zoom * camera->GetPitchScale();
+    int firstX = (int)floor((lookAt.x - resolution.x / 2.f / zoom) / tileSize);
+    int lastX = (int)floor((lookAt.x + resolution.x / 2.f / zoom) / tileSize);
+    int firstY = (int)floor((lookAt.y - resolution.y / 2.f / groundZoom) / tileSize);
+    int lastY = (int)floor((lookAt.y + resolution.y / 2.f / groundZoom) / tileSize);
+    for (int tileY = firstY; tileY <= lastY; ++tileY)
+    {
+        for (int tileX = firstX; tileX <= lastX; ++tileX)
+        {
+            BiomeType biome = BiomeType::Water;
+            if (tileX >= 0 && tileX < (int)worldMap.size() && tileY >= 0 && tileY < (int)worldMap[tileX].size())
+            {
+                biome = worldMap[tileX][tileY].getBiomeType();
+            }
+            Vec2D renderPos = camera->GetRenderPos(Vec2D(tileX * tileSize, tileY * tileSize));
+            RECT tileRect = { (LONG)floor(renderPos.x), (LONG)floor(renderPos.y),
+                (LONG)ceil(renderPos.x + tileSize * zoom), (LONG)ceil(renderPos.y + tileSize * groundZoom) };
+            FillRect(hdc, &tileRect, biomeBrush[(UINT)biome]);
+        }
+    }
 }
 
 void World::LoadTile(wstring& TexPath)
@@ -55,7 +104,7 @@ void World::LoadTile(wstring& TexPath)
 
 	if (hFind == INVALID_HANDLE_VALUE)
 	{
-		// ·Î´õ °æ·Î¸í ¹®Á¦ ¹ß»ı
+		// ë¡œë” ê²½ë¡œëª… ë¬¸ì œ ë°œìƒ
 		MessageBox(nullptr, (L"Cannot find Dir" + TexPath + L" Error :: Invalid Path.").c_str(), L"Error", MB_OK);
 		return;
 	}
@@ -74,7 +123,7 @@ void World::LoadTile(wstring& TexPath)
 			}
 			else if (wstring(findDir.cFileName).find(L".png") != wstring::npos)
 			{
-				// ÇÏÀ§ Æú´õ°¡ ¾ø°í, pngÆÄÀÏÀÌ ÀÖ´Ù¸é
+				// í•˜ìœ„ í´ë”ê°€ ì—†ê³ , pngíŒŒì¼ì´ ìˆë‹¤ë©´
 				wstring fileName = findDir.cFileName;
 
 				Texture* pTex = ResourceMgr::GetInst()->LoadTexture(fileName, fullPath);
@@ -89,73 +138,77 @@ void World::LoadTile(wstring& TexPath)
 
 	if (isEmpty)
 	{
-		// Æú´õ´Â ÀÖÁö¸¸ ÇÏÀ§¿¡ ÆÄÀÏÀÌ³ª Æú´õ°¡ ¾ø´Â °æ¿ì
+		// í´ë”ëŠ” ìˆì§€ë§Œ í•˜ìœ„ì— íŒŒì¼ì´ë‚˜ í´ë”ê°€ ì—†ëŠ” ê²½ìš°
 		MessageBox(nullptr, (L"Find " + TexPath + L"but it is Empty Dir.").c_str(), L"Notice", MB_OK);
 	}
 	FindClose(hFind);
 }
-//int calcDist(const POINT& a, const POINT& b)
-//{
-//    return sqrt(pow(a.x - b.x, 2) + pow(a.y - b.y, 2));
-//}
+int calcDist(const POINT& a, const POINT& b)
+{
+    return sqrt(pow(a.x - b.x, 2) + pow(a.y - b.y, 2));
+}
+
+// Prim ì•Œê³ ë¦¬ì¦˜ MST
+vector<pair<int, int>> generateMST(const vector<POINT>& biomeCenters)
+{
+    int biomecnt = biomeCenters.size();
+    vector<bool> isInMST(biomecnt, false);
+    vector<int> minDistance(biomecnt, INT_MAX);
+    vector<int> prev(biomecnt, -1);
+    vector<pair<int, int>> mstEdges;
+
+    minDistance[0] = 0;
+
+    for (int iter = 0; iter < biomecnt - 1; ++iter)
+    {
+        int currBiome = -1;
+        for (int i = 0; i < biomecnt; ++i)
+        {
+            if (!isInMST[i] && (currBiome == -1 || minDistance[i] < minDistance[currBiome]))
+            {
+                currBiome = i;
+            }
+        }
+
+        isInMST[currBiome] = true;
+
+        if (prev[currBiome] != -1)
+        {
+            mstEdges.push_back({ prev[currBiome], currBiome });
+        }
+
+        // ê±°ë¦¬ ê°±ì‹ 
+        for (int next = 0; next < biomecnt; ++next)
+        {
+            if (!isInMST[next])
+            {
+                int distance = calcDist(biomeCenters[currBiome], biomeCenters[next]);
+                if (distance < minDistance[next])
+                {
+                    minDistance[next] = distance;
+                    prev[next] = currBiome;
+                }
+            }
+        }
+    }
+
+    return mstEdges;
+}
+
 //
-//// Prim ¾Ë°í¸®Áò MST
-//vector<pair<int, int>> generateMST(const vector<POINT>& biomeCenters)
-//{
-//    int biomecnt = biomeCenters.size();
-//    vector<bool> isInMST(biomecnt, false);
-//    vector<int> minDistance(biomecnt, INT_MAX);
-//    vector<int> prev(biomecnt, -1);
-//    vector<pair<int, int>> mstEdges;
-//
-//    minDistance[0] = 0;
-//
-//    for (int iter = 0; iter < biomecnt - 1; ++iter)
-//    {
-//        int currBiome = -1;
-//        for (int i = 0; i < biomecnt; ++i)
-//        {
-//            if (!isInMST[i] && (currBiome == -1 || minDistance[i] < minDistance[currBiome]))
-//            {
-//                currBiome = i;
-//            }
-//        }
-//
-//        isInMST[currBiome] = true;
-//
-//        if (prev[currBiome] != -1)
-//        {
-//            mstEdges.push_back({ prev[currBiome], currBiome });
-//        }
-//
-//        // °Å¸® °»½Å
-//        for (int next = 0; next < biomecnt; ++next)
-//        {
-//            if (!isInMST[next])
-//            {
-//                int distance = calcDist(biomeCenters[currBiome], biomeCenters[next]);
-//                if (distance < minDistance[next])
-//                {
-//                    minDistance[next] = distance;
-//                    prev[next] = currBiome;
-//                }
-//            }
-//        }
-//    }
-//
-//    return mstEdges;
-//}
-//
-//void bfsExpandBiome(const POINT& center, int& biomeTiles, BiomeType biome, vector<vector<Terrain>>& worldMap, int worldWidth, int worldHeight)
+
+// ë°”ì´ì˜´ë³„ ì¤‘ì‹¬ì¢Œí‘œ ìƒì„±, MSTì•Œê³ ë¦¬ì¦˜ ì ìš©
+//void World::generateWorld(POINT* wldCenterPos)
+//{void bfsExpandBiome(const POINT& center, int& biomeTiles, BiomeType biome, vector<vector<Terrain>>& worldMap, int worldWidth, int worldHeight)
 //{
 //    std::queue<POINT> q;
 //    std::vector<std::vector<bool>> visited(worldWidth, std::vector<bool>(worldHeight, false));
-//    q.push(center);  // Áß½É ÁÂÇ¥¿¡¼­ ½ÃÀÛ
+//    q.push(center);  // ì¤‘ì‹¬ ì¢Œí‘œì—ì„œ ì‹œì‘
 //
 //    int placedTiles = 0;
-//    std::vector<std::pair<int, int>> directions = { {1,0}, {-1,0}, {0,1}, {0,-1} }; // 4¹æÇâ È®Àå
+//    std::vector<std::pair<int, int>> directions = { {1,0}, {-1,0}, {0,1}, {0,-1} }; // 4ë°©í–¥ í™•ì¥
 //
-//    // Áß½É¿¡¼­ ÀÎÁ¢ÇÑ Å¸ÀÏ·Î È®ÀåÇÏ´Â BFS ·çÇÁ
+//    // ì¤‘ì‹¬ì—ì„œ ì¸ì ‘í•œ íƒ€ì¼ë¡œ í™•ì¥í•˜ëŠ” BFS ë£¨í”„
 //    while (!q.empty() && placedTiles < biomeTiles)
 //    {
 //        POINT current = q.front();
@@ -164,22 +217,22 @@ void World::LoadTile(wstring& TexPath)
 //        int intX = current.x;
 //        int intY = current.y;
 //
-//        // ¿ùµå °æ°è¸¦ ³ÑÁö ¾Êµµ·Ï ¹üÀ§ °Ë»ç Ãß°¡
+//        // ì›”ë“œ ê²½ê³„ë¥¼ ë„˜ì§€ ì•Šë„ë¡ ë²”ìœ„ ê²€ì‚¬ ì¶”ê°€
 //        if (intX >= 0 && intX < worldWidth && intY >= 0 && intY < worldHeight && !visited[intX][intY])
 //        {
 //            visited[intX][intY] = true;
 //
-//            // ÀÌ¹Ì ¹°ÀÌ ¾Æ´Ñ Å¸ÀÏÀÏ °æ¿ì °Ç³Ê¶Ü
+//            // ì´ë¯¸ ë¬¼ì´ ì•„ë‹Œ íƒ€ì¼ì¼ ê²½ìš° ê±´ë„ˆëœ€
 //            if (worldMap[intX][intY].getBiomeType() != BiomeType::Water)
 //            {
 //                continue;
 //            }
 //
-//            // ¹°ÀÏ °æ¿ì¿¡¸¸ Å¸ÀÏ ¹èÄ¡
+//            // ë¬¼ì¼ ê²½ìš°ì—ë§Œ íƒ€ì¼ ë°°ì¹˜
 //            worldMap[intX][intY].update(biome);
 //            placedTiles++;
 //
-//            // ÀÎÁ¢ÇÑ Å¸ÀÏÀ» Å¥¿¡ Ãß°¡ (°æ°è ³»¿¡¼­¸¸ Ãß°¡)
+//            // ì¸ì ‘í•œ íƒ€ì¼ì„ íì— ì¶”ê°€ (ê²½ê³„ ë‚´ì—ì„œë§Œ ì¶”ê°€)
 //            for (const auto& dir : directions)
 //            {
 //                POINT nextTile = { intX + dir.first, intY + dir.second };
@@ -191,7 +244,7 @@ void World::LoadTile(wstring& TexPath)
 //        }
 //    }
 //
-//    // È®ÀåÇÒ ¼ö ÀÖ´Â Å¸ÀÏÀÌ ¾øÀ¸¸é ÀÎÁ¢ Å¸ÀÏÀ» Ã£¾Æ¼­ °è¼Ó È®Àå
+//    // í™•ì¥í•  ìˆ˜ ìˆëŠ” íƒ€ì¼ì´ ì—†ìœ¼ë©´ ì¸ì ‘ íƒ€ì¼ì„ ì°¾ì•„ì„œ ê³„ì† í™•ì¥
 //    while (placedTiles < biomeTiles)
 //    {
 //        bool foundNewExpansion = false;
@@ -201,7 +254,7 @@ void World::LoadTile(wstring& TexPath)
 //            {
 //                if (!visited[x][y] && worldMap[x][y].getBiomeType() == BiomeType::Water)
 //                {
-//                    // Å¸ÀÏÀ» È®Àå
+//                    // íƒ€ì¼ì„ í™•ì¥
 //                    worldMap[x][y].update(biome);
 //                    placedTiles++;
 //                    visited[x][y] = true;
@@ -212,16 +265,12 @@ void World::LoadTile(wstring& TexPath)
 //            }
 //            if (foundNewExpansion) break;
 //        }
-//        if (!foundNewExpansion) break; // È®ÀåÇÒ Å¸ÀÏÀÌ ¾øÀ¸¸é Á¾·á
+//        if (!foundNewExpansion) break; // í™•ì¥í•  íƒ€ì¼ì´ ì—†ìœ¼ë©´ ì¢…ë£Œ
 //    }
 //}
 //
-//
-//
-//// ¹ÙÀÌ¿Èº° Áß½ÉÁÂÇ¥ »ı¼º, MST¾Ë°í¸®Áò Àû¿ë
-//void World::generateWorld(POINT* wldCenterPos)
-//{
-//    // 8°³ÀÇ ÇÊ¼ö ¹ÙÀÌ¿È »ı¼º
+
+//    // 8ê°œì˜ í•„ìˆ˜ ë°”ì´ì˜´ ìƒì„±
 //    std::vector<BiomeType> biomes;
 //
 //    for (int i = 1; i < 9; ++i)
@@ -229,7 +278,7 @@ void World::LoadTile(wstring& TexPath)
 //        biomes.push_back(BiomeType(i));
 //    }
 //
-//    // ·£´ı ³­¼ö¸¦ ÅëÇÑ 0~4°³ÀÇ ¹ÙÀÌ¿È Ãß°¡
+//    // ëœë¤ ë‚œìˆ˜ë¥¼ í†µí•œ 0~4ê°œì˜ ë°”ì´ì˜´ ì¶”ê°€
 //    int addBiomes = rand() % 5;
 //    for (int i = 0; i < addBiomes; ++i)
 //    {
@@ -237,18 +286,18 @@ void World::LoadTile(wstring& TexPath)
 //        biomes.push_back((BiomeType)(randomBiome + 2));
 //    }
 //
-//    // ¹ÙÀÌ¿È ¼ø¼­¸¦ ¼¯±â
+//    // ë°”ì´ì˜´ ìˆœì„œë¥¼ ì„ê¸°
 //    for (int i = 0; i < biomes.size(); ++i)
 //    {
 //        int randomIndex = rand() % biomes.size();
 //        std::swap(biomes[i], biomes[randomIndex]);
 //    }
 //
-//    // Áß½ÉÁÂÇ¥
+//    // ì¤‘ì‹¬ì¢Œí‘œ
 //    int centerX = wldCenterPos->x;
 //    int centerY = wldCenterPos->y;
 //
-//    // ¹ÙÀÌ¿È´ç Å¸ÀÏ ¼ö °è»ê ¹× Á¶Á¤
+//    // ë°”ì´ì˜´ë‹¹ íƒ€ì¼ ìˆ˜ ê³„ì‚° ë° ì¡°ì •
 //    float landPercentage = 0.7f;
 //    int maxChangeTile = static_cast<int>(worldWidth * worldHeight * landPercentage);
 //    vector<int> biomeTileTargets(biomes.size());
@@ -257,7 +306,7 @@ void World::LoadTile(wstring& TexPath)
 //        biomeTileTargets[i] = maxChangeTile / biomes.size();
 //    }
 //
-//    // ¹ÙÀÌ¿È Áß½ÉÁÂÇ¥ »ı¼º
+//    // ë°”ì´ì˜´ ì¤‘ì‹¬ì¢Œí‘œ ìƒì„±
 //    vector<POINT> biomeCenters;
 //    int minDistance = min(worldWidth, worldHeight) * 0.1;
 //
@@ -283,13 +332,13 @@ void World::LoadTile(wstring& TexPath)
 //            }
 //        }
 //
-//        biomeCenters.push_back(newCenter); // À¯È¿ÇÑ Áß½É Ãß°¡
+//        biomeCenters.push_back(newCenter); // ìœ íš¨í•œ ì¤‘ì‹¬ ì¶”ê°€
 //    }
 //
-//    // MST·Î ¿¬°á
+//    // MSTë¡œ ì—°ê²°
 //    vector<pair<int, int>> mstEdges = generateMST(biomeCenters);
 //
-//    // MST °æ·Î¸¦ µû¶ó Å¸ÀÏ ¹èÄ¡
+//    // MST ê²½ë¡œë¥¼ ë”°ë¼ íƒ€ì¼ ë°°ì¹˜
 //    for (const auto& edge : mstEdges)
 //    {
 //        int biome1 = edge.first;
@@ -317,7 +366,7 @@ void World::LoadTile(wstring& TexPath)
 //            {
 //                if (worldMap[intX][intY].getBiomeType() != BiomeType::Water)
 //                {
-//                    biomeTileTargets[biome1]--; // Å¸ÀÏÀÌ ÀÌ¹Ì ¹èÄ¡µÈ °æ¿ì
+//                    biomeTileTargets[biome1]--; // íƒ€ì¼ì´ ì´ë¯¸ ë°°ì¹˜ëœ ê²½ìš°
 //                    continue;
 //                }
 //
@@ -330,10 +379,10 @@ void World::LoadTile(wstring& TexPath)
 //        }
 //    }
 //
-//    // °¢ ¹ÙÀÌ¿È Áß½É ÁÖº¯¿¡ Å¸ÀÏ ¹èÄ¡ (BFS)
+//    // ê° ë°”ì´ì˜´ ì¤‘ì‹¬ ì£¼ë³€ì— íƒ€ì¼ ë°°ì¹˜ (BFS)
 //    for (size_t i = 0; i < biomes.size(); ++i)
 //    {
 //        bfsExpandBiome(biomeCenters[i], biomeTileTargets[i], biomes[i], worldMap, worldWidth, worldHeight);
 //    }
 //}
-//
+

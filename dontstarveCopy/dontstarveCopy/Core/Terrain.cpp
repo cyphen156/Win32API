@@ -1,12 +1,12 @@
 #include "pch.h"
 #include "Terrain.h"
 
-// Terrain »ı¼ºÀÚ
+// Terrain ìƒì„±ì
 Terrain::Terrain(BiomeType type) : type(type) 
 {
 }
 
-// Terrain ¼Ò¸êÀÚ
+// Terrain ì†Œë©¸ì
 Terrain::~Terrain() 
 {
 }
@@ -21,7 +21,7 @@ BiomeType Terrain::getBiomeType() const
     return type;
 }
 
-// ÁöÇü ·»´õ¸µ
+// ì§€í˜• ë Œë”ë§
 void Terrain::render(HDC hdc) 
 {
     

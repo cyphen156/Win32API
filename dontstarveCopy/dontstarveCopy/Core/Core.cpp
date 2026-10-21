@@ -8,6 +8,7 @@
 #include "ResourceMgr.h"
 #include "CollisionMgr.h"
 #include "EventMgr.h"
+#include "CameraMgr.h"
 
 Core::Core()
 	: m_hWnd(0)
@@ -64,6 +65,7 @@ int Core::init(HWND hWnd, RECT* windowInfo)
 	TimeMgr::GetInst()->init();
 	PathMgr::GetInst()->init();
 	KeyMgr::GetInst()->init();
+	CameraMgr::GetInst()->Init(Vec2D((float)(m_ptWinInfo->right - m_ptWinInfo->left), (float)(m_ptWinInfo->bottom - m_ptWinInfo->top)));
 	SceneMgr::GetInst()->init();
 
 	// 비트맵 설정
@@ -111,6 +113,7 @@ void Core::update()
 	KeyMgr::GetInst()->update();
 	// 씬 업데이트
 	SceneMgr::GetInst()->update();
+	CameraMgr::GetInst()->Update();
 	// 충돌체 업데이트
 	CollisionMgr::GetInst()->update();
 }

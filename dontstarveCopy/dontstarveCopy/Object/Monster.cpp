@@ -17,7 +17,7 @@ Monster::Monster()
 {
 	// 리소스 로딩 - Texture
 	wstring resPath = PathMgr::GetInst()->GetContentPath();
-	resPath += L"Textures\\Monsters";
+	resPath += L"Textures\\Monster";
 	// 캐릭터 선택 여부 확인
 	/*if (!wcscmp(character, "wilson"))
 	{
@@ -28,8 +28,8 @@ Monster::Monster()
 	MessageBox(nullptr, (L"Monster Resource has Loaded"), L"Notice", MB_OK);
 	SetCurrDir(L"Down");
 	wstring dir = GetCurrDir();
-	GetAnimator()->Play(ObjType::Player, L"Attack", true, dir);
-	Texture* pTex = GetAnimator()->FindAnimation(L"Pig_Idle_Down")->GetFrame(0);
+	GetAnimator()->Play(ObjType::Monster, L"IdleLoop", true, dir);
+	Texture* pTex = GetAnimator()->FindAnimation(L"Pigman_IdleLoop_Down")->GetFrame(0);
 	//GetAnimation()->GetFrame()
 	Image* img = pTex->GetImage();
 	float width = (float)img->GetWidth();
@@ -37,6 +37,7 @@ Monster::Monster()
 	Vec2D baseScale(width, height);
 	SetPos(Vec2D(300.f, 300.f));
 	SetScale(baseScale);
+	SetFootAnchor(Vec2D(-5.f, 36.f));
 
 	Vec2D reScale(0.8f, 0.8f);
 	Vec2D colSize = GetScale();
@@ -113,8 +114,7 @@ void Monster::GetAnimations(vector<Texture*> frames, wstring& animationName, wst
     } while (FindNextFile(hFind, &findDir));
 
     if (!frames.empty()) {
-        double sec = 1;
-        double frameTime = (frames.size() / (double)1000 * sec);
+        double frameTime = 1.0 / 30.0;
 
         GetAnimator()->CreateAnimation(animationName, frames, frameTime);
         frames.clear();

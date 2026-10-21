@@ -2,12 +2,14 @@
 #include "Object.h"
 
 class Object;
+class World;
 
 class Scene
 {
 private:
 	vector <Object*>	m_arrObj[(UINT)ObjType::END];
 	wstring				m_sceneName;
+	World*				world;
 
 public:
 	Scene();
@@ -29,6 +31,9 @@ public:
 	}
 
 	const vector<Object*>& GetObjectGroup(ObjType objType) { return m_arrObj[(UINT)objType]; }
+
+	World* GetWorld() { return world; }
+	void SetWorld(World* ownedWorld) { world = ownedWorld; }
 	
 	void DeleteAll();
 	void DeleteGroup(ObjType target);

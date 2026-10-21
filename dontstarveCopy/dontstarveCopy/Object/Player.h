@@ -10,7 +10,7 @@ class Player :
 private:
     float   m_fspeed;
     bool    bisRight;
-    //ResTex* m_pTex;   // ¸®¼Ò½º °³º°·Îµù¶§ ½á¸Ô¾ù´ø°Å
+    //ResTex* m_pTex;   // ë¦¬ì†ŒìŠ¤ ê°œë³„ë¡œë”©ë•Œ ì¨ë¨¹ì—‡ë˜ê±°
 
 public:
     Player();
