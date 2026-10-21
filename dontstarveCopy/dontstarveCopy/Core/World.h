@@ -28,6 +28,7 @@ public:
     void setTileSize(int size) { tileSize = size; }
 
     void generateWorld();
+    void generateWorld(POINT* wldCenterPos);
 
     void Render(HDC hdc);
 

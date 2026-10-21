@@ -6,10 +6,9 @@
 #include <ctime>
 #include <algorithm>
 #include <queue>
+#include <functional>
 
 #define PI 3.14159265358979323846
-
-static int cnt = 0;
 
 World::World(SceneType type)
     : wldSize(0, 0)
@@ -62,6 +61,9 @@ void World::generateWorld()
 	setTileSize(120);
 	// 전체 월드 생성, default Biome : water
     worldMap.resize(wldSize.x, std::vector<Terrain>(wldSize.y, BiomeType::Water));
+
+    POINT wldCenterPos = { (LONG)(wldSize.x / 2), (LONG)(wldSize.y / 2) };
+    generateWorld(&wldCenterPos);
 }
 
 void World::Render(HDC hdc)
@@ -159,7 +161,7 @@ vector<pair<int, int>> generateMST(const vector<POINT>& biomeCenters)
 
     minDistance[0] = 0;
 
-    for (int iter = 0; iter < biomecnt - 1; ++iter)
+    for (int iter = 0; iter < biomecnt; ++iter)
     {
         int currBiome = -1;
         for (int i = 0; i < biomecnt; ++i)
@@ -195,194 +197,144 @@ vector<pair<int, int>> generateMST(const vector<POINT>& biomeCenters)
     return mstEdges;
 }
 
-//
+void bfsExpandBiome(const POINT& center, int& biomeTiles, BiomeType biome, vector<vector<Terrain>>& worldMap, int worldWidth, int worldHeight)
+{
+    std::priority_queue<std::pair<int, std::pair<int, int>>, std::vector<std::pair<int, std::pair<int, int>>>, std::greater<std::pair<int, std::pair<int, int>>>> q;
+    std::vector<std::vector<bool>> visited(worldWidth, std::vector<bool>(worldHeight, false));
+    q.push({ 0, { center.x, center.y } });  // 중심 좌표에서 시작
 
-// 바이옴별 중심좌표 생성, MST알고리즘 적용
-//void World::generateWorld(POINT* wldCenterPos)
-//{void bfsExpandBiome(const POINT& center, int& biomeTiles, BiomeType biome, vector<vector<Terrain>>& worldMap, int worldWidth, int worldHeight)
-//{
-//    std::queue<POINT> q;
-//    std::vector<std::vector<bool>> visited(worldWidth, std::vector<bool>(worldHeight, false));
-//    q.push(center);  // 중심 좌표에서 시작
-//
-//    int placedTiles = 0;
-//    std::vector<std::pair<int, int>> directions = { {1,0}, {-1,0}, {0,1}, {0,-1} }; // 4방향 확장
-//
-//    // 중심에서 인접한 타일로 확장하는 BFS 루프
-//    while (!q.empty() && placedTiles < biomeTiles)
-//    {
-//        POINT current = q.front();
-//        q.pop();
-//
-//        int intX = current.x;
-//        int intY = current.y;
-//
-//        // 월드 경계를 넘지 않도록 범위 검사 추가
-//        if (intX >= 0 && intX < worldWidth && intY >= 0 && intY < worldHeight && !visited[intX][intY])
-//        {
-//            visited[intX][intY] = true;
-//
-//            // 이미 물이 아닌 타일일 경우 건너뜀
-//            if (worldMap[intX][intY].getBiomeType() != BiomeType::Water)
-//            {
-//                continue;
-//            }
-//
-//            // 물일 경우에만 타일 배치
-//            worldMap[intX][intY].update(biome);
-//            placedTiles++;
-//
-//            // 인접한 타일을 큐에 추가 (경계 내에서만 추가)
-//            for (const auto& dir : directions)
-//            {
-//                POINT nextTile = { intX + dir.first, intY + dir.second };
-//                if (nextTile.x >= 0 && nextTile.x < worldWidth && nextTile.y >= 0 && nextTile.y < worldHeight && !visited[nextTile.x][nextTile.y])
-//                {
-//                    q.push(nextTile);
-//                }
-//            }
-//        }
-//    }
-//
-//    // 확장할 수 있는 타일이 없으면 인접 타일을 찾아서 계속 확장
-//    while (placedTiles < biomeTiles)
-//    {
-//        bool foundNewExpansion = false;
-//        for (int x = std::max(0, (int)(center.x - 1)); x <= std::min(worldWidth - 1, (int)(center.x + 1)); ++x)
-//        {
-//            for (int y = std::max(0, (int)(center.y - 1)); y <= std::min(worldHeight - 1, (int)(center.y + 1)); ++y)
-//            {
-//                if (!visited[x][y] && worldMap[x][y].getBiomeType() == BiomeType::Water)
-//                {
-//                    // 타일을 확장
-//                    worldMap[x][y].update(biome);
-//                    placedTiles++;
-//                    visited[x][y] = true;
-//                    q.push({ x, y });
-//                    foundNewExpansion = true;
-//                    break;
-//                }
-//            }
-//            if (foundNewExpansion) break;
-//        }
-//        if (!foundNewExpansion) break; // 확장할 타일이 없으면 종료
-//    }
-//}
-//
+    int placedTiles = 0;
+    std::vector<std::pair<int, int>> directions = { {1,0}, {-1,0}, {0,1}, {0,-1} }; // 4방향 확장
 
-//    // 8개의 필수 바이옴 생성
-//    std::vector<BiomeType> biomes;
-//
-//    for (int i = 1; i < 9; ++i)
-//    {
-//        biomes.push_back(BiomeType(i));
-//    }
-//
-//    // 랜덤 난수를 통한 0~4개의 바이옴 추가
-//    int addBiomes = rand() % 5;
-//    for (int i = 0; i < addBiomes; ++i)
-//    {
-//        int randomBiome = rand() % 7;
-//        biomes.push_back((BiomeType)(randomBiome + 2));
-//    }
-//
-//    // 바이옴 순서를 섞기
-//    for (int i = 0; i < biomes.size(); ++i)
-//    {
-//        int randomIndex = rand() % biomes.size();
-//        std::swap(biomes[i], biomes[randomIndex]);
-//    }
-//
-//    // 중심좌표
-//    int centerX = wldCenterPos->x;
-//    int centerY = wldCenterPos->y;
-//
-//    // 바이옴당 타일 수 계산 및 조정
-//    float landPercentage = 0.7f;
-//    int maxChangeTile = static_cast<int>(worldWidth * worldHeight * landPercentage);
-//    vector<int> biomeTileTargets(biomes.size());
-//    for (size_t i = 0; i < biomes.size(); ++i)
-//    {
-//        biomeTileTargets[i] = maxChangeTile / biomes.size();
-//    }
-//
-//    // 바이옴 중심좌표 생성
-//    vector<POINT> biomeCenters;
-//    int minDistance = min(worldWidth, worldHeight) * 0.1;
-//
-//    for (size_t i = 0; i < biomes.size(); ++i)
-//    {
-//        bool valid = false;
-//        POINT newCenter;
-//
-//        while (!valid)
-//        {
-//            newCenter.x = rand() % worldWidth;
-//            newCenter.y = rand() % worldHeight;
-//            valid = true;
-//
-//            for (const auto& center : biomeCenters)
-//            {
-//                int distance = calcDist(center, newCenter);
-//                if (distance < minDistance)
-//                {
-//                    valid = false;
-//                    break;
-//                }
-//            }
-//        }
-//
-//        biomeCenters.push_back(newCenter); // 유효한 중심 추가
-//    }
-//
-//    // MST로 연결
-//    vector<pair<int, int>> mstEdges = generateMST(biomeCenters);
-//
-//    // MST 경로를 따라 타일 배치
-//    for (const auto& edge : mstEdges)
-//    {
-//        int biome1 = edge.first;
-//        int biome2 = edge.second;
-//
-//        POINT start = biomeCenters[biome1];
-//        POINT end = biomeCenters[biome2];
-//
-//        int deltaX = end.x - start.x;
-//        int deltaY = end.y - start.y;
-//        int steps = max(abs(deltaX), abs(deltaY));
-//
-//        float xIncrement = deltaX / static_cast<float>(steps);
-//        float yIncrement = deltaY / static_cast<float>(steps);
-//
-//        float currentX = start.x;
-//        float currentY = start.y;
-//
-//        for (int j = 0; j <= steps; ++j)
-//        {
-//            int intX = static_cast<int>(currentX);
-//            int intY = static_cast<int>(currentY);
-//
-//            if (intX >= 0 && intX < worldWidth && intY >= 0 && intY < worldHeight)
-//            {
-//                if (worldMap[intX][intY].getBiomeType() != BiomeType::Water)
-//                {
-//                    biomeTileTargets[biome1]--; // 타일이 이미 배치된 경우
-//                    continue;
-//                }
-//
-//                worldMap[intX][intY].update(biomes[biome1]);
-//                ++cnt;
-//            }
-//
-//            currentX += xIncrement;
-//            currentY += yIncrement;
-//        }
-//    }
-//
-//    // 각 바이옴 중심 주변에 타일 배치 (BFS)
-//    for (size_t i = 0; i < biomes.size(); ++i)
-//    {
-//        bfsExpandBiome(biomeCenters[i], biomeTileTargets[i], biomes[i], worldMap, worldWidth, worldHeight);
-//    }
-//}
+    // 중심에서 인접한 타일로 확장하는 BFS 루프
+    while (!q.empty() && placedTiles < biomeTiles)
+    {
+        POINT current = { q.top().second.first, q.top().second.second };
+        q.pop();
 
+        int intX = current.x;
+        int intY = current.y;
+
+        // 월드 경계를 넘지 않도록 범위 검사 추가
+        if (intX >= 0 && intX < worldWidth && intY >= 0 && intY < worldHeight && !visited[intX][intY])
+        {
+            visited[intX][intY] = true;
+
+            // 다른 바이옴 타일일 경우 건너뜀
+            if (worldMap[intX][intY].getBiomeType() != BiomeType::Water && worldMap[intX][intY].getBiomeType() != biome)
+            {
+                continue;
+            }
+
+            // 물일 경우에만 타일 배치
+            if (worldMap[intX][intY].getBiomeType() == BiomeType::Water)
+            {
+                worldMap[intX][intY].update(biome);
+                placedTiles++;
+            }
+
+            // 인접한 타일을 큐에 추가 (경계 내에서만 추가)
+            for (const auto& dir : directions)
+            {
+                POINT nextTile = { intX + dir.first, intY + dir.second };
+                if (nextTile.x >= 0 && nextTile.x < worldWidth && nextTile.y >= 0 && nextTile.y < worldHeight && !visited[nextTile.x][nextTile.y])
+                {
+                    int squaredDistance = (nextTile.x - center.x) * (nextTile.x - center.x) + (nextTile.y - center.y) * (nextTile.y - center.y);
+                    q.push({ squaredDistance, { nextTile.x, nextTile.y } });
+                }
+            }
+        }
+    }
+}
+
+// 바이옴별 중심좌표 생성
+void World::generateWorld(POINT* wldCenterPos)
+{
+    int worldWidth = (int)wldSize.x;
+    int worldHeight = (int)wldSize.y;
+
+    // 8개의 필수 바이옴 생성
+    std::vector<BiomeType> biomes;
+
+    for (int i = 1; i < 9; ++i)
+    {
+        biomes.push_back(BiomeType(i));
+    }
+
+    // 중심좌표
+    int centerX = wldCenterPos->x;
+    int centerY = wldCenterPos->y;
+
+    // 바이옴당 타일 수 계산 및 조정
+    float landPercentage = 0.35f;
+    int maxChangeTile = static_cast<int>(worldWidth * worldHeight * landPercentage);
+    vector<int> biomeTileTargets(biomes.size());
+    for (size_t i = 0; i < biomes.size(); ++i)
+    {
+        biomeTileTargets[i] = (maxChangeTile + biomes.size() - 1) / biomes.size();
+    }
+
+    // 바이옴 중심좌표 생성
+    vector<POINT> biomeCenters;
+    double spawnRadius = sqrt(biomeTileTargets[0] / PI);
+
+    for (size_t i = 0; i < biomes.size(); ++i)
+    {
+        POINT newCenter = { centerX, centerY };
+
+        if (i > 0)
+        {
+            double angle = (i - 1) * 2 * PI / (biomes.size() - 1);
+            double distance = spawnRadius + sqrt(biomeTileTargets[i] / PI);
+            newCenter.x = centerX + lround(cos(angle) * distance);
+            newCenter.y = centerY + lround(sin(angle) * distance);
+        }
+
+        biomeCenters.push_back(newCenter); // 유효한 중심 추가
+    }
+
+    bfsExpandBiome(biomeCenters[0], biomeTileTargets[0], biomes[0], worldMap, worldWidth, worldHeight);
+
+    // 경로를 따라 타일 배치
+    for (size_t i = 1; i < biomes.size(); ++i)
+    {
+        POINT start = biomeCenters[i];
+        POINT end = biomeCenters[0];
+
+        int deltaX = end.x - start.x;
+        int deltaY = end.y - start.y;
+        int steps = max(abs(deltaX), abs(deltaY));
+
+        float xIncrement = deltaX / static_cast<float>(steps);
+        float yIncrement = deltaY / static_cast<float>(steps);
+
+        float currentX = start.x;
+        float currentY = start.y;
+
+        for (int j = 0; j <= steps; ++j)
+        {
+            int intX = static_cast<int>(currentX);
+            int intY = static_cast<int>(currentY);
+
+            if (intX >= 0 && intX < worldWidth && intY >= 0 && intY < worldHeight)
+            {
+                if (worldMap[intX][intY].getBiomeType() != BiomeType::Water)
+                {
+                    break;
+                }
+
+                worldMap[intX][intY].update(biomes[i]);
+                biomeTileTargets[i]--;
+            }
+
+            currentX += xIncrement;
+            currentY += yIncrement;
+        }
+    }
+
+    // 각 바이옴 중심 주변에 타일 배치 (BFS)
+    for (size_t i = 1; i < biomes.size(); ++i)
+    {
+        bfsExpandBiome(biomeCenters[i], biomeTileTargets[i], biomes[i], worldMap, worldWidth, worldHeight);
+    }
+}
