@@ -10,6 +10,8 @@ private:
 	Scene* m_arrScene[(UINT)SceneType::END];
 	Scene* m_pCurScene;
 
+	void GenerateWorld(SceneType type, int tryCount);
+
 public:
 	void init();
 	void update();

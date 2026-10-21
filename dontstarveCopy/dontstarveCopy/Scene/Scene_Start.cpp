@@ -38,19 +38,8 @@ void Scene_Start::render(HDC hdc)
 
 void Scene_Start::Enter()
 {
-	BOOL WLDSIZE = false;
 	wstring defaultPath = PathMgr::GetInst()->GetContentPath();
 
-	// 월드 생성, 초기화
-	if (GetWorld() == nullptr)
-	{
-		World* wld = new World(SceneType::START);
-		wstring wldName = EnumString::ToWString(SceneType::START);
-		wld->setWldName(wldName);
-		wld->SetWorldSize(WLDSIZE);
-		wld->generateWorld();
-		SetWorld(wld);
-	}
 	Vec2D charWorldPos = GetWorld()->getWorldSize() * Vec2D(GetWorld()->getTileSize(), GetWorld()->getTileSize()) / Vec2D(2, 2); // 캐릭터 기본 좌표 : 월드 정중앙
 	//wld.generateWorld(&charWorldPos);
 

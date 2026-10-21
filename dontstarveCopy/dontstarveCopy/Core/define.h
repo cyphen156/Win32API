@@ -26,6 +26,8 @@
 #define WSREGULAR 500
 #define WSLARGE 1000
 
+#define WORLD_TRY_COUNT 10
+
 enum class SceneType
 {
 	START,
@@ -84,6 +86,7 @@ enum class EVENT_TYPE
 	CREATE_OBJ,
 	DELETE_OBJ,
 	CHANGE_SCENE,
+	REGENERATE_WORLD,
 	ATTACK,
 	HIT,
 

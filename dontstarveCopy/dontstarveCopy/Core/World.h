@@ -28,7 +28,6 @@ public:
     void setTileSize(int size) { tileSize = size; }
 
     void generateWorld();
-    void generateWorld(POINT* wldCenterPos);
 
     void Render(HDC hdc);
 
@@ -37,4 +36,5 @@ public:
     wstring getWorldName() { return worldName; }
     Vec2D getWorldSize() { return wldSize; }
     int getTileSize() { return tileSize; }
+    vector<vector<Terrain>>& getWorldMap() { return worldMap; }
 };
