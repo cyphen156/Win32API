@@ -83,7 +83,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Core;$(ProjectDir)Manager;$(ProjectDir)Scene;$(ProjectDir)Object;$(ProjectDir)Component;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Core;$(ProjectDir)Manager;$(ProjectDir)Scene;$(ProjectDir)Object;$(ProjectDir)Component;$(ProjectDir)UI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -99,7 +99,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Core;$(ProjectDir)Manager;$(ProjectDir)Scene;$(ProjectDir)Object;$(ProjectDir)Component;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Core;$(ProjectDir)Manager;$(ProjectDir)Scene;$(ProjectDir)Object;$(ProjectDir)Component;$(ProjectDir)UI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -115,7 +115,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Core;$(ProjectDir)Manager;$(ProjectDir)Scene;$(ProjectDir)Object;$(ProjectDir)Component;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Core;$(ProjectDir)Manager;$(ProjectDir)Scene;$(ProjectDir)Object;$(ProjectDir)Component;$(ProjectDir)UI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -133,7 +133,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Core;$(ProjectDir)Manager;$(ProjectDir)Scene;$(ProjectDir)Object;$(ProjectDir)Component;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Core;$(ProjectDir)Manager;$(ProjectDir)Scene;$(ProjectDir)Object;$(ProjectDir)Component;$(ProjectDir)UI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -160,6 +160,10 @@
     <ClInclude Include="Core\func.h" />
     <ClInclude Include="Core\EnumString.h" />
     <ClInclude Include="Manager\InputMgr.h" />
+    <ClInclude Include="Manager\UIMgr.h" />
+    <ClInclude Include="Manager\GameMgr.h" />
+    <ClInclude Include="UI\UI.h" />
+    <ClInclude Include="UI\Map.h" />
     <ClInclude Include="Object\Monster.h" />
     <ClInclude Include="Object\Object.h" />
     <ClInclude Include="Manager\PathMgr.h" />
@@ -219,6 +223,10 @@
     <ClCompile Include="Core\func.cpp" />
     <ClCompile Include="Core\EnumString.cpp" />
     <ClCompile Include="Manager\InputMgr.cpp" />
+    <ClCompile Include="Manager\UIMgr.cpp" />
+    <ClCompile Include="Manager\GameMgr.cpp" />
+    <ClCompile Include="UI\UI.cpp" />
+    <ClCompile Include="UI\Map.cpp" />
     <ClCompile Include="Object\Monster.cpp" />
     <ClCompile Include="Object\Object.cpp" />
     <ClCompile Include="Manager\PathMgr.cpp" />

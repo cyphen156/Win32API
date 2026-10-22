@@ -12,8 +12,10 @@ struct Tile
 	int lastIndex;
 	int drawIndex;
 	Texture* texture;
+	Texture* mapTexture;
 
 	void render(HDC hdc, const RECT& tileRect);
+	Texture* getMapTexture();
 };
 
 // TileType 순서

@@ -2,6 +2,7 @@
 #include "EventMgr.h"
 #include "SceneMgr.h"
 #include "Scene.h"
+#include "GameMgr.h"
 
 EventMgr::EventMgr() {}
 
@@ -36,6 +37,11 @@ void EventMgr::Execute(const tEvent& event)
 		case EVENT_TYPE::REGENERATE_WORLD:
 		{
 			SceneMgr::GetInst()->GenerateWorld((SceneType)event.lParam, (int)event.wParam);
+			break;
+		}
+		case EVENT_TYPE::PAUSE_GAME:
+		{
+			GameMgr::GetInst()->SetPause(event.lParam != 0);
 			break;
 		}
 	}

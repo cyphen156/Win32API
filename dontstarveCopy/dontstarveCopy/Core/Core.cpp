@@ -4,9 +4,8 @@
 #include "TimeMgr.h"
 #include "PathMgr.h"
 #include "InputMgr.h"
-#include "SceneMgr.h"
+#include "GameMgr.h"
 #include "ResourceMgr.h"
-#include "CollisionMgr.h"
 #include "EventMgr.h"
 #include "CameraMgr.h"
 
@@ -66,7 +65,7 @@ int Core::init(HWND hWnd, RECT* windowInfo)
 	PathMgr::GetInst()->init();
 	InputMgr::GetInst()->init();
 	CameraMgr::GetInst()->Init(Vec2D((float)(m_ptWinInfo->right - m_ptWinInfo->left), (float)(m_ptWinInfo->bottom - m_ptWinInfo->top)));
-	SceneMgr::GetInst()->init();
+	GameMgr::GetInst()->init();
 
 	// 비트맵 설정
 	m_hBit = CreateCompatibleBitmap(m_hdc, (int)(m_ptWinInfo->right - m_ptWinInfo->left), (int)(m_ptWinInfo->bottom - m_ptWinInfo->top));
@@ -111,11 +110,7 @@ void Core::update()
 	TimeMgr::GetInst()->update();
 
 	InputMgr::GetInst()->update();
-	// 씬 업데이트
-	SceneMgr::GetInst()->update();
-	CameraMgr::GetInst()->Update();
-	// 충돌체 업데이트
-	CollisionMgr::GetInst()->update();
+	GameMgr::GetInst()->update();
 }
 
 void Core::render()
@@ -128,8 +123,7 @@ void Core::render()
 	// cliped 월드맵 텍스쳐 렌더링
 	Rectangle(m_MemDC, 0, 0, m_ptWinInfo->right, m_ptWinInfo->bottom);
 
-	// 씬 렌더링
-	SceneMgr::GetInst()->render(m_MemDC);
+	GameMgr::GetInst()->render(m_MemDC);
 
 
 	// 백 버퍼에서 메인 DC로 그리기

@@ -36,3 +36,16 @@ void Tile::render(HDC hdc, const RECT& tileRect)
     StretchBlt(hdc, tileRect.left, tileRect.top, tileRect.right - tileRect.left, tileRect.bottom - tileRect.top,
         tileDC, 0, 0, texture->Width(), texture->Height(), SRCCOPY);
 }
+
+// 지도 무늬. 처음 부를 때 읽는다
+Texture* Tile::getMapTexture()
+{
+    if (mapTexture == nullptr)
+    {
+        wstring mapName = L"Map_" + groundName + L"_000.png";
+        wstring mapPath = PathMgr::GetInst()->GetContentPath();
+        mapPath += L"\\Textures\\UI\\Map\\" + groundName + L"\\" + mapName;
+        mapTexture = ResourceMgr::GetInst()->LoadTexture(mapName, mapPath);
+    }
+    return mapTexture;
+}
