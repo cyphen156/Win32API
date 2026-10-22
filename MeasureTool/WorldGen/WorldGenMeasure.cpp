@@ -17,7 +17,7 @@ namespace
     const double pi = 3.14159265358979323846;
     const int steps[4][2] = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
     const int water = (int)BiomeType::Water;
-    const int spawn = (int)BiomeType::Spawn;
+    const int spawn = (int)BiomeType::Grass;
     const int typeCount = (int)BiomeType::END;
 
     // 게임의 World 바이옴 색과 같다
@@ -26,7 +26,7 @@ namespace
         Color(255, 64, 120, 190), Color(255, 250, 199, 117), Color(255, 59, 109, 17), Color(255, 200, 180, 70), Color(255, 160, 95, 40),
         Color(255, 90, 80, 110), Color(255, 235, 160, 90), Color(255, 151, 196, 89), Color(255, 140, 140, 140),
     };
-    const wchar_t* biomeNames[] = { L"Water", L"Spawn", L"Forest", L"Savanna", L"Deciduous", L"Marsh", L"Desert", L"Grass", L"Rocky" };
+    const wchar_t* biomeNames[] = { L"Water", L"Grass", L"Forest", L"Savanna", L"Deciduous", L"Marsh", L"Desert", L"MandrakeForest", L"Rocky" };
 
     // 게임 생성기에 시드를 넣어 부르고, 칸마다 바이옴 번호를 (y * 크기 + x) 순서로 돌려준다
     vector<int> Generate(unsigned int seed, int worldSize, bool& outIsGenerated, double& outMilliseconds)
@@ -304,7 +304,7 @@ int wmain(int argc, wchar_t* argv[])
     int islandCount = CountParts(types, worldSize, water);
     int reachedCount = CountReached(types, worldSize, center);
 
-    // L1.0 규칙에서 따로 계산한 기대값: 바이옴 8개(Spawn 먼저), 몫 = 땅 35% ÷ 8 올림, 원으로 가정한 반지름, 등간격으로 맞닿는 원점
+    // L1.0 규칙에서 따로 계산한 기대값: 바이옴 8개(시작 바이옴 먼저), 몫 = 땅 35% ÷ 8 올림, 원으로 가정한 반지름, 등간격으로 맞닿는 원점
     int landTarget = cellCount * 35 / 100;
     int biomeCount = 8;
     int quota = (landTarget + biomeCount - 1) / biomeCount;

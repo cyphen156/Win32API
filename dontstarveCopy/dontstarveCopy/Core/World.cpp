@@ -10,6 +10,7 @@ World::World(SceneType type)
     , worldMap{}
 	, tiles{}
     , tileSize(0)
+    , spawnPos(0, 0)
 {
 }
 
@@ -48,6 +49,8 @@ void World::generateWorld()
 	setTileSize(120);
 	// 전체 월드 생성, default Biome : water
     worldMap.resize(wldSize.x, std::vector<Terrain>(wldSize.y, Terrain(BiomeType::Water, TileType::OceanCoastal)));
+	// 기본 스폰 위치 : 월드 정중앙
+	setSpawnPos(wldSize * Vec2D(tileSize, tileSize) / Vec2D(2, 2));
 }
 
 void World::Render(HDC hdc)

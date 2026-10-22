@@ -40,7 +40,7 @@ void Scene_Start::Enter()
 {
 	wstring defaultPath = PathMgr::GetInst()->GetContentPath();
 
-	Vec2D charWorldPos = GetWorld()->getWorldSize() * Vec2D(GetWorld()->getTileSize(), GetWorld()->getTileSize()) / Vec2D(2, 2); // 캐릭터 기본 좌표 : 월드 정중앙
+	Vec2D charWorldPos = GetWorld()->getSpawnPos(); // 캐릭터 기본 좌표 : 월드 정중앙
 	//wld.generateWorld(&charWorldPos);
 
 	// 플레이어 추가

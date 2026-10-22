@@ -51,13 +51,13 @@ enum class ObjType
 
 enum class BiomeType {
 	Water,
-	Spawn,
+	Grass,
 	Forest,
 	Savanna,
 	Deciduous,
 	Marsh,
 	Desert,
-	Grass,
+	MandrakeForest,
 	Rocky,
 
 	END

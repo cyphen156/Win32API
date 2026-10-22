@@ -71,7 +71,7 @@ static const vector<TileType> biomeTileTypes[(UINT)BiomeType::END] =
     { TileType::Deciduous },
     { TileType::Marsh },
     { TileType::DesertDirt, TileType::Dirt },
-    { TileType::Grass },
+    { TileType::Forest, TileType::Savanna, TileType::Grass },
     { TileType::Rocky, TileType::Dirt },
 };
 
