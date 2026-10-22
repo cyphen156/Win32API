@@ -15,7 +15,6 @@ private:
     vector<Texture*> tiles;
     vector<vector<Terrain>> worldMap;
     int tileSize;
-    HBRUSH biomeBrush[(UINT)BiomeType::END];
 
 public:
     World(SceneType Type);
@@ -31,8 +30,6 @@ public:
 
     void Render(HDC hdc);
 
-    void LoadTile(wstring& TexPath);
-    
     wstring getWorldName() { return worldName; }
     Vec2D getWorldSize() { return wldSize; }
     int getTileSize() { return tileSize; }

@@ -26,12 +26,12 @@ namespace
         Color(255, 64, 120, 190), Color(255, 250, 199, 117), Color(255, 59, 109, 17), Color(255, 200, 180, 70), Color(255, 160, 95, 40),
         Color(255, 90, 80, 110), Color(255, 235, 160, 90), Color(255, 151, 196, 89), Color(255, 140, 140, 140),
     };
-    const wchar_t* biomeNames[] = { L"Water", L"Spawn", L"Forest", L"Savannah", L"Beechnut", L"Swamp", L"Desert", L"Grass", L"Rock" };
+    const wchar_t* biomeNames[] = { L"Water", L"Spawn", L"Forest", L"Savanna", L"Deciduous", L"Marsh", L"Desert", L"Grass", L"Rocky" };
 
     // 게임 생성기에 시드를 넣어 부르고, 칸마다 바이옴 번호를 (y * 크기 + x) 순서로 돌려준다
     vector<int> Generate(unsigned int seed, int worldSize, bool& outIsGenerated, double& outMilliseconds)
     {
-        vector<vector<Terrain>> worldMap(worldSize, vector<Terrain>(worldSize, BiomeType::Water));
+        vector<vector<Terrain>> worldMap(worldSize, vector<Terrain>(worldSize, Terrain(BiomeType::Water, TileType::OceanCoastal)));
         auto startTime = chrono::steady_clock::now();
         WorldGenerator generator;
         outIsGenerated = generator.generateWorld(worldMap, seed);

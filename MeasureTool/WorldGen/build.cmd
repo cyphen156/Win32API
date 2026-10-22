@@ -10,6 +10,6 @@ call "%VSROOT%\VC\Auxiliary\Build\vcvars64.bat" >nul 2>&1
 if not exist "%HERE%bin" mkdir "%HERE%bin"
 if not exist "%HERE%results" mkdir "%HERE%results"
 if not exist "%DOCS%" mkdir "%DOCS%"
-cl /nologo /EHsc /std:c++17 /O2 /W3 /utf-8 /DUNICODE /D_UNICODE /I"%GAME%" /I"%GAME%\Core" "%GAME%\Core\WorldGenerator.cpp" "%GAME%\Core\Terrain.cpp" "%HERE%WorldGenMeasure.cpp" /Fo"%HERE%bin\\" /Fe"%HERE%bin\WorldGenMeasure.exe" /link user32.lib gdiplus.lib > "%HERE%bin\compile.log"
+cl /nologo /EHsc /std:c++17 /O2 /W3 /utf-8 /DUNICODE /D_UNICODE /I"%GAME%" /I"%GAME%\Core" "%GAME%\Core\WorldGenerator.cpp" "%GAME%\Core\Terrain.cpp" "%GAME%\Core\Texture.cpp" "%GAME%\Core\Resource.cpp" "%HERE%WorldGenMeasure.cpp" /Fo"%HERE%bin\\" /Fe"%HERE%bin\WorldGenMeasure.exe" /link user32.lib gdi32.lib gdiplus.lib > "%HERE%bin\compile.log"
 if errorlevel 1 (type "%HERE%bin\compile.log" & exit /b 1)
 "%HERE%bin\WorldGenMeasure.exe" %1 "%HERE%results\%1.txt" "%DOCS%\%1.png"

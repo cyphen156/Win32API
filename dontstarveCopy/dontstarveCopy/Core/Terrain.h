@@ -1,17 +1,22 @@
 #pragma once
 
+class Texture;
+
 class Terrain 
 {
 protected:
     BiomeType type;
+    TileType tile;
 
 public:
-    Terrain(BiomeType type);
+    Terrain(BiomeType type, TileType tile);
     ~Terrain();
 
-    void update(BiomeType changetype);
+    void setBiomeType(BiomeType changetype);
+    void setTileType(TileType changetile);
 
     BiomeType getBiomeType() const;
+    TileType getTileType() const;
 
-    void render(HDC hdc);
+    void render(HDC hdc, const RECT& tileRect, Texture* tileTexture);
 };

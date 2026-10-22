@@ -22,23 +22,21 @@ void Texture::Load(const wstring& resPath)
         m_img = nullptr;
         return;
     }
-    //int width = m_img->GetWidth();
-    //int height = m_img->GetHeight();
+}
 
-    //Bitmap* bitmap = new Bitmap(width, height, PixelFormat32bppRGB);
-    //Graphics graphics(bitmap);
-
-    //// 원본 이미지를 비트맵으로 그리기
-    //graphics.DrawImage(m_img, 0, 0, width, height);
-
-    //bitmap->GetHBITMAP(Color(0, 0, 0, 0), &m_hBit);
-    //delete bitmap;
-
-    //MessageBox(nullptr, L"이미지 로드 성공!", L"Error", MB_OK);
-	//m_hBit = (HBITMAP)m_img->GetHBITMAP(Color(0, 0, 0, 0));
-	//m_hBit = (HBITMAP)LoadImage(nullptr, resPath.c_str(), IMAGE_BITMAP, 0, 0, LR_CREATEDIBSECTION | LR_LOADFROMFILE);
-
-	//assert(m_hBit);
+HDC Texture::GetDC()
+{
+	if (m_dc == nullptr && m_img != nullptr)
+	{
+		Bitmap bitmap(m_img->GetWidth(), m_img->GetHeight(), PixelFormat32bppRGB);
+		Graphics graphics(&bitmap);
+		graphics.DrawImage(m_img, 0, 0, m_img->GetWidth(), m_img->GetHeight());
+		bitmap.GetHBITMAP(Color(0, 0, 0, 0), &m_hBit);
+		m_dc = CreateCompatibleDC(nullptr);
+		SelectObject(m_dc, m_hBit);
+		GetObject(m_hBit, sizeof(BITMAP), &m_bitInfo);
+	}
+	return m_dc;
 }
 
 void Texture::ReleaseImage() {

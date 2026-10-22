@@ -18,7 +18,7 @@ public:
 	UINT Width() { return m_bitInfo.bmWidth; }
 	UINT Height() { return m_bitInfo.bmHeight; }
 
-	HDC GetDC() { return m_dc; }
+	HDC GetDC();
 	Image* GetImage() { return m_img; }
 	void Load(const wstring& resPath);
 

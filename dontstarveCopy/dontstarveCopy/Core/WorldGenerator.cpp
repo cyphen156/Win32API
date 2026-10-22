@@ -61,6 +61,20 @@ vector<pair<int, int>> WorldGenerator::generateMST(const vector<POINT>& biomeCen
     return mstEdges;
 }
 
+// 바이옴이 포함하는 타일, 첫 번째가 배경 타일
+static const vector<TileType> biomeTileTypes[(UINT)BiomeType::END] =
+{
+    { TileType::OceanCoastal, TileType::OceanSwell, TileType::OceanRough, TileType::OceanHazardous },
+    { TileType::Grass },
+    { TileType::Forest },
+    { TileType::Savanna },
+    { TileType::Deciduous },
+    { TileType::Marsh },
+    { TileType::DesertDirt, TileType::Dirt },
+    { TileType::Grass },
+    { TileType::Rocky, TileType::Dirt },
+};
+
 void WorldGenerator::bfsExpandBiome(const POINT& center, int& biomeTiles, BiomeType biome, vector<vector<Terrain>>& worldMap, int worldWidth, int worldHeight)
 {
     std::priority_queue<std::pair<int, std::pair<int, int>>, std::vector<std::pair<int, std::pair<int, int>>>, std::greater<std::pair<int, std::pair<int, int>>>> q;
@@ -93,7 +107,8 @@ void WorldGenerator::bfsExpandBiome(const POINT& center, int& biomeTiles, BiomeT
             // 물일 경우에만 타일 배치
             if (worldMap[intX][intY].getBiomeType() == BiomeType::Water)
             {
-                worldMap[intX][intY].update(biome);
+                worldMap[intX][intY].setBiomeType(biome);
+                worldMap[intX][intY].setTileType(biomeTileTypes[(UINT)biome][0]);
                 placedTiles++;
             }
 
@@ -190,7 +205,8 @@ bool WorldGenerator::generateWorld(vector<vector<Terrain>>& worldMap, unsigned i
                     break;
                 }
 
-                worldMap[intX][intY].update(biomes[i]);
+                worldMap[intX][intY].setBiomeType(biomes[i]);
+                worldMap[intX][intY].setTileType(biomeTileTypes[(UINT)biomes[i]][0]);
                 biomeTileTargets[i]--;
             }
 

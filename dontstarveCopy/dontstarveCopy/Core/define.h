@@ -53,12 +53,31 @@ enum class BiomeType {
 	Water,
 	Spawn,
 	Forest,
-	Savannah,
-	Beechnut,
-	Swamp,
+	Savanna,
+	Deciduous,
+	Marsh,
 	Desert,
 	Grass,
-	Rock,
+	Rocky,
+
+	END
+};
+
+// 타일 타입
+
+enum class TileType {
+	OceanCoastal,
+	OceanSwell,
+	OceanRough,
+	OceanHazardous,
+	Marsh,
+	Rocky,
+	Savanna,
+	Forest,
+	Grass,
+	Dirt,
+	Deciduous,
+	DesertDirt,
 
 	END
 };
