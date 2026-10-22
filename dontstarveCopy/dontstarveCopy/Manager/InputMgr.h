@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include "Vec2D.h"
 
 enum class KEY_STATE
 {
@@ -63,12 +64,17 @@ struct tKeyInfo
 	KEY_STATE	eState;	// 현재의 상태
 	bool		bPrev;	// 이전 프레임의 입력 상태
 };
-class KeyMgr 
+class InputMgr 
 {
-	SINGLE(KeyMgr);
+	SINGLE(InputMgr);
 
 private:
 	vector<tKeyInfo> m_vecKey;
+	Vec2D mousePos;
+	Vec2D mouseDelta;
+	int wheelInput;
+	int mouseWheel;
+
 public:
 	void init();
 	void update();
@@ -77,4 +83,8 @@ public:
 	{
 		return m_vecKey[(int)eKey].eState;
 	}
+	Vec2D GetMousePos() { return mousePos; }
+	Vec2D GetMouseDelta() { return mouseDelta; }
+	void AddMouseWheel(int delta) { wheelInput += delta; }
+	int GetMouseWheel() { return mouseWheel; }
 };

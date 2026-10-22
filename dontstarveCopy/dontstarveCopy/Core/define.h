@@ -15,7 +15,7 @@
 #define	fDT	TimeMgr::GetInst()->GetfDeltaTime();
 #define	DT	TimeMgr::GetInst()->GetDeltaTime();
 
-#define KEY_CHECK(key, state)	KeyMgr::GetInst()->GetKeyState(key) == state
+#define KEY_CHECK(key, state)	InputMgr::GetInst()->GetKeyState(key) == state
 #define KEY_PRESS(key)			KEY_CHECK(key, KEY_STATE::PRESS)
 #define KEY_DOWN(key)			KEY_CHECK(key, KEY_STATE::KEYDOWN)
 #define KEY_UP(key)				KEY_CHECK(key, KEY_STATE::KEYUP)

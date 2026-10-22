@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Player.h"
 #include "TimeMgr.h"
-#include "KeyMgr.h"
+#include "InputMgr.h"
 #include "PathMgr.h"
 #include "ResourceMgr.h"
 #include "Animator.h"
@@ -61,7 +61,6 @@ void Player::GenerateAnimations(wstring& TexPath)
 	wstring animationName = L"";
 
 	GetAnimations(frames, animationName, TexPath);
-	//GetAnimations(TexPath);
 }
 void Player::GetAnimations(vector<Texture*> frames, wstring& animationName, wstring& TexPath)
 //void Player::GetAnimations(wstring& TexPath)
@@ -79,7 +78,6 @@ void Player::GetAnimations(vector<Texture*> frames, wstring& animationName, wstr
 	bool isEmpty = true;
 
 	// 현재 경로의 마지막 폴더명을 애니메이션 이름으로 사용
-	
 	do {
 		if (wcscmp(findDir.cFileName, L".") != 0 && wcscmp(findDir.cFileName, L"..") != 0)
 		{
@@ -174,6 +172,16 @@ void Player::update()
 	}
 
 	SetPos(vPos);
+
+	int wheel = InputMgr::GetInst()->GetMouseWheel();
+	if (wheel > 0)
+	{
+		CameraMgr::GetInst()->ZoomIn();
+	}
+	else if (wheel < 0)
+	{
+		CameraMgr::GetInst()->ZoomOut();
+	}
 
 	GetAnimator()->update();
 }

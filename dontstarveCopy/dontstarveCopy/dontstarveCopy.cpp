@@ -5,7 +5,7 @@
 #include "framework.h"
 #include "dontstarveCopy.h"
 #include "Core.h"
-#include "CameraMgr.h"
+#include "InputMgr.h"
 
 #define MAX_LOADSTRING 100
 
@@ -193,14 +193,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         }
         break;
     case WM_MOUSEWHEEL:
-        if (GET_WHEEL_DELTA_WPARAM(wParam) > 0)
-        {
-            CameraMgr::GetInst()->ZoomIn();
-        }
-        else
-        {
-            CameraMgr::GetInst()->ZoomOut();
-        }
+        InputMgr::GetInst()->AddMouseWheel(GET_WHEEL_DELTA_WPARAM(wParam));
         break;
     case WM_KEYDOWN:
         if (wParam == VK_F11)

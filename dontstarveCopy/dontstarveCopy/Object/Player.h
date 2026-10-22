@@ -10,7 +10,6 @@ class Player :
 private:
     float   m_fspeed;
     bool    bisRight;
-    //ResTex* m_pTex;   // 리소스 개별로딩때 써먹엇던거
 
 public:
     Player();

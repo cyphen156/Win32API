@@ -8,7 +8,7 @@
 #include "ResourceMgr.h"
 #include "CollisionMgr.h"
 #include "SceneMgr.h"
-#include "KeyMgr.h"
+#include "InputMgr.h"
 #include "World.h"
 #include "EnumString.h"
 #include "CameraMgr.h"

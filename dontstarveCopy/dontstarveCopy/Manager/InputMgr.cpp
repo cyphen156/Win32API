@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "KeyMgr.h"
+#include "InputMgr.h"
 #include "Core.h"
 
 int g_arrVK[(int)KEY::LAST] = 
@@ -49,11 +49,11 @@ int g_arrVK[(int)KEY::LAST] =
 	VK_RBUTTON,
 };
 
-KeyMgr::KeyMgr() {}
+InputMgr::InputMgr() : mousePos{}, mouseDelta{}, wheelInput(0), mouseWheel(0) {}
 
-KeyMgr::~KeyMgr() {}
+InputMgr::~InputMgr() {}
 
-void KeyMgr::init() 
+void InputMgr::init() 
 {
 	for (int i = 00; i < (int)KEY::LAST; ++i) 
 	{
@@ -61,7 +61,7 @@ void KeyMgr::init()
 	}
 }
 
-void KeyMgr::update()
+void InputMgr::update()
 {
 	HWND hMainHwnd = Core::GetInst()->GetMainHWND();
 	HWND hWnd = GetFocus();
@@ -114,4 +114,16 @@ void KeyMgr::update()
 			}
 		}
 	}
+
+	// 마우스 위치는 메인 창 기준 좌표로 둔다
+	POINT cursor = {};
+	GetCursorPos(&cursor);
+	ScreenToClient(hMainHwnd, &cursor);
+	Vec2D nextMousePos(cursor);
+	mouseDelta = nextMousePos - mousePos;
+	mousePos = nextMousePos;
+
+	// 휠은 창 메시지로 들어온 만큼 모았다가 이번 프레임 값으로 넘긴다
+	mouseWheel = wheelInput;
+	wheelInput = 0;
 }

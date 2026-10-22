@@ -159,7 +159,7 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="Core\func.h" />
     <ClInclude Include="Core\EnumString.h" />
-    <ClInclude Include="Manager\KeyMgr.h" />
+    <ClInclude Include="Manager\InputMgr.h" />
     <ClInclude Include="Object\Monster.h" />
     <ClInclude Include="Object\Object.h" />
     <ClInclude Include="Manager\PathMgr.h" />
@@ -216,7 +216,7 @@
     <ClCompile Include="Manager\EventMgr.cpp" />
     <ClCompile Include="Core\func.cpp" />
     <ClCompile Include="Core\EnumString.cpp" />
-    <ClCompile Include="Manager\KeyMgr.cpp" />
+    <ClCompile Include="Manager\InputMgr.cpp" />
     <ClCompile Include="Object\Monster.cpp" />
     <ClCompile Include="Object\Object.cpp" />
     <ClCompile Include="Manager\PathMgr.cpp" />

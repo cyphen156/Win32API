@@ -3,7 +3,7 @@
 #include "Object.h"
 #include "TimeMgr.h"
 #include "PathMgr.h"
-#include "KeyMgr.h"
+#include "InputMgr.h"
 #include "SceneMgr.h"
 #include "ResourceMgr.h"
 #include "CollisionMgr.h"
@@ -64,7 +64,7 @@ int Core::init(HWND hWnd, RECT* windowInfo)
 	// 매니저 초기화
 	TimeMgr::GetInst()->init();
 	PathMgr::GetInst()->init();
-	KeyMgr::GetInst()->init();
+	InputMgr::GetInst()->init();
 	CameraMgr::GetInst()->Init(Vec2D((float)(m_ptWinInfo->right - m_ptWinInfo->left), (float)(m_ptWinInfo->bottom - m_ptWinInfo->top)));
 	SceneMgr::GetInst()->init();
 
@@ -110,7 +110,7 @@ void Core::update()
 	// 초당 프레임 동기화
 	TimeMgr::GetInst()->update();
 
-	KeyMgr::GetInst()->update();
+	InputMgr::GetInst()->update();
 	// 씬 업데이트
 	SceneMgr::GetInst()->update();
 	CameraMgr::GetInst()->Update();
