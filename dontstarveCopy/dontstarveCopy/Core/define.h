@@ -25,6 +25,7 @@
 
 #define WSREGULAR 500
 #define WSLARGE 1000
+#define TILESIZE 120
 
 #define WORLD_TRY_COUNT 10
 

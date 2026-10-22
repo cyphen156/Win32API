@@ -178,6 +178,8 @@
     <ClInclude Include="Core\Vec2D.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Core\Terrain.h" />
+    <ClInclude Include="Core\Tile.h" />
+    <ClInclude Include="Core\Biome.h" />
     <ClInclude Include="Manager\TimeMgr.h" />
     <ClInclude Include="Core\World.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -235,6 +237,8 @@
     <ClCompile Include="Scene\Scene_Start.cpp" />
     <ClCompile Include="Core\SelectGDI.cpp" />
     <ClCompile Include="Core\Terrain.cpp" />
+    <ClCompile Include="Core\Tile.cpp" />
+    <ClCompile Include="Core\Biome.cpp" />
     <ClCompile Include="Manager\TimeMgr.cpp" />
     <ClCompile Include="Core\World.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>

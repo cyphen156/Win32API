@@ -5,11 +5,16 @@
 #include <cstdlib>
 #include <ctime>
 
-World::World(SceneType type)
-    : wldSize(0, 0)
-    , worldMap{}
-	, tiles{}
-    , tileSize(0)
+const WorldDef worldDefs[END] =
+{
+	{ Forest, { BiomeType::Grass, BiomeType::Forest, BiomeType::Savanna, BiomeType::Deciduous, BiomeType::Marsh, BiomeType::Desert, BiomeType::MandrakeForest, BiomeType::Rocky } },
+	{ Cave, { } },
+};
+
+World::World(WorldType type)
+    : worldType(type)
+    , wldSize(0, 0)
+    , terrains{}
     , spawnPos(0, 0)
 {
 }
@@ -34,28 +39,15 @@ void World::SetWorldSize(bool isLarge)
 
 void World::generateWorld()
 {
-    const wchar_t* tileNames[(UINT)TileType::END] =
-    {
-        L"OceanCoastal", L"OceanSwell", L"OceanRough", L"OceanHazardous", L"Marsh", L"Rocky",
-        L"YellowGrass", L"Forest", L"Grass", L"Dirt", L"Deciduous", L"DesertDirt",
-    };
-    for (UINT i = 0; i < (UINT)TileType::END; ++i)
-    {
-        wstring tileName = wstring(tileNames[i]) + L"_Default_000.png";
-        wstring tilePath = PathMgr::GetInst()->GetContentPath();
-        tilePath += L"\\Textures\\Terrain\\" + wstring(tileNames[i]) + L"\\Default\\" + tileName;
-        tiles.push_back(ResourceMgr::GetInst()->LoadTexture(tileName, tilePath));
-    }
-	setTileSize(120);
 	// 전체 월드 생성, default Biome : water
-    worldMap.resize(wldSize.x, std::vector<Terrain>(wldSize.y, Terrain(BiomeType::Water, TileType::OceanCoastal)));
+    terrains.resize(wldSize.x, std::vector<Terrain>(wldSize.y, Terrain(BiomeType::Water, TileType::OceanCoastal)));
 	// 기본 스폰 위치 : 월드 정중앙
-	setSpawnPos(wldSize * Vec2D(tileSize, tileSize) / Vec2D(2, 2));
+	setSpawnPos(wldSize * Vec2D(TILESIZE, TILESIZE) / Vec2D(2, 2));
 }
 
 void World::Render(HDC hdc)
 {
-    if (worldMap.empty() || tileSize <= 0)
+    if (terrains.empty())
     {
         return;
     }
@@ -65,10 +57,10 @@ void World::Render(HDC hdc)
     Vec2D resolution = camera->GetResolution();
     float zoom = camera->GetZoom();
     float groundZoom = zoom * camera->GetPitchScale();
-    int firstX = (int)floor((lookAt.x - resolution.x / 2.f / zoom) / tileSize);
-    int lastX = (int)floor((lookAt.x + resolution.x / 2.f / zoom) / tileSize);
-    int firstY = (int)floor((lookAt.y - resolution.y / 2.f / groundZoom) / tileSize);
-    int lastY = (int)floor((lookAt.y + resolution.y / 2.f / groundZoom) / tileSize);
+    int firstX = (int)floor((lookAt.x - resolution.x / 2.f / zoom) / TILESIZE);
+    int lastX = (int)floor((lookAt.x + resolution.x / 2.f / zoom) / TILESIZE);
+    int firstY = (int)floor((lookAt.y - resolution.y / 2.f / groundZoom) / TILESIZE);
+    int lastY = (int)floor((lookAt.y + resolution.y / 2.f / groundZoom) / TILESIZE);
 
     Terrain outside(BiomeType::Water, TileType::OceanCoastal);
     SetStretchBltMode(hdc, COLORONCOLOR);
@@ -77,14 +69,14 @@ void World::Render(HDC hdc)
         for (int tileX = firstX; tileX <= lastX; ++tileX)
         {
             Terrain* terrain = &outside;
-            if (tileX >= 0 && tileX < (int)worldMap.size() && tileY >= 0 && tileY < (int)worldMap[tileX].size())
+            if (tileX >= 0 && tileX < (int)terrains.size() && tileY >= 0 && tileY < (int)terrains[tileX].size())
             {
-                terrain = &worldMap[tileX][tileY];
+                terrain = &terrains[tileX][tileY];
             }
-            Vec2D renderPos = camera->GetRenderPos(Vec2D(tileX * tileSize, tileY * tileSize));
+            Vec2D renderPos = camera->GetRenderPos(Vec2D(tileX * TILESIZE, tileY * TILESIZE));
             RECT tileRect = { (LONG)floor(renderPos.x), (LONG)floor(renderPos.y),
-                (LONG)ceil(renderPos.x + tileSize * zoom), (LONG)ceil(renderPos.y + tileSize * groundZoom) };
-            terrain->render(hdc, tileRect, tiles[(UINT)terrain->getTileType()]);
+                (LONG)ceil(renderPos.x + TILESIZE * zoom), (LONG)ceil(renderPos.y + TILESIZE * groundZoom) };
+            terrain->render(hdc, tileRect);
         }
     }
 }

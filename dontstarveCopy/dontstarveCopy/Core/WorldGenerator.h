@@ -1,11 +1,12 @@
 #pragma once
 
 #include "Terrain.h"
+#include "World.h"
 
 class WorldGenerator
 {
 public:
-    bool generateWorld(vector<vector<Terrain>>& worldMap, unsigned int seed);
+    bool generateWorld(vector<vector<Terrain>>& worldMap, WorldType worldType, unsigned int seed);
 
 private:
     int calcDist(const POINT& a, const POINT& b);

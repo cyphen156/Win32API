@@ -11,6 +11,9 @@
 
 게임의 `Core/WorldGenerator.cpp`를 그대로 함께 컴파일해 측정한다. 그래서 잰 것은 게임에 들어간 생성기 자체다.
 
+- 생성기가 쓰는 정의 표(`Core/World.cpp`의 세계 타입 선언, `Core/Biome.cpp`, `Core/Tile.cpp`)와 `Core/Terrain.cpp`도 함께 컴파일한다. 측정은 Forest 세계 타입으로 한다.
+- `World.cpp`와 `Tile.cpp`에는 엔진(CameraMgr, PathMgr, Core)을 부르는 그리기 코드가 같이 있다. 도구는 그리기를 부르지 않으므로 링크에서 그 참조를 비워 둔다(`/FORCE:UNRESOLVED`). 그래서 `bin/compile.log`에 그리기 쪽 LNK2019 줄과 LNK4088 경고가 남지만 실행 파일은 만들어진다. 그 함수가 불리면 도구가 멈춘다.
+
 - 생성기에 시드를 넣어 부르고, 돌려받은 성공 여부와 생성기가 채운 `worldMap`만 잰다. 생성기 안의 중간값은 보지 않는다.
 - 단계 조건의 기대값(몫, 원점 자리, 예상 원)은 진화 기록의 규칙에서 도구가 따로 계산한다.
 

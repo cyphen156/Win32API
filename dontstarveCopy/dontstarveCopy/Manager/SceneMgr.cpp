@@ -68,9 +68,8 @@ void SceneMgr::GenerateWorld(SceneType type, int tryCount)
 	BOOL WLDSIZE = false;
 
 	// 월드 생성, 초기화
-	World* wld = new World(type);
+	World* wld = new World(type == SceneType::CAVE ? WorldType::Cave : WorldType::Forest);
 	wstring wldName = EnumString::ToWString(type);
-	wld->setWldName(wldName);
 	wld->SetWorldSize(WLDSIZE);
 	wld->generateWorld();
 
@@ -78,7 +77,7 @@ void SceneMgr::GenerateWorld(SceneType type, int tryCount)
 	QueryPerformanceCounter(&seed);
 
 	WorldGenerator generator;
-	if (generator.generateWorld(wld->getWorldMap(), (unsigned int)seed.QuadPart) == false)
+	if (generator.generateWorld(wld->getTerrains(), wld->getWorldType(), (unsigned int)seed.QuadPart) == false)
 	{
 		delete wld;
 		if (tryCount + 1 < WORLD_TRY_COUNT)

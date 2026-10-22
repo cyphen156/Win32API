@@ -1,6 +1,7 @@
 #include "pch.h"
 
 #include "Core/WorldGenerator.h"
+#include "Core/Biome.h"
 #include <cmath>
 #include <cstdlib>
 #include <algorithm>
@@ -61,20 +62,6 @@ vector<pair<int, int>> WorldGenerator::generateMST(const vector<POINT>& biomeCen
     return mstEdges;
 }
 
-// 바이옴이 포함하는 타일, 첫 번째가 배경 타일
-static const vector<TileType> biomeTileTypes[(UINT)BiomeType::END] =
-{
-    { TileType::OceanCoastal, TileType::OceanSwell, TileType::OceanRough, TileType::OceanHazardous },
-    { TileType::Grass },
-    { TileType::Forest },
-    { TileType::Savanna },
-    { TileType::Deciduous },
-    { TileType::Marsh },
-    { TileType::DesertDirt, TileType::Dirt },
-    { TileType::Forest, TileType::Savanna, TileType::Grass },
-    { TileType::Rocky, TileType::Dirt },
-};
-
 void WorldGenerator::bfsExpandBiome(const POINT& center, int& biomeTiles, BiomeType biome, vector<vector<Terrain>>& worldMap, int worldWidth, int worldHeight)
 {
     std::priority_queue<std::pair<int, std::pair<int, int>>, std::vector<std::pair<int, std::pair<int, int>>>, std::greater<std::pair<int, std::pair<int, int>>>> q;
@@ -108,7 +95,7 @@ void WorldGenerator::bfsExpandBiome(const POINT& center, int& biomeTiles, BiomeT
             if (worldMap[intX][intY].getBiomeType() == BiomeType::Water)
             {
                 worldMap[intX][intY].setBiomeType(biome);
-                worldMap[intX][intY].setTileType(biomeTileTypes[(UINT)biome][0]);
+                worldMap[intX][intY].setTileType(biomeDefs[(UINT)biome].tiles[0]);
                 placedTiles++;
             }
 
@@ -129,19 +116,14 @@ void WorldGenerator::bfsExpandBiome(const POINT& center, int& biomeTiles, BiomeT
 }
 
 // 바이옴별 중심좌표 생성
-bool WorldGenerator::generateWorld(vector<vector<Terrain>>& worldMap, unsigned int seed)
+bool WorldGenerator::generateWorld(vector<vector<Terrain>>& worldMap, WorldType worldType, unsigned int seed)
 {
     srand(seed);
     int worldWidth = (int)worldMap.size();
     int worldHeight = (int)worldMap[0].size();
 
-    // 8개의 필수 바이옴 생성
-    std::vector<BiomeType> biomes;
-
-    for (int i = 1; i < 9; ++i)
-    {
-        biomes.push_back(BiomeType(i));
-    }
+    // 세계 타입에 선언된 바이옴 생성
+    std::vector<BiomeType> biomes = worldDefs[worldType].biomes;
 
     // 중심좌표
     int centerX = worldWidth / 2;
@@ -206,7 +188,7 @@ bool WorldGenerator::generateWorld(vector<vector<Terrain>>& worldMap, unsigned i
                 }
 
                 worldMap[intX][intY].setBiomeType(biomes[i]);
-                worldMap[intX][intY].setTileType(biomeTileTypes[(UINT)biomes[i]][0]);
+                worldMap[intX][intY].setTileType(biomeDefs[(UINT)biomes[i]].tiles[0]);
                 biomeTileTargets[i]--;
             }
 

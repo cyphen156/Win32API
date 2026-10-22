@@ -1,7 +1,5 @@
 #pragma once
 
-class Texture;
-
 class Terrain 
 {
 protected:
@@ -18,5 +16,5 @@ public:
     BiomeType getBiomeType() const;
     TileType getTileType() const;
 
-    void render(HDC hdc, const RECT& tileRect, Texture* tileTexture);
+    void render(HDC hdc, const RECT& tileRect);
 };

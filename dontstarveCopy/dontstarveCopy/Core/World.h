@@ -2,39 +2,47 @@
 
 #include "Vec2D.h"
 #include "Terrain.h"
-#include "PathMgr.h"
-#include "ResourceMgr.h"
-#include "Texture.h"
 
-class Texture;
+enum WorldType
+{
+	Forest,
+	Cave,
+
+	END
+};
+
+// 세계 타입에 들어가는 바이옴, 첫 번째가 시작 바이옴
+struct WorldDef
+{
+	WorldType type;
+	vector<BiomeType> biomes;
+};
+
+// WorldType 순서
+extern const WorldDef worldDefs[END];
 
 class World {
 private:
-    wstring worldName;
+    WorldType worldType;
     Vec2D wldSize;
-    vector<Texture*> tiles;
-    vector<vector<Terrain>> worldMap;
-    int tileSize;
+    vector<vector<Terrain>> terrains;
     Vec2D spawnPos;
 
 public:
-    World(SceneType Type);
+    World(WorldType type);
     ~World();
 
     // 월드 크기 지정
     
-    void setWldName(wstring type) { worldName = type; }
     void SetWorldSize(bool isLarge);
-    void setTileSize(int size) { tileSize = size; }
     void setSpawnPos(Vec2D pos) { spawnPos = pos; }
 
     void generateWorld();
 
     void Render(HDC hdc);
 
-    wstring getWorldName() { return worldName; }
+    WorldType getWorldType() { return worldType; }
     Vec2D getWorldSize() { return wldSize; }
-    int getTileSize() { return tileSize; }
     Vec2D getSpawnPos() { return spawnPos; }
-    vector<vector<Terrain>>& getWorldMap() { return worldMap; }
+    vector<vector<Terrain>>& getTerrains() { return terrains; }
 };

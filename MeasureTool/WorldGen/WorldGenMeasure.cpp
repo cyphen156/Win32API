@@ -34,7 +34,7 @@ namespace
         vector<vector<Terrain>> worldMap(worldSize, vector<Terrain>(worldSize, Terrain(BiomeType::Water, TileType::OceanCoastal)));
         auto startTime = chrono::steady_clock::now();
         WorldGenerator generator;
-        outIsGenerated = generator.generateWorld(worldMap, seed);
+        outIsGenerated = generator.generateWorld(worldMap, WorldType::Forest, seed);
         outMilliseconds = chrono::duration<double, milli>(chrono::steady_clock::now() - startTime).count();
 
         vector<int> types(worldSize * worldSize);
