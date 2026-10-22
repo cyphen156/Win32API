@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "UIMgr.h"
 #include "UI.h"
+#include "HUD.h"
 #include "Map.h"
 
 UIMgr::UIMgr()
@@ -15,12 +16,14 @@ UIMgr::~UIMgr()
 
 void UIMgr::init()
 {
+	uis.push_back(new HUD);
 	uis.push_back(new Map);
 }
 
 void UIMgr::update()
 {
-	for (size_t i = 0; i < uis.size(); ++i)
+	// 위에 그려지는 UI가 입력을 먼저 받는다
+	for (int i = (int)uis.size() - 1; i >= 0; --i)
 	{
 		uis[i]->update();
 	}

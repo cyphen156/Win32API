@@ -87,4 +87,7 @@ public:
 	Vec2D GetMouseDelta() { return mouseDelta; }
 	void AddMouseWheel(int delta) { wheelInput += delta; }
 	int GetMouseWheel() { return mouseWheel; }
+	// UI가 가져간 입력은 같은 프레임에 다른 쪽이 읽지 못한다
+	void ConsumeMouseWheel() { mouseWheel = 0; }
+	void ConsumeKey(KEY eKey) { m_vecKey[(int)eKey].eState = KEY_STATE::NONE; }
 };

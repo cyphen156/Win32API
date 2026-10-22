@@ -1,13 +1,13 @@
 #pragma once
 #include "UI.h"
 #include "Vec2D.h"
+#include "MapRenderer.h"
 
 // 전체 지도. 지금 씬 월드의 지도를 배율과 중심에 맞춰 펼쳐 보여 준다
 class Map : public UI
 {
 private:
-	HBRUSH mapBrushes[(UINT)TileType::END];
-	int mapBrushSize;
+	MapRenderer renderer;
 	HDC mapDC;
 	HBITMAP mapBitmap;
 	int mapWidth;
