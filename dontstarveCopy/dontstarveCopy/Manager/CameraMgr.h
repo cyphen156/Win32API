@@ -21,6 +21,8 @@ private:
 public:
 	void Init(Vec2D screenResolution);
 	void Update();
+	void ApplyView(HDC hdc);
+	void ResetView(HDC hdc);
 
 	void SetTarget(Object* followTarget) { target = followTarget; }
 	void SetLookAt(Vec2D pos) { lookAt = pos; }
@@ -33,5 +35,4 @@ public:
 	Vec2D GetResolution() { return resolution; }
 	float GetZoom() { return zoom; }
 	float GetPitchScale() { return pitchScale; }
-	Vec2D GetRenderPos(Vec2D worldPos);
 };

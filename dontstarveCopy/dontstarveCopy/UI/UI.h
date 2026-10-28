@@ -1,10 +1,14 @@
 #pragma once
+#include "Transform.h"
 
-// 씬 위에 그리는 화면 하나
 class UI
 {
 protected:
+	Transform transform;
 	bool isOpen;
+
+	virtual void OnOpen() {}
+	virtual void OnClose() {}
 
 public:
 	UI();
@@ -14,5 +18,5 @@ public:
 	virtual void render(HDC hdc) = 0;
 
 	bool IsOpen() { return isOpen; }
-	void SetOpen(bool open) { isOpen = open; }
+	void SetOpen(bool open);
 };

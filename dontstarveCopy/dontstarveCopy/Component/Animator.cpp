@@ -16,7 +16,8 @@ Animator::~Animator()
 
 void Animator::CreateAnimation(const wstring& name
 	, vector<Texture*> frames
-	, float fDuration)
+	, float fDuration
+	, Vec2D vOffset)
 {
 	// 애니메이션이 이미 존재하는지 확인
 	if (FindAnimation(name) != nullptr)
@@ -32,7 +33,7 @@ void Animator::CreateAnimation(const wstring& name
 	pAnim = new Animation;
 	pAnim->SetName(name);
 	pAnim->m_pAnimator = this;
-	pAnim->Create(frames, fDuration);
+	pAnim->Create(frames, fDuration, vOffset);
 
 	m_mapAnimation.insert(make_pair(name, pAnim));
 }

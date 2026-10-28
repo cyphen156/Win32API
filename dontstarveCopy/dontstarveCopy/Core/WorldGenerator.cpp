@@ -2,6 +2,10 @@
 
 #include "Core/WorldGenerator.h"
 #include "Core/Biome.h"
+#include "Core/Tile.h"
+#include "Core/EnumString.h"
+#include "Manager/PathMgr.h"
+#include "Manager/ResourceMgr.h"
 #include <cmath>
 #include <cstdlib>
 #include <algorithm>
@@ -116,9 +120,35 @@ void WorldGenerator::bfsExpandBiome(const POINT& center, int& biomeTiles, BiomeT
 }
 
 // 바이옴별 중심좌표 생성
-bool WorldGenerator::generateWorld(vector<vector<Terrain>>& worldMap, WorldType worldType, unsigned int seed)
+bool WorldGenerator::tryGenerateWorld(WorldType worldType, int tryCount, World*& world)
 {
-    srand(seed);
+    // 타일 세트 로딩
+    for (UINT i = 0; i < TILEDEFCOUNT; ++i)
+    {
+        TileDef& tileDef = tileDefs[i];
+        if (tileDef.tiles[0].texture != nullptr)
+        {
+            continue;
+        }
+        wstring tileName = EnumString::ToWString(tileDef.type);
+        wstring setPath = PathMgr::GetInst()->GetContentPath();
+        setPath += L"\\Textures\\Terrain\\" + tileName + L"\\" + tileDef.setName + L"\\";
+        for (int index = 0; index < tileDef.tileCount; ++index)
+        {
+            wchar_t indexName[8] = {};
+            swprintf_s(indexName, L"%03d", index);
+            wstring texName = tileName + L"_" + tileDef.setName + L"_" + indexName + L".png";
+            tileDef.tiles[index].texture = ResourceMgr::GetInst()->LoadTexture(texName, setPath + texName);
+        }
+    }
+
+    World* wld = new World(worldType);
+    wld->SetWorldSize(false);
+    vector<vector<Terrain>>& worldMap = wld->getTerrains();
+
+    LARGE_INTEGER seed = {};
+    QueryPerformanceCounter(&seed);
+    srand((unsigned int)seed.QuadPart);
     int worldWidth = (int)worldMap.size();
     int worldHeight = (int)worldMap[0].size();
 
@@ -207,8 +237,14 @@ bool WorldGenerator::generateWorld(vector<vector<Terrain>>& worldMap, WorldType 
     {
         if (biomeTileTargets[i] > 0)
         {
+            delete wld;
+            if (tryCount > 1)
+            {
+                return tryGenerateWorld(worldType, tryCount - 1, world);
+            }
             return false;
         }
     }
+    world = wld;
     return true;
 }

@@ -36,16 +36,11 @@ Monster::Monster()
 	Vec2D baseScale(width, height);
 	SetPos(Vec2D(300.f, 300.f));
 	SetScale(baseScale);
-	SetFootAnchor(Vec2D(-5.f, 36.f));
 
-	Vec2D reScale(0.8f, 0.8f);
-	Vec2D colSize = GetScale();
-
+	// 충돌체는 대기 첫 프레임에서 그림이 차지하는 영역
 	CreateCollider();
-	GetCollider()->SetOffsetPos(colSize / Vec2D(2, 2));
-
-	colSize = colSize * reScale;
-	GetCollider()->SetColliderSize(colSize);
+	GetCollider()->SetOffsetPos(Vec2D(0.f, -31.5f));
+	GetCollider()->SetColliderSize(Vec2D(52.f, 65.f));
 }
 
 Monster::Monster(const Monster& origin)
@@ -115,7 +110,7 @@ void Monster::GetAnimations(vector<Texture*> frames, wstring& animationName, wst
     if (!frames.empty()) {
         double frameTime = 1.0 / 30.0;
 
-        GetAnimator()->CreateAnimation(animationName, frames, frameTime);
+        GetAnimator()->CreateAnimation(animationName, frames, frameTime, Vec2D(5.f, -36.f));
         frames.clear();
         animationName = L"";
     }

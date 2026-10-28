@@ -88,7 +88,6 @@ void Minimap::render(HDC hdc)
 	Vec2D lookAt = CameraMgr::GetInst()->GetLookAt();
 	float originX = (mapRect.left + mapRect.right) / 2.f - (lookAt.x + offset.x) / TILESIZE * pixelsPerTile;
 	float originY = (mapRect.top + mapRect.bottom) / 2.f - (lookAt.y + offset.y) / TILESIZE * pixelsPerTile;
-	renderer.render(hdc, mapRect, world, originX, originY, pixelsPerTile);
 
 	float playerX = originX + lookAt.x / TILESIZE * pixelsPerTile;
 	float playerY = originY + lookAt.y / TILESIZE * pixelsPerTile;

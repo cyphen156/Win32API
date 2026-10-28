@@ -34,11 +34,6 @@ void EventMgr::Execute(const tEvent& event)
 			SceneMgr::GetInst()->ChangeScene((SceneType)event.lParam);
 			break;
 		}
-		case EVENT_TYPE::REGENERATE_WORLD:
-		{
-			SceneMgr::GetInst()->GenerateWorld((SceneType)event.lParam, (int)event.wParam);
-			break;
-		}
 		case EVENT_TYPE::PAUSE_GAME:
 		{
 			GameMgr::GetInst()->SetPause(event.lParam != 0);

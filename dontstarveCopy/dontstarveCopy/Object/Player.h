@@ -22,6 +22,5 @@ public:
     virtual void render(HDC hdc);
 
     Player* Clone() { return new Player(*this); }
-
 };
 

@@ -37,8 +37,6 @@ public:
     void SetWorldSize(bool isLarge);
     void setSpawnPos(Vec2D pos) { spawnPos = pos; }
 
-    void generateWorld();
-
     void Render(HDC hdc);
 
     WorldType getWorldType() { return worldType; }

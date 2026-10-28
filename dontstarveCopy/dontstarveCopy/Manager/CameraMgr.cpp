@@ -54,10 +54,7 @@ void CameraMgr::Update()
 		return;
 	}
 
-	Vec2D targetPos = target->GetPos();
-	Vec2D targetScale = target->GetScale();
-	Vec2D targetAnchor = target->GetFootAnchor();
-	lookAt = Vec2D(targetPos.x + targetScale.x / 2.f + targetAnchor.x, targetPos.y + targetScale.y / 2.f + targetAnchor.y);
+	lookAt = target->GetPos();
 }
 
 void CameraMgr::ZoomIn()
@@ -78,8 +75,16 @@ void CameraMgr::ZoomOut()
 	}
 }
 
-Vec2D CameraMgr::GetRenderPos(Vec2D worldPos)
+// lookAt이 화면 가운데에 오도록 옮긴다
+void CameraMgr::ApplyView(HDC hdc)
 {
-	// 바닥 위 점: 가로는 줌, 세로는 줌 x 기울기 눌림
-	return Vec2D((worldPos.x - lookAt.x) * zoom + resolution.x / 2.f, (worldPos.y - lookAt.y) * zoom * pitchScale + resolution.y / 2.f);
+	XFORM view = { 1.f, 0.f, 0.f, 1.f, resolution.x / 2.f - lookAt.x, resolution.y / 2.f - lookAt.y };
+	SetGraphicsMode(hdc, GM_ADVANCED);
+	SetWorldTransform(hdc, &view);
+}
+
+void CameraMgr::ResetView(HDC hdc)
+{
+	ModifyWorldTransform(hdc, nullptr, MWT_IDENTITY);
+	SetGraphicsMode(hdc, GM_COMPATIBLE);
 }

@@ -22,7 +22,8 @@ public:
 	*/
 	void CreateAnimation(const wstring& name
 		, vector<Texture*> frames
-		, float fDuration);
+		, float fDuration
+		, Vec2D vOffset);
 	Animation* FindAnimation(const wstring& name);
 	void Play(ObjType objType, const wstring& strName, bool isRepeat, wstring dir);
 	Object* GetOwner() { return m_pOwner; };

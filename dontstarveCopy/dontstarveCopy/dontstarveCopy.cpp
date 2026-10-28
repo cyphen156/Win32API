@@ -214,7 +214,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             }
         }
         break;
-    // 창 크기가 바뀌면 그리는 크기도 바꾼다. 최소화는 크기가 0이라 건너뛴다
     case WM_SIZE:
         if (wParam != SIZE_MINIMIZED)
         {

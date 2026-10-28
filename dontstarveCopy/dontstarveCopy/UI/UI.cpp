@@ -9,3 +9,20 @@ UI::UI()
 UI::~UI()
 {
 }
+
+void UI::SetOpen(bool open)
+{
+	if (isOpen == open)
+	{
+		return;
+	}
+	isOpen = open;
+	if (isOpen)
+	{
+		OnOpen();
+	}
+	else
+	{
+		OnClose();
+	}
+}

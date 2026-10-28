@@ -5,11 +5,12 @@
 
 class WorldGenerator
 {
-public:
-    bool generateWorld(vector<vector<Terrain>>& worldMap, WorldType worldType, unsigned int seed);
-
 private:
-    int calcDist(const POINT& a, const POINT& b);
-    vector<pair<int, int>> generateMST(const vector<POINT>& biomeCenters);
-    void bfsExpandBiome(const POINT& center, int& biomeTiles, BiomeType biome, vector<vector<Terrain>>& worldMap, int worldWidth, int worldHeight);
+    static bool tryGenerateWorld(WorldType worldType, int tryCount, World*& world);
+
+    static int calcDist(const POINT& a, const POINT& b);
+    static vector<pair<int, int>> generateMST(const vector<POINT>& biomeCenters);
+    static void bfsExpandBiome(const POINT& center, int& biomeTiles, BiomeType biome, vector<vector<Terrain>>& worldMap, int worldWidth, int worldHeight);
+
+    friend class SceneMgr;
 };

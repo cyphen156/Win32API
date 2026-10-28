@@ -1,9 +1,14 @@
 #include "pch.h"
 #include "Terrain.h"
 #include "Tile.h"
+#include "Texture.h"
 
 // Terrain 생성자
-Terrain::Terrain(BiomeType type, TileType tile) : type(type), tile(tile) 
+Terrain::Terrain(BiomeType biomeType, TileType tileType, Vec2D position) 
+    : biomeType(biomeType),
+    tileType(tileType),
+    tileIndex(0),
+	position(position)
 {
 }
 
@@ -14,26 +19,27 @@ Terrain::~Terrain()
 
 void Terrain::setBiomeType(BiomeType newType)
 {
-    type = newType;
+    biomeType = newType;
 }
 
 void Terrain::setTileType(TileType newTile)
 {
-    tile = newTile;
+    tileType = newTile;
 }
 
 BiomeType Terrain::getBiomeType() const
 {
-    return type;
+    return biomeType;
 }
 
 TileType Terrain::getTileType() const
 {
-    return tile;
+    return tileType;
 }
 
 // 지형 렌더링
-void Terrain::render(HDC hdc, const RECT& tileRect)
+void Terrain::render(HDC hdc)
 {
-    tileDefs[(UINT)tile].render(hdc, tileRect);
+    Texture* texture = tileDefs[(UINT)tileType].tiles[tileIndex].texture;
+    StretchBlt(hdc, (int)position.x, (int)position.y, 1, 1, texture->GetDC(), 0, 0, texture->Width(), texture->Height(), SRCCOPY);
 }

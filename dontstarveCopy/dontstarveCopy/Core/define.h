@@ -65,7 +65,6 @@ enum class BiomeType {
 };
 
 // 타일 타입
-
 enum class TileType {
 	OceanCoastal,
 	OceanSwell,
@@ -106,7 +105,6 @@ enum class EVENT_TYPE
 	CREATE_OBJ,
 	DELETE_OBJ,
 	CHANGE_SCENE,
-	REGENERATE_WORLD,
 	PAUSE_GAME,
 	ATTACK,
 	HIT,

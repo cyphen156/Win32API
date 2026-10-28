@@ -18,7 +18,6 @@ private:
     wstring m_ObjName;
     Vec2D m_Pos;
     Vec2D m_objScale;
-    Vec2D footAnchor;
     bool m_bisDead;
     void SetDead() { m_bisDead = true; } 
 
@@ -36,11 +35,9 @@ public:
 
     void SetPos(Vec2D pos) { m_Pos = pos; };
     void SetScale(Vec2D scale) { m_objScale = scale; };
-    void SetFootAnchor(Vec2D anchor) { footAnchor = anchor; };
     bool isDead() { return m_bisDead; }
     Vec2D GetPos() { return m_Pos; };
     Vec2D GetScale() { return m_objScale; };
-    Vec2D GetFootAnchor() { return footAnchor; };
     wstring GetObjName() { return m_ObjName; }
     Collider* GetCollider() { return m_pCollider; }
     Animator* GetAnimator() { return m_pAnimator;  }
@@ -52,7 +49,6 @@ public:
 
     virtual void GenerateAnimations(wstring& TexPath) = 0;
     virtual void GetAnimations(vector<Texture*> frames, wstring& animationName, wstring& TexPath) = 0;
-    //virtual void GetAnimations(wstring& TexPath) = 0;
     virtual void update() = 0;
     virtual void finalupdate() final;
     virtual void render(HDC hdc);
@@ -63,7 +59,6 @@ public:
     virtual void OnCollisionEnter(Collider* pOther) {};
     virtual void OnCollisionExit(Collider* pOther) {};
 
-    // CLONE(OBJECT);
     virtual Object* Clone() = 0;
     friend class EventMgr;
 };

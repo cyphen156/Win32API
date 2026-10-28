@@ -1,13 +1,16 @@
 #pragma once
+#include "Transform.h"
 
 class Terrain 
 {
 protected:
-    BiomeType type;
-    TileType tile;
+    BiomeType biomeType;
+    TileType tileType;
+    int tileIndex;
+	Vec2D position;
 
 public:
-    Terrain(BiomeType type, TileType tile);
+    Terrain(BiomeType biomeType, TileType tileType, Vec2D position);
     ~Terrain();
 
     void setBiomeType(BiomeType changetype);
@@ -16,5 +19,5 @@ public:
     BiomeType getBiomeType() const;
     TileType getTileType() const;
 
-    void render(HDC hdc, const RECT& tileRect);
+    void render(HDC hdc);
 };

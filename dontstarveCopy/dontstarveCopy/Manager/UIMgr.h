@@ -13,4 +13,6 @@ public:
 	void init();
 	void update();
 	void render(HDC hdc);
+
+	void ToggleMap();
 };

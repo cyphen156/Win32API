@@ -22,6 +22,7 @@ private:
     float m_fAccTime;
     float m_fFrameDuration; // 프레임의 지속 시간
     bool m_bFinish;
+    Vec2D m_vOffset;
 
     void SetName(const wstring& name) { m_strName = name; }
 
@@ -38,7 +39,7 @@ public:
     }
 
     Texture* GetFrame(int iIDX) { return (iIDX >= 0 && iIDX < m_vecFrames.size()) ? m_vecFrames[iIDX] : nullptr; }
-    void Create(vector<Texture*> frames, float fDuration);
+    void Create(vector<Texture*> frames, float fDuration, Vec2D vOffset);
     int GetMaxFrame() { return (int)m_vecFrames.size(); }
     void update();
     void render(HDC hdc);

@@ -36,28 +36,33 @@ Map::~Map()
 	DeleteObject(mapBitmap);
 }
 
+void Map::OnOpen()
+{
+	mapCenter = CameraMgr::GetInst()->GetLookAt();
+	isMapChanged = true;
+
+	tEvent event = {};
+	event.eEvent = EVENT_TYPE::PAUSE_GAME;
+	event.lParam = (DWORD_PTR)true;
+	EventMgr::GetInst()->AddEvent(event);
+}
+
+void Map::OnClose()
+{
+	tEvent event = {};
+	event.eEvent = EVENT_TYPE::PAUSE_GAME;
+	event.lParam = (DWORD_PTR)false;
+	EventMgr::GetInst()->AddEvent(event);
+}
+
 void Map::update()
 {
+	transform.scale = Vec2D(Core::GetInst()->GetResolution());
+
 	World* world = SceneMgr::GetInst()->GetCurScene()->GetWorld();
 	if (world == nullptr)
 	{
 		return;
-	}
-
-	// 펼칠 때 지도 가운데를 플레이어 자리로 되돌린다
-	if (KEY_DOWN(KEY::TAB))
-	{
-		SetOpen(!IsOpen());
-		if (IsOpen())
-		{
-			mapCenter = CameraMgr::GetInst()->GetLookAt();
-			isMapChanged = true;
-		}
-
-		tEvent event = {};
-		event.eEvent = EVENT_TYPE::PAUSE_GAME;
-		event.lParam = (DWORD_PTR)IsOpen();
-		EventMgr::GetInst()->AddEvent(event);
 	}
 	if (!IsOpen())
 	{
@@ -97,9 +102,8 @@ void Map::render(HDC hdc)
 		return;
 	}
 
-	POINT resolution = Core::GetInst()->GetResolution();
-	int width = resolution.x;
-	int height = resolution.y;
+	int width = (int)transform.scale.x;
+	int height = (int)transform.scale.y;
 
 	Texture* frame = ResourceMgr::GetInst()->FindTexture(L"Map_Frame_000.png");
 	SetStretchBltMode(hdc, HALFTONE);
@@ -147,7 +151,6 @@ void Map::render(HDC hdc)
 		float originY = areaHeight / 2.f - centerY * pixelsPerTile;
 
 		RECT imageRect = { 0, 0, areaWidth, areaHeight };
-		renderer.render(mapDC, imageRect, world, originX, originY, pixelsPerTile);
 	}
 	BitBlt(hdc, area.left, area.top, areaWidth, areaHeight, mapDC, 0, 0, SRCCOPY);
 

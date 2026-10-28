@@ -164,7 +164,6 @@
     <ClInclude Include="Manager\GameMgr.h" />
     <ClInclude Include="UI\UI.h" />
     <ClInclude Include="UI\Map.h" />
-    <ClInclude Include="UI\MapRenderer.h" />
     <ClInclude Include="UI\HUD.h" />
     <ClInclude Include="UI\Minimap.h" />
     <ClInclude Include="Object\Monster.h" />
@@ -183,6 +182,7 @@
     <ClInclude Include="Scene\Scene_Start.h" />
     <ClInclude Include="Core\SelectGDI.h" />
     <ClInclude Include="Core\Vec2D.h" />
+    <ClInclude Include="Core\Transform.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Core\Terrain.h" />
     <ClInclude Include="Core\Tile.h" />
@@ -230,7 +230,6 @@
     <ClCompile Include="Manager\GameMgr.cpp" />
     <ClCompile Include="UI\UI.cpp" />
     <ClCompile Include="UI\Map.cpp" />
-    <ClCompile Include="UI\MapRenderer.cpp" />
     <ClCompile Include="UI\HUD.cpp" />
     <ClCompile Include="UI\Minimap.cpp" />
     <ClCompile Include="Object\Monster.cpp" />

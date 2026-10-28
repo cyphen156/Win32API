@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "HUD.h"
+#include "Core.h"
 
 HUD::HUD()
 {
@@ -12,6 +13,8 @@ HUD::~HUD()
 
 void HUD::update()
 {
+	transform.scale = Vec2D(Core::GetInst()->GetResolution());
+
 	if (minimap.IsOpen())
 	{
 		minimap.update();

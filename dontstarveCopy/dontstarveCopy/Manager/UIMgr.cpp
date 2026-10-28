@@ -22,7 +22,6 @@ void UIMgr::init()
 
 void UIMgr::update()
 {
-	// 위에 그려지는 UI가 입력을 먼저 받는다
 	for (int i = (int)uis.size() - 1; i >= 0; --i)
 	{
 		uis[i]->update();
@@ -38,4 +37,9 @@ void UIMgr::render(HDC hdc)
 			uis[i]->render(hdc);
 		}
 	}
+}
+
+void UIMgr::ToggleMap()
+{
+	uis[1]->SetOpen(!uis[1]->IsOpen());
 }

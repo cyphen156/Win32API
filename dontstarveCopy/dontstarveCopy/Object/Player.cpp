@@ -16,11 +16,6 @@ Player::Player()
 
 	wstring resPath = PathMgr::GetInst()->GetContentPath();
 	resPath += L"Textures\\Character\\Wilson";
-	// 캐릭터 선택 여부 확인
-	/*if (!wcscmp(character, "wilson"))
-	{
-		resPath += L"\\Wilson";
-	}*/
 	CreateAnimator();
 	GenerateAnimations(resPath);
 	MessageBox(nullptr, (L"Player Resource has Loaded"), L"Notice", MB_OK);
@@ -35,19 +30,11 @@ Player::Player()
 	Vec2D baseScale(width, height);
 	SetPos(Vec2D(300.f, 300.f));
 	SetScale(baseScale);
-	SetFootAnchor(Vec2D(0.f, 45.f));
 
-	Vec2D reScale(0.8f, 0.8f);
-	Vec2D colSize = GetScale();
-	
+	// 충돌체는 대기 첫 프레임에서 그림이 차지하는 영역
 	CreateCollider();
-	GetCollider()->SetOffsetPos(colSize/Vec2D(2, 2));
-
-	colSize = colSize * reScale;
-	GetCollider()->SetColliderSize(colSize);
-
-	//MessageBox(nullptr, (L"All Resource has Loaded"), L"Notice", MB_OK);
-
+	GetCollider()->SetOffsetPos(Vec2D(-2.f, -34.f));
+	GetCollider()->SetColliderSize(Vec2D(44.f, 72.f));
 }
 
 Player::~Player()
@@ -86,37 +73,19 @@ void Player::GetAnimations(vector<Texture*> frames, wstring& animationName, wstr
 
 			if (findDir.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
 			{
-				// 하위 폴더가 있는 경우 재귀 호출
 				GetAnimations(frames, animationName, fullPath);
-				//GetAnimations(fullPath);
 			}
 			else if (wstring(findDir.cFileName).find(L".png") != wstring::npos)
 			{
-				// 하위 폴더가 없고, png파일이 있다면
-				// 여러 파일을 로드해서 각각 프레임으로 등록하여 애니메이션 생성
-				// 애니메이션 생성
-				// PNG 파일을 로드하여 프레임으로 추가
 				wstring fileName = findDir.cFileName;
 
-				// 확장자 제거
 				animationName = fileName.substr(0, fileName.find_last_of(L'_'));
 
-				//animationName = TexPath.substr(TexPath.find_last_of(L"\\") + 1);
 				Texture* pTex = ResourceMgr::GetInst()->LoadTexture(fileName, fullPath);
 				if (pTex)
 				{
 					frames.push_back(pTex);
-					//MessageBox(nullptr, (fileName + L" is loaded " + std::to_wstring(frames.size()) + L" frames").c_str(), L"Notice", MB_OK);
 				}
-
-				// 수정 전 한개의 파일에서 프레임을 잘라내어 애니메이션 생성
-				//ResTex* pTex = ResMgr::GetInst()->LoadTex(animationName + L"_" + findDir.cFileName, fullPath);
-
-				//if (pTex)
-				//{
-				//	// 애니메이션 생성: 프레임 속성 설정 및 등록
-				//	GetAnimator()->CreateAnimation(animationName, pTex, Vec2D(0.f, 0.f), Vec2D(100.f, 100.f), Vec2D(100.f, 0.f), 0.1f, 1);
-				//}
 			}
 		}
 	} while (FindNextFile(hFind, &findDir));
@@ -126,15 +95,13 @@ void Player::GetAnimations(vector<Texture*> frames, wstring& animationName, wstr
 	{
 		double frameTime = 1.0 / 30.0;
 
-		GetAnimator()->CreateAnimation(animationName, frames, frameTime);
-		//MessageBox(nullptr, (animationName + L" is loaded " + std::to_wstring(frames.size()) + L" frames").c_str(), L"Notice", MB_OK);
+		GetAnimator()->CreateAnimation(animationName, frames, frameTime, Vec2D(0.f, -45.f));
 		frames.clear();
 		animationName = L"";
 	}
 	
 	if (isEmpty)
 	{
-		// 폴더는 있지만 하위에 파일이나 폴더가 없는 경우
 		MessageBox(nullptr, (L"Find " + TexPath + L"but it is Empty Dir.").c_str(), L"Notice", MB_OK);
 	}
 	FindClose(hFind);
@@ -188,30 +155,16 @@ void Player::update()
 
 void Player::render(HDC hdc)
 {
-
-	//리소스 개별로딩때 써먹엇던 코드
-
 	Vec2D vPlayerScale = GetScale();
-	Vec2D vPlayerAnchor = GetFootAnchor();
-	Vec2D vPlayerFoot = CameraMgr::GetInst()->GetRenderPos(GetPos() + Vec2D(vPlayerScale.x / 2.f + vPlayerAnchor.x, vPlayerScale.y / 2.f + vPlayerAnchor.y));
-	float fZoom = CameraMgr::GetInst()->GetZoom();
-	Vec2D vPlayerCenter = Vec2D(vPlayerFoot.x - vPlayerAnchor.x * fZoom, vPlayerFoot.y - vPlayerAnchor.y * fZoom);
-	/*UINT iWidth = 20;
-	UINT iHeight = 20;*/
-	//MessageBox(nullptr, (L"Before Call Anim Render"), L"Notice", MB_OK);
+	
 	HPEN hOldPen = (HPEN)CreatePen(PS_SOLID, 5, RGB(0, 0, 255));
 	HPEN hPrevPen = (HPEN)SelectObject(hdc, hOldPen);
-	Rectangle(hdc, (int)(vPlayerCenter.x - vPlayerScale.x * fZoom / 2.f)
-		, (int)(vPlayerCenter.y - vPlayerScale.y * fZoom / 2.f)
-		, (int)(vPlayerCenter.x + vPlayerScale.x * fZoom / 2.f)
-		, (int)(vPlayerCenter.y + vPlayerScale.y * fZoom / 2.f));
+	Rectangle(hdc, (int)(vPlayerScale.x / 2.f)
+		, (int)(vPlayerScale.y / 2.f)
+		, (int)(vPlayerScale.x / 2.f)
+		, (int)(vPlayerScale.y / 2.f));
 	SelectObject(hdc, hPrevPen);
 	DeleteObject(hOldPen);
 	
-	//GetAnimator()->render(hdc);
-
-
-	// 애니메이션 렌더링
-
 	componentRender(hdc);
 }

@@ -31,8 +31,14 @@ void SceneMgr::init()
 
 	if (m_pCurScene->GetWorld() == nullptr)
 	{
-		GenerateWorld(SceneType::START, 0);
-		return;
+		int tryCount = 50;
+		World* wld = nullptr;
+		if (WorldGenerator::tryGenerateWorld(WorldType::Forest, tryCount, wld) == false)
+		{
+			MessageBox(nullptr, L"월드 생성 실패!", L"Error", MB_OK);
+			return;
+		}
+		m_pCurScene->SetWorld(wld);
 	}
 	m_pCurScene->Enter();
 }
@@ -51,51 +57,18 @@ void SceneMgr::render(HDC hdc)
 
 void SceneMgr::ChangeScene(SceneType next)
 {
+	if (m_arrScene[(UINT)next]->GetWorld() == nullptr)
+	{
+		int tryCount = 50;
+		World* wld = nullptr;
+		if (WorldGenerator::tryGenerateWorld(next == SceneType::CAVE ? WorldType::Cave : WorldType::Forest, tryCount, wld) == false)
+		{
+			MessageBox(nullptr, L"월드 생성 실패!, 기존 월드로 돌아갑니다.", L"Error", MB_OK);
+			return;
+		}
+		m_arrScene[(UINT)next]->SetWorld(wld);
+	}
 	m_pCurScene->Exit();
 	m_pCurScene = m_arrScene[(UINT)next];
-
-	if (m_pCurScene->GetWorld() == nullptr)
-	{
-		GenerateWorld(next, 0);
-		return;
-	}
 	m_pCurScene->Enter();
-
-}
-
-void SceneMgr::GenerateWorld(SceneType type, int tryCount)
-{
-	BOOL WLDSIZE = false;
-
-	// 월드 생성, 초기화
-	World* wld = new World(type == SceneType::CAVE ? WorldType::Cave : WorldType::Forest);
-	wstring wldName = EnumString::ToWString(type);
-	wld->SetWorldSize(WLDSIZE);
-	wld->generateWorld();
-
-	LARGE_INTEGER seed = {};
-	QueryPerformanceCounter(&seed);
-
-	WorldGenerator generator;
-	if (generator.generateWorld(wld->getTerrains(), wld->getWorldType(), (unsigned int)seed.QuadPart) == false)
-	{
-		delete wld;
-		if (tryCount + 1 < WORLD_TRY_COUNT)
-		{
-			tEvent event = {};
-			event.eEvent = EVENT_TYPE::REGENERATE_WORLD;
-			event.lParam = (DWORD)type;
-			event.wParam = (DWORD_PTR)(tryCount + 1);
-
-			EventMgr::GetInst()->AddEvent(event);
-		}
-		else
-		{
-			MessageBox(nullptr, (L"World generation failed :: " + wldName).c_str(), L"Error", MB_OK);
-		}
-		return;
-	}
-
-	m_arrScene[(UINT)type]->SetWorld(wld);
-	m_arrScene[(UINT)type]->Enter();
 }

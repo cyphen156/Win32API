@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "InputMgr.h"
 #include "Core.h"
+#include "UIMgr.h"
 
 int g_arrVK[(int)KEY::LAST] = 
 {
@@ -126,4 +127,9 @@ void InputMgr::update()
 	// 휠은 창 메시지로 들어온 만큼 모았다가 이번 프레임 값으로 넘긴다
 	mouseWheel = wheelInput;
 	wheelInput = 0;
+
+	if (m_vecKey[(int)KEY::TAB].eState == KEY_STATE::KEYDOWN)
+	{
+		UIMgr::GetInst()->ToggleMap();
+	}
 }
