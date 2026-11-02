@@ -21,8 +21,8 @@ Player::Player()
 	MessageBox(nullptr, (L"Player Resource has Loaded"), L"Notice", MB_OK);
 	SetCurrDir(L"Down");
 	wstring dir = GetCurrDir();
-	GetAnimator()->Play(ObjType::Player, L"IdleLoop", true, dir);
-	Texture* pTex = GetAnimator()->FindAnimation(L"Wilson_IdleLoop_Down")->GetFrame(0);
+	GetAnimator()->Play(ObjType::Player, L"Idle", true, dir);
+	Texture* pTex = GetAnimator()->FindAnimation(L"Wilson_Idle_Down")->GetFrame(0);
 	//GetAnimation()->GetFrame()
 	Image* img = pTex->GetImage();
 	float width = (float)img->GetWidth();
@@ -50,7 +50,6 @@ void Player::GenerateAnimations(wstring& TexPath)
 	GetAnimations(frames, animationName, TexPath);
 }
 void Player::GetAnimations(vector<Texture*> frames, wstring& animationName, wstring& TexPath)
-//void Player::GetAnimations(wstring& TexPath)
 {
 	WIN32_FIND_DATA findDir;
 	HANDLE hFind = FindFirstFile((TexPath + L"\\*").c_str(), &findDir);
@@ -156,7 +155,7 @@ void Player::update()
 void Player::render(HDC hdc)
 {
 	Vec2D vPlayerScale = GetScale();
-	
+
 	HPEN hOldPen = (HPEN)CreatePen(PS_SOLID, 5, RGB(0, 0, 255));
 	HPEN hPrevPen = (HPEN)SelectObject(hdc, hOldPen);
 	Rectangle(hdc, (int)(vPlayerScale.x / 2.f)
@@ -165,6 +164,6 @@ void Player::render(HDC hdc)
 		, (int)(vPlayerScale.y / 2.f));
 	SelectObject(hdc, hPrevPen);
 	DeleteObject(hOldPen);
-	
+
 	componentRender(hdc);
 }

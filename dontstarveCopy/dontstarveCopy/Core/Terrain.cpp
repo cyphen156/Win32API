@@ -41,5 +41,10 @@ TileType Terrain::getTileType() const
 void Terrain::render(HDC hdc)
 {
     Texture* texture = tileDefs[(UINT)tileType].tiles[tileIndex].texture;
-    StretchBlt(hdc, (int)position.x, (int)position.y, 1, 1, texture->GetDC(), 0, 0, texture->Width(), texture->Height(), SRCCOPY);
+    HDC textureDC = texture->GetDC();
+    StretchBlt(hdc,
+        (int)position.x * TILESIZE, (int)position.y * TILESIZE, TILESIZE, TILESIZE, 
+        textureDC,
+        0, 0, texture->Width(), texture->Height(), 
+        SRCCOPY);
 }

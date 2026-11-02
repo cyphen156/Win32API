@@ -4,24 +4,31 @@
 #include "Core.h"
 #include <cmath>
 
-static const float minDistance = 15.f;		
-static const float maxDistance = 50.f;		
-static const float zoomStep = 4.f;			
-static const float normalDistance = 36.f;	
-static const float minPitch = 30.f;			
-static const float maxPitch = 60.f;			
-static const float fieldOfView = 35.f;		
-static const float focusHeight = 1.5f;		
-static const float pixelsPerUnit = 30.f;	
+static const float minDistance = 15.f;
+static const float maxDistance = 50.f;
+static const float normalDistance = 36.f;
+static const float minPitch = 30.f;
+static const float maxPitch = 60.f;
+static const float focusHeight = 1.5f;
+
+static const int minZoomLevel = -3;
+static const int maxZoomLevel = 8;
+static const float zoomStep = 1.1135f;
+
+static const float fieldOfView = 35.f;
+static const float pixelsPerUnit = 30.f;
 static const float degreeToRadian = 3.14159265f / 180.f;
 
 CameraMgr::CameraMgr()
-	: lookAt{}
-	, resolution{}
-	, target(nullptr)
+	: worldPosition{}
+	, orbitPosition{}
 	, distance(normalDistance)
-	, zoom(1.f)
+	, pitch(0.f)
 	, pitchScale(1.f)
+	, resolution{}
+	, zoomLevel(0)
+	, zoom(1.f)
+	, target(nullptr)
 {
 }
 
@@ -29,18 +36,16 @@ CameraMgr::~CameraMgr()
 {
 }
 
-void CameraMgr::Init(Vec2D screenResolution)
+void CameraMgr::init()
 {
-	resolution = screenResolution;
+	UpdateOrbitPose();
 }
 
 void CameraMgr::Update()
 {
+	// 적응형 해상도
 	POINT windowSize = Core::GetInst()->GetResolution();
 	resolution = Vec2D((float)windowSize.x, (float)windowSize.y);
-
-	float pitch = minPitch + (distance - minDistance) / (maxDistance - minDistance) * (maxPitch - minPitch);
-	pitchScale = sinf(pitch * degreeToRadian);
 	float screenPixelsPerUnit = resolution.y / (2.f * tanf(fieldOfView * 0.5f * degreeToRadian) * (distance + focusHeight * pitchScale));
 	zoom = screenPixelsPerUnit / pixelsPerUnit;
 
@@ -54,37 +59,75 @@ void CameraMgr::Update()
 		return;
 	}
 
-	lookAt = target->GetPos();
+	Vec2D foot = target->GetPos();
+	worldPosition = Vec2D(foot.x, foot.y + orbitPosition.x);
 }
 
 void CameraMgr::ZoomIn()
 {
-	distance -= zoomStep;
-	if (distance < minDistance)
-	{
-		distance = minDistance;
-	}
+	zoomLevel = min(maxZoomLevel, zoomLevel + 1);
+	UpdateOrbitPose();
 }
 
 void CameraMgr::ZoomOut()
 {
-	distance += zoomStep;
-	if (distance > maxDistance)
+	zoomLevel = max(minZoomLevel, zoomLevel - 1);
+	UpdateOrbitPose();
+}
+
+void CameraMgr::UpdateOrbitPose()
+{
+	float normalPitch = (minPitch + (normalDistance - minDistance) / (maxDistance - minDistance) * (maxPitch - minPitch)) * degreeToRadian;
+	float focusDistance = (normalDistance + focusHeight * sinf(normalPitch)) / powf(zoomStep, (float)zoomLevel);
+
+	distance = focusDistance;
+	for (int i = 0; i < 3; ++i)
 	{
-		distance = maxDistance;
+		pitch = (minPitch + (distance - minDistance) / (maxDistance - minDistance) * (maxPitch - minPitch)) * degreeToRadian;
+		distance = focusDistance - focusHeight * sinf(pitch);
 	}
+
+	pitchScale = sinf(pitch);
+	orbitPosition = Vec2D(distance * cosf(pitch) * pixelsPerUnit, (focusHeight + distance * pitchScale) * pixelsPerUnit);
 }
 
-// lookAt이 화면 가운데에 오도록 옮긴다
-void CameraMgr::ApplyView(HDC hdc)
+Vec2D CameraMgr::GetLookAt()
 {
-	XFORM view = { 1.f, 0.f, 0.f, 1.f, resolution.x / 2.f - lookAt.x, resolution.y / 2.f - lookAt.y };
-	SetGraphicsMode(hdc, GM_ADVANCED);
-	SetWorldTransform(hdc, &view);
+	return Vec2D(worldPosition.x, worldPosition.y - orbitPosition.x);
 }
 
-void CameraMgr::ResetView(HDC hdc)
+XFORM CameraMgr::GetViewTransform()
 {
-	ModifyWorldTransform(hdc, nullptr, MWT_IDENTITY);
-	SetGraphicsMode(hdc, GM_COMPATIBLE);
+	Vec2D lookAt = GetLookAt();
+
+	XFORM view = {
+		zoom, 0.f,
+		0.f, zoom,
+		resolution.x / 2.f - lookAt.x * zoom,
+		resolution.y / 2.f - lookAt.y * zoom
+	};
+
+	return view;
+}
+
+XFORM CameraMgr::GetPitchTransform()
+{
+	Vec2D lookAt = GetLookAt();
+
+	XFORM pitch = {
+		1.f, 0.f,
+		0.f, pitchScale,
+		0.f, lookAt.y * (1.f - pitchScale)
+	};
+
+	return pitch;
+}
+
+RECT CameraMgr::GetViewArea()
+{
+	Vec2D lookAt = GetLookAt();
+	float halfWidth = resolution.x / 2.f / zoom;
+	float halfHeight = resolution.y / 2.f / (zoom * pitchScale);
+	RECT area = { (LONG)floor(lookAt.x - halfWidth), (LONG)floor(lookAt.y - halfHeight), (LONG)ceil(lookAt.x + halfWidth), (LONG)ceil(lookAt.y + halfHeight) };
+	return area;
 }

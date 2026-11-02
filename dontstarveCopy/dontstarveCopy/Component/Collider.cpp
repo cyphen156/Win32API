@@ -34,18 +34,13 @@ void Collider::finalupdate()
 
 void Collider::render(HDC hdc)
 {
-	SelectGDI p (hdc, PEN_TYPE::RED);
-	SelectGDI b (hdc, BRUSH_TYPE::HOLLOW);
-
+#ifdef _DEBUG
 	Vec2D colSize = GetColliderSize();
 
-	Rectangle(hdc
-		, (int)(m_vFinalPos.x - colSize.x / 2)
-		, (int)(m_vFinalPos.y - colSize.y / 2)
-		, (int)(m_vFinalPos.x + colSize.x / 2)
-		, (int)(m_vFinalPos.y + colSize.y / 2));
-	colSize = GetColliderSize();
-
+	Graphics graphics(hdc);
+	Pen pen(Color(255, 255, 0, 0));
+	graphics.DrawRectangle(&pen, m_vFinalPos.x - colSize.x / 2.f, m_vFinalPos.y - colSize.y / 2.f, colSize.x, colSize.y);
+#endif
 }
 
 void Collider::OnCollision(Collider* pOther)

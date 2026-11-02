@@ -17,7 +17,6 @@ public:
 
     virtual void GenerateAnimations(wstring& TexPath);
     virtual void GetAnimations(vector<Texture*> frames, wstring& animationName, wstring& TexPath);
-    //virtual void GetAnimations(wstring& TexPath);
     virtual void update();
     virtual void render(HDC hdc);
 

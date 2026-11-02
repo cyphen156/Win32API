@@ -64,7 +64,7 @@ int Core::init(HWND hWnd, RECT* windowInfo)
 	TimeMgr::GetInst()->init();
 	PathMgr::GetInst()->init();
 	InputMgr::GetInst()->init();
-	CameraMgr::GetInst()->Init(Vec2D((float)(m_ptWinInfo->right - m_ptWinInfo->left), (float)(m_ptWinInfo->bottom - m_ptWinInfo->top)));
+	CameraMgr::GetInst()->init();	
 	GameMgr::GetInst()->init();
 
 	// 비트맵 설정
