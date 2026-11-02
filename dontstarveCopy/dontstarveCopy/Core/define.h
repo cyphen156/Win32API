@@ -27,8 +27,6 @@
 #define WSLARGE 1000
 #define TILESIZE 120
 
-#define WORLD_TRY_COUNT 10
-
 enum class SceneType
 {
 	START,
@@ -43,6 +41,14 @@ enum class ObjType
 	Player,
 	Monster,
 	Component,
+
+	END
+};
+
+enum class MonsterType
+{
+	Pigman,
+	Spider,
 
 	END
 };

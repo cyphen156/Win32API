@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Animator.h"
 #include "Animation.h"
+#include "Monster.h"
 
 Animator::Animator()
 	: m_pCurAnimation(nullptr)
@@ -55,8 +56,17 @@ void Animator::Play(ObjType objType, const wstring& strName, bool isRepeat, wstr
 	switch (objType)
 	{
 	case ObjType::Player:  objTypeStr = L"Wilson_"; break;
-	case ObjType::Monster: objTypeStr = L"Pigman_"; break;
-		// 필요에 따라 다른 객체 타입 추가
+	case ObjType::Monster: objTypeStr = L"Monster_";
+	{
+		MonsterType monsterType = ((Monster*)m_pOwner)->GetMonsterType();
+		switch (monsterType)
+		{
+		case MonsterType::Pigman: objTypeStr = L"Pigman_"; break;
+		case MonsterType::Spider: objTypeStr = L"Spider_"; break;
+		default: break;
+		}
+		break;
+	}
 	default: objTypeStr = L""; break;
 	}
 

@@ -162,6 +162,8 @@
     <ClInclude Include="Manager\InputMgr.h" />
     <ClInclude Include="Manager\UIMgr.h" />
     <ClInclude Include="Manager\GameMgr.h" />
+    <ClInclude Include="Object\Pigman.h" />
+    <ClInclude Include="Object\Spider.h" />
     <ClInclude Include="UI\UI.h" />
     <ClInclude Include="UI\Map.h" />
     <ClInclude Include="UI\HUD.h" />
@@ -228,6 +230,8 @@
     <ClCompile Include="Manager\InputMgr.cpp" />
     <ClCompile Include="Manager\UIMgr.cpp" />
     <ClCompile Include="Manager\GameMgr.cpp" />
+    <ClCompile Include="Object\Pigman.cpp" />
+    <ClCompile Include="Object\Spider.cpp" />
     <ClCompile Include="UI\UI.cpp" />
     <ClCompile Include="UI\Map.cpp" />
     <ClCompile Include="UI\HUD.cpp" />
