@@ -117,18 +117,23 @@ void Core::render()
 {
 	// 렌더 비트맵생성
 	HBITMAP hOldBit = (HBITMAP)SelectObject(m_MemDC, m_hBit);
+	SetViewportOrgEx(m_MemDC, (int)(m_ptWinInfo->right / 2), (int)(m_ptWinInfo->bottom / 2), nullptr);
 
 	TimeMgr::GetInst()->render();
 
-	// cliped 월드맵 텍스쳐 렌더링
-	Rectangle(m_MemDC, 0, 0, m_ptWinInfo->right, m_ptWinInfo->bottom);
-
 	GameMgr::GetInst()->render(m_MemDC);
 
+#ifdef _DEBUG
+	SetBkMode(m_MemDC, TRANSPARENT);
+	const wstring& frameText = TimeMgr::GetInst()->GetFrameText();
+	SetTextColor(m_MemDC, RGB(0, 0, 0));
+	TextOutW(m_MemDC, 5, 5, frameText.c_str(), (int)frameText.size());
+	SetTextColor(m_MemDC, RGB(255, 255, 0));
+	TextOutW(m_MemDC, 4, 4, frameText.c_str(), (int)frameText.size());
+#endif
 
 	// 백 버퍼에서 메인 DC로 그리기
 	BitBlt(m_hdc, 0, 0, (int)m_ptWinInfo->right, (int)m_ptWinInfo->bottom, m_MemDC, 0, 0, SRCCOPY);
 	SelectObject(m_MemDC, hOldBit);
-	
 }
 

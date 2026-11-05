@@ -26,6 +26,7 @@ void EventMgr::Execute(const tEvent& event)
 		{
 			Object* deadObj = (Object*)event.lParam;
 			deadObj->SetDead();
+			SceneMgr::GetInst()->GetCurScene()->RemoveObj(deadObj);
 			m_vecDeadObj.push_back(deadObj);
 			break;
 		}

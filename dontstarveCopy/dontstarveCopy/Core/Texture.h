@@ -11,6 +11,7 @@ private:
 	HBITMAP		m_hBit;
 	BITMAP		m_bitInfo;
 	Image*		m_img;
+	RECT		m_opaqueBounds;
 	Texture();
 	virtual ~Texture();
 
@@ -20,6 +21,7 @@ public:
 
 	HDC GetDC();
 	Image* GetImage() { return m_img; }
+	const RECT& GetOpaqueBounds();
 	void Load(const wstring& resPath);
 
 	void ReleaseImage();

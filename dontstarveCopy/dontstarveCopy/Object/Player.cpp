@@ -18,12 +18,11 @@ Player::Player()
 	resPath += L"Textures\\Character\\Wilson";
 	CreateAnimator();
 	GenerateAnimations(resPath);
-	MessageBox(nullptr, (L"Player Resource has Loaded"), L"Notice", MB_OK);
+	//MessageBox(nullptr, (L"Player Resource has Loaded"), L"Notice", MB_OK);
 	SetCurrDir(L"Down");
 	wstring dir = GetCurrDir();
 	GetAnimator()->Play(ObjType::Player, L"Idle", true, dir);
 	Texture* pTex = GetAnimator()->FindAnimation(L"Wilson_Idle_Down")->GetFrame(0);
-	//GetAnimation()->GetFrame()
 	Image* img = pTex->GetImage();
 	float width = (float)img->GetWidth();
 	float height= (float)img->GetHeight();

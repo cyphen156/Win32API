@@ -32,8 +32,9 @@ public:
 	void ZoomIn();
 	void ZoomOut();
 
-	XFORM GetViewTransform();
 	XFORM GetPitchTransform();
+	XFORM GetInversePitchTransform();
+	XFORM GetMultiplierTransform();
 
 	RECT GetViewArea();
 	Vec2D GetLookAt();

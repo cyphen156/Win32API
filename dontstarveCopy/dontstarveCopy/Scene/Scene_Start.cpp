@@ -70,6 +70,23 @@ void Scene_Start::Enter()
 		AddObj(spider, ObjType::Monster);
 	}
 
+#ifdef _DEBUG
+	// 부하 확인용: 플레이어 주변 격자(간격 250)에 Pigman/Spider를 번갈아 깐다
+	const int debugSpawnCount = 500;
+	int columns = (int)ceilf(sqrtf((float)debugSpawnCount));
+	float spacing = 250.f;
+	for (int k = 0; k < debugSpawnCount; ++k)
+	{
+		int col = k % columns, row = k / columns;
+		Vec2D gridPos = charWorldPos + Vec2D((col - columns / 2) * spacing + 125.f, (row - columns / 2) * spacing + 125.f);
+		Monster* monster = (k % 2 == 0) ? (Monster*)new Pigman : (Monster*)new Spider;
+		monster->SetCenterPos(gridPos);
+		monster->SetPos(gridPos);
+		monster->SetMaxMoveDistance(fMonsterMaxDist);
+		AddObj(monster, ObjType::Monster);
+	}
+#endif
+	
 	CollisionMgr::GetInst()->CheckObjType(ObjType::Player, ObjType::Monster);
 }
 void Scene_Start::Exit()

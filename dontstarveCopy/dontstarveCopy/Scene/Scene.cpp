@@ -49,11 +49,17 @@ void Scene::render(HDC hdc)
 {
 	CameraMgr* camera = CameraMgr::GetInst();
 
-	XFORM view = camera->GetViewTransform();
-	XFORM pitch = camera->GetPitchTransform();
+	Vec2D lookAt = camera->GetLookAt();
 
+	XFORM toLookAt = { 1.f, 0.f, 0.f, 1.f, -lookAt.x, -lookAt.y };
+	XFORM pitch = camera->GetPitchTransform();
+	XFORM inversePitch = camera->GetInversePitchTransform();
+	XFORM multiplier = camera->GetMultiplierTransform();
+
+	XFORM focused = {};
+	CombineTransform(&focused, &toLookAt, &pitch);
 	XFORM ground = {};
-	CombineTransform(&ground, &pitch, &view);
+	CombineTransform(&ground, &focused, &multiplier);
 
 	SetGraphicsMode(hdc, GM_ADVANCED);
 	SetWorldTransform(hdc, &ground);
@@ -63,6 +69,9 @@ void Scene::render(HDC hdc)
 		world->Render(hdc);
 	}
 
+	RECT viewArea = camera->GetViewArea();
+	InflateRect(&viewArea, TILESIZE, TILESIZE);
+
 	for (UINT i = 0; i < (UINT)ObjType::END; ++i)
 	{
 		bool isStand = (i == (UINT)ObjType::Player || i == (UINT)ObjType::Monster);
@@ -70,23 +79,30 @@ void Scene::render(HDC hdc)
 
 		for (; iter != m_arrObj[i].end();)
 		{
-			if (!(*iter)->isDead())
+			// Culling: 화면 밖에 있는 오브젝트는 렌더링하지 않음
+			Vec2D position = (*iter)->GetPos();
+			if (position.x < viewArea.left || position.x > viewArea.right 
+				|| position.y < viewArea.top || position.y > viewArea.bottom)
 			{
-				if (isStand)
-				{
-					float deltaY = (*iter)->GetPos().y * (pitch.eM22 - 1.f) + pitch.eDy;
-					XFORM placement = { 1.f, 0.f, 0.f, 1.f, 0.f, deltaY };
-					XFORM stand = {};
-					CombineTransform(&stand, &placement, &view);
-					SetWorldTransform(hdc, &stand);
-				}
-				(*iter)->render(hdc);
 				++iter;
+				continue;
 			}
-			else
+
+			if (isStand)
 			{
-				iter = m_arrObj[i].erase(iter);
+				XFORM toPosition = { 1.f, 0.f, 0.f, 1.f, -position.x, -position.y };
+				XFORM fromPosition = { 1.f, 0.f, 0.f, 1.f, position.x, position.y };
+
+				XFORM unpressed = {};
+				CombineTransform(&unpressed, &toPosition, &inversePitch);
+				XFORM standing = {};
+				CombineTransform(&standing, &unpressed, &fromPosition);
+				XFORM stand = {};
+				CombineTransform(&stand, &standing, &ground);
+				SetWorldTransform(hdc, &stand);
 			}
+			(*iter)->render(hdc);
+			++iter;
 		}
 		SetWorldTransform(hdc, &ground);
 	}

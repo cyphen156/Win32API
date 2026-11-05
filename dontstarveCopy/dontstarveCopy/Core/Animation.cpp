@@ -63,11 +63,23 @@ void Animation::render(HDC hdc)
 
 	Object* pObj = m_pAnimator->GetOwner();
 	Vec2D	vCenter = pObj->GetPos() + m_vOffset;
-	
+
 	Texture* currentFrameTex = GetFrame(m_iCurFrame);
 
-	Graphics graphics(hdc);
-	Image* img = currentFrameTex->GetImage();
-	REAL width = img->GetWidth(), height = img->GetHeight();
-	graphics.DrawImage(img, vCenter.x - width / 2.f, vCenter.y - height / 2.f, width, height);
+	XFORM transform;
+	GetWorldTransform(hdc, &transform);
+	ModifyWorldTransform(hdc, nullptr, MWT_IDENTITY);
+	{
+		Graphics graphics(hdc);
+		Matrix matrix(transform.eM11, transform.eM12, transform.eM21, transform.eM22, transform.eDx, transform.eDy);
+		graphics.SetTransform(&matrix);
+
+		Image* img = currentFrameTex->GetImage();
+		REAL width = img->GetWidth(), height = img->GetHeight();
+		const RECT& box = currentFrameTex->GetOpaqueBounds();
+		REAL boxWidth = (REAL)(box.right - box.left), boxHeight = (REAL)(box.bottom - box.top);
+		RectF dest(vCenter.x - width / 2.f + box.left, vCenter.y - height / 2.f + box.top, boxWidth, boxHeight);
+		graphics.DrawImage(img, dest, (REAL)box.left, (REAL)box.top, boxWidth, boxHeight, UnitPixel);
+	}
+	SetWorldTransform(hdc, &transform);
 }

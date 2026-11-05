@@ -31,9 +31,10 @@ void GameMgr::update()
 
 	// 씬 업데이트
 	SceneMgr::GetInst()->update();
-	CameraMgr::GetInst()->Update();
 	// 충돌체 업데이트
 	CollisionMgr::GetInst()->update();
+
+	CameraMgr::GetInst()->Update();
 }
 
 void GameMgr::render(HDC hdc)
@@ -43,5 +44,6 @@ void GameMgr::render(HDC hdc)
 		// 씬 렌더링
 		SceneMgr::GetInst()->render(hdc);
 	}
+	SetViewportOrgEx(hdc, 0, 0, nullptr);
 	UIMgr::GetInst()->render(hdc);
 }

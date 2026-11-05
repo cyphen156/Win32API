@@ -37,9 +37,18 @@ void Collider::render(HDC hdc)
 #ifdef _DEBUG
 	Vec2D colSize = GetColliderSize();
 
-	Graphics graphics(hdc);
-	Pen pen(Color(255, 255, 0, 0));
-	graphics.DrawRectangle(&pen, m_vFinalPos.x - colSize.x / 2.f, m_vFinalPos.y - colSize.y / 2.f, colSize.x, colSize.y);
+	XFORM transform;
+	GetWorldTransform(hdc, &transform);
+	ModifyWorldTransform(hdc, nullptr, MWT_IDENTITY);
+	{
+		Graphics graphics(hdc);
+		Matrix matrix(transform.eM11, transform.eM12, transform.eM21, transform.eM22, transform.eDx, transform.eDy);
+		graphics.SetTransform(&matrix);
+
+		Pen pen(Color(255, 255, 0, 0));
+		graphics.DrawRectangle(&pen, m_vFinalPos.x - colSize.x / 2.f, m_vFinalPos.y - colSize.y / 2.f, colSize.x, colSize.y);
+	}
+	SetWorldTransform(hdc, &transform);
 #endif
 }
 

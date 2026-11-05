@@ -48,7 +48,7 @@ void CameraMgr::Update()
 	resolution = Vec2D((float)windowSize.x, (float)windowSize.y);
 	float screenPixelsPerUnit = resolution.y / (2.f * tanf(fieldOfView * 0.5f * degreeToRadian) * (distance + focusHeight * pitchScale));
 	zoom = screenPixelsPerUnit / pixelsPerUnit;
-
+	
 	if (target == nullptr)
 	{
 		return;
@@ -59,8 +59,8 @@ void CameraMgr::Update()
 		return;
 	}
 
-	Vec2D foot = target->GetPos();
-	worldPosition = Vec2D(foot.x, foot.y + orbitPosition.x);
+	Vec2D center = target->GetPos();
+	worldPosition = Vec2D(center.x, center.y + orbitPosition.x);
 }
 
 void CameraMgr::ZoomIn()
@@ -96,31 +96,43 @@ Vec2D CameraMgr::GetLookAt()
 	return Vec2D(worldPosition.x, worldPosition.y - orbitPosition.x);
 }
 
-XFORM CameraMgr::GetViewTransform()
-{
-	Vec2D lookAt = GetLookAt();
-
-	XFORM view = {
-		zoom, 0.f,
-		0.f, zoom,
-		resolution.x / 2.f - lookAt.x * zoom,
-		resolution.y / 2.f - lookAt.y * zoom
-	};
-
-	return view;
-}
-
 XFORM CameraMgr::GetPitchTransform()
 {
-	Vec2D lookAt = GetLookAt();
-
 	XFORM pitch = {
 		1.f, 0.f,
 		0.f, pitchScale,
-		0.f, lookAt.y * (1.f - pitchScale)
+		0.f, 0.f
 	};
 
 	return pitch;
+}
+
+XFORM CameraMgr::GetInversePitchTransform()
+{
+	XFORM pitch = GetPitchTransform();
+	Matrix matrix(pitch.eM11, pitch.eM12, pitch.eM21, pitch.eM22, pitch.eDx, pitch.eDy);
+	matrix.Invert();
+
+	REAL elements[6] = {};
+	matrix.GetElements(elements);
+	XFORM inversePitch = {
+		elements[0], elements[1],
+		elements[2], elements[3],
+		elements[4], elements[5]
+	};
+
+	return inversePitch;
+}
+
+XFORM CameraMgr::GetMultiplierTransform()
+{
+	XFORM multiplierTransform = {
+		zoom, 0.f,
+		0.f, zoom,
+		0.f, 0.f
+	};
+
+	return multiplierTransform;
 }
 
 RECT CameraMgr::GetViewArea()

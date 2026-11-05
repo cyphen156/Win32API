@@ -47,6 +47,7 @@ void TimeMgr::update()
 
 		swprintf_s(szBuff, L"fps : %d, DT : %lf", m_iFPS, m_dDT);
 		SetWindowText(Core::GetInst()->GetMainHWND(), szBuff);
+		m_frameText = szBuff;
 	}
 
 #ifdef _DEBUG

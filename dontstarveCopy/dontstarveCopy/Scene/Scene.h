@@ -30,6 +30,19 @@ public:
 		m_arrObj[(UINT)objType].push_back(pObj);
 	}
 
+	void RemoveObj(Object* pObj)
+	{
+		for (UINT i = 0; i < (UINT)ObjType::END; ++i)
+		{
+			vector<Object*>::iterator iter = find(m_arrObj[i].begin(), m_arrObj[i].end(), pObj);
+			if (iter != m_arrObj[i].end())
+			{
+				m_arrObj[i].erase(iter);
+				return;
+			}
+		}
+	}
+
 	const vector<Object*>& GetObjectGroup(ObjType objType) { return m_arrObj[(UINT)objType]; }
 
 	World* GetWorld() { return world; }
