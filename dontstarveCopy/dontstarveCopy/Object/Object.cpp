@@ -9,6 +9,7 @@ Object::Object()
 	, m_ObjName()
 	, m_bisDead(false)
 	, m_pAnimator(nullptr)
+	, bisRight(true)
 {
 }
 
@@ -19,6 +20,7 @@ Object::Object(const Object& origin)
 	, m_ObjName(origin.m_ObjName)
 	, m_bisDead(false)
 	, m_pAnimator(nullptr)
+	, bisRight(origin.bisRight)
 {
 	if (origin.m_pCollider)
 	{
@@ -85,5 +87,3 @@ void Object::componentRender(HDC hdc)
 		m_pAnimator->render(hdc);
 	}
 }
-
-

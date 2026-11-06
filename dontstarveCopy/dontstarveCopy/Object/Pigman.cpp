@@ -10,8 +10,6 @@ Pigman::Pigman()
 	// 리소스 로딩 - Texture
 	wstring resPath = L"Pigman";
 	GenerateAnimations(resPath);
-	wstring dir = GetCurrDir();
-	GetAnimator()->Play(ObjType::Monster, L"Idle", true, dir);
 	Texture* pTex = GetAnimator()->FindAnimation(L"Pigman_Idle_Down")->GetFrame(0);
 	Image* img = pTex->GetImage();
 	float width = (float)img->GetWidth();

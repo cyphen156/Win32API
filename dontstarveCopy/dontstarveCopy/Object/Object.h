@@ -4,7 +4,7 @@
 #include "Animator.h"
 #include "func.h"
 /**
-* includes 
+* includes
 * Position
 * Scale
 */
@@ -12,19 +12,20 @@
 class Collider;
 class Animator;
 
-class Object 
+class Object
 {
 private:
     wstring m_ObjName;
     Vec2D m_Pos;
     Vec2D m_objScale;
     bool m_bisDead;
-    void SetDead() { m_bisDead = true; } 
+    void SetDead() { m_bisDead = true; }
 
     Collider* m_pCollider;
     Animator* m_pAnimator;
 
     wstring m_direction;
+    bool bisRight;
 public:
     Object();
     Object(const Object& origin);
@@ -40,10 +41,12 @@ public:
     Vec2D GetScale() { return m_objScale; };
     wstring GetObjName() { return m_ObjName; }
     Collider* GetCollider() { return m_pCollider; }
-    Animator* GetAnimator() { return m_pAnimator;  }
+    Animator* GetAnimator() { return m_pAnimator; }
 
     void SetCurrDir(wstring dir) { m_direction = dir; }
     wstring GetCurrDir() const { return m_direction; }
+    bool IsRight() { return bisRight; }
+    void SetIsRight(bool isRight) { bisRight = isRight; }
     /*void SetKeyState(KEY_STATE state) { m_currentKeyState = state; }
     KEY_STATE GetKeyState() const { return m_currentKeyState; }*/
 

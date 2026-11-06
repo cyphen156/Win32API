@@ -7,10 +7,12 @@
 #include "Animator.h"
 #include "Animation.h"
 #include "CameraMgr.h"
+#include "PlayerController.h"
 
 Player::Player()
 	: m_fspeed(100.f)
-	, bisRight(true)
+	, stateMachine(PlayerState::Alive)
+	, controller(new PlayerController(this))
 {
 	// 리소스 로딩 - Texture
 
@@ -25,7 +27,7 @@ Player::Player()
 	Texture* pTex = GetAnimator()->FindAnimation(L"Wilson_Idle_Down")->GetFrame(0);
 	Image* img = pTex->GetImage();
 	float width = (float)img->GetWidth();
-	float height= (float)img->GetHeight();
+	float height = (float)img->GetHeight();
 	Vec2D baseScale(width, height);
 	SetPos(Vec2D(300.f, 300.f));
 	SetScale(baseScale);
@@ -36,9 +38,17 @@ Player::Player()
 	GetCollider()->SetColliderSize(Vec2D(44.f, 72.f));
 }
 
+Player::Player(const Player& origin)
+	: Object(origin)
+	, m_fspeed(origin.m_fspeed)
+	, stateMachine(origin.stateMachine)
+	, controller(new PlayerController(this))
+{
+}
+
 Player::~Player()
 {
-	
+	delete controller;
 }
 
 void Player::GenerateAnimations(wstring& TexPath)
@@ -97,7 +107,7 @@ void Player::GetAnimations(vector<Texture*> frames, wstring& animationName, wstr
 		frames.clear();
 		animationName = L"";
 	}
-	
+
 	if (isEmpty)
 	{
 		MessageBox(nullptr, (L"Find " + TexPath + L"but it is Empty Dir.").c_str(), L"Notice", MB_OK);
@@ -107,46 +117,7 @@ void Player::GetAnimations(vector<Texture*> frames, wstring& animationName, wstr
 
 void Player::update()
 {
-	Vec2D vPos = GetPos();
-
-	if (KEY_PRESS(KEY::W))
-	{
-		vPos.y -= m_fspeed * fDT;
-		SetCurrDir(L"Up");
-	}
-	if (KEY_PRESS(KEY::A))
-	{
-		vPos.x -= m_fspeed * fDT;
-		SetCurrDir(L"Side");
-		bisRight = false;
-	}
-	if (KEY_PRESS(KEY::S))
-	{
-		vPos.y += m_fspeed * fDT;
-		SetCurrDir(L"Down");
-	}
-	if (KEY_PRESS(KEY::D))
-	{
-		vPos.x += m_fspeed * fDT;
-		SetCurrDir(L"Side");
-		bisRight = true;
-	}
-	if (KEY_PRESS(KEY::SPACE))
-	{
-		//attack();, chop
-	}
-
-	SetPos(vPos);
-
-	int wheel = InputMgr::GetInst()->GetMouseWheel();
-	if (wheel > 0)
-	{
-		CameraMgr::GetInst()->ZoomIn();
-	}
-	else if (wheel < 0)
-	{
-		CameraMgr::GetInst()->ZoomOut();
-	}
+	controller->update();
 
 	GetAnimator()->update();
 }

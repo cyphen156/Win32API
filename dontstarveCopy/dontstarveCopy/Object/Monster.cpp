@@ -1,23 +1,36 @@
 #include "pch.h"
 #include "Monster.h"
-#include "TimeMgr.h"
 #include "PathMgr.h"
 #include "ResourceMgr.h"
 #include "Animator.h"
+#include "MonsterController.h"
 
 Monster::Monster()
 	: m_fspeed(100.f)
-	, bisRight(true)
 	, m_vCenterPos(Vec2D(0.f, 0.f))
 	, m_fMaxDist(50.f)
 	, m_MonsterType(MonsterType::END)
+	, stateMachine(MonsterState::Alive)
+	, controller(new MonsterController(this))
 {
 	CreateAnimator();
 	SetCurrDir(L"Down");
 }
 
+Monster::Monster(const Monster& origin)
+	: Object(origin)
+	, m_fspeed(origin.m_fspeed)
+	, m_vCenterPos(origin.m_vCenterPos)
+	, m_fMaxDist(origin.m_fMaxDist)
+	, m_MonsterType(origin.m_MonsterType)
+	, stateMachine(origin.stateMachine)
+	, controller(new MonsterController(this))
+{
+}
+
 Monster::~Monster()
 {
+	delete controller;
 }
 
 void Monster::GenerateAnimations(wstring& TexPath)
@@ -97,26 +110,7 @@ void Monster::GetAnimations(vector<Texture*> frames, wstring& animationName, wst
 
 void Monster::update()
 {
-	Vec2D vPos = GetPos();
-
-	if (bisRight)
-	{
-		vPos.x += m_fspeed * fDT;
-	}
-	else
-	{
-		vPos.x -= m_fspeed * fDT;
-	}
-
-	float fDist = abs(m_vCenterPos.x - vPos.x) - m_fMaxDist;
-
-	if (fDist > 0)
-	{
-		bisRight = !bisRight;
-		vPos.x += bisRight ? fDist : -fDist;
-	}
-
-	SetPos(vPos);
+	controller->update();
 
 	GetAnimator()->update();
 }

@@ -65,6 +65,7 @@ void Animation::render(HDC hdc)
 	Vec2D	vCenter = pObj->GetPos() + m_vOffset;
 
 	Texture* currentFrameTex = GetFrame(m_iCurFrame);
+	bool isSideClip = m_strName.length() >= 5 && m_strName.compare(m_strName.length() - 5, 5, L"_Side") == 0;
 
 	XFORM transform;
 	GetWorldTransform(hdc, &transform);
@@ -79,6 +80,13 @@ void Animation::render(HDC hdc)
 		const RECT& box = currentFrameTex->GetOpaqueBounds();
 		REAL boxWidth = (REAL)(box.right - box.left), boxHeight = (REAL)(box.bottom - box.top);
 		RectF dest(vCenter.x - width / 2.f + box.left, vCenter.y - height / 2.f + box.top, boxWidth, boxHeight);
+
+		if (isSideClip && !pObj->IsRight())
+		{
+			dest.X = vCenter.x + width / 2.f - box.left;
+			dest.Width = -boxWidth;
+		}
+
 		graphics.DrawImage(img, dest, (REAL)box.left, (REAL)box.top, boxWidth, boxHeight, UnitPixel);
 	}
 	SetWorldTransform(hdc, &transform);
