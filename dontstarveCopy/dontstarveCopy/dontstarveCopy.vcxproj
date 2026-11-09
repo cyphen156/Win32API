@@ -150,11 +150,11 @@
     <ClInclude Include="Component\PlayerController.h" />
     <ClInclude Include="Core\BehaviorMask.h" />
     <ClInclude Include="Core\StateMachine.h" />
+    <ClInclude Include="Interface\IHittable.h" />
     <ClInclude Include="Manager\CameraMgr.h" />
     <ClInclude Include="Core\Animation.h" />
     <ClInclude Include="Component\Animator.h" />
     <ClInclude Include="Core\WorldGenerator.h" />
-    <ClInclude Include="Object\Attack.h" />
     <ClInclude Include="Component\Collider.h" />
     <ClInclude Include="Manager\CollisionMgr.h" />
     <ClInclude Include="Core\Core.h" />
@@ -206,7 +206,6 @@
     <ClCompile Include="Core\Animation.cpp" />
     <ClCompile Include="Component\Animator.cpp" />
     <ClCompile Include="Core\WorldGenerator.cpp" />
-    <ClCompile Include="Object\Attack.cpp" />
     <ClCompile Include="Component\Collider.cpp" />
     <ClCompile Include="Manager\CollisionMgr.cpp" />
     <ClCompile Include="Core\Core.cpp" />

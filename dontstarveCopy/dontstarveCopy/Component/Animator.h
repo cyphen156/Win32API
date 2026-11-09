@@ -25,7 +25,9 @@ public:
 		, float fDuration
 		, Vec2D vOffset);
 	Animation* FindAnimation(const wstring& name);
-	void Play(ObjType objType, const wstring& strName, bool isRepeat, wstring dir);
+	void Play(ObjType objType, const wstring& strName, bool isRepeat, const wstring& dir);
+	bool IsFinish();
+
 	Object* GetOwner() { return m_pOwner; };
 
 	void update();

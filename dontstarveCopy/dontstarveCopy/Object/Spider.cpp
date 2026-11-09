@@ -6,6 +6,9 @@
 Spider::Spider()
 {
 	SetMonsterType(MonsterType::Spider);
+	SetHp(100);
+	SetAtk(20);
+	SetInvincibleDuration(16.f / 30.f);
 
 	// 리소스 로딩 - Texture
 	wstring resPath = L"Spider";

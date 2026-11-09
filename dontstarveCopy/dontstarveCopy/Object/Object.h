@@ -44,7 +44,7 @@ public:
     Animator* GetAnimator() { return m_pAnimator; }
 
     void SetCurrDir(wstring dir) { m_direction = dir; }
-    wstring GetCurrDir() const { return m_direction; }
+    const wstring& GetCurrDir() const { return m_direction; }
     bool IsRight() { return bisRight; }
     void SetIsRight(bool isRight) { bisRight = isRight; }
     /*void SetKeyState(KEY_STATE state) { m_currentKeyState = state; }

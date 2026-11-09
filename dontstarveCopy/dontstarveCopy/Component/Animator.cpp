@@ -50,9 +50,9 @@ Animation* Animator::FindAnimation(const wstring& name)
 	return iter->second;
 }
 
-void Animator::Play(ObjType objType, const wstring& strName, bool isRepeat, wstring dir)
+void Animator::Play(ObjType objType, const wstring& strName, bool isRepeat, const wstring& dir)
 {
-	wstring objTypeStr;
+	const wchar_t* objTypeStr = L"";
 	switch (objType)
 	{
 	case ObjType::Player:  objTypeStr = L"Wilson_"; break;
@@ -70,10 +70,42 @@ void Animator::Play(ObjType objType, const wstring& strName, bool isRepeat, wstr
 	default: objTypeStr = L""; break;
 	}
 
+	if (m_pCurAnimation != nullptr)
+	{
+		const wstring& currentName = m_pCurAnimation->GetName();
+		size_t prefixLength = wcslen(objTypeStr);
+		bool isSameClip = currentName.length() == prefixLength + strName.length() + 1 + dir.length()
+			&& currentName.compare(prefixLength, strName.length(), strName) == 0
+			&& currentName.compare(prefixLength + strName.length() + 1, dir.length(), dir) == 0;
+
+		if (isSameClip)
+		{
+			m_bRepeat = isRepeat;
+
+			if (!isRepeat && m_pCurAnimation->IsFinish())
+			{
+				m_pCurAnimation->SetFrame(0);
+			}
+			return;
+		}
+	}
+
 	wstring animationName = objTypeStr + strName + L"_" + dir;
 
-	m_pCurAnimation = FindAnimation(animationName);
+	Animation* pAnimation = FindAnimation(animationName);
+	if (pAnimation == nullptr)
+	{
+		return;
+	}
+
+	m_pCurAnimation = pAnimation;
+	m_pCurAnimation->SetFrame(0);
 	m_bRepeat = isRepeat;
+}
+
+bool Animator::IsFinish()
+{
+	return m_pCurAnimation != nullptr && !m_bRepeat && m_pCurAnimation->IsFinish();
 }
 
 void Animator::update()

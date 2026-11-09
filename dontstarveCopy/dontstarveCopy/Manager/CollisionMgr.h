@@ -28,6 +28,7 @@ private:
 public:
 	void update();
 	void CheckObjType(ObjType left, ObjType right);
+	Collider* OverlapBox(Vec2D center, Vec2D size, ObjType group);
 	void Reset() { memset(m_arrCheck, 0, sizeof(UINT) * (UINT)ObjType::END); }
 };
 

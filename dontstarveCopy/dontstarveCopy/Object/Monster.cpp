@@ -3,15 +3,33 @@
 #include "PathMgr.h"
 #include "ResourceMgr.h"
 #include "Animator.h"
+#include "Collider.h"
+#include "TimeMgr.h"
+#include "EventMgr.h"
 #include "MonsterController.h"
 
+void Monster::TakeDamage(int amount)
+{
+	hp -= amount;
+
+	if (hp <= 0)
+	{
+		stateMachine.TryChangeState(MonsterState::Dead);
+		GetAnimator()->Play(ObjType::Monster, L"Death", false, L"Down");
+	}
+}
+
 Monster::Monster()
-	: m_fspeed(100.f)
+	: hp(0)
+	, atk(0)
+	, m_fspeed(100.f)
 	, m_vCenterPos(Vec2D(0.f, 0.f))
 	, m_fMaxDist(50.f)
 	, m_MonsterType(MonsterType::END)
 	, stateMachine(MonsterState::Alive)
 	, controller(new MonsterController(this))
+	, invincibleDuration(0.f)
+	, invincibleTime(0.f)
 {
 	CreateAnimator();
 	SetCurrDir(L"Down");
@@ -19,12 +37,16 @@ Monster::Monster()
 
 Monster::Monster(const Monster& origin)
 	: Object(origin)
+	, hp(origin.hp)
+	, atk(origin.atk)
 	, m_fspeed(origin.m_fspeed)
 	, m_vCenterPos(origin.m_vCenterPos)
 	, m_fMaxDist(origin.m_fMaxDist)
 	, m_MonsterType(origin.m_MonsterType)
 	, stateMachine(origin.stateMachine)
 	, controller(new MonsterController(this))
+	, invincibleDuration(origin.invincibleDuration)
+	, invincibleTime(origin.invincibleTime)
 {
 }
 
@@ -110,7 +132,65 @@ void Monster::GetAnimations(vector<Texture*> frames, wstring& animationName, wst
 
 void Monster::update()
 {
+	if (stateMachine.GetState() == MonsterState::Dead)
+	{
+		if (GetAnimator()->IsFinish())
+		{
+			DeleteObj(this);
+			return;
+		}
+	}
+	else if (stateMachine.GetState() == MonsterState::Invincible)
+	{
+		invincibleTime -= fDT;
+
+		if (invincibleTime <= 0.f)
+		{
+			stateMachine.TryChangeState(MonsterState::Alive);
+		}
+	}
+
 	controller->update();
 
 	GetAnimator()->update();
+}
+
+void Monster::OnCollisionEnter(Collider* pOther)
+{
+	if (stateMachine.GetState() == MonsterState::Dead)
+	{
+		return;
+	}
+
+	IHittable* target = dynamic_cast<IHittable*>(pOther->GetOwner());
+	if (target == nullptr)
+	{
+		return;
+	}
+
+	tEvent event = {};
+	event.eEvent = EVENT_TYPE::HIT;
+	event.lParam = reinterpret_cast<DWORD_PTR>(target);
+	event.wParam = static_cast<DWORD_PTR>(atk);
+
+	EventMgr::GetInst()->AddEvent(event);
+}
+
+void Monster::OnHit(int damage)
+{
+	if (stateMachine.GetState() != MonsterState::Alive)
+	{
+		return;
+	}
+
+	TakeDamage(damage);
+
+	if (stateMachine.GetState() == MonsterState::Dead)
+	{
+		return;
+	}
+
+	invincibleTime = invincibleDuration;
+	stateMachine.TryChangeState(MonsterState::Invincible);
+	GetAnimator()->Play(ObjType::Monster, L"Hit", false, L"Down");
 }

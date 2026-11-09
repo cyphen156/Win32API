@@ -3,6 +3,8 @@
 #include "Texture.h"
 #include "StateMachine.h"
 
+#include "Interface/IHittable.h"
+
 class Texture;
 class MonsterController;
 
@@ -10,6 +12,7 @@ enum class MonsterState
 {
     None,
     Alive,
+    Invincible,
     Dead,
 
     END
@@ -23,9 +26,11 @@ enum class MonsterBehavior
     END
 };
 
-class Monster : public Object
+class Monster : public Object, public IHittable
 {
 private:
+    int hp;
+    int atk;
     float   m_fspeed;
 
     Vec2D   m_vCenterPos;
@@ -35,6 +40,11 @@ private:
     StateMachine<MonsterState> stateMachine;
     MonsterController* controller;
 
+    float invincibleDuration;
+    float invincibleTime;
+
+    void TakeDamage(int amount);
+
 public:
     Monster();
     Monster(const Monster& origin);
@@ -43,6 +53,9 @@ public:
     virtual void GenerateAnimations(wstring& TexPath);
     virtual void GetAnimations(vector<Texture*> frames, wstring& animationName, wstring& TexPath);
     virtual void update();
+    void OnCollisionEnter(Collider* pOther) override;
+
+    void OnHit(int damage) override;
 
     float GetSpeed() { return m_fspeed; }
 
@@ -56,4 +69,12 @@ public:
     void SetMonsterType(MonsterType type) { m_MonsterType = type; }
 
     MonsterState GetState() { return stateMachine.GetState(); }
+
+    void SetHp(int value) { hp = value; }
+    int GetHp() { return hp; }
+
+    void SetAtk(int value) { atk = value; }
+    int GetAtk() { return atk; }
+
+    void SetInvincibleDuration(float seconds) { invincibleDuration = seconds; }
 };

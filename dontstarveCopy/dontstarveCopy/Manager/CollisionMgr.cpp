@@ -146,3 +146,43 @@ void CollisionMgr::CheckObjType(ObjType left, ObjType right)
 		m_arrCheck[iRow] |= (1 << iCol);
 	}
 }
+
+Collider* CollisionMgr::OverlapBox(Vec2D center, Vec2D size, ObjType group)
+{
+	const vector<Object*>& objects = SceneMgr::GetInst()->GetCurScene()->GetObjectGroup(group);
+
+	Collider* nearest = nullptr;
+	float nearestDistance = 0.f;
+
+	for (size_t i = 0; i < objects.size(); ++i)
+	{
+		if (objects[i]->isDead() || objects[i]->GetCollider() == nullptr)
+		{
+			continue;
+		}
+
+		Collider* collider = objects[i]->GetCollider();
+		Vec2D colliderPos = collider->GetFinalPos();
+		Vec2D colliderSize = collider->GetColliderSize();
+
+		if (abs(center.x - colliderPos.x) >= (size.x + colliderSize.x) / 2.f
+			|| abs(center.y - colliderPos.y) >= (size.y + colliderSize.y) / 2.f)
+		{
+			continue;
+		}
+
+		float dx = colliderPos.x - center.x;
+		float dy = colliderPos.y - center.y;
+		float distance = dx * dx + dy * dy;
+
+		if (nearest != nullptr && distance >= nearestDistance)
+		{
+			continue;
+		}
+
+		nearest = collider;
+		nearestDistance = distance;
+	}
+
+	return nearest;
+}

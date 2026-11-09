@@ -17,14 +17,12 @@ public:
 			return false;
 		}
 
-		TState prev = state;
 		state = next;
 		return true;
 	}
 
 	bool ForceChangeState(TState next)
 	{
-		TState prev = state;
 		state = next;
 		return true;
 	}

@@ -6,6 +6,9 @@
 Pigman::Pigman()
 {
 	SetMonsterType(MonsterType::Pigman);
+	SetHp(250);
+	SetAtk(35);
+	SetInvincibleDuration(14.f / 30.f);
 
 	// 리소스 로딩 - Texture
 	wstring resPath = L"Pigman";

@@ -1,18 +1,33 @@
 #include "pch.h"
 #include "Player.h"
-#include "TimeMgr.h"
-#include "InputMgr.h"
 #include "PathMgr.h"
 #include "ResourceMgr.h"
 #include "Animator.h"
 #include "Animation.h"
-#include "CameraMgr.h"
+#include "TimeMgr.h"
 #include "PlayerController.h"
 
+void Player::TakeDamage(int amount)
+{
+	hp -= amount;
+
+	if (hp <= 0)
+	{
+		stateMachine.TryChangeState(PlayerState::Dead);
+		GetAnimator()->Play(ObjType::Player, L"Death", false, L"Down");
+	}
+}
+
 Player::Player()
-	: m_fspeed(100.f)
+	: hp(170)
+	, atk(25)
+	, m_fspeed(100.f)
+	, atkRange(80.f)
+	, atkWidth(60.f)
 	, stateMachine(PlayerState::Alive)
 	, controller(new PlayerController(this))
+	, invincibleDuration(21.f / 30.f)
+	, invincibleTime(0.f)
 {
 	// 리소스 로딩 - Texture
 
@@ -40,9 +55,15 @@ Player::Player()
 
 Player::Player(const Player& origin)
 	: Object(origin)
+	, hp(origin.hp)
+	, atk(origin.atk)
 	, m_fspeed(origin.m_fspeed)
+	, atkRange(origin.atkRange)
+	, atkWidth(origin.atkWidth)
 	, stateMachine(origin.stateMachine)
 	, controller(new PlayerController(this))
+	, invincibleDuration(origin.invincibleDuration)
+	, invincibleTime(origin.invincibleTime)
 {
 }
 
@@ -117,6 +138,24 @@ void Player::GetAnimations(vector<Texture*> frames, wstring& animationName, wstr
 
 void Player::update()
 {
+	if (stateMachine.GetState() == PlayerState::Dead)
+	{
+		if (GetAnimator()->IsFinish())
+		{
+			DeleteObj(this);
+			return;
+		}
+	}
+	else if (stateMachine.GetState() == PlayerState::Invincible)
+	{
+		invincibleTime -= fDT;
+
+		if (invincibleTime <= 0.f)
+		{
+			stateMachine.TryChangeState(PlayerState::Alive);
+		}
+	}
+
 	controller->update();
 
 	GetAnimator()->update();
@@ -135,5 +174,57 @@ void Player::render(HDC hdc)
 	SelectObject(hdc, hPrevPen);
 	DeleteObject(hOldPen);
 
+	// 공격 충돌체 시각화
+#ifdef _DEBUG
+	if (controller->IsPunching())
+	{
+		Vec2D facing(0.f, 1.f);
+		if (GetCurrDir() == L"Up")
+		{
+			facing = Vec2D(0.f, -1.f);
+		}
+		if (GetCurrDir() == L"Side")
+		{
+			facing = Vec2D(IsRight() ? 1.f : -1.f, 0.f);
+		}
+
+		Vec2D center(GetPos().x + facing.x * atkRange / 2.f, GetPos().y + facing.y * atkRange / 2.f);
+		float boxWidth = facing.x != 0.f ? atkRange : atkWidth;
+		float boxHeight = facing.x != 0.f ? atkWidth : atkRange;
+
+		XFORM transform;
+		GetWorldTransform(hdc, &transform);
+		ModifyWorldTransform(hdc, nullptr, MWT_IDENTITY);
+		{
+			Graphics graphics(hdc);
+			Matrix matrix(transform.eM11, transform.eM12, transform.eM21, transform.eM22, transform.eDx, transform.eDy);
+			graphics.SetTransform(&matrix);
+
+			Pen pen(Color(255, 0, 160, 255));
+			graphics.DrawRectangle(&pen, center.x - boxWidth / 2.f, center.y - boxHeight / 2.f, boxWidth, boxHeight);
+		}
+		SetWorldTransform(hdc, &transform);
+	}
+#endif
+
 	componentRender(hdc);
+}
+
+void Player::OnHit(int damage)
+{
+	if (stateMachine.GetState() != PlayerState::Alive)
+	{
+		return;
+	}
+
+	TakeDamage(damage);
+
+	if (stateMachine.GetState() == PlayerState::Dead)
+	{
+		return;
+	}
+
+	invincibleTime = invincibleDuration;
+	stateMachine.TryChangeState(PlayerState::Invincible);
+	GetAnimator()->Play(ObjType::Player, L"Hit", false, GetCurrDir());
 }

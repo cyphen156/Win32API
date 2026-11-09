@@ -3,6 +3,7 @@
 #include "SceneMgr.h"
 #include "Scene.h"
 #include "GameMgr.h"
+#include "Interface/IHittable.h"
 
 EventMgr::EventMgr() {}
 
@@ -14,32 +15,40 @@ void EventMgr::Execute(const tEvent& event)
 
 	switch (evtType)
 	{
-		case EVENT_TYPE::CREATE_OBJ:
-		{
-			Object* newObj = (Object*)event.lParam;
-			ObjType objType = (ObjType)event.wParam;
+	case EVENT_TYPE::CREATE_OBJ:
+	{
+		Object* newObj = (Object*)event.lParam;
+		ObjType objType = (ObjType)event.wParam;
 
-			SceneMgr::GetInst()->GetCurScene()->AddObj(newObj, objType);
-			break;
-		}
-		case EVENT_TYPE::DELETE_OBJ:
-		{
-			Object* deadObj = (Object*)event.lParam;
-			deadObj->SetDead();
-			SceneMgr::GetInst()->GetCurScene()->RemoveObj(deadObj);
-			m_vecDeadObj.push_back(deadObj);
-			break;
-		}
-		case EVENT_TYPE::CHANGE_SCENE:
-		{
-			SceneMgr::GetInst()->ChangeScene((SceneType)event.lParam);
-			break;
-		}
-		case EVENT_TYPE::PAUSE_GAME:
-		{
-			GameMgr::GetInst()->SetPause(event.lParam != 0);
-			break;
-		}
+		SceneMgr::GetInst()->GetCurScene()->AddObj(newObj, objType);
+		break;
+	}
+	case EVENT_TYPE::DELETE_OBJ:
+	{
+		Object* deadObj = (Object*)event.lParam;
+		deadObj->SetDead();
+		SceneMgr::GetInst()->GetCurScene()->RemoveObj(deadObj);
+		m_vecDeadObj.push_back(deadObj);
+		break;
+	}
+	case EVENT_TYPE::CHANGE_SCENE:
+	{
+		SceneMgr::GetInst()->ChangeScene((SceneType)event.lParam);
+		break;
+	}
+	case EVENT_TYPE::PAUSE_GAME:
+	{
+		GameMgr::GetInst()->SetPause(event.lParam != 0);
+		break;
+	}
+	case EVENT_TYPE::HIT:
+	{
+		IHittable* target = (IHittable*)event.lParam;
+		int damage = (int)event.wParam;
+
+		target->OnHit(damage);
+		break;
+	}
 	}
 }
 

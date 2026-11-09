@@ -7,6 +7,7 @@ const BehaviorMask<MonsterState, MonsterBehavior> MonsterController::allowedBeha
 {
 	{ false, false },	// None
 	{ true,  true  },	// Alive
+	{ false, false },	// Invincible
 	{ false, false },	// Dead
 };
 
