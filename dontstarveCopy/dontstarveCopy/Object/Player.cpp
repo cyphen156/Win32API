@@ -15,6 +15,11 @@ void Player::TakeDamage(int amount)
 	{
 		stateMachine.TryChangeState(PlayerState::Dead);
 		GetAnimator()->Play(ObjType::Player, L"Death", false, L"Down");
+
+		if (GetCollider() != nullptr)
+		{
+			GetCollider()->SetActive(false);
+		}
 	}
 }
 

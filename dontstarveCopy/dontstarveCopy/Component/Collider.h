@@ -18,6 +18,7 @@ private:
 
 	UINT	m_iColliderID;
 	bool	m_bCol;
+	bool	isActive;
 
 public:
 	Collider();
@@ -33,6 +34,8 @@ public:
 	UINT GetColliderID() { return m_iColliderID; }
 	Vec2D GetFinalPos() { return m_vFinalPos; }
 	Object* GetOwner() { return m_pOwner; }
+	void SetActive(bool active) { isActive = active; }
+	bool IsActive() { return isActive; }
 	void finalupdate();
 	void render(HDC hdc);
 

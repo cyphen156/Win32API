@@ -51,8 +51,8 @@ void TimeMgr::update()
 	}
 
 #ifdef _DEBUG
-	if (m_dDT > (1. / 60.))
-		m_dDT = (1. / 60.);
+	if (m_dDT > (1. / 10.))
+		m_dDT = (1. / 10.);
 #endif
 
 }

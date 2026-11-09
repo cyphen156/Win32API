@@ -16,6 +16,11 @@ void Monster::TakeDamage(int amount)
 	{
 		stateMachine.TryChangeState(MonsterState::Dead);
 		GetAnimator()->Play(ObjType::Monster, L"Death", false, L"Down");
+
+		if (GetCollider() != nullptr)
+		{
+			GetCollider()->SetActive(false);
+		}
 	}
 }
 

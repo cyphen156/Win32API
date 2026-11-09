@@ -58,7 +58,7 @@ void CollisionMgr::CollisionObjUpdate(ObjType left, ObjType right)
 				// 이전에도 충돌중
 				if (iter->second) 
 				{
-					if (rowObj[i]->isDead() || colObj[j]->isDead())
+					if (rowObj[i]->isDead() || colObj[j]->isDead() || !pLeft->IsActive() || !pRight->IsActive())
 					{
 						pLeft->OnCollisionExit(pRight);
 						pRight->OnCollisionExit(pLeft);
@@ -73,7 +73,7 @@ void CollisionMgr::CollisionObjUpdate(ObjType left, ObjType right)
 				else
 				{
 					// 이전에는 충돌 안함
-					if (!rowObj[i]->isDead() && !colObj[j]->isDead())
+					if (!rowObj[i]->isDead() && !colObj[j]->isDead() && pLeft->IsActive() && pRight->IsActive())
 					{
 						pLeft->OnCollisionEnter(pRight);
 						pRight->OnCollisionEnter(pLeft);
@@ -147,8 +147,11 @@ void CollisionMgr::CheckObjType(ObjType left, ObjType right)
 	}
 }
 
-Collider* CollisionMgr::OverlapBox(Vec2D center, Vec2D size, ObjType group)
+Collider* CollisionMgr::BoxCast(Vec2D origin, Vec2D direction, float range, float width, ObjType group)
 {
+	Vec2D center(origin.x + direction.x * range / 2.f, origin.y + direction.y * range / 2.f);
+	Vec2D size = direction.x != 0.f ? Vec2D(range, width) : Vec2D(width, range);
+
 	const vector<Object*>& objects = SceneMgr::GetInst()->GetCurScene()->GetObjectGroup(group);
 
 	Collider* nearest = nullptr;
@@ -156,7 +159,7 @@ Collider* CollisionMgr::OverlapBox(Vec2D center, Vec2D size, ObjType group)
 
 	for (size_t i = 0; i < objects.size(); ++i)
 	{
-		if (objects[i]->isDead() || objects[i]->GetCollider() == nullptr)
+		if (objects[i]->isDead() || objects[i]->GetCollider() == nullptr || !objects[i]->GetCollider()->IsActive())
 		{
 			continue;
 		}
@@ -171,8 +174,8 @@ Collider* CollisionMgr::OverlapBox(Vec2D center, Vec2D size, ObjType group)
 			continue;
 		}
 
-		float dx = colliderPos.x - center.x;
-		float dy = colliderPos.y - center.y;
+		float dx = colliderPos.x - origin.x;
+		float dy = colliderPos.y - origin.y;
 		float distance = dx * dx + dy * dy;
 
 		if (nearest != nullptr && distance >= nearestDistance)

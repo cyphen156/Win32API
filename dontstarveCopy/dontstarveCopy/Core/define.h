@@ -112,7 +112,7 @@ enum class EVENT_TYPE
 	DELETE_OBJ,
 	CHANGE_SCENE,
 	PAUSE_GAME,
-	HIT,
+	HIT,		// lParam IHittable*, wParam 피해량
 
 	END,
 };

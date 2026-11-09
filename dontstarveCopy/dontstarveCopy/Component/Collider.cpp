@@ -9,6 +9,7 @@ Collider::Collider()
 	: m_pOwner(nullptr)
 	, m_iColliderID(g_iNextID++)
 	, m_bCol(false)
+	, isActive(true)
 {
 }
 
@@ -18,6 +19,7 @@ Collider::Collider(const Collider& origin)
 	, m_vColliderSize(origin.m_vColliderSize)
 	, m_iColliderID(g_iNextID++)
 	, m_bCol(false)
+	, isActive(true)
 {
 	UINT m_iColliderId;
 }

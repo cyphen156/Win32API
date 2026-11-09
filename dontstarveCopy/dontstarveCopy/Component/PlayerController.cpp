@@ -70,10 +70,7 @@ bool PlayerController::Punch()
 		facing = Vec2D(owner->IsRight() ? 1.f : -1.f, 0.f);
 	}
 
-	Vec2D center(owner->GetPos().x + facing.x * owner->GetAtkRange() / 2.f, owner->GetPos().y + facing.y * owner->GetAtkRange() / 2.f);
-	Vec2D size = facing.x != 0.f ? Vec2D(owner->GetAtkRange(), owner->GetAtkWidth()) : Vec2D(owner->GetAtkWidth(), owner->GetAtkRange());
-
-	Collider* hit = CollisionMgr::GetInst()->OverlapBox(center, size, ObjType::Monster);
+	Collider* hit = CollisionMgr::GetInst()->BoxCast(owner->GetPos(), facing, owner->GetAtkRange(), owner->GetAtkWidth(), ObjType::Monster);
 	if (hit == nullptr)
 	{
 		return false;

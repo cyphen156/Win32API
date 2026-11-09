@@ -44,7 +44,7 @@ void Animation::update()
 
 		if (m_vecFrames.size() <= m_iCurFrame)
 		{
-			m_iCurFrame = 0;
+			m_iCurFrame = (int)m_vecFrames.size() - 1;
 			m_bFinish = true;
 			m_fAccTime = 0.f;
 			return;
@@ -55,12 +55,6 @@ void Animation::update()
 
 void Animation::render(HDC hdc)
 {
-	// 재생 종료 시퀸스
-	if (m_bFinish)
-	{
-		return;
-	}
-
 	Object* pObj = m_pAnimator->GetOwner();
 	Vec2D	vCenter = pObj->GetPos() + m_vOffset;
 
