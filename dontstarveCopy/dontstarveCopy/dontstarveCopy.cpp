@@ -215,7 +215,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         }
         break;
     case WM_SIZE:
-        if (wParam != SIZE_MINIMIZED)
+        if (wParam != SIZE_MINIMIZED && LOWORD(lParam) != 0 && HIWORD(lParam) != 0)
         {
             GetClientRect(hWnd, &windowInfo);
         }
