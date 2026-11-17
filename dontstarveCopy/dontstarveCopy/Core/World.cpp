@@ -81,10 +81,10 @@ void World::Render(HDC hdc)
     SetStretchBltMode(hdc, COLORONCOLOR);
 
 	RECT view = CameraMgr::GetInst()->GetViewArea();    // 카메라 기준 절두 영역 확보 및 컬링
-    int firstX = max((int)floor((float)view.left / TILESIZE), 0);
-    int lastX = min((int)ceil((float)view.right / TILESIZE), (int)wldSize.x);
-    int firstY = max((int)floor((float)view.top / TILESIZE), 0);
-    int lastY = min((int)ceil((float)view.bottom / TILESIZE), (int)wldSize.y);
+    int firstX = max((int)floor((float)view.left / TILESIZE + 0.5f), 0);
+    int lastX = min((int)ceil((float)view.right / TILESIZE + 0.5f), (int)wldSize.x);
+    int firstY = max((int)floor((float)view.top / TILESIZE + 0.5f), 0);
+    int lastY = min((int)ceil((float)view.bottom / TILESIZE + 0.5f), (int)wldSize.y);
     for (int x = firstX; x < lastX; ++x)
     {
         for (int y = firstY; y < lastY; ++y)

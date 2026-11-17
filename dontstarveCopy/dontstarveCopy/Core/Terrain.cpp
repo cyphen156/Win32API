@@ -43,7 +43,7 @@ void Terrain::render(HDC hdc)
     Texture* texture = tileDefs[(UINT)tileType].tiles[tileIndex].texture;
     HDC textureDC = texture->GetDC();
     StretchBlt(hdc,
-        (int)position.x * TILESIZE, (int)position.y * TILESIZE, TILESIZE, TILESIZE, 
+        (int)position.x * TILESIZE - TILESIZE / 2, (int)position.y * TILESIZE - TILESIZE / 2, TILESIZE, TILESIZE,
         textureDC,
         0, 0, texture->Width(), texture->Height(), 
         SRCCOPY);
