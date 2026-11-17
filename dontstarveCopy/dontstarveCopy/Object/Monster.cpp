@@ -197,5 +197,5 @@ void Monster::OnHit(int damage)
 
 	invincibleTime = invincibleDuration;
 	stateMachine.TryChangeState(MonsterState::Invincible);
-	GetAnimator()->Play(ObjType::Monster, L"Hit", false, L"Down");
+	GetAnimator()->Play(ObjType::Monster, L"Hit", false, L"Down", 0);
 }

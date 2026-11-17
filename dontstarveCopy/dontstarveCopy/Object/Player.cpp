@@ -231,5 +231,5 @@ void Player::OnHit(int damage)
 
 	invincibleTime = invincibleDuration;
 	stateMachine.TryChangeState(PlayerState::Invincible);
-	GetAnimator()->Play(ObjType::Player, L"Hit", false, GetCurrDir());
+	GetAnimator()->Play(ObjType::Player, L"Hit", false, GetCurrDir(), 0);
 }

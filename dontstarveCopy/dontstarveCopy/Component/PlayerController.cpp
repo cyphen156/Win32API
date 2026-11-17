@@ -82,7 +82,7 @@ bool PlayerController::Punch()
 		return false;
 	}
 
-	owner->GetAnimator()->Play(ObjType::Player, L"Punch", false, owner->GetCurrDir());
+	owner->GetAnimator()->Play(ObjType::Player, L"Attack", false, owner->GetCurrDir());
 	isPunching = true;
 
 	tEvent event = {};

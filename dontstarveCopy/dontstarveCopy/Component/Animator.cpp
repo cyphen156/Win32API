@@ -10,6 +10,27 @@ Animator::Animator()
 {
 }
 
+Animator::Animator(const Animator& origin)
+	: m_pCurAnimation(nullptr)
+	, m_pOwner(nullptr)
+	, m_bRepeat(origin.m_bRepeat)
+{
+	map<wstring, Animation*>::const_iterator iter = origin.m_mapAnimation.begin();
+
+	for (; iter != origin.m_mapAnimation.end(); ++iter)
+	{
+		Animation* pAnim = new Animation(*iter->second);
+		pAnim->m_pAnimator = this;
+
+		m_mapAnimation.insert(make_pair(iter->first, pAnim));
+
+		if (iter->second == origin.m_pCurAnimation)
+		{
+			m_pCurAnimation = pAnim;
+		}
+	}
+}
+
 Animator::~Animator()
 {
 	Safe_Delete_Map(m_mapAnimation);
@@ -28,10 +49,7 @@ void Animator::CreateAnimation(const wstring& name
 		return;
 	}
 
-	Animation* pAnim = FindAnimation(name);
-	assert(pAnim == nullptr);
-	
-	pAnim = new Animation;
+	Animation* pAnim = new Animation;
 	pAnim->SetName(name);
 	pAnim->m_pAnimator = this;
 	pAnim->Create(frames, fDuration, vOffset);
@@ -50,7 +68,7 @@ Animation* Animator::FindAnimation(const wstring& name)
 	return iter->second;
 }
 
-void Animator::Play(ObjType objType, const wstring& strName, bool isRepeat, const wstring& dir)
+void Animator::Play(ObjType objType, const wstring& strName, bool isRepeat, const wstring& dir, int frame)
 {
 	const wchar_t* objTypeStr = L"";
 	switch (objType)
@@ -70,7 +88,7 @@ void Animator::Play(ObjType objType, const wstring& strName, bool isRepeat, cons
 	default: objTypeStr = L""; break;
 	}
 
-	if (m_pCurAnimation != nullptr)
+	if (frame < 0 && m_pCurAnimation != nullptr)
 	{
 		const wstring& currentName = m_pCurAnimation->GetName();
 		size_t prefixLength = wcslen(objTypeStr);
@@ -95,11 +113,15 @@ void Animator::Play(ObjType objType, const wstring& strName, bool isRepeat, cons
 	Animation* pAnimation = FindAnimation(animationName);
 	if (pAnimation == nullptr)
 	{
+		pAnimation = FindAnimation(objTypeStr + strName + L"_Down");
+	}
+	if (pAnimation == nullptr)
+	{
 		return;
 	}
 
 	m_pCurAnimation = pAnimation;
-	m_pCurAnimation->SetFrame(0);
+	m_pCurAnimation->SetFrame(frame < 0 ? 0 : frame);
 	m_bRepeat = isRepeat;
 }
 
@@ -112,25 +134,20 @@ void Animator::update()
 {
 	if (m_pCurAnimation != nullptr)
 	{
+		m_pCurAnimation->update();
+
 		if (m_bRepeat && m_pCurAnimation->IsFinish())
 		{
 			m_pCurAnimation->SetFrame(0);
 		}
-		m_pCurAnimation->update();
 	}
 	// 애니메이션 재생
 }
 
 void Animator::render(HDC hdc)
 {
-	//MessageBox(nullptr, (L"After Call Anim Render"), L"Notice", MB_OK);
-
 	if (m_pCurAnimation != nullptr)
 	{
-		if (m_bRepeat && m_pCurAnimation->IsFinish())
-		{
-			m_pCurAnimation->SetFrame(0);
-		}
 		m_pCurAnimation->render(hdc);
 	}
 	// 애니메이션 렌더링

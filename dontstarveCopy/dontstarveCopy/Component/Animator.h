@@ -15,6 +15,7 @@ private:
 
 public:
 	Animator();
+	Animator(const Animator& origin);
 	~Animator();
 
 	/**
@@ -25,7 +26,7 @@ public:
 		, float fDuration
 		, Vec2D vOffset);
 	Animation* FindAnimation(const wstring& name);
-	void Play(ObjType objType, const wstring& strName, bool isRepeat, const wstring& dir);
+	void Play(ObjType objType, const wstring& strName, bool isRepeat, const wstring& dir, int frame = -1);
 	bool IsFinish();
 
 	Object* GetOwner() { return m_pOwner; };
