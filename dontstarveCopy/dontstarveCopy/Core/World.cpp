@@ -21,9 +21,17 @@ const WorldDef worldDefs[END] =
         } 
     },
 	{ 
-        Cave, 
-        { 
-        } 
+        Cave,
+        {
+            BiomeType::Cave,
+            BiomeType::Fungus,
+            BiomeType::FungusRed,
+            BiomeType::FungusGreen,
+            BiomeType::Sinkhole,
+            BiomeType::Mud,
+            BiomeType::Underrock,
+            BiomeType::Marsh
+        }
     },
 };
 

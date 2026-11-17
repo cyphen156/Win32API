@@ -3,6 +3,7 @@
 #include "Core/WorldGenerator.h"
 #include "Core/Biome.h"
 #include "Core/Tile.h"
+#include "Core/Texture.h"
 #include "Core/EnumString.h"
 #include "Manager/PathMgr.h"
 #include "Manager/ResourceMgr.h"
@@ -122,26 +123,6 @@ void WorldGenerator::bfsExpandBiome(const POINT& center, int& biomeTiles, BiomeT
 // 바이옴별 중심좌표 생성
 bool WorldGenerator::tryGenerateWorld(WorldType worldType, int tryCount, World*& world)
 {
-    // 타일 세트 로딩
-    for (UINT i = 0; i < TILEDEFCOUNT; ++i)
-    {
-        TileDef& tileDef = tileDefs[i];
-        if (tileDef.tiles[0].texture != nullptr)
-        {
-            continue;
-        }
-        wstring tileName = EnumString::ToWString(tileDef.type);
-        wstring setPath = PathMgr::GetInst()->GetContentPath();
-        setPath += L"\\Textures\\Terrain\\" + tileName + L"\\" + tileDef.setName + L"\\";
-        for (int index = 0; index < tileDef.tileCount; ++index)
-        {
-            wchar_t indexName[8] = {};
-            swprintf_s(indexName, L"%03d", index);
-            wstring texName = tileName + L"_" + tileDef.setName + L"_" + indexName + L".png";
-            tileDef.tiles[index].texture = ResourceMgr::GetInst()->LoadTexture(texName, setPath + texName);
-        }
-    }
-
     World* wld = new World(worldType);
     wld->SetWorldSize(false);
     vector<vector<Terrain>>& worldMap = wld->getTerrains();
@@ -245,6 +226,47 @@ bool WorldGenerator::tryGenerateWorld(WorldType worldType, int tryCount, World*&
             return false;
         }
     }
+
+    // 타일 세트 로딩
+    for (int x = 0; x < worldWidth; ++x)
+    {
+        for (int y = 0; y < worldHeight; ++y)
+        {
+            TileDef& tileDef = tileDefs[(UINT)worldMap[x][y].getTileType()];
+            if (tileDef.tiles[0].texture != nullptr)
+            {
+                continue;
+            }
+            wstring tileName = EnumString::ToWString(tileDef.type);
+            wstring setPath = PathMgr::GetInst()->GetContentPath();
+            setPath += L"\\Textures\\Terrain\\" + tileName + L"\\" + tileDef.setName + L"\\";
+            for (int index = 0; index < tileDef.tileCount; ++index)
+            {
+                wchar_t indexName[8] = {};
+                swprintf_s(indexName, L"%03d", index);
+                wstring texName = tileName + L"_" + tileDef.setName + L"_" + indexName + L".png";
+                tileDef.tiles[index].texture = ResourceMgr::GetInst()->LoadTexture(texName, setPath + texName);
+                if (tileDef.tiles[index].texture->GetImage() == nullptr)
+                {
+                    tileDef.tiles[0].texture = nullptr;
+                    delete wld;
+                    return false;
+                }
+            }
+
+            wstring mapPath = PathMgr::GetInst()->GetContentPath();
+            mapPath += L"\\Textures\\UI\\Map\\" + tileName + L"\\";
+            wstring mapName = L"Map_" + tileName + L"_000.png";
+            if (ResourceMgr::GetInst()->LoadTexture(mapName, mapPath + mapName)->GetImage() == nullptr)
+            {
+                tileDef.tiles[0].texture = nullptr;
+                delete wld;
+                return false;
+            }
+        }
+    }
+
     world = wld;
+
     return true;
 }

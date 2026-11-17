@@ -30,7 +30,27 @@ wstring EnumString::ToWString(TileType type)
 	case TileType::Deciduous:      return L"Deciduous";
 	case TileType::DesertDirt:     return L"DesertDirt";
 
+	case TileType::Cave:           return L"Cave";
+	case TileType::Underrock:      return L"Underrock";
+	case TileType::Fungus:         return L"Fungus";
+	case TileType::FungusRed:      return L"FungusRed";
+	case TileType::FungusGreen:    return L"FungusGreen";
+	case TileType::Sinkhole:       return L"Sinkhole";
+	case TileType::Mud:            return L"Mud";
+
 	case TileType::END:            return L"END";
 	default:                       return L"END";
+	}	
+}
+
+wstring EnumString::ToWString(MonsterType type)
+{
+	switch (type)
+	{
+	case MonsterType::Pigman: return L"Pigman";
+	case MonsterType::Spider: return L"Spider";
+
+	case MonsterType::END:    return L"END";
+	default:                 return L"END";
 	}
 }

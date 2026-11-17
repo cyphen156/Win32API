@@ -7,6 +7,7 @@ TileDef tileDefs[TILEDEFCOUNT] =
 	{ TileType::OceanSwell, L"Default", 1 },
 	{ TileType::OceanRough, L"Default", 1 },
 	{ TileType::OceanHazardous, L"Default", 1 },
+
 	{ TileType::Marsh, L"Default", 48 },
 	{ TileType::Rocky, L"Default", 48 },
 	{ TileType::Savanna, L"Default", 48 },
@@ -15,6 +16,15 @@ TileDef tileDefs[TILEDEFCOUNT] =
 	{ TileType::Dirt, L"Default", 48 },
 	{ TileType::Deciduous, L"Default", 48 },
 	{ TileType::DesertDirt, L"Default", 48 },
+	
+	{ TileType::Cave, L"Default", 48 },
+	{ TileType::Underrock, L"Default", 48 },
+	{ TileType::Fungus, L"Default", 48 },
+	{ TileType::FungusRed, L"Default", 48 },
+	{ TileType::FungusGreen, L"Default", 48 },
+	{ TileType::Sinkhole, L"Default", 48 },
+	{ TileType::Mud, L"Default", 48 },
+	
 	{ TileType::Forest, L"VariantA", 16 },
 	{ TileType::Forest, L"VariantB", 16 },
 	{ TileType::Forest, L"VariantC", 1 },

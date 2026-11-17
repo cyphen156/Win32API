@@ -12,4 +12,12 @@ const Biome biomeDefs[(UINT)BiomeType::END] =
 	{ BiomeType::Desert, { TileType::DesertDirt, TileType::Dirt } },
 	{ BiomeType::MandrakeForest, { TileType::Forest, TileType::Savanna, TileType::Grass } },
 	{ BiomeType::Rocky, { TileType::Rocky, TileType::Dirt } },
+	
+	{ BiomeType::Cave, { TileType::Cave } },
+	{ BiomeType::Fungus, { TileType::Fungus } },
+	{ BiomeType::FungusRed, { TileType::FungusRed } },
+	{ BiomeType::FungusGreen, { TileType::FungusGreen } },
+	{ BiomeType::Sinkhole, { TileType::Sinkhole } },
+	{ BiomeType::Mud, { TileType::Mud } },
+	{ BiomeType::Underrock, { TileType::Underrock } },
 };

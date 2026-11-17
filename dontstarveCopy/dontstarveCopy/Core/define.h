@@ -23,9 +23,10 @@
 
 #define CLONE(type) type* Clone {return new type(*this);}
 
-#define WSREGULAR 500
-#define WSLARGE 1000
-#define TILESIZE 120
+#define WSSMALL		16		// 2**4
+#define WSREGULAR	512		// 2**9
+#define WSLARGE		1024	// 2**10
+#define TILESIZE	120		// 120 * 120
 
 enum class SceneType
 {
@@ -53,10 +54,8 @@ enum class MonsterType
 	END
 };
 
-// 열거형 오브젝트 타입
-// 바이옴 타입
-
-enum class BiomeType {
+enum class BiomeType
+{
 	Water,
 	Grass,
 	Forest,
@@ -66,12 +65,19 @@ enum class BiomeType {
 	Desert,
 	MandrakeForest,
 	Rocky,
+	Cave,
+	Fungus,
+	FungusRed,
+	FungusGreen,
+	Sinkhole,
+	Mud,
+	Underrock,
 
 	END
 };
 
-// 타일 타입
-enum class TileType {
+enum class TileType
+{
 	OceanCoastal,
 	OceanSwell,
 	OceanRough,
@@ -84,6 +90,13 @@ enum class TileType {
 	Dirt,
 	Deciduous,
 	DesertDirt,
+	Cave,
+	Underrock,
+	Fungus,
+	FungusRed,
+	FungusGreen,
+	Sinkhole,
+	Mud,
 
 	END
 };
