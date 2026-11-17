@@ -3,7 +3,6 @@
 #include "gdiplus.h"
 #include <cassert>
 
-
 class Texture : public Resource
 {
 private:

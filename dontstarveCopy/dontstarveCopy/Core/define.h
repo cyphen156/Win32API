@@ -124,7 +124,6 @@ enum class EVENT_TYPE
 	CREATE_OBJ,
 	DELETE_OBJ,
 	CHANGE_SCENE,
-	PAUSE_GAME,
 	HIT,		// lParam IHittable*, wParam 피해량
 
 	END,

@@ -6,6 +6,7 @@
 #include "World.h"
 #include "WorldGenerator.h"
 #include "EnumString.h"
+#include "UIMgr.h"
 
 SceneMgr::SceneMgr() : m_arrScene{}, m_pCurScene{} {};
 
@@ -41,6 +42,7 @@ void SceneMgr::init()
 		m_pCurScene->SetWorld(wld);
 	}
 	m_pCurScene->Enter();
+	UIMgr::GetInst()->Refresh(L"Map");
 }
 
 void SceneMgr::update()
@@ -71,4 +73,5 @@ void SceneMgr::ChangeScene(SceneType next)
 	m_pCurScene->Exit();
 	m_pCurScene = m_arrScene[(UINT)next];
 	m_pCurScene->Enter();
+	UIMgr::GetInst()->Refresh(L"Map");
 }

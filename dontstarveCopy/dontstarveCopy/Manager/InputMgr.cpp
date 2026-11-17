@@ -50,7 +50,10 @@ int g_arrVK[(int)KEY::LAST] =
 	VK_RBUTTON,
 };
 
-InputMgr::InputMgr() : mousePos{}, mouseDelta{}, wheelInput(0), mouseWheel(0) {}
+InputMgr::InputMgr() 
+	: context{}
+	, wheelInput(0) 
+{}
 
 InputMgr::~InputMgr() {}
 
@@ -58,7 +61,7 @@ void InputMgr::init()
 {
 	for (int i = 00; i < (int)KEY::LAST; ++i) 
 	{
-		m_vecKey.push_back(tKeyInfo{ KEY_STATE::NONE, false });
+		context.keys.push_back(tKeyInfo{ KEY_STATE::NONE, false });
 	}
 }
 
@@ -74,27 +77,27 @@ void InputMgr::update()
 			// 키가 눌려 있다.
 			if (GetAsyncKeyState(g_arrVK[i]) & 0x8000)
 			{
-				if (m_vecKey[i].bPrev)
+				if (context.keys[i].bPrev)
 				{
-					m_vecKey[i].eState = KEY_STATE::PRESS;
+					context.keys[i].eState = KEY_STATE::PRESS;
 				}
 				else
 				{
-					m_vecKey[i].eState = KEY_STATE::KEYDOWN;
+					context.keys[i].eState = KEY_STATE::KEYDOWN;
 				}
-				m_vecKey[i].bPrev = true;
+				context.keys[i].bPrev = true;
 			}
 			else
 			{
-				if (m_vecKey[i].bPrev)
+				if (context.keys[i].bPrev)
 				{
-					m_vecKey[i].eState = KEY_STATE::KEYUP;
+					context.keys[i].eState = KEY_STATE::KEYUP;
 				}
 				else
 				{
-					m_vecKey[i].eState = KEY_STATE::NONE;
+					context.keys[i].eState = KEY_STATE::NONE;
 				}
-				m_vecKey[i].bPrev = false;
+				context.keys[i].bPrev = false;
 			}
 		}
 	}
@@ -103,15 +106,15 @@ void InputMgr::update()
 	{
 		for (int i = 00; i < (int)KEY::LAST; ++i)
 		{
-			m_vecKey[i].bPrev = false;
+			context.keys[i].bPrev = false;
 
-			if (m_vecKey[i].eState == KEY_STATE::KEYDOWN || m_vecKey[i].eState == KEY_STATE::PRESS)
+			if (context.keys[i].eState == KEY_STATE::KEYDOWN || context.keys[i].eState == KEY_STATE::PRESS)
 			{
-				m_vecKey[i].eState = KEY_STATE::KEYUP;
+				context.keys[i].eState = KEY_STATE::KEYUP;
 			}
-			else if (m_vecKey[i].eState == KEY_STATE::KEYUP)
+			else if (context.keys[i].eState == KEY_STATE::KEYUP)
 			{
-				m_vecKey[i].eState = KEY_STATE::NONE;
+				context.keys[i].eState = KEY_STATE::NONE;
 			}
 		}
 	}
@@ -121,15 +124,20 @@ void InputMgr::update()
 	GetCursorPos(&cursor);
 	ScreenToClient(hMainHwnd, &cursor);
 	Vec2D nextMousePos(cursor);
-	mouseDelta = nextMousePos - mousePos;
-	mousePos = nextMousePos;
+	context.mouse.delta = nextMousePos - context.mouse.pos;
+	context.mouse.pos = nextMousePos;
 
 	// 휠은 창 메시지로 들어온 만큼 모았다가 이번 프레임 값으로 넘긴다
-	mouseWheel = wheelInput;
+	context.mouse.wheel = wheelInput;
 	wheelInput = 0;
 
-	if (m_vecKey[(int)KEY::TAB].eState == KEY_STATE::KEYDOWN)
+	if (context.keys[(int)KEY::TAB].eState == KEY_STATE::KEYDOWN)
 	{
 		UIMgr::GetInst()->ToggleMap();
+	}
+	bool isDragging = context.keys[(int)KEY::LBUTTON].eState == KEY_STATE::PRESS && (context.mouse.delta.x != 0.f || context.mouse.delta.y != 0.f);
+	if (context.mouse.wheel != 0 || isDragging)
+	{
+		UIMgr::GetInst()->Execute(context);
 	}
 }

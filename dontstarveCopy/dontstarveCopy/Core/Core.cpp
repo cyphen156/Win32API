@@ -8,6 +8,7 @@
 #include "ResourceMgr.h"
 #include "EventMgr.h"
 #include "CameraMgr.h"
+#include "UIMgr.h"
 
 Core::Core()
 	: m_hWnd(0)
@@ -64,7 +65,8 @@ int Core::init(HWND hWnd, RECT* windowInfo)
 	TimeMgr::GetInst()->init();
 	PathMgr::GetInst()->init();
 	InputMgr::GetInst()->init();
-	CameraMgr::GetInst()->init();	
+	CameraMgr::GetInst()->init();
+	UIMgr::GetInst()->init();
 	GameMgr::GetInst()->init();
 
 	// 비트맵 설정
@@ -111,18 +113,24 @@ void Core::update()
 
 	InputMgr::GetInst()->update();
 	GameMgr::GetInst()->update();
+	UIMgr::GetInst()->update();
 }
 
 void Core::render()
 {
 	// 렌더 비트맵생성
 	HBITMAP hOldBit = (HBITMAP)SelectObject(m_MemDC, m_hBit);
+	PatBlt(m_MemDC, 0, 0, (int)m_ptWinInfo->right, (int)m_ptWinInfo->bottom, BLACKNESS);
+
 	SetViewportOrgEx(m_MemDC, (int)(m_ptWinInfo->right / 2), (int)(m_ptWinInfo->bottom / 2), nullptr);
 
 	TimeMgr::GetInst()->render();
 
 	GameMgr::GetInst()->render(m_MemDC);
 
+	UIMgr::GetInst()->render(m_MemDC);
+
+	SetViewportOrgEx(m_MemDC, 0, 0, nullptr);
 #ifdef _DEBUG
 	SetBkMode(m_MemDC, TRANSPARENT);
 	const wstring& frameText = TimeMgr::GetInst()->GetFrameText();

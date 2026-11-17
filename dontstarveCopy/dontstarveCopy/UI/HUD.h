@@ -6,7 +6,7 @@
 class HUD : public UI
 {
 private:
-	Minimap minimap;
+	//Minimap minimap;
 
 public:
 	HUD();

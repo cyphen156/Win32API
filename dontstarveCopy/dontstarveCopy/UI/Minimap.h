@@ -6,10 +6,6 @@
 class Minimap : public UI
 {
 private:
-	RECT frameRect;
-	RECT mapRect;
-	float pixelsPerTile;
-	Vec2D offset;
 
 public:
 	Minimap();

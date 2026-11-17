@@ -1,9 +1,11 @@
 #include "pch.h"
 #include "UI.h"
 
-UI::UI()
-	: isOpen(false)
+UI::UI(const wstring& name)
+	: name(name)
+	, isOpen(false)
 {
+	assert(!name.empty());
 }
 
 UI::~UI()
@@ -25,4 +27,9 @@ void UI::SetOpen(bool open)
 	{
 		OnClose();
 	}
+}
+
+void UI::SetParent(Transform* parent)
+{
+	transform.parent = parent;
 }

@@ -148,7 +148,9 @@
     <ClInclude Include="Component\Controller.h" />
     <ClInclude Include="Component\MonsterController.h" />
     <ClInclude Include="Component\PlayerController.h" />
+    <ClInclude Include="Core\Atlas.h" />
     <ClInclude Include="Core\BehaviorMask.h" />
+    <ClInclude Include="Core\Sprite.h" />
     <ClInclude Include="Core\StateMachine.h" />
     <ClInclude Include="Interface\IHittable.h" />
     <ClInclude Include="Manager\CameraMgr.h" />
@@ -202,6 +204,8 @@
   <ItemGroup>
     <ClCompile Include="Component\MonsterController.cpp" />
     <ClCompile Include="Component\PlayerController.cpp" />
+    <ClCompile Include="Core\Atlas.cpp" />
+    <ClCompile Include="Core\Sprite.cpp" />
     <ClCompile Include="Manager\CameraMgr.cpp" />
     <ClCompile Include="Core\Animation.cpp" />
     <ClCompile Include="Component\Animator.cpp" />
