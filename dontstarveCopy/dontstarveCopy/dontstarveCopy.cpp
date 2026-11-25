@@ -6,6 +6,7 @@
 #include "dontstarveCopy.h"
 #include "Core.h"
 #include "InputMgr.h"
+#include "EventMgr.h"
 
 #define MAX_LOADSTRING 100
 
@@ -173,6 +174,8 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 //
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
+    tEvent event = {};
+
     switch (message)
     {
     case WM_COMMAND:
@@ -195,7 +198,59 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     case WM_MOUSEWHEEL:
         InputMgr::GetInst()->AddMouseWheel(GET_WHEEL_DELTA_WPARAM(wParam));
         break;
+    case WM_MOUSEMOVE:
+        event.eEvent = EVENT_TYPE::MOUSE_MOVE;
+        event.lParam = (DWORD_PTR)lParam;
+        EventMgr::GetInst()->AddEvent(event);
+        break;
+    case WM_LBUTTONDOWN:
+    case WM_RBUTTONDOWN:
+        if (GetCapture() != hWnd)
+        {
+            SetCapture(hWnd);
+        }
+        event.eEvent = EVENT_TYPE::MOUSE_MOVE;
+        event.lParam = (DWORD_PTR)lParam;
+        EventMgr::GetInst()->AddEvent(event);
+        event.eEvent = EVENT_TYPE::KEY_INPUT;
+        event.lParam = (DWORD_PTR)(message == WM_LBUTTONDOWN ? VK_LBUTTON : VK_RBUTTON);
+        event.wParam = (DWORD_PTR)KEY_STATE::KEYDOWN;
+        EventMgr::GetInst()->AddEvent(event);
+        break;
+    case WM_LBUTTONUP:
+    case WM_RBUTTONUP:
+        event.eEvent = EVENT_TYPE::MOUSE_MOVE;
+        event.lParam = (DWORD_PTR)lParam;
+        EventMgr::GetInst()->AddEvent(event);
+        event.eEvent = EVENT_TYPE::KEY_INPUT;
+        event.lParam = (DWORD_PTR)(message == WM_LBUTTONUP ? VK_LBUTTON : VK_RBUTTON);
+        event.wParam = (DWORD_PTR)KEY_STATE::KEYUP;
+        EventMgr::GetInst()->AddEvent(event);
+        if ((wParam & (MK_LBUTTON | MK_RBUTTON)) == 0 && GetCapture() == hWnd)
+        {
+            ReleaseCapture();
+        }
+        break;
+    case WM_CAPTURECHANGED:
+        event.eEvent = EVENT_TYPE::KEY_INPUT;
+        event.lParam = (DWORD_PTR)VK_LBUTTON;
+        event.wParam = (DWORD_PTR)KEY_STATE::KEYUP;
+        EventMgr::GetInst()->AddEvent(event);
+        event.lParam = (DWORD_PTR)VK_RBUTTON;
+        EventMgr::GetInst()->AddEvent(event);
+        break;
+    case WM_KEYUP:
+        event.eEvent = EVENT_TYPE::KEY_INPUT;
+        event.lParam = (DWORD_PTR)wParam;
+        event.wParam = (DWORD_PTR)KEY_STATE::KEYUP;
+        EventMgr::GetInst()->AddEvent(event);
+        break;
     case WM_KEYDOWN:
+        event.eEvent = EVENT_TYPE::KEY_INPUT;
+        event.lParam = (DWORD_PTR)wParam;
+        event.wParam = (DWORD_PTR)KEY_STATE::KEYDOWN;
+        EventMgr::GetInst()->AddEvent(event);
+
         if (wParam == VK_F11)
         {
             if (isFScreen) {
@@ -220,15 +275,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             GetClientRect(hWnd, &windowInfo);
         }
         break;
-    /*case WM_PAINT:
-        {
-            PAINTSTRUCT ps;
-            HDC hdc = BeginPaint(hWnd, &ps);
-
-            EndPaint(hWnd, &ps);
-        }
-        break;*/
-    
     case WM_DESTROY:
         PostQuitMessage(0);
         break;

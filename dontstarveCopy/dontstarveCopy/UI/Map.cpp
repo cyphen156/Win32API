@@ -326,7 +326,10 @@ void Map::Execute(const InputContext& ctx)
 		BakeGround();
 	}
 
-	if (ctx.keys[(int)KEY::LBUTTON].eState == KEY_STATE::PRESS)
+	if ((ctx.keys[(int)KEY::LBUTTON].eState == KEY_STATE::PRESS 
+		|| ctx.keys[(int)KEY::LBUTTON].eState == KEY_STATE::KEYUP) 
+	&& (ctx.mouse.delta.x != 0.f 
+		|| ctx.mouse.delta.y != 0.f))
 	{
 		Transform mapFinal = transform.GetFinalTransform();
 		drawTransformer.position += Vec2D(ctx.mouse.delta.x / mapFinal.scale.x, ctx.mouse.delta.y / mapFinal.scale.y);

@@ -2,6 +2,8 @@
 #include "InputMgr.h"
 #include "Core.h"
 #include "UIMgr.h"
+#include "EventMgr.h"
+#include <windowsx.h>
 
 int g_arrVK[(int)KEY::LAST] = 
 {
@@ -67,41 +69,23 @@ void InputMgr::init()
 
 void InputMgr::update()
 {
-	HWND hMainHwnd = Core::GetInst()->GetMainHWND();
 	HWND hWnd = GetFocus();
 
 	if (hWnd != nullptr)
 	{
 		for (int i = 00; i < (int)KEY::LAST; ++i)
 		{
-			// 키가 눌려 있다.
-			if (GetAsyncKeyState(g_arrVK[i]) & 0x8000)
+			switch (context.keys[i].eState)
 			{
-				if (context.keys[i].bPrev)
-				{
-					context.keys[i].eState = KEY_STATE::PRESS;
-				}
-				else
-				{
-					context.keys[i].eState = KEY_STATE::KEYDOWN;
-				}
-				context.keys[i].bPrev = true;
-			}
-			else
-			{
-				if (context.keys[i].bPrev)
-				{
-					context.keys[i].eState = KEY_STATE::KEYUP;
-				}
-				else
-				{
-					context.keys[i].eState = KEY_STATE::NONE;
-				}
-				context.keys[i].bPrev = false;
+			case KEY_STATE::KEYDOWN:
+				context.keys[i].eState = KEY_STATE::PRESS;
+				break;
+			case KEY_STATE::KEYUP:
+				context.keys[i].eState = KEY_STATE::NONE;
+				break;
 			}
 		}
 	}
-
 	else
 	{
 		for (int i = 00; i < (int)KEY::LAST; ++i)
@@ -119,24 +103,58 @@ void InputMgr::update()
 		}
 	}
 
-	// 마우스 위치는 메인 창 기준 좌표로 둔다
-	POINT cursor = {};
-	GetCursorPos(&cursor);
-	ScreenToClient(hMainHwnd, &cursor);
-	Vec2D nextMousePos(cursor);
-	context.mouse.delta = nextMousePos - context.mouse.pos;
-	context.mouse.pos = nextMousePos;
+	const vector<tEvent>& events = EventMgr::GetInst()->GetEvents();
+	for (size_t i = 0; i < events.size(); ++i)
+	{
+		switch (events[i].eEvent)
+		{
+		case EVENT_TYPE::MOUSE_MOVE:
+			context.mouse.pos = Vec2D(GET_X_LPARAM(events[i].lParam), GET_Y_LPARAM(events[i].lParam));
+			break;
+		case EVENT_TYPE::KEY_INPUT:
+			for (int j = 0; j < (int)KEY::LAST; ++j)
+			{
+				if (g_arrVK[j] != (int)events[i].lParam)
+				{
+					continue;
+				}
+				if (context.keys[j].bPrev == ((KEY_STATE)events[i].wParam == KEY_STATE::KEYDOWN))
+				{
+					continue;
+				}
+				context.keys[j].eState = (KEY_STATE)events[i].wParam;
+				context.keys[j].bPrev = context.keys[j].eState == KEY_STATE::KEYDOWN;
+
+				switch ((KEY)j)
+				{
+				case KEY::TAB:
+					if (context.keys[j].eState == KEY_STATE::KEYDOWN)
+					{
+						UIMgr::GetInst()->ToggleMap();
+					}
+					break;
+				case KEY::LBUTTON:
+				case KEY::RBUTTON:
+					context.mouse.delta = context.mouse.pos - previousMousePos;
+					previousMousePos = context.mouse.pos;
+					context.mouse.wheel = 0;
+					UIMgr::GetInst()->Execute(context);
+					context.keys[j].eState = context.keys[j].bPrev ? KEY_STATE::PRESS : KEY_STATE::NONE;
+					break;
+				}
+			}
+			break;
+		}
+	}
+
+	context.mouse.delta = context.mouse.pos - previousMousePos;
+	previousMousePos = context.mouse.pos;
 
 	// 휠은 창 메시지로 들어온 만큼 모았다가 이번 프레임 값으로 넘긴다
 	context.mouse.wheel = wheelInput;
 	wheelInput = 0;
 
-	if (context.keys[(int)KEY::TAB].eState == KEY_STATE::KEYDOWN)
-	{
-		UIMgr::GetInst()->ToggleMap();
-	}
-	bool isDragging = context.keys[(int)KEY::LBUTTON].eState == KEY_STATE::PRESS && (context.mouse.delta.x != 0.f || context.mouse.delta.y != 0.f);
-	if (context.mouse.wheel != 0 || isDragging)
+	if (context.mouse.wheel != 0 || context.keys[(int)KEY::LBUTTON].eState != KEY_STATE::NONE || context.keys[(int)KEY::RBUTTON].eState != KEY_STATE::NONE)
 	{
 		UIMgr::GetInst()->Execute(context);
 	}

@@ -23,5 +23,6 @@ private:
 public:
 	void update();
 	void AddEvent(const tEvent& event);
+	const vector<tEvent>& GetEvents() { return m_vecEvent; }
 };
 

@@ -125,6 +125,8 @@ enum class EVENT_TYPE
 	DELETE_OBJ,
 	CHANGE_SCENE,
 	HIT,		// lParam IHittable*, wParam 피해량
+	KEY_INPUT,
+	MOUSE_MOVE,
 
 	END,
 };

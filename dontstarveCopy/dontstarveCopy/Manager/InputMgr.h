@@ -85,6 +85,7 @@ class InputMgr
 private:
 	InputContext context;
 	int wheelInput;
+	Vec2D previousMousePos;
 
 public:
 	void init();
